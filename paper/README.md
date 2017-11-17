@@ -21,6 +21,7 @@ This is worth a look - I only skimmed it so far, but I bet it has more reference
 * [Warner, Harris, Pravec 2009](http://www.sciencedirect.com/science/article/pii/S0019103509000566?via%3Dihub) The asteroid lightcurve database <br>
 The asteroid lightcurve database paper. This describes the contents of the ALCD. 
 
+### Lightcurve ###
 
 * [Erasmus et al 2017](http://iopscience.iop.org/article/10.3847/1538-3881/aa88be/meta) Characterization of Near-Earth Asteroids Using KMTNET-SAAO <br>
 Short time coverage of NEOs, used L-S to determine periods (and machine-learning for taxonomy). 
@@ -31,6 +32,7 @@ Short time coverage of NEOs, used L-S to determine periods (and machine-learning
 * [Harris et al 1989](http://www.sciencedirect.com/science/article/pii/0019103589900158?via%3Dihub) Photoelectric observations of asteroids 3, 24, 60, 261, and 863 <br>
 The FALC reference
 
+### More Detailed Lightcurve / Shape ###
 
 * [Cibulková 2016](https://www.aanda.org/articles/aa/abs/2016/12/aa29192-16/aa29192-16.html)Distribution of spin-axes longitudes and shape elongations of main-belt asteroids <br>
 All-sky survey data turned into shapes/spin axes from sparse photometry. Probably not so relevant right now, actually - but maybe for later.
