@@ -58,3 +58,10 @@ Documents describing Gaussian Processes
 * A minimal introduction is [here](https://www.robots.ox.ac.uk/~mebden/reports/GPtutorial.pdf)
 * [This book](http://www.gaussianprocess.org) is free, but very computer science-y
 
+
+
+Bryce's repo of lightcurve, photometry and modeling papers
+---------------------------------------------------------
+https://www.dropbox.com/s/dlyxjlm3u8dnka5/light_curve_references.tar.gz?dl=0
+
+Is there a way to put these .pdf files on git?
