@@ -86,7 +86,10 @@ Gaussian Process Papers
 Documents describing Gaussian Processes
 
 * A minimal introduction is [here](https://www.robots.ox.ac.uk/~mebden/reports/GPtutorial.pdf)
+* [This tutorial](http://www.robots.ox.ac.uk/~sjrob/Pubs/philTransA_2012.pdf) might be useful
 * [This book](http://www.gaussianprocess.org) is free, but very computer science-y
+* [This tutorial](http://dfm.io/george/dev/tutorials/first/) is part of the documentation for the package we'll likely use
+* [These slides](https://speakerdeck.com/dfm/an-astronomers-introduction-to-gaussian-processes-v2) seem useful
 
 
 
