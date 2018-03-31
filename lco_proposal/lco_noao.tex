@@ -1,0 +1,868 @@
+% NOAOPROP.TEX -- template for NOAO STANDARD telescope proposals.
+% Revised for the 2018B semester (August - January 2018)
+% For later semesters, the current form may be obtained from our Web
+% page at http://www.noao.edu/noaoprop/noaoprop.html
+
+% DEADLINE FOR SUBMISSIONS: 11:59pm MST MONDAY APRIL 2 
+
+% This form can NOT be used to submit Gemini proposals.  Please
+% see:   http://www.noao.edu/noaoprop/help/pit.html
+
+% This LaTeX template has been returned to you upon request through
+% our Web-based proposal form.  The template has been customized for
+% you based on the run information that you entered via the Web form.
+% As an option you may complete this form locally and submit it by
+% email following the instructions below.  If the run information is
+% incomplete you should go back to the Web form, complete all the
+% suggested run information and then obtain another customized 
+% template before proceeding. 
+%
+% WEB FORM SUBMISSION:
+% If you have not modified this document locally, we encourage web
+% submissions using the "Proposal Submission" button on the web
+% proposal form.  Be sure to click on the second prompt on the
+% following page to complete submission.   Skip to step #3 below
+% for some additional information.
+%
+% FILE UPLOAD SUBMISSION:
+% If you have modified this document locally and are ready to submit, 
+% you do not need to return to the web form.  Instead, you may submit
+% this template and figure files by following the instructions 
+% below.
+%
+%   1. Before submitting this form electronically, run it through latex
+%      and print it out to make certain that it looks the way that you
+%      wish the review panel to see it.
+%   
+%   2. Upload THIS file (NOT the PostScript or PDF version) and
+%      all figures on the web at http://www.noao.edu/noaoprop/submit/
+%
+%   3. If the proposal is a thesis or if the principal investigator is a
+%      a graduate student, the student's faculty advisor must complete
+%      the online form at http://www.noao.edu/noaoprop/thesis/
+%      This form should be completed within two business days after the
+%      deadline.  Graduate students proposing thesis observations should
+%      consult NOAO policies concerning thesis programs and travel support.
+%
+%   4. QUESTIONS?  If you have questions about submitting your proposal
+%      send email to noaoprop-help@noao.edu.  Information about
+%      instrumentation can be found at the NOAO Web 
+%      site at http://www.noao.edu/noaoprop/noaoprop.html.  Specific 
+%      instrumentation or facility questions for CTIO or KPNO
+%      can also be sent to the respective sites at ctio@noao.edu, 
+%      and kpno@noao.edu
+%      Gemini questions can be  emailed to the US mirror scientists 
+%      at nssc@noao.edu.
+%
+%   5. When your proposal is received at NOAO you will be sent an
+%      automatic email message verifying its receipt along with a
+%      proposal ID number.  If you do not receive this message within
+%      15 minutes of the time you sent your proposal send email to
+%      noaoprop-help@noao.edu for assistance.  You may track your
+%      proposal processing by the proposal ID number at the following
+%      web page:   https://www.noao.edu/cgi-bin/noaoprop/propstatus
+% ___________________________________________________________________
+% THE FORM STARTS HERE
+%
+
+% Please do not modify or delete this line.
+\documentclass[11pt]{article}
+\usepackage{nprop30}
+
+
+% Please do not modify or delete this line.
+\begin{document}
+
+% Uncomment the following line and enter a previous semester and ID
+% (e.g. 01B-0987) if you wish to flag this proposal as a resubmission
+%\pastid{}
+
+% Please do not modify or delete this line.
+\proposaltype{Standard}
+% Do not delete the following uncommented line which is required for Gemini 
+% proposals.  This line indicates whether or not the proposal is being 
+% submitted to multiple partner countries - only "yes" or "no" is valid.
+\geminidata{mpartners}{no}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SCIENTIFIC CATEGORIES
+%
+% Please select a "scientific category" that best describes your
+% program by uncommenting only ONE of the selections below.  Your
+% \sciencecategory selection will be used to assign a review panel to
+% your proposal.  DO NOT MODIFY THE SELECTION YOU UNCOMMENT.  A
+% description of each of these categories is available on our Web page
+% at https://www.noao.edu/noaoprop/help/scicat.html
+
+% EXTRA-GALACTIC LIST (do not uncomment this line)
+%\sciencecategory{Active Galaxies}
+%\sciencecategory{Cosmology}
+%\sciencecategory{Large Scale Struc.}
+%\sciencecategory{Clusters of Galaxies}
+%\sciencecategory{High Z Galaxies}
+%\sciencecategory{Low Z Galaxies}
+%\sciencecategory{Resolved Galaxies}
+%\sciencecategory{Stellar Pops (EGAL)}
+%\sciencecategory{EGAL - Other}
+
+% GALACTIC/LOCAL GROUP LIST (do not uncomment this line)
+%\sciencecategory{Star Clusters}
+%\sciencecategory{Stellar Pops (GAL)}
+%\sciencecategory{HII Reg., PN, etc.}
+%\sciencecategory{ISM}
+%\sciencecategory{Star Forming Regions}
+%\sciencecategory{Young Stellar Obj.}
+%\sciencecategory{Massive Stars}
+%\sciencecategory{Low Mass Stars}
+%\sciencecategory{Stellar Remnants}
+%\sciencecategory{Galactic - Other}
+
+% SOLAR SYSTEM LIST (do not uncomment this line)
+%\sciencecategory{Kuiper Belt Objects}
+\sciencecategory{Small Bodies \& Moons}
+%\sciencecategory{Planets}
+%\sciencecategory{Extrasolar Planets}
+%\sciencecategory{Solar System - Other}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% TITLE
+%
+% Give a descriptive title for the proposal in the \title command.
+%
+% Note that a title can be quite long; LaTeX will break the title into
+% separate lines automatically.  If you wish to indicate line breaks
+% yourself, do so with a `\\' command at the appropriate point in
+% the title text.  Use both upper and lower case letters (NOT ALL CAPS).
+
+\title{Lightcurves of Main Belt Asteroids}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ABSTRACT
+%
+% Give a general abstract of the scientific justification appropriate
+% for a non-specialist.  Write between the \begin{abstract} and 
+% \end{abstract} lines.  Limit yourself to approximately 175 words.
+% Abstracts of accepted proposals will be made publicly available.
+
+% DO NOT remove the \begin{abstract} and \end{abstract} lines.
+
+\begin{abstract}
+We propose to obtain dense, continuous time sampling of 10 main belt asteroids with LCO as follow up to sparse light curve sampling obtained with ZTF. The extremely well-characterized light curve segment from LCO will serve to validate Gaussian Process techniques we are developing to analyze sparse asteroid light curves from surveys like ZTF or LSST.
+
+These Gaussian Process methods provide formal error estimates on asteroid rotation periods, as well as allowing us to account for non-sinusoidal period profiles, and (in future work) fit for colors, phase curves and shape models when using survey data from a multi-band, long-term survey such as ZTF or LSST. Obtaining LCO data to supplement the ZTF data while developing these algorithms will provide invaluable real-world tests of our methods.
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SUMMARY OF OBSERVING RUNS REQUESTED
+%
+% List a summary of the details of the observing runs being requested,
+% for UP TO SIX runs.  The parameters for each run are segregated
+% between \begin{obsrun} and \end{obsrun} lines.  Please be sure
+% that the information is isolated properly for each run.
+%
+%   \begin{obsrun}
+%   \telescope{}        % For example, \telescope{KP-4m}
+%   \instrument{}       % For example, \instrument{ECHUV + T2KB}
+%   \numnights{}        % For example, \numnights{6}
+%   \lunardays{}        % For example, \lunardays{grey}
+%   \optimaldates{}     % For example, \optimaldates{Sep - Nov}
+%   \acceptabledates{}  % For example, \acceptabledates{Aug - Jan}
+%   \end{obsrun}
+%
+% The following telescope identifiers MUST be used in the \telescope{}
+% field.  Some of the telescope identifiers must include an observatory
+% code as well.
+%
+% CTIO: CT-4m, SOAR, CT-1.3m, CT-0.9m
+% KPNO: WIYN, KP-0.9m
+% AAO: AAT
+% LCO: LCO-2m, LCO-1m
+% CHARA: CHARA
+%
+% Select the instrument and detector identifiers from the list on our
+% Web page at https://www.noao.edu/noaoprop/help/facilities.html.
+% The correct codes MUST be used to ensure your correct
+% instrument + detector combination.
+%
+% \numnights should give the number of nights of the run (for queue
+% observations, use fractional 10-hour equivalent nights, e.g.
+% 3 hours = 0.3 nights).  Formats such as 5x0.5 are acceptable.
+%
+% \lunardays should contain the word "darkest", "dark", "grey", or
+% "bright", which in turn reflects the number of nights from new moon
+% where darkest<=3, dark<=7, grey<=10, bright<=14.  Particular lunar 
+% phase requirements dictated by the science program (e.g., "<=12", 
+% "+9, -6", or "full moon more than 2 hours away from Taurus") should
+% be noted in the "scheduling constraints or non-usable dates" section 
+% below.
+%
+% \optimaldates should contain the range of OPTIMAL months, as shown 
+% below.
+%
+% \acceptabledates should give the range of ACCEPTABLE months (i.e.,
+% you would not accept time outside those limits).
+% NOTE THAT DUE TO INSTRUMENT BLOCKING RESTRICTIONS YOU SHOULD MAKE 
+% THIS RANGE AS GENEROUS AS POSSIBLE.
+%
+% For QUEUE-SCHEDULED observations, you may set the date range to the 
+% full semester range and set \lunardays to the brightest moon your
+% observations could tolerate if the program were scheduled classically.
+%
+% To enter the acceptable and optimal date ranges, please use two
+% dash-separated months with 3-letter abbreviations for the month
+% (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec).
+% For example:  \optimaldates{Nov - Dec}.
+% We appreciate your help in not using vague range specifications
+% like "October dark run" or "mid-January" which will require human
+% intervention.
+%
+% FOR LONGTERM STATUS PROPOSALS SPECIFY ONLY THE RUNS FOR THE CURRENT
+% SEMESTER, AND NOT FOR ANY SUBSEQUENT SEMESTERS.
+
+% DO NOT remove any of the \begin{obsrun} and \end{obsrun} blocks, 
+% even if the blocks are empty.
+
+\begin{obsrun}
+\telescope{LCO-1m}
+\instrument{Sinistro}
+\numnights{120 hrs}
+\lunardays{dark}
+\optimaldates{Jun - Nov}
+\acceptabledates{Jun - Nov}
+\end{obsrun}
+
+\begin{obsrun}
+\telescope{}
+\instrument{}
+\numnights{}
+\lunardays{}
+\optimaldates{}
+\acceptabledates{}
+\end{obsrun}
+
+\begin{obsrun}
+\telescope{}
+\instrument{}
+\numnights{}
+\lunardays{}
+\optimaldates{}
+\acceptabledates{}
+\end{obsrun}
+
+\begin{obsrun}
+\telescope{}
+\instrument{}
+\numnights{}
+\lunardays{}
+\optimaldates{}
+\acceptabledates{}
+\end{obsrun}
+
+\begin{obsrun}
+\telescope{}
+\instrument{}
+\numnights{}
+\lunardays{}
+\optimaldates{}
+\acceptabledates{}
+\end{obsrun}
+
+\begin{obsrun}
+\telescope{}
+\instrument{}
+\numnights{}
+\lunardays{}
+\optimaldates{}
+\acceptabledates{}
+\end{obsrun}
+
+
+% If there are scheduling constraints or non-usable dates for any of
+% the runs specified, (i.e., other than the default lunar phase 
+% requirements or when your object is up) please give the dates by 
+% filling in the curly braces in \unusabledates{}.  Note here if you 
+% are requesting runs in an "either/or" situation, e.g. run 1 or run 2, 
+% but not both. This is also the place to advise us of any special 
+% constraints which affect the scheduling of your observing run (e.g. 
+% "schedule run #1 before run #2" or "run dates must be coordinated 
+% with HST observations").
+% 
+% Please limit your text to six lines on the printed copy.
+
+\unusabledates{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% INVESTIGATOR'S (PI AND CoI) INFORMATION BLOCKS
+%
+% Please give the PI's name (first name first followed by middle
+% initial and last name), affiliation, department and complete mailing
+% address, as well as an email address.  Also give a complete phone
+% number, and a number for a fax machine if you have access to one.
+% You must also indicate the principal investigator's status with one
+% of the one-letter codes inside the \invstatus{} curly braces, as
+% indicated below.
+%
+% The affil{}, \department{}, \address{} (use a comma separate list as
+% needed), \city{}, \state{}, \zipcode{}, and \country{} (for non-US
+% addresses) fields will be used together as your full postal mailing
+% address.  Please be sure this information is complete.  Note that
+% some institutions will not deliver postal mail if a department is
+% not included in the postal mailing address.  Non-US addresses should
+% include the country and any local postal codes.
+%
+% The fax number does not print on the form.
+%
+% For each CoI please include a name, affiliation, email address and
+% investigator's status within the \begin{CoI} and \end{CoI} lines.
+%
+% For each \invstatus{} field, please fill in the appropriate
+% investigator status code from the following list.  If the investigator
+% is a graduate student, indicate "T" if THIS proposal is related to a
+% thesis project, or "G" otherwise.  This code should represent the
+% status of the individuals at the time of the proposal submission.
+% This information is necessary to assist us with our required reporting
+% to the NSF.
+%
+% \invstatus{P} % investigator has obtained PhD or equivalent
+% \invstatus{T} % investigator is grad student, proposal is thesis
+% \invstatus{G} % investigator is grad student, proposal not thesis
+% \invstatus{U} % investigator is an undergraduate student
+% \invstatus{O} % investigator has other status (none of the above)
+%
+% DO NOT remove the \begin{PI} and \end{PI}.  Only one individual's
+% name per \name field is allowed.
+%
+% Investigator names will now appear on page 2 of the printed proposal.
+% Do not remove this line.
+\investigators
+
+\begin{PI}
+\name{Lynne Jones}
+\affil{University of Washington}
+\department{Department of Astronomy}
+\address{Box 351580, U.W.}
+\city{Seattle}
+\state{WA}
+\zipcode{98105}
+\country{USA}
+\email{lynnej@uw.edu}
+\phone{2067954755}
+\fax{}
+\invstatus{P}
+\end{PI}
+
+\begin{CoI}
+\name{D. Huppenkothen}
+\affil{University of Washington}
+\email{d.huppenkothen@gmail.com}
+\invstatus{P}
+\end{CoI}
+
+\begin{CoI}
+\name{S. Greenstreet}
+\affil{B612 Asteroid Institute / DIRAC Institute}
+\email{sarah@b612foundation.org}
+\invstatus{P}
+\end{CoI}
+
+\begin{CoI}
+\name{B. Bolin}
+\affil{B612 Asteroid Institute / DIRAC Institute}
+\email{bolin@b612foundation.org}
+\invstatus{P}
+\end{CoI}
+
+\begin{CoI}
+\name{M. Juric}
+\affil{University of Washington}
+\email{mjuric@astro.washington.edu}
+\invstatus{P}
+\end{CoI}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% In the following "essay question" sections, the delimiting pieces of
+% markup (\justification, \expdesign, etc.) act as LaTeX \section*{}
+% commands.  If the author wanted to have numbered subsections within
+% any of these, LaTeX's \subsection could be used.
+%
+% DO NOT REDUCE THE FONT SIZE, and do not otherwise fiddle with the
+% format to get more on a page.  We will reset any changes back to the
+% default font.
+
+% SCIENTIFIC JUSTIFICATION
+%
+% Give the scientific justification for the proposed observations.
+% This section should consist of paragraphs of text followed by any
+% references and up to three figures and captions.  Be sure to include
+% overall significance to astronomy.  THE SCIENTIFIC JUSTIFICATION
+% SHOULD BE LIMITED TO ONE PAGE (the review panels have requested that
+% we not send them more than one page), with up to two additional pages
+% for references, figures (no more than three), and captions. 
+
+% If you wish to use our "reference" environment, follow the following
+% example (journal commands are compatible with AASTeX v4.0):
+%
+%\begin{references}
+%\reference Armandroff \& Massey 1991 \aj, 102, 927.
+%\reference Berkhuijsen \& Humphreys 1989 \aap, 214, 68.
+%\reference Massey 1993 in Massive Stars: Their Lives in the 
+% Interstellar Medium (Review), ed. J. P. Cassinelli and E. B. 
+% Churchwell, p. 168.
+%\reference Massey \& Armandroff 1999, in prep.
+%\end{references}
+
+% Only EPS figures may be included with your proposal.  In order to
+% include an EPS plot, you should use the LaTeX "figure" environment.
+% The plot file is included with the \plotone{FILENAME} command; two
+% side-by-side plot files can be included by typing
+% \plottwo{FILENAME1}{FILENAME2}.  Use \caption{} to specify a caption.
+% The \epsscale{} command can be used to scale \plotone plots if they
+% appear too large on the printed page.  Contact us if you have any
+% figure questions or encounter any problems with figures
+% (noaoprop-help@noao.edu).
+%
+% \begin{figure}
+% \epsscale{0.85}
+% \plotone{sample.eps}
+% \caption{Sample figure showing important results.}
+% \end{figure}
+%
+% If you need to rotate or make other transformations to a figure, you
+% may use the \plotfiddle command:
+% \plotfiddle{PSFILE}{VSIZE}{ROTANG}{HSCALE}{VSCALE}{HTRANS}{VTRANS}
+% \plotfiddle{sample.eps}{2.6in}{-90.}{32.}{32.}{-250}{225}
+% where HSCALE and VSCALE are percentages and HTRANS and VTRANS are
+% in PostScript units, 72 PS units = 1 inch.
+%
+% Note that the Web form provides several useful and simple figure 
+% options.
+
+\sciencejustification
+periods of asteroids tells us about their internal structure the shape
+of the light curve also gives us important clues as to their shape
+being able to fit the phase curve and potential color variations at
+the same time is important for future surveys (phase curve varies with
+family, color variations complicate light curve)
+
+Current methods of fitting asteroid sparse light curves include
+fourier analysis of the light curve amplitudes (such as with FALC),
+Lomb-Scargle (L-S) fitting, and Phase Dispersion Minimization (PDM)
+analysis (see {\it e.g.} Waszczak et al, \aj\, 2015, Polishook et al,
+MNRAS 2012, Harris et al, Icarus 2012, Warner \& Harris, Icarus 2011,
+Masiero et al, Icarus 2009, Mann et al, \aj\, 2007). These methods have
+varying drawbacks, but in general do not provide a proper statistical
+estimate of the error of the parameters which are fit. In order to
+determine a formal statistical error, a generative model must be used;
+Gaussian Processes combined with Monte Carlo provide such a method.
+[Daniela say something smart here?]
+
+These Gaussian Process methods are intended to discover the light
+curve periodicity as well as the shape of the light curve (including
+non-sinusoidal light curve profiles), even in sparse data obtained
+with only a few data points in distinct nights. This is a technique
+required to characterize asteroids observed with LSST and is under
+development by teams at University of Washington and the DIRAC
+Institute. We intend to continue to develop this technique to also fit
+for phase function variation, potential tumbling, and multi-color
+observations, in order to provide a useful tool for determining
+periods, spin axes, shapes and colors for surveys such as ZTF and
+LSST.
+
+
+\clearpage
+
+
+% EXPERIMENTAL DESIGN
+%
+% This section should consist of text only (no figures).
+% There is a limit of one page of printed text.
+
+% Describe your overall observational program.  How will these 
+% observations contribute toward the accomplishment of the goals 
+% outlined in the science justification?  If you've requested 
+% long-term status, justify why this is necessary for successful 
+% completion of the science.
+%
+% NOTE: In previous versions of the proposal form, this section
+% requested details about the use of non-NOAO observing facilities. 
+% Such information should now be entered in the following "Other
+% Facilities" section.
+
+\expdesign
+The observations we are proposing to obtain with LCO are intended to
+densely sample the light curve, following up on the sparse sampling
+obtained with ZTF.
+
+We will use our Gaussian Process technique on the sparsely sampled data
+obtained with ZTF, but need densely sampled light curves over a full
+rotation period to verify the results, especially non-sinusoidal
+features in the light curve profile. 
+
+We expect ZTF to observe more than a thousand main belt asteroids
+brighter than $r=20$ in the region between 290 and 0 degrees RA and 
++10 and -30 degrees Declination, consistent with the footprint of the
+ZTF survey, avoiding the galaxy, and suitable for LCO observations with
+the 1-m network between June and Dec 2018. This provides plenty of
+potential targets, with a range of expected light curve periods,
+profiles and amplitudes. We will choose a sample of approximately 10
+objects which provide the best challenge to the Gaussian Process method
+development, with a range of periods between 2 and 10 hours. 
+
+To gather data to fully sample the light curve over the entire rotation
+period, and to maintain sensitivity to non-sinusoidal elements in the
+light curve, we need to continually observe the targets for at least
+two light curve periods. By sampling two light curve periods, we can
+remove ambiguities due to the possibility of either the light-curve
+originating from a rotation period (a `double-peaked' light curve) or
+albedo variations (a `single-peaked' light curve).  By continually
+observing the object, we are sensitive to non-sinusoidal variations in
+the light curve profile. LCO is unique in its capabilities to
+continually observe a target for longer than a few hours, due to its
+global distribution of telescopes, and is thus an ideal resource for
+this project. Although we can recover from missed observations due to
+local weather conditions, the ideal situation would be to observe each
+target continually throughout a 4-20 hour time period (depending on the
+rotation period of each asteroid). 
+
+A SNR of about 20 is required in order to obtain photometry with
+uncertainties small enough to accurately determine the light curve. At
+r=20, with Sinistro used on the 1-m telescopes, this is possible to
+achieve with exposure times of about 176 seconds during `half' bright
+time (estimated using the LCO Exposure Time Calculator) or 124 seconds
+during dark time, which provides a reasonable sampling rate (218
+seconds, including readout) for these multi-hour light curves. 
+
+Depending on the light curve profile and possible ambiguities between
+light curve period and rotation period, we may request alternating
+observations in g and r band. For targets with no ambiguity between
+double- and single- peaked light curves, but with complexity in their
+light curve profile, we will observe in just r band.
+
+
+% PROPRIETARY PERIOD
+% 
+% Enter the proprietary period for your data between the braces.
+% The normal duration is 18 months from when the data are taken at
+% the telescope.  Requests for longer proprietary periods must
+% be approved by the NOAO Director.
+
+\proprietaryperiod{12 months}
+
+
+% OTHER FACILITIES OR RESOURCES
+% 
+% This section should consist of text only (no figures).
+% Please limit to about a half page of printed text.
+% 
+% 1) We are interested in understanding how observations made through
+% NOAO observing opportunities complement or support data from other
+% facilities both on the ground and in space.   We will use this
+% information to guide the evolution of the NOAO program; it will not
+% affect the success of your proposal in the evaluation process.
+% Please describe how the proposed observations complement data from  
+% other facilities, including private observatories and both ground-
+% and space-based telescopes.  In addressing this question, take a
+% broad view of your research program.  Are the data to be obtained 
+% through this proposal going to help select samples for detailed
+% observations using larger telescopes or from space observatories?
+% Are these data going to be directly combined with data obtained
+% elsewhere to test a hypothesis?  Will these observations have
+% relevance to other observations, even though the proposal stands
+% on its own?  For each of these other facilities, indicate the nature
+% of the observations (yours or those of others), and describe the
+% importance of the observations proposed here in the context of the
+% entire program.
+%
+% 2) Do you currently have a grant that would provide resources
+% to support the data processing, analysis, and publication of the
+% observations proposed here?
+
+\otherfacilities
+We are proposing to obtain dense light curve coverage with LCO to
+complement sparse, LSST-style coverage obtained with the Zwicky
+Transient Factory, ZTF. The ZTF observations are expected to be
+obtained approximately every three or four days, with two observations
+in each night separated by approximately 30 minutes, continually over
+several months. The University of Washington is a ZTF partner, thus we
+can access both the public data (sampled at the rate described) and
+the partnership data, which has the possibility of providing a
+long-term light-curve sampled at a slightly higher rate (6 times per
+night instead of 2). This will help us understand the level of
+``sparse-ness'' which works best when combining dense and sparse
+measurements.
+
+% LONG-TERM DETAILS
+%
+% If you are requesting long-term status for this proposal briefly 
+% state the requirements for telescope time (telescope, instrument, 
+% number of nights) needed in subsequent semesters to complete this 
+% project in \longtermdetails (be sure to uncomment the 
+% \longtermdetails line below).
+%
+% If this is a long-term request you MAY ALSO NEED to modify the
+% \proposaltype keyword at the top of this form changing "Standard"
+% to "Longterm" (where is says "Please do not modify or delete this 
+% line!").  It is this keyword that will flag this proposal as a 
+% long-term status request, regardless of what may be entered here 
+% in \longtermdetails!
+%
+% If this is not a long-term status request then please ignore this
+% section.
+%
+%
+%\longtermdetails
+
+
+% PAST USE
+%
+% How effectively have you used the facilities available through NOAO
+% in the past?
+% List allocations of telescope time on facilities available through 
+% NOAO to the Principal Investigator during the past 2 years, together 
+% with the current status of the data (cite publications where 
+% appropriate).  Mark any allocations of time related to the current 
+% proposal with a \relatedwork{} command.
+
+\thepast
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% OBSERVING RUN DETAILS - REQUIRED FOR EACH OBSERVING RUN REQUESTED
+%
+% For each run requested earlier in the \begin{obsruns}-\end{obsruns}
+% sections of this proposal form, further run information must be
+% specified.  Enter this block of information for each non-Gemini run.
+
+% The \runid field must contain the run number plus 
+% telescope/instrument-detector information as it appears for each 
+% run in the obsruns sections. For example, 
+% \runid{1}{KP-4m/ECHUV + T2KB}.
+
+\runid{1}{LCO-1m/Sinistro}
+
+% Describe the observations to be made during this observing run in
+% the \technicaldescription section. Justify the specific telescope,
+% the number of nights, the instrument, and the lunar phase requested.
+% List objects, coordinates, and magnitudes (or surface brightness, if
+% appropriate) using a LaTeX-coded table in this section or optionally
+% enter the target information using the Target Tables described at
+% the end of this template.  Target Tables of objects are required for 
+% queue runs.
+%
+% Exposure time calculators (ETCs) for some optical and IR 
+% instruments in use at CTIO and at KPNO are available to assist 
+% you with the preparation of your proposal.  See the Web pages:
+%    Imaging ETC      - http://www.noao.edu/gateway/ccdtime/
+%    Spectroscopy ETC - http://www.noao.edu/gateway/spectime/
+
+\technicaldescription
+We request dark or moon-down gray time for this proposal, as our
+targets will be in the ecliptic and thus near the moon.
+
+For each of our targets, we request continuous observations covering a
+full rotation period (twice the light curve period). We will determine
+periods and light curve profiles for potential targets using Gaussian
+Process methods on the sparse ZTF data. We will select a subset of
+approximately 10 targets with periods between 2 and 10 hours which
+provide challenges to the Gaussian Process technique for observation
+with LCO.  The chosen targets will be $r\le20$.
+
+A SNR of 20 will allow us to resolve non-sinusoidal small amplitude
+features in the light curve profile, and can be reached in a single
+exposure on the LCO 1-m with Sinistro in 176 seconds during
+`half' bright time or 124 seconds during dark time (estimated from the
+LCO ETC). Including a readout + overhead time of 42 seconds per
+exposure, we can sample the asteroid lightcurve on a timescale of 166
+to 218 seconds, which provides a reasonable rate for these multi-hour
+light curve periods.
+
+For each asteroid, we would observe in a sequence of $\approx200$s
+exposures, in either just $r$ band or in alternating $r$ and $g$,
+depending on the details of the sparse light curve data obtained from
+ZTF. The sequence would continue throughout two light curve periods
+(as fit from the ZTF data) to unambiguously sample a full rotation
+period.
+
+By choosing a range of targets with an average light curve period of 6
+hours, our total time requirement, including 
+
+# CHECK RA RANGE
+
+% Several instrument configuration parameters are requested.  Fill
+% these in as appropriate for each run. 
+%
+% \begin{configuration}
+% \filters{}            % List here any filters that you plan to use.
+% \grating{}            % List any gratings/grisms need with this run.
+% \order{}              % Specify any grating order(s).
+% \crossdisperser{}     % List cross disperser, if needed.
+% \slit{}               % Enter slit widths you plan to use.
+% \multislit{}          % yes or no only
+% \wstart{}             % Starting wavelength of wavelength range.
+% \wend{}               % Ending wavelength of wavelength range.
+% \cable{}              % For CTIO/Hydra: enter 2.0".  For WIYN: enter
+%                         red, blue, or densepak.
+% \corrector{}          % Enter red or blue for KP-coude, CAM5.
+% \collimator{}         % Enter collimator needed.
+% \adc{}                % If user selectable, enter yes or no only.
+% \end{configuration}
+%
+% Details about these fields are available in the online help for the
+% Web form at http://www.noao.edu/noaoprop/help/standard.html#iconfig
+
+\begin{configuration}
+\filters{r, g}
+\grating{}
+\order{}
+\crossdisperser{}       
+\slit{}
+\multislit{}            
+\wstart{}
+\wend{}
+\cable{}
+\corrector{}            
+\collimator{}             
+\adc{}
+\end{configuration}
+
+
+
+% COORDINATE RANGES OF PRINCIPLE TARGETS   
+% Use the \targetsra and \targetsdec fields to specify the range
+% of right ascension (in hours) and declination (in degrees) of your
+% principle targets for this observing run.
+%
+% For example:
+%
+%  \targetsra{14 to 17}
+%  \targetsdec{-10 to 35}
+
+\targetsra{9 to 0}			% RA range in hours
+\targetsdec{10 to -30}			% Dec. range in degrees
+
+
+
+% Use \specialrequest to describe briefly any special or non-standard
+% usage of instrumentation. 
+\specialrequest
+
+
+% If you plan to submit any Target Tables for this run they must be
+% entered here.  Target Tables are required for all queue runs.
+
+% TARGET TABLES
+%
+% Target Tables are required for all queue runs and are
+% are optional for classically scheduled runs.  Target
+% Tables, if included, are associated with each run in the observing
+% run details section of the proposal form and must follow the 
+% \specialrequest in each section.
+%
+% CT-1.3m tables require that all the fields in the target table be
+% specified.  For other tables specific fields may be deleted EXCEPT 
+% for the \obscomment command as mentioned below.
+%
+% Queue investigators should supply good coordinates
+% with the \ra and \dec commands since these values may be used to
+% observe your fields.
+%
+% Note that for iterative targets, only the parameters that need
+% to be changed have to be specified.  Once a parameter is specified in
+% a targettable environment, it is retained until explicitly changed.
+%
+% The \obscomment command is REQUIRED for each target entry and
+% must be the last item; this command forces each target line to be
+% printed.  If no comment is needed, leave the argument blank.
+%
+% The \begin{targettable}{} command for each table must contain the
+% telescope/instrument-detector information for that particular run,
+% i.e,. \begin{targettable}{KP-4m/ECHUV + T2KB}.
+%
+% HINTS: Long tables do not break across pages. If it is necessary to
+% continue a table across a page you must start a new table.  Use
+% /clearpage before the \begin{targettable} command for the new table.
+%
+%\begin{targettable}{}
+%\objid{}           % specify a 3-digit number for each target.
+%\object{}          % 20 characters maximum
+%\ra{}              % e.g., xx:xx:xx.x
+%\dec{}             % e.g., +-xx:xx:xx.x
+%\epoch{}           % e.g., 1950.3
+%\magnitude{}
+%\filter{}
+%\exptime{}         % in seconds PER EXPOSURE
+%\nexposures{}      % Number of exposures
+%\moondays{}        % Days from new moon, use a number 0-14
+%\skycond{}         % "spec" or "phot"
+%\seeing{}          % max allowable PSF FWHM (arcsecs)
+%\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+%  - repeat target entry parameters as needed to complete Table -
+%\end{targettable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Detailed information as noted below must be provided for all runs 
+% up to SIX runs.  Since Gemini runs must be specified through the 
+% Web form this section only applies to non-Gemini runs - use the 
+% Web form to generate detailed information and target tables for 
+% Gemini runs.  Target Tables are required for queue runs but
+% are optional for classical observing.
+%
+%\runid{}{}
+%\technicaldescription
+%\begin{configuration}
+%\filters{}
+%\grating{}
+%\order{}
+%\crossdisperser{}
+%\slit{}
+%\multislit{}
+%\wstart{}
+%\wend{}
+%\cable{}
+%\corrector{}
+%\collimator{}
+%\adc{}
+%\end{configuration}
+%\specialrequest    % remove and not use for HET runs
+%\begin{targettable}{}
+%\objid{}           % specify a 3-digit number for each target
+%\object{}          % 20 characters maximum
+%\ra{}              % e.g., xx:xx:xx.x
+%\dec{}             % e.g., +-xx:xx:xx.x
+%\epoch{}           % e.g., 1950.3
+%\magnitude{}
+%\filter{}
+%\exptime{}         % in seconds PER EXPOSURE
+%\nexposures{}      % Number of exposures
+%\moondays{}        % Days from new moon, use a number 0-14
+%\skycond{}         % "spec" or "phot"
+%\seeing{}          % max allowable PSF FWHM (arcsecs)
+%\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+%  - repeat target entry parameters as needed to complete Table -
+%\end{targettable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Please do not modify or delete this line.
+\end{document}
+
+% PROPOSAL SUBMISSION (if not submitting from the online proposal form):
+%
+%
+% Upload this completed proposal latex file and figures at: 
+%            https://www.noao.edu/noaoprop/submit/
+%
+%
+% Thank you for your interest in NOAO.  Contact us at
+% noaoprop-help@noao.edu if you have any suggestions or comments.
