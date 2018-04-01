@@ -25,6 +25,9 @@ Add papers describing currently used methods here
 * [Waszczak iPTF summer school presentation](http://phares.caltech.edu/iptf/iptf_SummerSchool_2014/slides/waszczak_asteroid_lightcurves.pdf) <br>
 This is worth a look - I only skimmed it so far, but I bet it has more references that will be useful too.
 
+* [Branimir Sesar, iPTF summer school presentation](http://phares.caltech.edu/iptf/iptf_SummerSchool_2015/presentations/Time_Series_Analysis.pdf) <br>
+Plenty of information on light curve characterization. 
+
 * [Warner, Harris, Pravec 2009](http://www.sciencedirect.com/science/article/pii/S0019103509000566?via%3Dihub) The asteroid lightcurve database <br>
 The asteroid lightcurve database paper. This describes the contents of the ALCD.
 
