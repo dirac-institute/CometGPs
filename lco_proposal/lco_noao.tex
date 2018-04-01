@@ -153,7 +153,7 @@
 \begin{abstract}
 We propose to obtain dense, continuous time sampling of 10 main belt asteroids with LCO as follow up to sparse light curve sampling obtained with ZTF. The extremely well-characterized light curve segment from LCO will serve to validate Gaussian Process techniques we are developing to analyze sparse asteroid light curves from surveys like ZTF or LSST.
 
-These Gaussian Process methods provide formal error estimates on asteroid rotation periods, as well as allowing us to account for non-sinusoidal period profiles, and (in future work) fit for colors, phase curves and shape models when using survey data from a multi-band, long-term survey such as ZTF or LSST. Obtaining LCO data to supplement the ZTF data while developing these algorithms will provide invaluable real-world tests of our methods.
+These MCMC + Gaussian Process techniques provide formal error estimates on asteroid rotation periods, as well as allowing us to account for non-sinusoidal period profiles, and (in future work) fit for colors, phase curves and shape models when using survey data from a multi-band, long-term survey such as ZTF or LSST. Obtaining LCO data to supplement the ZTF data while developing these algorithms will provide invaluable real-world tests of our methods.
 
 \end{abstract}
 
@@ -231,7 +231,7 @@ These Gaussian Process methods provide formal error estimates on asteroid rotati
 \begin{obsrun}
 \telescope{LCO-1m}
 \instrument{Sinistro}
-\numnights{120 hrs}
+\numnights{101 hrs}
 \lunardays{dark}
 \optimaldates{Jun - Nov}
 \acceptabledates{Jun - Nov}
@@ -447,38 +447,66 @@ These Gaussian Process methods provide formal error estimates on asteroid rotati
 % options.
 
 \sciencejustification
-periods of asteroids tells us about their internal structure the shape
-of the light curve also gives us important clues as to their shape
-being able to fit the phase curve and potential color variations at
-the same time is important for future surveys (phase curve varies with
-family, color variations complicate light curve)
+With the start of all-sky synoptic surveys (PanSTARRS, ZTF, LSST), new opportunities
+are opening up for studying some of the smallest members of our Solar System: 
+Near Earth and Main Belt Asteroids. These asteroids provide keys to understanding
+the formation and evolution of our Solar System, entangled in their distributions of
+sizes, shapes, spins and physical structure. We can learn about these properties from
+the details of the light curve information available in the survey data, but it requires processing
+tens of thousands of sparsely sampled light curves to fit the asteroid rotation periods, 
+the profiles of the asteroid light curves, phase curve variations and the asteroid colors,
+including variations with phase angles and rotation.
 
-Current methods of fitting asteroid sparse light curves include
-fourier analysis of the light curve amplitudes (such as with FALC),
-Lomb-Scargle (L-S) fitting, and Phase Dispersion Minimization (PDM)
-analysis (see {\it e.g.} Waszczak et al, \aj\, 2015, Polishook et al,
+With any individual asteroid, the amplitude and period of the light curve can be used
+to derive the rotation period and estimate the elongation. Together, these can be used
+to constrain the structural properties of the asteroid (rubble pile vs. monolithic rock). 
+The light curve profile can be used to determine the 
+asteroid's shape, particularly when data is obtained over a wide variety of viewing geometries
+and phase angles. Observations over a wide range of phase angles must also fit for the phase curve
+of the asteroid, constraining the surface properties (smooth vs rough). The rotation period and shape can 
+be used to determine the full spin state of the asteroid. The distribution of all of these parameters 
+constrains models of the collisional evolution of the asteroids. Asteroid colors (and any variations with 
+phase angle or rotation) must also be accounted for when using the non-simultaneous multi-band 
+observations typical of all-sky synoptic surveys. The colors constrain the chemical composition of the 
+asteroid, the distribution across the population then constrains models of asteroid formation.
+
+Current methods of fitting asteroid sparse light curves fall under the categories of
+fourier analysis of the light curve (such as with Lomb-Scargle or FALC) or non-parametric
+minimization algoriths (such as Phase Dispersion Minimization (PDM) or SuperSmoother)  
+(see {\it e.g.} Waszczak et al, \aj\, 2015, Polishook et al,
 MNRAS 2012, Harris et al, Icarus 2012, Warner \& Harris, Icarus 2011,
-Masiero et al, Icarus 2009, Mann et al, \aj\, 2007). These methods have
-varying drawbacks, but in general do not provide a proper statistical
-estimate of the error of the parameters which are fit. In order to
-determine a formal statistical error, a generative model must be used;
-Gaussian Processes combined with Monte Carlo provide such a method.
-[Daniela say something smart here?]
+Masiero et al, Icarus 2009, Mann et al, \aj\, 2007).  With fourier analysis, the 
+light curve is approximated as a series (for sparse light curves, typically two harmonics)
+of sine curves and the best fit period and amplitude is determined using a chi-squared minimization. 
+PDM is the non-parametric method most typically used for asteroids; here the measured magnitudes
+are folded at a range of phases and the scatter within each phase bin is measured to search for 
+a minimum. A drawback to both of these methods, however, is that the fitting process makes the true 
+uncertainty of the fit parameters (the period, amplitude and shape of the light curve profile) extremely hard
+to calibrate. This is problematic when attempting to draw conclusions about the population-level distribution
+of parameters.
 
-These Gaussian Process methods are intended to discover the light
-curve periodicity as well as the shape of the light curve (including
-non-sinusoidal light curve profiles), even in sparse data obtained
-with only a few data points in distinct nights. This is a technique
-required to characterize asteroids observed with LSST and is under
-development by teams at University of Washington and the DIRAC
-Institute. We intend to continue to develop this technique to also fit
-for phase function variation, potential tumbling, and multi-color
-observations, in order to provide a useful tool for determining
-periods, spin axes, shapes and colors for surveys such as ZTF and
-LSST.
+We are developing techniques to fit sparse light curves using MCMC and Gaussian Process
+methods. The advantage to these techniques is that they provide a generative model;
+the formal uncertainty in the fit parameters can be well determined. Further advantages
+include the capability of including fits for the phase function, potential tumbling, 
+and multi-color observations. These techniques will be necessary to fully
+exploit the large amounts of sparse light curve data coming from surveys like
+PanSTARRS, ZTF and LSST. We will develop and test our process with simulated light curves and against 
+archive data. However, simulated data may not sample the full range
+of true light curve profiles and archive data will generally not be obtained
+during the same apparition as the sparsely sampled data obtained with ZTF, thus may
+not present the same light curve profile. Obtaining real, densely sampled
+light curve data will provide an invaluable resource to fully test our methods.
 
 
 \clearpage
+
+% \begin{figure}
+% \epsscale{0.85}
+% \plotone{sample.eps}
+% \caption{Sample figure showing important results.}
+% \end{figure}
+
 
 
 % EXPERIMENTAL DESIGN
@@ -502,7 +530,7 @@ The observations we are proposing to obtain with LCO are intended to
 densely sample the light curve, following up on the sparse sampling
 obtained with ZTF.
 
-We will use our Gaussian Process technique on the sparsely sampled data
+We will use our Gaussian Process methods on the sparsely sampled data
 obtained with ZTF, but need densely sampled light curves over a full
 rotation period to verify the results, especially non-sinusoidal
 features in the light curve profile. 
@@ -665,16 +693,18 @@ measurements.
 %    Spectroscopy ETC - http://www.noao.edu/gateway/spectime/
 
 \technicaldescription
-We request dark or moon-down gray time for this proposal, as our
+We have requested dark or moon-down gray time for this proposal, as our
 targets will be in the ecliptic and thus near the moon.
 
-For each of our targets, we request continuous observations covering a
+For each of our targets, we request observations covering a
 full rotation period (twice the light curve period). We will determine
 periods and light curve profiles for potential targets using Gaussian
-Process methods on the sparse ZTF data. We will select a subset of
+Process methods on the sparse ZTF data. We will select a set of
 approximately 10 targets with periods between 2 and 10 hours which
 provide challenges to the Gaussian Process technique for observation
-with LCO.  The chosen targets will be $r\le20$.
+with LCO. Choosing 10 targets gives the opportunity to select a reasonable range
+of test cases. The chosen targets will be $r\le20$, with an average 
+light curve period of 5 hours.
 
 A SNR of 20 will allow us to resolve non-sinusoidal small amplitude
 features in the light curve profile, and can be reached in a single
@@ -688,14 +718,19 @@ light curve periods.
 For each asteroid, we would observe in a sequence of $\approx200$s
 exposures, in either just $r$ band or in alternating $r$ and $g$,
 depending on the details of the sparse light curve data obtained from
-ZTF. The sequence would continue throughout two light curve periods
+ZTF. Ideally the sequence would continue continuously throughout two light curve periods
 (as fit from the ZTF data) to unambiguously sample a full rotation
-period.
+period, but non-continuous coverage planned out over the entire rotation 
+can be used if necessary. If filter changes are required, the overhead for the filter change will
+be absorbed in the sampling rate, without changing the total 
+amount of time required to cover the light curve. Observing a target for 
+10 continuous hours (corresponding to a light curve period of 5 hours) with an airmass $<1.5$
+would require observations acquired from about three or four locations, adding approximately
+6 minutes of slew settle and acquisition time per target.
 
-By choosing a range of targets with an average light curve period of 6
-hours, our total time requirement, including 
+Across all 10 targets, with an average light curve period of 5 hours (requiring observations
+spanning 10 hours) and an addition 6 minutes of overhead, we are asking for 101 hours of time.
 
-# CHECK RA RANGE
 
 % Several instrument configuration parameters are requested.  Fill
 % these in as appropriate for each run. 
@@ -746,7 +781,7 @@ hours, our total time requirement, including
 %  \targetsra{14 to 17}
 %  \targetsdec{-10 to 35}
 
-\targetsra{9 to 0}			% RA range in hours
+\targetsra{20 to 2}			% RA range in hours
 \targetsdec{10 to -30}			% Dec. range in degrees
 
 
