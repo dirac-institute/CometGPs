@@ -498,15 +498,20 @@ during the same apparition as the sparsely sampled data obtained with ZTF, thus 
 not present the same light curve profile. Obtaining real, densely sampled
 light curve data will provide an invaluable resource to fully test our methods.
 
+\begin{figure}[hbt]
+\epsscale{0.65}
+\plotone{figure1a.eps}
+\caption{A set of synthetic light curve data, simulated using a template similar to Psyche's light curve profile. The true period of the light curve is 4.196 hours. Light curve data points, as they might be acquired by ZTF and by LCO, are plotted over time in the top panel. In the second panel, the ZTF data have been phased by the true period. In the bottom panel, the LCO data are shown without need for phasing.}
+\end{figure}
+
+\begin{figure}[hbt]
+\epsscale{0.9}
+\plotone{figure2a.eps}
+\caption{The ZTF data from the previous figure were fit using the Lomb-Scargle (2 harmonics) and SuperSmoother (similar in approach to PDM) methods available in gatsby (VanderPlas \& Ivezic, ApJ 2015). The true period (4.196 hours) was not accurately recovered by either approach. Uncovering the uncertainties in the periods fit by either approach from their periodograms is difficult.}
+\end{figure}
+
 
 \clearpage
-
-% \begin{figure}
-% \epsscale{0.85}
-% \plotone{sample.eps}
-% \caption{Sample figure showing important results.}
-% \end{figure}
-
 
 
 % EXPERIMENTAL DESIGN
