@@ -25,6 +25,9 @@ Add papers describing currently used methods here
 * [Waszczak iPTF summer school presentation](http://phares.caltech.edu/iptf/iptf_SummerSchool_2014/slides/waszczak_asteroid_lightcurves.pdf) <br>
 This is worth a look - I only skimmed it so far, but I bet it has more references that will be useful too.
 
+* [Branimir Sesar, iPTF summer school presentation](http://phares.caltech.edu/iptf/iptf_SummerSchool_2015/presentations/Time_Series_Analysis.pdf) <br>
+Plenty of information on light curve characterization. 
+
 * [Warner, Harris, Pravec 2009](http://www.sciencedirect.com/science/article/pii/S0019103509000566?via%3Dihub) The asteroid lightcurve database <br>
 The asteroid lightcurve database paper. This describes the contents of the ALCD.
 
@@ -35,6 +38,14 @@ The asteroid lightcurve database paper. This describes the contents of the ALCD.
 * [Modeling of lightcurves of binary asteroids](http://adsabs.harvard.edu/abs/2009Icar..200..531S)  <br>
 * [Rotational properties of asteroids, comets andTNOs](http://adsabs.harvard.edu/abs/2006IAUS..229..439H)  <br>
 
+
+Here's an interesting sequence:
+* [Harris et al 2012 Icarus ](https://www.sciencedirect.com/science/article/pii/S0019103512002874?via%3Dihub) - evaluates a Subaru and TALCS dataset <br>
+* [Warner & Harris 2011 Icarus](https://www.sciencedirect.com/science/article/pii/S0019103511004003?via%3Dihub#b0030) - methods paper for the above <br>
+* [Masiero et al 2009 Icarus](https://www.sciencedirect.com/science/article/pii/S0019103509002541) - the TALCS paper (for comparison -- and the data should be public by now although maybe not catalog?) <br>
+* [Polishook et al 2012](https://arxiv.org/abs/1201.1930) - Asteroid lightcurves from PTF  - second order fourier series (88 out of 624 objects with good lightcurves, another 85 with possibles)
+* [Waszczak et al AJ 2015](http://iopscience.iop.org/article/10.1088/0004-6256/150/3/75/meta) - Asteroid lightcurves from PTF - 54,296 asteroids fit with second order fourier series + phase function (then ~least squares fit), used known sample of 809 asteroids as training set for machine learning to determine what was a "good fit", and then decided had 9033 reliable periods (not all unique asteroids). 
+<br>
 
 ### Lightcurve ###
 
@@ -51,13 +62,8 @@ The FALC reference
 * [Distribution of spin-axes longitudes and shape elongations of main-belt asteroids](http://adsabs.harvard.edu/abs/2016A%26A...596A..57C) <br>
 * [Shape and spin distributions of asteroid populations from brightness variation estimates and large databases](https://arxiv.org/abs/1703.07178)  <br>
 * [Spin rate distribution of small asteroids](http://adsabs.harvard.edu/abs/2008Icar..197..497P) <br>
-* [Looking a gift horse in the mouth: Evaluation of wide-field asteroid photometric surveys](http://adsabs.harvard.edu/abs/2012Icar..221..226H) <br>
-* [ASTEROID ROTATION PERIODS FROM THE PALOMAR TRANSIENT FACTORY SURVEY](https://arxiv.org/abs/1201.1930)  <br>
-* [Photometry and Spin Rate Distribution of Small-Sized Main Belt Asteroids](https://arxiv.org/abs/0811.1223)  <br>
-* [The asteroid lightcurve database](http://adsabs.harvard.edu/abs/2009Icar..202..134W)  <br>
-* [Using sparse photometric data sets for asteroid lightcurve studies](http://adsabs.harvard.edu/abs/2011Icar..216..610W)  <br>
-* [ASTEROID LIGHTCURVES FROM THE PALOMAR TRANSIENT FACTORY SURVEY:
-ROTATION PERIODS AND PHASE FUNCTIONS FROM SPARSE PHOTOMETRY](http://iopscience.iop.org/article/10.1088/0004-6256/150/3/75/meta)  <br>
+* [Warner et al 2009 - The asteroid lightcurve database](http://adsabs.harvard.edu/abs/2009Icar..202..134W)  <br>
+
 
 ### More Detailed Lightcurve / Shape ###
 
