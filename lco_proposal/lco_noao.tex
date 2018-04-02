@@ -153,6 +153,12 @@
 \begin{abstract}
 We propose to obtain dense, continuous time sampling of 10 main belt asteroids with LCO as follow up to sparse light curve sampling obtained with ZTF. The extremely well-characterized light curve segment from LCO will serve to validate Gaussian Process techniques we are developing to analyze sparse asteroid light curves from surveys like ZTF or LSST.
 
+Sparse light curve data from asteroids can provide constraints on their rotation periods, shape, spin states, and 
+(indirectly, because they have to be accounted for when fitting the data, colors and phase curves). The distribution of
+these parameters provides information on the structural properties of asteroids and constrains models of the collisional history
+of the asteroid belt. Spin states provide valuable inputs for Yarkovsky and YORP models, and color information provides
+statistical constraints on the composition of asteroids. 
+
 These MCMC + Gaussian Process techniques provide formal error estimates on asteroid rotation periods, as well as allowing us to account for non-sinusoidal period profiles, and (in future work) fit for colors, phase curves and shape models when using survey data from a multi-band, long-term survey such as ZTF or LSST. Obtaining LCO data to supplement the ZTF data while developing these algorithms will provide invaluable real-world tests of our methods.
 
 \end{abstract}
@@ -507,9 +513,14 @@ light curve data will provide an invaluable resource to fully test our methods.
 \begin{figure}[hbt]
 \epsscale{0.9}
 \plotone{figure2a.eps}
-\caption{The ZTF data from the previous figure were fit using the Lomb-Scargle (2 harmonics) and SuperSmoother (similar in approach to PDM) methods available in gatsby (VanderPlas \& Ivezic, ApJ 2015). The true period (4.196 hours) was not accurately recovered by either approach. Uncovering the uncertainties in the periods fit by either approach from their periodograms is difficult.}
+\caption{The ZTF data from the previous figure were fit using the Lomb-Scargle (2 harmonics) and SuperSmoother (similar in approach to PDM) methods available in gatsby (VanderPlas \& Ivezic, ApJ 2015). The true period was recovered by the L-S method (4.196 hrs), but to the eye, the fit looks better with the Supersmoother template (fit period = 5.089 hrs). Uncovering the uncertainties in the periods fit by either approach from their periodograms is difficult. There are multiple peaks and the total power in the periodogram is unknown; some calibration with bootstrapping is possible, but depends on the sampling grid.}
 \end{figure}
 
+\begin{figure}[hbt]
+\epsscale{0.9}
+\plotone{figure3a.eps}
+\caption{The ZTF data were also fit using our Gaussian Process technique, including an MCMC sampling to examine the uncertainty in the period. The true period, 4.196 hours, was recovered with a small uncertainty.}
+\end{figure}
 
 \clearpage
 
