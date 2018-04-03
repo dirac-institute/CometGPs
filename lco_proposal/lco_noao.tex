@@ -154,12 +154,12 @@
 We propose to obtain dense, continuous time sampling of 10 main belt asteroids with LCO as follow up to sparse light curve sampling obtained with ZTF. The extremely well-characterized light curve segment from LCO will serve to validate Gaussian Process techniques we are developing to analyze sparse asteroid light curves from surveys like ZTF or LSST.
 
 Sparse light curve data from asteroids can provide constraints on their rotation periods, shape, spin states, and 
-(indirectly, because they have to be accounted for when fitting the data, colors and phase curves). The distribution of
+(because they have to be accounted for when fitting the multi-band data) colors and phase curves. The distribution of
 these parameters provides information on the structural properties of asteroids and constrains models of the collisional history
 of the asteroid belt. Spin states provide valuable inputs for Yarkovsky and YORP models, and color information provides
 statistical constraints on the composition of asteroids. 
 
-These MCMC + Gaussian Process techniques provide formal error estimates on asteroid rotation periods, as well as allowing us to account for non-sinusoidal period profiles, and (in future work) fit for colors, phase curves and shape models when using survey data from a multi-band, long-term survey such as ZTF or LSST. Obtaining LCO data to supplement the ZTF data while developing these algorithms will provide invaluable real-world tests of our methods.
+These Monte Carlo Markov Chain + Gaussian Process techniques provide posterior probability distributions on asteroid rotation periods, as well as allowing us to account for non-sinusoidal period profiles, and (in future work) fit for colors, phase curves and shape models when using survey data from a multi-band, long-term survey such as ZTF or LSST. Obtaining LCO data to supplement the ZTF data while developing these algorithms will provide invaluable real-world tests of our methods.
 
 \end{abstract}
 
@@ -459,22 +459,21 @@ Near Earth and Main Belt Asteroids. These asteroids provide keys to understandin
 the formation and evolution of our Solar System, entangled in their distributions of
 sizes, shapes, spins and physical structure. We can learn about these properties from
 the details of the light curve information available in the survey data, but it requires processing
-tens of thousands of sparsely sampled light curves to fit the asteroid rotation periods, 
-the profiles of the asteroid light curves, phase curve variations and the asteroid colors,
-including variations with phase angles and rotation.
+tens of thousands to millions of sparsely sampled light curves to fit the asteroid rotation periods, 
+the profiles and amplitudes of the asteroid light curves, phase curve variations and the asteroid colors.
 
 With any individual asteroid, the amplitude and period of the light curve can be used
 to derive the rotation period and estimate the elongation. Together, these can be used
-to constrain the structural properties of the asteroid (rubble pile vs. monolithic rock). 
+to constrain its structural properties (rubble pile vs. monolithic rock) (Pravec et al. 2002).
 The light curve profile can be used to determine the 
 asteroid's shape, particularly when data is obtained over a wide variety of viewing geometries
 and phase angles. Observations over a wide range of phase angles must also fit for the phase curve
-of the asteroid, constraining the surface properties (smooth vs rough, and also variable light scattering properties
-with composition). The distribution of all of these parameters 
-constrains models of the collisional evolution of the asteroids. Asteroid colors (and any variations with 
+of the asteroid, constraining the surface properties (smooth vs rough, as well as variable light scattering properties
+which vary with composition). Asteroid colors (and any variations in color with 
 phase angle or rotation) must also be accounted for when using the non-simultaneous multi-band 
 observations typical of all-sky synoptic surveys. These colors constrain the chemical composition of the 
-asteroid, and these distributions can be used to help constrain models of asteroid formation. 
+asteroid. The population-wide distributions of colors, shapes, periods, and spin states can
+be used to help constrain models of asteroid formation, collision history and orbital evolution.
 
 Current methods of fitting asteroid sparse light curves fall under the categories of
 fourier analysis of the light curve such as with Lomb-Scargle (Lomb 1976; Scargle 1982) or FALC (Harris et al. 1989); or non-parametric
@@ -503,21 +502,28 @@ not present the same light curve profile. Obtaining real, densely sampled
 light curve data will provide an invaluable resource to fully test our methods.
 
 \begin{figure}[hbt]
-\epsscale{0.65}
+\epsscale{0.85}
 \plotone{figure1a.eps}
 \caption{A set of synthetic light curve data, simulated using a template similar to Psyche's light curve profile. The true period of the light curve is 4.196 hours. Light curve data points, as they might be acquired by ZTF (on average, two data points per night separated by 3-4 nights) and by LCO (a continuous rotation period), are plotted over time in the top panel. In the second panel, the ZTF data have been phased by the true period. In the bottom panel, the LCO data are shown without need for phasing.}
 \end{figure}
 
 \begin{figure}[hbt]
-\epsscale{0.9}
+\epsscale{0.8}
 \plotone{figure2a.eps}
-\caption{The ZTF data from the previous figure were fit using the Lomb-Scargle (2 harmonics) and SuperSmoother (similar in approach to PDM) methods available in gatsby (VanderPlas \& Ivezic, ApJ 2015). The true period was recovered by the L-S method (4.196 hrs), but to the eye, the fit looks better with the Supersmoother template (fit period = 5.089 hrs). Uncovering the uncertainties in the periods fit by either approach from their periodograms is difficult. There are multiple peaks and the total power in the periodogram is unknown; some calibration with bootstrapping is possible, but depends on the sampling grid.}
+\caption{The simulated ZTF sparse light curve data from the previous figure were fit using Lomb-Scargle (with 2 harmonics) and SuperSmoother (similar in approach to PDM) methods available in gatsby (VanderPlas \& Ivezic, ApJ 2015). The top panels show the ZTF data phased according to the period fit by each method; L-S recovered the true period, but to the eye, the 
+fit looks better with the Supersmoother template (fit period = 5.089 hrs).
+Uncovering the uncertainties in the periods fit by either approach from their periodograms is difficult. There are multiple peaks and the total power in the periodogram is unknown, as can be seen in the bottom panels. 
+}
 \end{figure}
 
 \begin{figure}[hbt]
 \epsscale{0.9}
 \plotone{figure3a.eps}
-\caption{We show the data (orange) and draws from the posterior probability distribution for the Gaussian Process (blue). On the right, we also show the marginalized posterior probability distribution for the period. Unlike traditional methods, the Gaussian Process converges on a well defined probability distribution including the true value, and thus generates a best-fit period with known uncertainty.
+\caption{The same simulated ZTF sparse light curve data were run through our Gaussian Process technique. 
+On the left, we show the phased ZTF data (orange) and draws from the posterior probability distribution for the Gaussian Process (blue). 
+On the right, we show the marginalized posterior probability distribution for the period. Unlike traditional methods, the 
+Gaussian Process converges on a well defined probability distribution including the true value, and thus allows for much more 
+precise estimation of the period and its uncertainty than is possible with traditional methods
 }
 \end{figure}
 
@@ -551,8 +557,8 @@ rotation period to verify the results, especially non-sinusoidal
 features in the light curve profile. 
 
 We expect ZTF to observe more than a thousand main belt asteroids
-brighter than $r=20$ in the region between 290 and 0 degrees RA and 
-+10 and -30 degrees Declination, consistent with the footprint of the
+brighter than $r=20$ in the region with RA between 22 and 2 degrees and 
+Declination between +10 and -30 degrees, consistent with the footprint of the
 ZTF survey, avoiding the galaxy, and suitable for LCO observations with
 the 1-m network between June and Dec 2018. This provides plenty of
 potential targets, with a range of expected light curve periods,
