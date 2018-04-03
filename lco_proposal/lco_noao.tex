@@ -469,31 +469,29 @@ to constrain the structural properties of the asteroid (rubble pile vs. monolith
 The light curve profile can be used to determine the 
 asteroid's shape, particularly when data is obtained over a wide variety of viewing geometries
 and phase angles. Observations over a wide range of phase angles must also fit for the phase curve
-of the asteroid, constraining the surface properties (smooth vs rough). The rotation period and shape can 
-be used to determine the full spin state of the asteroid. The distribution of all of these parameters 
+of the asteroid, constraining the surface properties (smooth vs rough, and also variable light scattering properties
+with composition). The distribution of all of these parameters 
 constrains models of the collisional evolution of the asteroids. Asteroid colors (and any variations with 
 phase angle or rotation) must also be accounted for when using the non-simultaneous multi-band 
-observations typical of all-sky synoptic surveys. The colors constrain the chemical composition of the 
-asteroid, the distribution across the population then constrains models of asteroid formation.
+observations typical of all-sky synoptic surveys. These colors constrain the chemical composition of the 
+asteroid, and these distributions can be used to help constrain models of asteroid formation. 
 
 Current methods of fitting asteroid sparse light curves fall under the categories of
-fourier analysis of the light curve (such as with Lomb-Scargle or FALC) or non-parametric
-minimization algoriths (such as Phase Dispersion Minimization (PDM) or SuperSmoother)  
-(see {\it e.g.} Waszczak et al, \aj\, 2015, Polishook et al,
-MNRAS 2012, Harris et al, Icarus 2012, Warner \& Harris, Icarus 2011,
-Masiero et al, Icarus 2009, Mann et al, \aj\, 2007).  With fourier analysis, the 
-light curve is approximated as a series (for sparse light curves, typically two harmonics)
-of sine curves and the best fit period and amplitude is determined using a chi-squared minimization. 
-PDM is the non-parametric method most typically used for asteroids; here the measured magnitudes
-are folded at a range of phases and the scatter within each phase bin is measured to search for 
-a minimum. A drawback to both of these methods, however, is that the fitting process makes the true 
-uncertainty of the fit parameters (the period, amplitude and shape of the light curve profile) extremely hard
-to calibrate. This is problematic when attempting to draw conclusions about the population-level distribution
-of parameters.
+fourier analysis of the light curve such as with Lomb-Scargle (Lomb 1976; Scargle 1982) or FALC (Harris et al. 1989); or non-parametric
+minimization algoriths such as Phase Dispersion Minimization (PDM) (Stellingwerf 1978) or SuperSmoother (Freidman 1984).
+For applications, see {\it e.g.} Waszczak et al  2015, Polishook et al 2012, Harris et al  2012, Warner \& Harris 2011,
+Masiero et al 2009, Heinze \& deLahunta 2009, Mann et al 2007.   These methods have multiple drawbacks:
+(1) finding the correct period can be difficult when the data are sparse and the power in the periodogram is distributed equally among multiple peaks;
+(2) uncertainties in the magnitudes can only be taken into account via computationally expensive Monte Carlo simulations;
+(3) there is no natural way to calibrate the uncertainty in the period estimate;
+(4) it is difficult to propagate uncertainties into population studies, leading to potentially biased results.
 
-We are developing techniques to fit sparse light curves using MCMC and Gaussian Process
-methods. The advantage to these techniques is that they provide a generative model;
-the formal uncertainty in the fit parameters can be well determined. Further advantages
+We are developing techniques to model sparse light curves using Gaussian Processes (GPs). 
+Unlike traditional methods, GPs provide a generative model of the time series and include effects 
+such as the non-sinusoidal nature of many asteroid light curves. Via Markov Chain Monte Carlo, 
+they yield a posterior probability distribution for the period that is directly interpretable. 
+They allow easy quantification of uncertainties in period estimate, and posterior probability distributions 
+can be fairly straightforwardly combined for population studies. Further advantages
 include the capability of including fits for the phase function, potential tumbling, 
 and multi-color observations. These techniques will be necessary to fully
 exploit the large amounts of sparse light curve data coming from surveys like
@@ -507,7 +505,7 @@ light curve data will provide an invaluable resource to fully test our methods.
 \begin{figure}[hbt]
 \epsscale{0.65}
 \plotone{figure1a.eps}
-\caption{A set of synthetic light curve data, simulated using a template similar to Psyche's light curve profile. The true period of the light curve is 4.196 hours. Light curve data points, as they might be acquired by ZTF and by LCO, are plotted over time in the top panel. In the second panel, the ZTF data have been phased by the true period. In the bottom panel, the LCO data are shown without need for phasing.}
+\caption{A set of synthetic light curve data, simulated using a template similar to Psyche's light curve profile. The true period of the light curve is 4.196 hours. Light curve data points, as they might be acquired by ZTF (on average, two data points per night separated by 3-4 nights) and by LCO (a continuous rotation period), are plotted over time in the top panel. In the second panel, the ZTF data have been phased by the true period. In the bottom panel, the LCO data are shown without need for phasing.}
 \end{figure}
 
 \begin{figure}[hbt]
@@ -519,7 +517,8 @@ light curve data will provide an invaluable resource to fully test our methods.
 \begin{figure}[hbt]
 \epsscale{0.9}
 \plotone{figure3a.eps}
-\caption{The ZTF data were also fit using our Gaussian Process technique, including an MCMC sampling to examine the uncertainty in the period. The true period, 4.196 hours, was recovered with a small uncertainty.}
+\caption{We show the data (orange) and draws from the posterior probability distribution for the Gaussian Process (blue). On the right, we also show the marginalized posterior probability distribution for the period. Unlike traditional methods, the Gaussian Process converges on a well defined probability distribution including the true value, and thus generates a best-fit period with known uncertainty.
+}
 \end{figure}
 
 \clearpage
