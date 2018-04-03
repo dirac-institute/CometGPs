@@ -47,6 +47,8 @@ Here's an interesting sequence:
 * [Waszczak et al AJ 2015](http://iopscience.iop.org/article/10.1088/0004-6256/150/3/75/meta) - Asteroid lightcurves from PTF - 54,296 asteroids fit with second order fourier series + phase function (then ~least squares fit), used known sample of 809 asteroids as training set for machine learning to determine what was a "good fit", and then decided had 9033 reliable periods (not all unique asteroids). 
 <br>
 
+* [Butkiewicz-Bąk 2017](https://academic.oup.com/mnras/article/470/2/1314/3859619) Another statistical analysis of asteroid rotation periods, using a lot of synthetic lightcurves generated from real asteroid shapes! <br>
+
 ### Lightcurve ###
 
 * [Erasmus et al 2017](http://iopscience.iop.org/article/10.3847/1538-3881/aa88be/meta) Characterization of Near-Earth Asteroids Using KMTNET-SAAO <br>
