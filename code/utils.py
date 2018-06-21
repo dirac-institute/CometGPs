@@ -110,7 +110,7 @@ def subsample(time, flux, flux_err=None, npoints=100, kind="random",
             return tsmall, fsmall
       
 
-def folded_lightcurve(time, flux, period, flux_err=None, models=None, true_lightcurve=None, 
+def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_lightcurve=None, 
                       ax=None, use_radians=False, legend=True):
     """
     Plot a folded periodic light curve, potentially including the true underlying 
