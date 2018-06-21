@@ -1,0 +1,262 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+def subsample(time, flux, flux_err=None, npoints=100, kind="random",
+              time_unit="days", night_length=8.0):
+    """
+    Subsample an existing high-resolution time series (e.g. simulated) 
+    using different sampling patterns.
+    
+    Parameters
+    ----------
+    time : numpy.ndarray
+        The array of time stamps 
+    
+    flux : numpy.ndarray
+        The array of flux values corresponding to the time 
+        stamps in `time`
+        
+    npoints : int
+        The number of data points to sub-sample
+        
+    kind : str, one of {random | telescope}
+        The type of subsampling to perform. 
+        There are different sampling patterns currently implemented:
+            "random" : randomly sample `npoints` data points from 
+                       `time` and `flux1`          
+            "telescope": take day/night cycle into account, but randomly 
+                         subsample within a "night"
+
+    time_unit : str
+        The unit of time that the `time` array is in.
+    
+    night_length : float
+        The length of a night in hours for including day/night cycles
+                
+    Returns
+    -------
+    tsmall, fsmall, (ferrsmall) : the subsampled time series
+    """
+    
+    if kind == "random":
+        # generate a random list of indices for sub-sampling
+        idx = np.random.choice(np.arange(0, time.shape[0], 1, dtype=int), 
+                               size=npoints, replace=False)
+
+        tsmall = time[np.sort(idx)]
+        fsmall = flux[np.sort(idx)]
+        if flux_err is not None:
+            ferrsmall = flux_err[np.sort(idx)]
+            return tsmall, fsmall, ferrsmall
+        else:
+            return tsmall, fsmall
+        
+    elif kind == "telescope":
+        # if time unit is in days, convert length of night and day 
+        # from hours into days
+        if time_unit == "days":
+            night_length /= 24.0
+            tseg = time[-1] - time[0] # total length of the time series
+        else:
+            tseg = (time[-1] - time[0]) / 24.0
+        
+        nightly_points = int(npoints/tseg)
+        
+        tstart = time[0]
+        tend = tstart + night_length
+        
+        tsmall = []
+        fsmall = []
+        
+        if flux_err is not None:
+            ferrsmall = []
+        
+        while tend <= time[-1]:
+            min_ind = time.searchsorted(tstart)
+            max_ind = time.searchsorted(tend)
+
+            tshort = time[min_ind:max_ind]
+            fshort = flux[min_ind:max_ind]
+
+
+            idx = np.random.choice(np.arange(0, tshort.shape[0], 1, dtype=int), 
+                           size=nightly_points, replace=False)
+
+            tsample = tshort[np.sort(idx)]
+            fsample = fshort[np.sort(idx)]
+            
+            tsmall.append(tsample)
+            fsmall.append(fsample)
+            
+            if flux_err is not None:
+                ferrshort = flux_err[min_ind:max_ind]
+                ferrsample = ferrshort[np.sort(idx)]
+                ferrsmall.append(ferrsample)
+            
+            if time_unit == "days":
+                tstart += 1.0
+                tend += 1.0
+            elif time_unit == "hours":
+                tstart += 24.0
+                tend += 24.0
+        
+        tsmall = np.hstack(np.array(tsmall))
+        fsmall = np.hstack(np.array(fsmall))
+        if flux_err is not None:
+            ferrsmall = np.hstack(np.array(ferrsmall))
+            return tsmall, fsmall, ferrsmall
+        else:
+            return tsmall, fsmall
+      
+
+def folded_lightcurve(time, flux, period, flux_err=None, models=None, true_lightcurve=None, 
+                      ax=None, use_radians=False, legend=True):
+    """
+    Plot a folded periodic light curve, potentially including the true underlying 
+    model that produced the data (in the case of simulations), or model 
+    light curves from MCMC. 
+    
+    Parameters
+    ----------
+    time : numpy.ndarray
+        The time stamps of the periodic light curve
+        
+    flux : numpy.ndarray
+        Flux measurements corresponding to the time stamps
+         
+    flux_err : numpy.ndarray
+        The flux uncertainties corresponding to the data. 
+        
+    period : float
+        The period on which to fold
+        
+    models : iterable of shape (model_time, numpy.ndarray of shape (nsamples, len(model_time)))
+        First element here contains the time stamps for the models (which may not be the same 
+        as for the data), the second is an array of shape (nsamples, ndatapoints), where nsamples 
+        is the number of model light curves, and ndatapoints == len(model_time)
+        
+    true_lightcurve : iterable containing (true_time, true_flux)
+        In the case of simulated data, this contains the times and flux values from which the 
+        simulated data was created (could be higher-resolution than the "data"), useful for 
+        comparison between models created e.g. from MCMC samples and the true underlying process
+
+        
+    ax : matplotlib.Axes object
+        An Axes object in which to plot the results. If not given, the code will create a 
+        new figure.
+        
+    use_radians : bool, default False
+        If True, the phase will be plotted from (0, 2pi) instead of (0,1), which is the default.
+        
+    legend : bool, default True
+        If True, include a legend in the plot
+    
+    Returns
+    -------
+    
+    ax : matplotlib.Axes object
+        The object with the plot
+    
+    """
+    if ax is None:
+        fig, ax = plt.subplots(1, 1, figsize=(6,4))
+    
+    t0 = np.min(time)
+    if models:
+        t0 = np.min([t0, np.min(models[0])])
+    
+    if true_lightcurve:
+        t0 = np.min([t0, np.min(true_lightcurve[0])])
+    
+    phase = (time-t0)/period - np.floor((time-t0)/period)
+    
+    if use_radians:
+        phase *= 2.*np.pi
+    
+    if flux_err is None:
+        ax.scatter(phase, flux, s=5, color="black", label="data")
+    else:
+        ax.errorbar(phase, flux, yerr=flux_err, fmt="o", c="black", markersize=5, label="data")
+    
+    if true_lightcurve:
+        true_time = (true_lightcurve[0] - t0)
+        true_flux = true_lightcurve[1]
+        true_phase = true_time/period - np.floor(true_time/period)
+        
+        if use_radians:
+            true_phase *= 2.*np.pi
+
+        # compute the difference from one phase bin to the next
+        tdiff = np.diff(true_phase)
+        # find all differences < 0, which is where the phase wraps around
+        idx = np.where(tdiff < 0)[0]
+
+        # loop through indices where phase goes from 1 (or 2pi) to 0
+        # plot each phase light curve separately
+        istart = 0
+        iend = idx[0]+1
+        
+        # first phase cycle also contains the label for the legend
+        ax.plot(true_phase[istart:iend], true_flux[istart:iend], alpha=0.3, 
+                c="#33B3FF", label="true light curve")
+
+        for i, x in enumerate(idx[:-1]):
+            ax.plot(true_phase[istart:iend], true_flux[istart:iend], alpha=0.3, c="#33B3FF")
+            istart = x+1
+            iend = idx[i+1]+1        
+        
+        # last plot
+        istart = idx[-1]+1
+        ax.plot(true_phase[istart:], true_flux[istart:], alpha=0.3, c="#33B3FF")
+    
+    if models:
+        m_time = (models[0] - t0)
+        m_flux = models[1]
+        
+        m_phase = (m_time/period) - np.floor(m_time/period)
+        if use_radians:
+            m_phase *= 2.*np.pi
+        
+        # compute the difference from one phase bin to the next
+        tdiff = np.diff(m_phase)
+        # find all differences < 0, which is where the phase wraps around
+        idx = np.where(tdiff < 0)[0]
+
+        
+        # loop through the different samples
+        for i,m in enumerate(m_flux):
+            # loop through indices where phase goes from 1 (or 2pi) to 0
+            # plot each phase light curve separately
+            istart = 0
+            iend = idx[0]+1
+            
+            if i == 0:
+                # first phase cycle also contains the label for the legend
+                ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1, 
+                        c="#FFB733", label="model")
+
+            else:
+                ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1, 
+                        c="#FFB733")
+
+            for j, x in enumerate(idx[:-1]):
+                ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1, c="#FFB733")
+                istart = x+1
+                iend = idx[j+1]+1        
+
+            # last plot
+            istart = idx[-1]+1
+            ax.plot(m_phase[istart:], m[istart:], alpha=0.1, c="#FFB733")
+
+    if legend:
+        ax.legend()
+    ax.set_xlabel("Rotational Phase")
+    ax.set_ylabel("Plot")
+    ax.set_title(r"period $P = %.3f$"%period)
+    if use_radians:
+        ax.set_xlim(0, 2*np.pi)
+    else:
+        ax.set_xlim(0, 1)
+    return ax
+    
