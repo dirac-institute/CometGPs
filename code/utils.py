@@ -108,10 +108,99 @@ def subsample(time, flux, flux_err=None, npoints=100, kind="random",
             return tsmall, fsmall, ferrsmall
         else:
             return tsmall, fsmall
-      
+
+def plot_lightcurve(time, flux, flux_err=None, true_lightcurve=None, 
+                    models=None, ax=None, colours=None):
+    
+    """
+    Plot a light curve, potentially including the true underlying 
+    model that produced the data (in the case of simulations), or model 
+    light curves from MCMC. 
+    
+    Parameters
+    ----------
+    time : numpy.ndarray
+        The time stamps of the periodic light curve
+        
+    flux : numpy.ndarray
+        Flux measurements corresponding to the time stamps
+         
+    flux_err : numpy.ndarray
+        The flux uncertainties corresponding to the data. 
+
+    true_lightcurve : iterable containing (true_time, true_flux)
+        In the case of simulated data, this contains the times and flux values from which the 
+        simulated data was created (could be higher-resolution than the "data"), useful for 
+        comparison between models created e.g. from MCMC samples and the true underlying process
+                
+    models : iterable of shape (model_time, numpy.ndarray of shape (nsamples, len(model_time)))
+        First element here contains the time stamps for the models (which may not be the same 
+        as for the data), the second is an array of shape (nsamples, ndatapoints), where nsamples 
+        is the number of model light curves, and ndatapoints == len(model_time)
+        
+    ax : matplotlib.Axes object
+        An Axes object in which to plot the results. If not given, the code will create a 
+        new figure.
+                
+    legend : bool, default True
+        If True, include a legend in the plot
+        
+    colours : [str, str, str]
+        List of (up to) three colours. First colour is used for the data, the second 
+        colour for the true underlying data, the third for the models.
+    
+    Returns
+    -------
+    
+    ax : matplotlib.Axes object
+        The object with the plot
+    
+    """
+    
+    if colours is None:
+        colours = ["black", "#33B3FF", "#FFB733"]
+        
+    if ax is None:
+        fig, ax = plt.subplots(1, 1, figsize=(8,4))
+
+    if flux_err is None:
+        ax.scatter(time, flux, s=4, c=colours[0], marker="o")
+    else:
+        ax.errorbar(time, flux, yerr=flux_err, fmt="o", markersize=4, c=colours[0])
+     
+    min_time = np.min(time)
+    max_time = np.max(time)
+
+    if true_lightcurve is not None:
+        true_time = true_lightcurve[0]
+        true_flux = true_lightcurve[1]
+        
+        ax.plot(true_time, true_flux, lw=2, alpha=0.5, color=colours[1])
+
+        min_time = np.min([min_time, np.min(true_time)])
+        max_time = np.max([max_time, np.max(true_time)])
+
+
+    if models is not None:
+        m_time = models[0]
+        m_flux = models[1]
+        
+        for m in m_flux:
+            ax.plot(m_time, m, color=colours[2], alpha=0.1)
+
+        min_time = np.min([min_time, np.min(m_time)])
+        max_time = np.max([max_time, np.max(m_time)])
+    
+    ax.set_xlim(min_time, max_time)
+    ax.set_xlabel("Time")
+    ax.set_ylabel("Flux");
+        
+    return ax
+
+
 
 def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_lightcurve=None, 
-                      ax=None, use_radians=False, legend=True):
+                      ax=None, use_radians=False, legend=True, colours=None):
     """
     Plot a folded periodic light curve, potentially including the true underlying 
     model that produced the data (in the case of simulations), or model 
@@ -152,6 +241,10 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
     legend : bool, default True
         If True, include a legend in the plot
     
+    colours : [str, str, str]
+        List of (up to) three colours. First colour is used for the data, the second 
+        colour for the true underlying data, the third for the models.
+
     Returns
     -------
     
@@ -159,6 +252,10 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         The object with the plot
     
     """
+    
+    if colours is None:
+        colours = ["black", "#33B3FF", "#FFB733"]
+
     if ax is None:
         fig, ax = plt.subplots(1, 1, figsize=(6,4))
     
@@ -175,9 +272,9 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         phase *= 2.*np.pi
     
     if flux_err is None:
-        ax.scatter(phase, flux, s=5, color="black", label="data")
+        ax.scatter(phase, flux, s=5, color=colours[0], label="data")
     else:
-        ax.errorbar(phase, flux, yerr=flux_err, fmt="o", c="black", markersize=5, label="data")
+        ax.errorbar(phase, flux, yerr=flux_err, fmt="o", c=colours[0], markersize=5, label="data")
     
     if true_lightcurve:
         true_time = (true_lightcurve[0] - t0)
@@ -199,16 +296,16 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         
         # first phase cycle also contains the label for the legend
         ax.plot(true_phase[istart:iend], true_flux[istart:iend], alpha=0.3, 
-                c="#33B3FF", label="true light curve")
+                c=colours[1], label="true light curve")
 
         for i, x in enumerate(idx[:-1]):
-            ax.plot(true_phase[istart:iend], true_flux[istart:iend], alpha=0.3, c="#33B3FF")
+            ax.plot(true_phase[istart:iend], true_flux[istart:iend], alpha=0.3, c=colours[1])
             istart = x+1
             iend = idx[i+1]+1        
         
         # last plot
         istart = idx[-1]+1
-        ax.plot(true_phase[istart:], true_flux[istart:], alpha=0.3, c="#33B3FF")
+        ax.plot(true_phase[istart:], true_flux[istart:], alpha=0.3, c=colours[1])
     
     if models:
         m_time = (models[0] - t0)
@@ -234,20 +331,20 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
             if i == 0:
                 # first phase cycle also contains the label for the legend
                 ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1, 
-                        c="#FFB733", label="model")
+                        c=colours[2], label="model")
 
             else:
                 ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1, 
-                        c="#FFB733")
+                        c=colours[2])
 
             for j, x in enumerate(idx[:-1]):
-                ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1, c="#FFB733")
+                ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1, c=colours[2])
                 istart = x+1
                 iend = idx[j+1]+1        
 
             # last plot
             istart = idx[-1]+1
-            ax.plot(m_phase[istart:], m[istart:], alpha=0.1, c="#FFB733")
+            ax.plot(m_phase[istart:], m[istart:], alpha=0.1, c=colours[2])
 
     if legend:
         ax.legend()
