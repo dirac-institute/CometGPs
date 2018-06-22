@@ -1,5 +1,10 @@
 import matplotlib.pyplot as plt
+import seaborn as sns
+
 import numpy as np
+
+from astropy.stats import LombScargle
+
 
 
 def subsample(time, flux, flux_err=None, npoints=100, kind="random",
@@ -108,6 +113,145 @@ def subsample(time, flux, flux_err=None, npoints=100, kind="random",
             return tsmall, fsmall, ferrsmall
         else:
             return tsmall, fsmall
+
+
+def make_lsp(time, flux, flux_err, p_min=1/24.0, p_max=1.0, oversampling=5, lsp_kwargs=None):
+    """
+    Compute the Lomb-Scargle periodogram using the astropy LombScargle class.
+    
+    Parameters
+    ----------
+    time : numpy.ndarray
+        The time stamps of the time series **IN DAYS**
+        
+    flux : numpy.ndarray
+        Flux measurements corresponding to the time stamps
+         
+    flux_err : numpy.ndarray
+        The flux uncertainties corresponding to the data. 
+
+    p_min, p_max : float, float
+        The minimum and maximum period to search, **IN DAYS**
+        
+    oversampling : int
+        The oversampling factor; default is 5
+        
+    lsp_kwargs : dict
+        Optional keyword arguments for astropy.stats.LombScargle
+        
+    Returns
+    -------
+    freq : numpy.ndarray
+        The frequencies for which the Lomb-Scargle periodogram 
+        was computed
+        
+    power : numpy.ndarray
+        Normalized Lomb-Scargle power
+        
+    """
+    
+    # initialize the lomb-scargle periodogram
+    ls = LombScargle(time, flux, dy=flux_err, **lsp_kwargs)
+    
+    # number of frequencies to sample
+    nfreq = int(oversampling*(p_max - p_min)/p_min) # number of frequencies
+
+    # make a list of frequencies 
+    freq = np.linspace(1/p_max, 1/p_min, nfreq)
+    
+    # compute the power at each given frequency
+    power = ls.power(freq)
+    
+    return freq, power
+
+
+def plot_lsp(time, flux, flux_err=None, true_period=None, 
+             p_min=1/24.0, p_max=1.0, oversampling=5, lsp_kwargs=None,
+             ax=None, nharmonics=0, legend=True):
+    
+    """
+    Plot a Lomb-Scargle periodogram of the data in (time, flux) and optionally 
+    include the "true" period, if known. 
+    
+    Parameters
+    ----------
+    time : numpy.ndarray
+        The time stamps of the time series **IN DAYS**
+        
+    flux : numpy.ndarray
+        Flux measurements corresponding to the time stamps
+         
+    flux_err : numpy.ndarray
+        The flux uncertainties corresponding to the data. 
+        
+    true_period : float
+        For simulated data, we might know the true period from 
+        which the data came. If so, this will plot a dashed line 
+        where the true period should be in the Lomb-Scargle periodogram
+
+    p_min, p_max : float, float
+        The minimum and maximum period to search, **IN DAYS**
+        
+    oversampling : int
+        The oversampling factor; default is 5
+        
+    lsp_kwargs : dict
+        Optional keyword arguments for astropy.stats.LombScargle
+     
+    ax : matplotlib.Axes object
+        A matplotlib.Axes object into which to plot the LSP. Useful 
+        for including an LSP in a multi-panel figure. If not given, 
+        this function will instantiate a new Figure.
+        
+    nharmonics : int, default 0
+        The number of harmonics to plot apart from the true period. 
+        Plotting harmonics can be useful if there's significant power 
+        e.g. at 1/2 the actual period
+        
+    legend : bool, default True
+        If true, include a legend
+    
+
+    """
+    
+    freq, power = make_lsp(time, flux, flux_err, p_min, p_max, oversampling)
+    
+    # array of corresponding periods
+    periods = 1./freq
+    
+    # invert the arrays so that my plot goes from 
+    # small periods --> large periods
+    periods = periods[::-1]
+    power = power[::-1]
+
+    if ax is None:
+        fig, ax = plt.subplots(1, 1, figsize=(8,4))
+
+    # plot the Lomb-Scargle periodogram
+    ax.semilogx(periods, power, lw=2, color="black", linestyle="steps-mid", alpha=0.7, label="data")
+
+    ylim = ax.get_ylim()
+    
+    ax.vlines(true_period, ylim[0], ylim[1], color="purple", linestyle="dashed", lw=3, 
+              label="true period")
+
+    if nharmonics > 0:
+        colours = sns.color_palette("viridis", n_colors=nharmonics)
+        for n in range(nharmonics):
+            true_period /= 2.0
+            ax.vlines(true_period, ylim[0], ylim[1], color=colours[n], 
+                      linestyle="dashed", lw=3, label="%.2f * true period"%(0.5/(n+1)))
+    
+    if legend:
+        ax.legend()
+        
+    ax.set_xlim(np.min(periods), np.max(periods))
+
+    ax.set_xlabel("Period [days]")
+    ax.set_ylabel("Normalized Power")
+    
+    return ax
+
 
 def plot_lightcurve(time, flux, flux_err=None, true_lightcurve=None, 
                     models=None, ax=None, colours=None):
