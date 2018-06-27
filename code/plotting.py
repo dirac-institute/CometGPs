@@ -7,7 +7,7 @@ from dynesty import utils as dyfunc
 
 import corner
 
-from .lombscargle import make_lsp
+from lombscargle import make_lsp
 
 def plot_lightcurve(time, flux, flux_err=None, true_lightcurve=None, 
                     models=None, ax=None, colours=None):
@@ -345,10 +345,57 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         ax.set_xlim(0, 1)
     return ax
 
-
 def plot_sampling_results(time, flux, flux_err, gp, sampler, t_pred=None, true_lightcurve=None,
-                          true_period=None, namestr="test", change_term=False, nmodels=10, npred=1000):
+                          true_period=None, namestr="test", change_term=False, nmodels=10, npred=1000,
+                          close_plots=True):
+    """
+    Plot the results of a Dynesty run for (simulated) asteroid data.
+    Saves a few diagnostic plots along with a multi-panel view of the most important results.
     
+    Parameters
+    ----------
+    time : numpy.ndarray
+        The time stamps of the periodic light curve
+        
+    flux : numpy.ndarray
+        Flux measurements corresponding to the time stamps
+         
+    flux_err : numpy.ndarray
+        The flux uncertainties corresponding to the data. 
+    
+    t_pred : numpy.ndarray or None
+        The time stamps where to calculate predictions for the Gaussian Process
+        If not given, time stamps will be distributed evenly between the beginning 
+        and end of `time`
+        
+    true_lightcurve : iterable containing (true_time, true_flux)
+        In the case of simulated data, this contains the times and flux values from which the 
+        simulated data was created (could be higher-resolution than the "data"), useful for 
+        comparison between models created e.g. from MCMC samples and the true underlying process
+        
+    true_period : float, default None
+        If data is derived from simulations, this keyword takes the true underlying 
+        period of the process in **DAYS**.
+        
+    namestr : string, default ``test''
+        A file path and identifying string for the output files.
+        
+    change_term : bool, default False
+        If True, include a Squared Exponential term in the Gaussian Process in 
+        order to model changes in the periodic process over time
+        
+    nmodels : int, default 10
+        The number of samples to draw from the posterior and plot with the real 
+        data
+        
+    npred : float, default 1000
+        If `t_pred` is None, this number will set the number of evenly spaced 
+        time points for which to calculate Gaussian Process predictions
+        
+    close_plots : bool, default True
+        Keep the plots open (e.g. in a notebook) or close them after saving?
+    
+    """
     # get results out of sampler
     results = sampler.results
     
@@ -360,6 +407,9 @@ def plot_sampling_results(time, flux, flux_err, gp, sampler, t_pred=None, true_l
     plt.tight_layout()
     plt.savefig(namestr + "_traceplot.pdf", format="pdf")
     
+    if close_plots:
+        plt.close()
+
     # get out samples and weights
     samples, weights = results.samples, np.exp(results.logwt - results.logz[-1])
     mean, cov = dyfunc.mean_and_cov(samples, weights)
@@ -373,8 +423,52 @@ def plot_sampling_results(time, flux, flux_err, gp, sampler, t_pred=None, true_l
     # save to file
     plt.savefig(namestr + "_corner.pdf", format="pdf")
     
+    if close_plots:
+        plt.close()
 
     # plot some light curves with example models
+    
+    # first, get the total number of available samples
+    nsamples = new_samples.shape[0]
+
+
+    # multi-panel plot with the most important results
+    fig = plt.figure(figsize=(10, 12))
+
+    gs1 = gridspec.GridSpec(nrows=4, ncols=2)
+
+    ax1 = fig.add_subplot(gs1[0, :])
+    ax2 = fig.add_subplot(gs1[1, :])
+    ax3 = fig.add_subplot(gs1[2, 0])
+    ax4 = fig.add_subplot(gs1[2, 1])
+    ax5 = fig.add_subplot(gs1[3, :])
+
+    # first panel: just the data (and possibly the underlying light curve that produced it)
+    ax1 = plot_lightcurve(tsample, fsample, flux_err=ferr, true_lightcurve=true_lightcurve,ax=ax1)
+    ax1.set_title("Data points with underlying true light curve")
+
+    # second panel: the Lomb-Scargle periodogram
+    ax2 = plot_lsp(tsample, fsample, flux_err=ferr, true_period=true_period, ax=ax2, nharmonics=1)
+    ax2.set_title("Lomb-Scargle periodogram")
+
+    # third panel: plot the posterior PDF of the periods
+    if change_term:
+        ax3.hist(new_samples[:,-3]*24., bins=100, normed=True, 
+                label="posterior PDF", color="purple", alpha=0.5)
+    else:
+        ax3.hist(new_samples[:,-1]*24., bins=100, normed=True, 
+                label="posterior PDF", color="purple", alpha=0.5)
+
+    if true_period is not None:
+        ylim = ax3.get_ylim()
+        ax3.vlines(true_period*24., 0, ylim[-1], lw=3, color="black", linestyle="dashed", label="true period")
+
+    ax3.legend()
+    ax3.set_xlabel("Period [hours]")
+    ax3.set_ylabel("Posterior probability density")
+    ax3.set_title("Posterior probability for the period")
+
+    # fourth plot: the folded light curve + models
     
     # first, get the total number of available samples
     nsamples = new_samples.shape[0]
@@ -402,50 +496,30 @@ def plot_sampling_results(time, flux, flux_err, gp, sampler, t_pred=None, true_l
         mean_model = gp.sample_conditional(fsample, t_pred)
         m_all[i] = mean_model
 
-    fig, ax = plt.subplots(1, 1, figsize=(6,4))
-    plot_lightcurve(tsample, fsample, flux_err=ferr, true_lightcurve=true_lightcurve, 
-                        models=(t_pred, m_all), ax=ax)
-
-    plt.tight_layout()
-    plt.savefig(namestr + "_lc.pdf", format="pdf")
-
-    
-    # plot histogram of periods
-    fig, ax = plt.subplots(1, 1, figsize=(5,4))
-    if change_term:
-        ax.hist(new_samples[:,-3]*24., bins=100, normed=True, 
-                label="posterior PDF", color="black", alpha=0.5)
-    else:
-        ax.hist(new_samples[:,-1]*24., bins=100, normed=True, 
-                label="posterior PDF", color="black", alpha=0.5)
-
-    if true_period is not None:
-        ylim = ax.get_ylim()
-        ax.vlines(true_period*24., 0, ylim[-1], lw=1, color="red", linestyle="dashed", label="true period")
-    
-    ax.set_xlabel("Period in hours")
-    ax.set_ylabel("Probability")
-    ax.legend()
-
-    plt.tight_layout()
-    plt.savefig(namestr + "_period_pdf.pdf", format="pdf")
-    
-    
-    # plot folded light curve
-
-    fig, ax = plt.subplots(1, 1, figsize=(6,4))
-
     if true_period:
-        ax = plot_folded_lightcurve(tsample, fsample, true_period, flux_err=ferr, 
-                          models=[t_pred, m_all[:2]], 
-                          true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
+        ax4 = plot_folded_lightcurve(tsample, fsample, true_period, flux_err=ferr, 
+                          models=[t_pred, m_all], 
+                          true_lightcurve=true_lightcurve, ax=ax4, use_radians=False)
+        ax4.set_title("Light curve folded on the true period with models")
+
     else:
-        ax = plot_folded_lightcurve(tsample, fsample, best_period, flux_err=ferr, 
-                          models=[t_pred, m_all[:2]], 
-                          true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
+        best_period = new_samples[np.argmax(results.logl), -1]
+        ax4 = plot_folded_lightcurve(tsample, fsample, best_period, flux_err=ferr, 
+                          models=[t_pred, m_all], 
+                          true_lightcurve=true_lightcurve, ax=ax4, use_radians=False)
+        ax4.set_title("Light curve folded on the most probable period with models")
+
+
+    # fifth plot: the unfolded light curve + models
+    ax5 = plot_lightcurve(tsample, fsample, flux_err=ferr, models=(t_pred, m_all), 
+                          true_lightcurve=true_lightcurve, ax=ax5)
+    ax5.set_title("Light curve with models")
 
     plt.tight_layout()
-    plt.savefig(namestr + "_folded_lc.pdf", format="pdf")
+    # save multi-panel figure to file
+    plt.savefig(namestr + "_summary.pdf", format="pdf")
     
+    if close_plots:
+        plt.close()
+
     return
-    
