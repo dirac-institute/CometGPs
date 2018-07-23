@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 
 import numpy as np
 
@@ -446,11 +447,13 @@ def plot_sampling_results(time, flux, flux_err, gp, sampler, t_pred=None, true_l
     # first panel: just the data (and possibly the underlying light curve that produced it)
     ax1 = plot_lightcurve(tsample, fsample, flux_err=ferr, true_lightcurve=true_lightcurve,ax=ax1)
     ax1.set_title("Data points with underlying true light curve")
+    ax1.ticklabel_format(style="scientific", axis="both", useMathText=True)
 
     # second panel: the Lomb-Scargle periodogram
     ax2 = plot_lsp(tsample, fsample, flux_err=ferr, true_period=true_period, ax=ax2, nharmonics=1)
     ax2.set_title("Lomb-Scargle periodogram")
-
+    ax2.ticklabel_format(style="scientific", axis="y", useMathText=True)
+ 
     # third panel: plot the posterior PDF of the periods
     if change_term:
         ax3.hist(new_samples[:,-3]*24., bins=100, normed=True, 
@@ -467,6 +470,7 @@ def plot_sampling_results(time, flux, flux_err, gp, sampler, t_pred=None, true_l
     ax3.set_xlabel("Period [hours]")
     ax3.set_ylabel("Posterior probability density")
     ax3.set_title("Posterior probability for the period")
+    ax3.ticklabel_format(style="scientific", axis="both", useMathText=True)
 
     # fourth plot: the folded light curve + models
     
@@ -509,11 +513,13 @@ def plot_sampling_results(time, flux, flux_err, gp, sampler, t_pred=None, true_l
                           true_lightcurve=true_lightcurve, ax=ax4, use_radians=False)
         ax4.set_title("Light curve folded on the most probable period with models")
 
+    ax4.ticklabel_format(style="scientific", axis="both", useMathText=True)
 
     # fifth plot: the unfolded light curve + models
     ax5 = plot_lightcurve(tsample, fsample, flux_err=ferr, models=(t_pred, m_all), 
                           true_lightcurve=true_lightcurve, ax=ax5)
     ax5.set_title("Light curve with models")
+    ax5.ticklabel_format(style="scientific", axis="both", useMathText=True)
 
     plt.tight_layout()
     # save multi-panel figure to file
