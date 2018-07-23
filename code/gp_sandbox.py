@@ -57,7 +57,7 @@ def sample_data(x_possible, pre_y, yerr_amp, random_n=0, cluster_n=0, cadence_n=
 
     if cadence_n != 0:
         #pick m number of random clusters
-        idx_choice = cadence_set(pre_y, cadence_n)
+        idx_choice = cadence_set(x_possible, cadence_n)
 
     #filter out the randomly chosen indicies from earlier
     x = x_possible[idx_choice]
@@ -68,6 +68,44 @@ def sample_data(x_possible, pre_y, yerr_amp, random_n=0, cluster_n=0, cadence_n=
     y = y_base + yerr * np.random.randn(len(x))
 
     return(x, y, yerr)
+
+def random_set(pre_y, random_n):
+    idx = pre_y.size #pre_y is a long as x_possible (500)
+    #randomly select n points from 1-500
+    idx_choice = np.random.choice(idx, random_n, replace= False)
+    idx_choice.sort()
+    return(idx_choice)
+
+def cluster_set(pre_y, cluster_n):
+    idx = pre_y.size
+    start_idx = []
+    for j in np.arange(cluster_n):
+        #get 5 before and 5 after
+        start_idx.append(np.random.choice(np.arange(int((j)*idx/cluster_n),int((j+1)*idx/cluster_n)),1)[0]) 
+    idx_sub = np.hstack((start_idx))
+    idx_sub.sort()
+
+    idx_sub = []
+    for i in np.arange(len(start_idx)):
+        idx_sub.append(np.arange(start_idx[i]-5,start_idx[i]+5))
+
+    idx_choice = np.hstack((idx_sub))
+    idx_choice.sort()
+    return(idx_choice)
+
+def cadence_set(x_possible, days):
+    max_idx = x_possible.size
+    start_idx = x_possible.index[0]
+    init_idx = x_possible.index[0]
+    end_idx = start_idx + 48*20 #8 hours later
+    idx_choice = []
+
+    while end_idx <= max_idx+init_idx:
+        idx_choice.extend(np.arange(start_idx, end_idx, 20, dtype=int))
+        start_idx += 2880 #skip forward 24 hours
+        end_idx += 2880
+    return(idx_choice)
+
 
 def log_prior(gamma, period, amp):
     if(gamma > 1.0 and gamma < 15.0): p_gamma = 1
@@ -155,40 +193,87 @@ def plotting(x, y, yerr,pre_y, x_possible, gp):
     plt.ylabel("y");
     plt.show()
 
-def random_set(pre_y, random_n):
-    idx = pre_y.size #pre_y is a long as x_possible (500)
-    #randomly select n points from 1-500
-    idx_choice = np.random.choice(idx, random_n, replace= False)
-    idx_choice.sort()
-    return(idx_choice)
 
-def cluster_set(pre_y, cluster_n):
-    idx = pre_y.size
-    start_idx = []
-    for j in np.arange(cluster_n):
-        start_idx.append(np.random.choice(np.arange(int((j)*idx/cluster_n),int((j+1)*idx/cluster_n)),1)[0]) #get 5 before and 5 after
-    idx_sub = np.hstack((start_idx))
-    idx_sub.sort()
+def plot_steps(sampler, p0, data_pts, from_saved=False):
+    fig, ax = plt.subplots(2,2)
+    fig.subplots_adjust(wspace=0.3, hspace=0.3)
+    
+    axs = [ax[0,0], ax[0,1], ax[1,0], ax[1,1]]
+    dims = ['mean', 'log_amp', 'gamma', 'period']
+    
+    if from_saved==True:
+        x = np.arange(sampler.shape[1])
+        
+        for i in range(len(dims)):
+            axs[i].set_xlabel('Step Number')
+            axs[i].set_ylabel('{}'.format(dims[i]))
+            
+            for j in range(len(sampler.chain)):
+                param = sampler[j,:,i]
+                if i == 3: 
+                    param = np.exp(param)*24
+                axs[i].plot(x, param, 'k-', alpha=0.3)
+                
+            flatchain = sampler[:,:,i]
+            if i == 3: 
+                pre_mean = flatchain.mean()
+                flatchain = np.exp(flatchain)*24
+                axs[i].axhline(flatchain.mean(), linestyle='--', 
+                               label=(str((round(flatchain.mean(),5)))+'\n'+str((round(pre_mean,5)))))
+            
+            else: axs[i].axhline(flatchain.mean(), linestyle='--', 
+                                 label=round(flatchain.mean(),5))
+            axs[i].legend(loc=1)
 
-    idx_sub = []
-    for i in np.arange(len(start_idx)):
-        idx_sub.append(np.arange(start_idx[i]-5,start_idx[i]+5))
+    else:        
+        x = np.arange(sampler.iterations)
 
-    idx_choice = np.hstack((idx_sub))
-    idx_choice.sort()
-    return(idx_choice)
+        print(str(p0[0]) + '\nData points: ' + str(data_pts))
+        print("Mean acceptance fraction: {0:.3f}".format(np.mean(sampler.acceptance_fraction)))
 
-def cadence_set(pre_y, days):
-    max_idx = pre_y.size
+        for i in range(len(dims)):
+            axs[i].set_xlabel('Step Number')
+            axs[i].set_ylabel('{}'.format(dims[i]))
+            
+            for j in range(len(sampler.chain)):
+                param = sampler.chain[j,:,i]
+                if i == 3: 
+                    param =  np.exp(param)*24
+                axs[i].plot(x, param, 'k-', alpha=0.3)
+                # fit might guess period is time range of sampling
+                
+            flatchain = sampler.flatchain[:,i]
+            if i == 3: 
+                pre_mean = flatchain.mean()
+                flatchain = np.exp(flatchain)*24
+                axs[i].axhline(flatchain.mean(), linestyle='--' , label=(str((round(flatchain.mean(),5)))+'\n'+str((round(pre_mean,5)))))
+            
+            else: axs[i].axhline(flatchain.mean(), linestyle='--' , label=round(flatchain.mean(),5))
+            axs[i].legend(loc=1)
+            
+def plot_hist(sampler, from_saved=False):
+    """
+    Working. :)
+    """
+    fig, ax = plt.subplots(2,2)
+    fig.subplots_adjust(wspace=0.3, hspace=0.3)
 
-    start_idx = 0
-    end_idx = start_idx + 48*20 #8 hours later
-    idx_choice = []
-
-    while end_idx <= max_idx:
-        idx_choice.extend(np.arange(start_idx, end_idx, 20, dtype=int))
-        start_idx += 2880 #skip forward 24 hours
-        end_idx += 2880
-
-    return(idx_choice)
-    #every j index is 0.5 minutes
+    dims = ['mean', 'log_amp', 'gamma', 'period']
+    axs = [ax[0,0], ax[0,1], ax[1,0], ax[1,1]]
+    
+    if from_saved == True:
+        for i in range(len(dims)):
+            axs[i].set_xlabel('{}'.format(dims[i]))
+            param = sampler[:,:,i]
+            if i == 3: 
+                param =  np.exp(param)*24
+            axs[i].hist(param, 100, color='k',histtype="step")
+        
+    else:
+        for i in range(len(dims)):
+            axs[i].set_xlabel('{}'.format(dims[i]))
+            param = sampler.flatchain[:,i]
+            if i == 3: 
+                param =  np.exp(param)*24
+            axs[i].hist(param, 100, color='k', histtype="step")
+                
