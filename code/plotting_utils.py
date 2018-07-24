@@ -1,3 +1,7 @@
+import corner 
+import numpy as np
+import matplotlib.pyplot as plt
+
 def plot_sampling_results(time, flux, flux_err, gp, sampler,
                           t_pred=None, true_lightcurve=None,
                           true_period=None, namestr="test", 

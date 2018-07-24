@@ -194,7 +194,7 @@ def plotting(x, y, yerr,pre_y, x_possible, gp):
     plt.show()
 
 
-def plot_steps(sampler, p0, data_pts, from_saved=False):
+def plot_steps(sampler, p0=None, data_pts=None, from_saved=False):
     fig, ax = plt.subplots(2,2)
     fig.subplots_adjust(wspace=0.3, hspace=0.3)
     
@@ -208,7 +208,7 @@ def plot_steps(sampler, p0, data_pts, from_saved=False):
             axs[i].set_xlabel('Step Number')
             axs[i].set_ylabel('{}'.format(dims[i]))
             
-            for j in range(len(sampler.chain)):
+            for j in range(sampler.shape[0]):
                 param = sampler[j,:,i]
                 if i == 3: 
                     param = np.exp(param)*24
@@ -219,7 +219,7 @@ def plot_steps(sampler, p0, data_pts, from_saved=False):
                 pre_mean = flatchain.mean()
                 flatchain = np.exp(flatchain)*24
                 axs[i].axhline(flatchain.mean(), linestyle='--', 
-                               label=(str((round(flatchain.mean(),5)))+'\n'+str((round(pre_mean,5)))))
+                               label=(str((round(flatchain.mean(),5)))+'h \n'+str((round(pre_mean,5)))))
             
             else: axs[i].axhline(flatchain.mean(), linestyle='--', 
                                  label=round(flatchain.mean(),5))
@@ -246,7 +246,7 @@ def plot_steps(sampler, p0, data_pts, from_saved=False):
             if i == 3: 
                 pre_mean = flatchain.mean()
                 flatchain = np.exp(flatchain)*24
-                axs[i].axhline(flatchain.mean(), linestyle='--' , label=(str((round(flatchain.mean(),5)))+'\n'+str((round(pre_mean,5)))))
+                axs[i].axhline(flatchain.mean(), linestyle='--' , label=(str((round(flatchain.mean(),5)))+'h \n'+str((round(pre_mean,5)))))
             
             else: axs[i].axhline(flatchain.mean(), linestyle='--' , label=round(flatchain.mean(),5))
             axs[i].legend(loc=1)
@@ -267,7 +267,7 @@ def plot_hist(sampler, from_saved=False):
             param = sampler[:,:,i]
             if i == 3: 
                 param =  np.exp(param)*24
-            axs[i].hist(param, 100, color='k',histtype="step")
+            axs[i].hist(param, 100,histtype="step")
         
     else:
         for i in range(len(dims)):
