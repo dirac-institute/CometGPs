@@ -8,7 +8,7 @@ We would like to:
 * reliable estimate the amplitude of the variations and its uncertainties
 * (future): take into account trends in the pulse profile and the overall light curve shape
 * (future): think about forecasting where ideal future observations should take place
-
+ 
 
 
 
