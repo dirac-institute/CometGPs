@@ -40,6 +40,7 @@ def walker_params(params, fsample, flux_err, nwalkers, cov_scale=1):
 
     p_start = np.array(params)/100.
     cov_matrix = np.sqrt(np.diag(p_start)**2)*cov_scale
+    print('params : [ mean, log_amp, gamma, log_period]')
     print("params : " + str(params))
     print("cov matrix : \n" + str(cov_matrix))
 
