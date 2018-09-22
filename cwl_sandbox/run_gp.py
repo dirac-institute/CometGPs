@@ -31,7 +31,7 @@ def prior(params):
         log amplitude (between -10 and 10)
 
     param[2] : float
-        gamma (log gamma between 0.1 and 100)
+        gamma (log gamma between 0.1 and 50)
 
     param[3] : float
         log period (period between 1h and 24hrs)
@@ -56,7 +56,7 @@ def prior(params):
     return sum_log_prior
 
 
-def post_lnlikelihood(params):
+def post_lnlikelihood(params, gp, tsample, fsample, flux_err):
 
     """
     Calculates the posterior likelihood from the log prior and
@@ -74,6 +74,7 @@ def post_lnlikelihood(params):
         -1e25 will be returned instead.
 
     """
+
     # calculate the log_prior
     log_prior = prior(params)
 
@@ -90,13 +91,14 @@ def post_lnlikelihood(params):
     except np.linalg.LinAlgError:
         ln_likelihood = -1e25
 
-    print(counter)
     return ln_likelihood if np.isfinite(ln_likelihood) else -1e25
 
 
 def read_data(filename, datadir="./"):
     """
     Read in light curve data from asteroid.
+
+    NEED TO FIX LATER ONCE SAMPLER HAS BEEN CREATED!
     """
 
     data  = pd.read_csv(datadir+filename)
@@ -133,7 +135,7 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
     new_period = 1./new_freq
     new_log_period = np.log(1./new_freq)
 
-    
+
 
     ndim, nwalkers = 4, nchain
 
@@ -143,18 +145,28 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
     params = [np.mean(fsample), best_log_amp, gamma, new_log_period]
     p0, gp = walker_params(params, fsample, flux_err, nwalkers, cov_scale=cov_scale)
 
-    sampler = emcee.EnsembleSampler(nwalkers, ndim, post_lnlikelihood, threads=threads)
+    sampler = emcee.EnsembleSampler(nwalkers, ndim, post_lnlikelihood, args=[gp, tsample, fsample, flux_err], threads=threads)
     mcmc_sampling = sampler.run_mcmc(p0, niter)
 
-    plot_steps(sampler, dims = ['mean', 'log_amp', 'gamma', 'log_period'], p0=[params], data_pts=data_pts)
+    def save_chain(file_name, sampler):
+        header = str(sampler.chain.shape)
+        np.savetxt(file_name, sampler.flatchain, header=header)
+        return
+
+    save_chain(filename + "_results", sampler)
+
+    ###AVOID HAVING TO USE pd SO YOU DON'T HAVE TO CHANGE THIS TO A NP.ARRAY
+    tsample = np.array(tsample)
+
+    plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler, namestr=filename + "_plots")
 
 
-
+    return
 
 
 
 def main():
-    run_gp(filename, datadir, niter, gamma, cov_scale, threads)
+    run_gp(filename, datadir, nchain, niter, gamma, cov_scale, threads)
 
     return
 
@@ -213,5 +225,8 @@ if __name__ == "__main__":
     gamma = clargs.gamma
     cov_scale = clargs.cov_scale
     threads = clargs.threads
+
+    print(nchain)
+    print(niter)
 
     main()

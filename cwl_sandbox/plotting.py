@@ -372,7 +372,7 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
 
     # if the array for the predictions isn't given, make one
     if t_pred is None:
-        t_pred = np.linspace(true_lightcurve[0][0], true_lightcurve[0][-1], npred)
+        t_pred = np.linspace(tsample[0], tsample[-1], npred)
 
     # empty array for output
     m_all = np.zeros((nmodels, t_pred.shape[0]))
@@ -419,10 +419,10 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
         ax = plot_folded_lightcurve(tsample, fsample, true_period/24, flux_err=0.01,
                           models=[t_pred, m_all[:2]],
                           true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
-    else:
-        ax = plot_folded_lightcurve(tsample, fsample, best_period, flux_err=flux_err,
-                          models=[t_pred, m_all[:2]],
-                          true_lightcurve=true_lightcurve, ax=bx, use_radians=False)
+    #else:
+    #    ax = plot_folded_lightcurve(tsample, fsample, best_period, flux_err=flux_err,
+    #                      models=[t_pred, m_all[:2]],
+    #                      true_lightcurve=true_lightcurve, ax=bx, use_radians=False)
 
     plt.tight_layout()
     plt.savefig(namestr + "_folded_lc.pdf", format="pdf")
@@ -446,8 +446,8 @@ def plot_steps(sampler, dims=None, p0=None, data_pts=None, from_saved=False):
                 axs[i].plot(x, param, 'k-', alpha=0.3)
 
             flatchain = sampler[:,:,i]
-            axs[i].axhline(flatchain.mean(), linestyle='--',
-                            label=round(flatchain.mean(),5))
+            #axs[i].axhline(flatchain.mean(), linestyle='--',
+            #                label=round(flatchain.mean(),5))
             axs[i].legend(loc=1)
 
     else:
@@ -466,6 +466,5 @@ def plot_steps(sampler, dims=None, p0=None, data_pts=None, from_saved=False):
                 # fit might guess period is time range of sampling
 
             flatchain = sampler.flatchain[:,i]
-            axs[i].axhline(flatchain.mean(), linestyle='--' , label=round(flatchain.mean(),5))
+            #axs[i].axhline(flatchain.mean(), linestyle='--' , label=round(flatchain.mean(),5))
             axs[i].legend(loc=1)
-            
