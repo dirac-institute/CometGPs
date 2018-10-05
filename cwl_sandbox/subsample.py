@@ -202,4 +202,8 @@ def subsample(time, flux, flux_err=None, npoints=100, kind="random",
 
     fsmall = np.random.normal(np.hstack(fsmall), scale=np.hstack(ferrsmall)) + mean_flux
 
+    #print('tsmall: ' + str(type(tsmall)))
+
+    #return tsmall, fsmall, ferrsmall
+
     return np.hstack(tsmall), np.hstack(fsmall), np.hstack(ferrsmall)

@@ -345,6 +345,33 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         ax.set_xlim(0, 1)
     return ax
 
+def plot_steps(sampler, dims=None, p0=None, data_pts=None):
+    fig, ax = plt.subplots(2, 2, figsize=(7,6))
+    fig.subplots_adjust(wspace=0.25, hspace=0.3)
+
+    fig.suptitle("Data points: " + str(data_pts) + "\nMean acceptance fraction: {0:.3f}".format(np.mean(sampler.acceptance_fraction)))
+
+
+
+
+    axs = [ax[0,0], ax[0,1], ax[1,0], ax[1,1]]
+
+    x = np.arange(sampler.iterations)
+
+    for i in range(sampler.dim):
+        axs[i].set_xlabel('Step Number')
+        axs[i].set_ylabel('{}'.format(dims[i]))
+
+        for j in range(len(sampler.chain)):
+            param = sampler.chain[j,:,i]
+            axs[i].plot(x, param, 'k-', alpha=0.3)
+            # fit might guess period is time range of sampling
+
+        flatchain = sampler.flatchain[:,i]
+
+
+    return axs
+
 
 def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
                           t_pred=None, true_lightcurve=None,
@@ -352,11 +379,12 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
                           nmodels=10, npred=1000):
 
 
+
     # resample from weights
     new_samples = sampler.flatchain
 
     # make a corner plot
-    corner.corner(new_samples, labels=gp.get_parameter_names())
+    corner.corner(new_samples[int(-len(new_samples)*0.1):], labels=gp.get_parameter_names())
 
     # save to file
     plt.savefig(namestr + "_corner.pdf", format="pdf")
@@ -367,7 +395,6 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     nsamples = new_samples.shape[0]
 
     # get some random samples from the
-
     idx = np.random.choice(np.arange(0, nsamples, 1, dtype=int), size=nmodels)
 
     # if the array for the predictions isn't given, make one
@@ -412,59 +439,21 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
 
     # plot folded light curve
 
-    fig, ax = plt.subplots(1, 1, figsize=(6,4))
+    #fig, ax = plt.subplots(1, 1, figsize=(6,4))
 
 
-    if true_period:
-        ax = plot_folded_lightcurve(tsample, fsample, true_period/24, flux_err=0.01,
-                          models=[t_pred, m_all[:2]],
-                          true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
+    #if true_period:
+    #    ax = plot_folded_lightcurve(tsample, fsample, true_period/24, flux_err=0.01,
+    #                      models=[t_pred, m_all[:2]],
+    #                      true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
     #else:
     #    ax = plot_folded_lightcurve(tsample, fsample, best_period, flux_err=flux_err,
     #                      models=[t_pred, m_all[:2]],
     #                      true_lightcurve=true_lightcurve, ax=bx, use_radians=False)
 
-    plt.tight_layout()
-    plt.savefig(namestr + "_folded_lc.pdf", format="pdf")
+    #plt.tight_layout()
+    #plt.savefig(namestr + "_folded_lc.pdf", format="pdf")
 
-
-def plot_steps(sampler, dims=None, p0=None, data_pts=None, from_saved=False):
-    fig, ax = plt.subplots(2, 2, figsize=(7,6))
-    fig.subplots_adjust(wspace=0.25, hspace=0.2)
-
-    axs = [ax[0,0], ax[0,1], ax[1,0], ax[1,1]]
-
-    if from_saved==True:
-        x = np.arange(sampler.shape[1])
-
-        for i in range(sampler.shape[-1]):
-            axs[i].set_xlabel('Step Number')
-            axs[i].set_ylabel('{}'.format(dims[i]))
-
-            for j in range(sampler.shape[0]):
-                param = sampler[j,:,i]
-                axs[i].plot(x, param, 'k-', alpha=0.3)
-
-            flatchain = sampler[:,:,i]
-            #axs[i].axhline(flatchain.mean(), linestyle='--',
-            #                label=round(flatchain.mean(),5))
-            axs[i].legend(loc=1)
-
-    else:
-        x = np.arange(sampler.iterations)
-
-        print(str(p0[0]) + '\nData points: ' + str(data_pts))
-        print("Mean acceptance fraction: {0:.3f}".format(np.mean(sampler.acceptance_fraction)))
-
-        for i in range(sampler.dim):
-            axs[i].set_xlabel('Step Number')
-            axs[i].set_ylabel('{}'.format(dims[i]))
-
-            for j in range(len(sampler.chain)):
-                param = sampler.chain[j,:,i]
-                axs[i].plot(x, param, 'k-', alpha=0.3)
-                # fit might guess period is time range of sampling
-
-            flatchain = sampler.flatchain[:,i]
-            #axs[i].axhline(flatchain.mean(), linestyle='--' , label=round(flatchain.mean(),5))
-            axs[i].legend(loc=1)
+    fig, ax = plt.subplots(1, 1, figsize=(6,4))
+    ax = plot_steps(sampler, dims = ['mean', 'log_amp', 'gamma', 'log_period'], data_pts=len(fsample))
+    plt.savefig(namestr + "_trace.pdf", format="pdf")

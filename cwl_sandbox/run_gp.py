@@ -31,7 +31,7 @@ def prior(params):
         log amplitude (between -10 and 10)
 
     param[2] : float
-        gamma (log gamma between 0.1 and 50)
+        gamma (log gamma between 0.1 and 40)
 
     param[3] : float
         log period (period between 1h and 24hrs)
@@ -45,7 +45,7 @@ def prior(params):
 
     p_mean = scipy.stats.uniform(0,20).logpdf(params[0])
     p_log_amp = scipy.stats.uniform(-10,30).logpdf(params[1])
-    p_log_gamma = scipy.stats.uniform(np.log(0.1), np.log(10)*3).logpdf(np.log(params[2]))
+    p_log_gamma = scipy.stats.uniform(np.log(0.1), (np.log(40)-np.log(0.1))).logpdf(np.log(params[2]))
     p_period = scipy.stats.uniform(np.log(0.5/24), -np.log(0.5/24)).logpdf((params[3]))
 
     sum_log_prior =  p_mean + p_log_amp + p_log_gamma + p_period
@@ -97,15 +97,13 @@ def post_lnlikelihood(params, gp, tsample, fsample, flux_err):
 def read_data(filename, datadir="./"):
     """
     Read in light curve data from asteroid.
-
-    NEED TO FIX LATER ONCE SAMPLER HAS BEEN CREATED!
     """
 
-    data  = pd.read_csv(datadir+filename)
+    data  = pd.read_csv(datadir+filename, header=None)
 
-    tsample = data.jd
-    fsample = data.magpsf
-    flux_err = data.sigmapsf
+    tsample = data[0]
+    fsample = data[1]
+    flux_err = data[2]
     data_pts = len(tsample)
 
     return tsample, fsample, flux_err, data_pts
@@ -176,6 +174,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
                                      description=" ", #Bayesian QPO searches for burst light curves.",
                                      epilog=textwrap.dedent("""
+    NOTE! The first 3 columns of your input file "-f" must correspond to your
+    time, flux, and flux error in that order. All columns beyond column 3 will be ignored.                                
+
     Examples
     --------
 
@@ -193,7 +194,7 @@ if __name__ == "__main__":
             $> python /absolute/path/to/CometGP/cwl_sandbox/run_gp.py -f "2001SC170.csv"
                     -d "absolute/path/to/CometGP/data/asteroid_csv"
 
-    Run on example data (from example data directory) with more walkers, more iterations, more simulations, just MORE!
+    Run on example data (from example data directory) with more walkers, steps, etc.
 
             $> python ../code/run_gp.py -f "2001SC170.csv" -d "./" -c 50 -i 5000 -g 5 -c 0.5 -t 2
 
@@ -225,8 +226,5 @@ if __name__ == "__main__":
     gamma = clargs.gamma
     cov_scale = clargs.cov_scale
     threads = clargs.threads
-
-    print(nchain)
-    print(niter)
 
     main()
