@@ -49,6 +49,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
                                      description=" ", #Bayesian QPO searches for burst light curves.",
                                      epilog=textwrap.dedent("""
+    Warning! Please make sure the first three columns of your input file correspond to the time, flux, and flux error accordingly.
+
     Examples
     --------
 

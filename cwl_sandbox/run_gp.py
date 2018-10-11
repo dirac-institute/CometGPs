@@ -175,7 +175,7 @@ if __name__ == "__main__":
                                      description=" ", #Bayesian QPO searches for burst light curves.",
                                      epilog=textwrap.dedent("""
     NOTE! The first 3 columns of your input file "-f" must correspond to your
-    time, flux, and flux error in that order. All columns beyond column 3 will be ignored.                                
+    time, flux, and flux error in that order. All columns beyond column 3 will be ignored.
 
     Examples
     --------
