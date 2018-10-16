@@ -53,8 +53,7 @@ def subsample(time, flux, flux_err=None, npoints=100, kind="random",
 
     if kind == "random":
         # generate a random list of indices for sub-sampling
-        idx = np.random.choice(np.arange(0, time.shape[0], 1, dtype=int),
-                               size=npoints, replace=False)
+        idx = np.random.choice(np.arange(0, time.shape[0], 1, dtype=int),size=npoints, replace=False)
 
         tsmall = time[np.sort(idx)]
         fsmall = flux[np.sort(idx)]

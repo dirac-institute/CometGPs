@@ -99,7 +99,7 @@ def read_data(filename, datadir="./"):
     Read in light curve data from asteroid.
     """
 
-    data  = pd.read_csv(datadir+filename, header=None)
+    data  = pd.read_csv(datadir+filename, header=None, delim_whitespace=True)
 
     tsample = data[0]
     fsample = data[1]
