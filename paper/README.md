@@ -81,6 +81,9 @@ Looks at a/b and beta distributions of objects from PS1 + others. Uses "LEADER" 
 * [Marciniak et al 2017](https://arxiv.org/abs/1711.01893) Photometric survey, modelling, and scaling of long-period and low-amplitude asteroids <br>
 Definitely more in depth modeling than we need for our work - this is going all the way to shapes and spin poles (light curve inversion using SAGE).  Something to think about for the future though, and could be a good reference for gathering light curve / photometry information. 
 
+* [Durech & Hanus 2018](https://arxiv.org/pdf/1810.04485.pdf) "Reconstruction of asteroid spin states from Gaia DR2 photometry" <br>
+Asteroids with > 30 measurements were able to be used for shape models. Didn't mention rejecting observations which were very close together in time or any requirement on time spacing or viewing geometry. (didn't seem to be important, perhaps partly because of the high quality of the photometry). 
+
 
 Download papers
 --------------
