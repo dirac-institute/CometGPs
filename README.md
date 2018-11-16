@@ -9,7 +9,12 @@ We would like to:
 * (future): take into account trends in the pulse profile and the overall light curve shape
 * (future): think about forecasting where ideal future observations should take place
  
-
+Current dependencies (beyond anaconda3)
+* corner
+* dynesty 
+* george
+* emcee
+* gatspy
 
 
 Copyright © 2017 the authors
