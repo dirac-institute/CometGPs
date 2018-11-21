@@ -13,6 +13,7 @@ import george
 
 from emcee_utils import walker_params
 from plotting import plot_lightcurve, plot_folded_lightcurve, plot_mcmc_sampling_results, plot_steps
+import matplotlib.pyplot as plt
 
 def prior(params):
 
@@ -43,9 +44,11 @@ def prior(params):
 
     """
 
-    p_mean = scipy.stats.uniform(0,20).logpdf(params[0])
+    #p_mean = scipy.stats.uniform(0,20).logpdf(params[0])
+    p_mean = scipy.stats.norm(1, 0.5).logpdf(params[0])
     p_log_amp = scipy.stats.uniform(-10,30).logpdf(params[1])
-    p_log_gamma = scipy.stats.uniform(np.log(0.1), (np.log(40)-np.log(0.1))).logpdf(np.log(params[2]))
+    #p_log_gamma = scipy.stats.uniform(np.log(0.1), (np.log(40)-np.log(0.1))).logpdf(np.log(params[2]))
+    p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
     p_period = scipy.stats.uniform(np.log(0.5/24), -np.log(0.5/24)).logpdf((params[3]))
 
     sum_log_prior =  p_mean + p_log_amp + p_log_gamma + p_period
@@ -99,7 +102,7 @@ def read_data(filename, datadir="./"):
     Read in light curve data from asteroid.
     """
 
-    data  = pd.read_csv(datadir+filename, header=None, delim_whitespace=True)
+    data  = pd.read_csv(datadir+filename, header=None, delim_whitespace=False)
 
     tsample = data[0]
     fsample = data[1]
@@ -133,6 +136,23 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
     new_period = 1./new_freq
     new_log_period = np.log(1./new_freq)
 
+    ###change for examples
+    ###delete for final product
+    true_period = 10.443
+
+    fig, ax = plt.subplots(1,1, figsize=(6,5))
+    fig.set_tight_layout('tight')
+    ax.plot((1./freq)*24.,power)
+    ax.set_xlabel('Period')
+    ax.vlines(new_period*24., 0, 1, colors='orange', linestyles='--',
+              label = 'Best fit : ' + str(round(new_period*24., 5)))
+    ax.vlines(true_period, 0, 1, colors='blue', linestyles='--',
+              label = 'True fit : ' + str(true_period))
+    ax.set_xlim([0,24])
+    ax.legend()
+    namestr=filename + "_plots"
+    plt.savefig(namestr + "_lsp.pdf", format="pdf")
+
 
 
     ndim, nwalkers = 4, nchain
@@ -151,12 +171,12 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
         np.savetxt(file_name, sampler.flatchain, header=header)
         return
 
-    save_chain(filename + "_results", sampler)
+    save_chain(filename + "_results.txt", sampler)
 
     ###AVOID HAVING TO USE pd SO YOU DON'T HAVE TO CHANGE THIS TO A NP.ARRAY
     tsample = np.array(tsample)
 
-    plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler, namestr=filename + "_plots")
+    plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler, namestr=filename + "_plots", true_period=true_period)
 
 
     return

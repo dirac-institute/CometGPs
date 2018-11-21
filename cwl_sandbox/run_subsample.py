@@ -32,7 +32,7 @@ def run_subsample(filename, datadir="./", npoints=100, kind="random", days=1, de
     df['flux_err'] = flux_err
 
 
-    np.savetxt(filename+"_sampled", df, delimiter=",")
+    np.savetxt(filename+"_sampled_"+str(kind)+"_"+str(days)+"days.txt", df, delimiter=",")
 
     return
 

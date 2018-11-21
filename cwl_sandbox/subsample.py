@@ -31,11 +31,11 @@ def subsample(time, flux, flux_err=None, npoints=100, kind="random",
             "dense" : dense asteroid sampling: observations every 5 minutes for 8 hours every nights
 
             "semi-dense" : 15 observations per night every 30 minutes on average over 8 hours,
-                            then 3 nights later, than skipping a month
+                            then 3 nights later
             "talc" : 17 observations per night every 15 minutes on average over 3-4 hours,
                             for 5 nights over a 2 week periods
-            "ztf/lsst" : 2 observations per night separated by 60 minutes over 3 nights
-                            not sequential (e.g. 1, 5, 8 (4+/-1))
+            "ztf/lsst" : 2 observations per night separated by 60 minutes every night
+                            (formerly over 3 nights not sequential (e.g. 1, 5, 8 (4+/-1)))
 
 
     time_unit : str
@@ -313,7 +313,7 @@ def subsample(time, flux, flux_err=None, npoints=100, kind="random",
                     tstart += (24.0*26. - night_length)
                     tend += 24.0*26.
 
-            skip_month = not skip_month
+            #skip_month = not skip_month
 
     elif kind == "talc":
         if time_unit == "days":
@@ -413,7 +413,7 @@ def subsample(time, flux, flux_err=None, npoints=100, kind="random",
 
                 nobs+=1
 
-            day_jump = np.random.randint(3,6)
+            day_jump = 1.0 #np.random.randint(3,6)
 
             if time_unit == "days":
                 tstart += (1.0*day_jump-night_length/(24.*60.))

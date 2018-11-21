@@ -386,12 +386,6 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     # resample from weights
     new_samples = sampler.flatchain
 
-    # make a corner plot
-    corner.corner(new_samples[int(-len(new_samples)*0.1):], labels=gp.get_parameter_names())
-
-    # save to file
-    plt.savefig(namestr + "_corner.pdf", format="pdf")
-
     # plot some light curves with example models
 
     # first, get the total number of available samples
@@ -426,7 +420,7 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
 
     # plot histogram of periods
     fig, ax = plt.subplots(1, 1, figsize=(5,4))
-    ax.hist(np.exp(new_samples[:,-1])*24, bins=100, normed=True,
+    ax.hist(np.exp(new_samples[:,-1])*24, bins=100, density=True,
                 label="posterior PDF", color="black", alpha=0.5)
 
     if true_period is not None:
@@ -457,6 +451,21 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     #plt.tight_layout()
     #plt.savefig(namestr + "_folded_lc.pdf", format="pdf")
 
+
+    #convert period values from log days to hours
+    x = (np.exp(new_samples.T[3])*24.)
+    new_samples.T[3] = x
+
+    labels = list(gp.parameter_names)
+    labels[3] = 'period hours'
+
+    # make a corner plot
+    corner.corner(new_samples[int(-len(new_samples)*0.1):], labels=labels)
+
+    # save to file
+    plt.savefig(namestr + "_corner.pdf", format="pdf")
+
+    #plot trace plot
     fig, ax = plt.subplots(1, 1, figsize=(6,4))
-    ax = plot_steps(sampler, dims = ['mean', 'log_amp', 'gamma', 'log_period'], data_pts=len(fsample))
+    ax = plot_steps(sampler, dims = ['mean', 'log_amp', 'gamma', 'period'], data_pts=len(fsample))
     plt.savefig(namestr + "_trace.pdf", format="pdf")
