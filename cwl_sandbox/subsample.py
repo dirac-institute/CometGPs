@@ -373,7 +373,7 @@ def subsample(time, flux, flux_err=None, npoints=100, kind="random",
 
             day_obs+=1
 
-    elif kind == "ztf/lsst":
+    elif kind == "ztf-lsst":
         if time_unit == "days":
             night_length /= 24.0
             tseg = time[-1] - time[0] # total length of the time series

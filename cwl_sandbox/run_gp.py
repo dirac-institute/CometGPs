@@ -138,7 +138,7 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
 
     ###change for examples
     ###delete for final product
-    true_period = 10.443
+    true_period = 3.603957# 10.443
 
     fig, ax = plt.subplots(1,1, figsize=(6,5))
     fig.set_tight_layout('tight')
