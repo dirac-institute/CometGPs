@@ -138,7 +138,7 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
 
     ###change for examples
     ###delete for final product
-    true_period = 3.603957# 10.443
+    true_period = 10.443 #3.603957
 
     fig, ax = plt.subplots(1,1, figsize=(6,5))
     fig.set_tight_layout('tight')
@@ -162,6 +162,8 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
 
     params = [np.mean(fsample), best_log_amp, gamma, new_log_period]
     p0, gp = walker_params(params, fsample, flux_err, nwalkers, cov_scale=cov_scale)
+    x = np.log(np.linspace(2,12,100)/24.)
+    p0.T[3] = x
 
     sampler = emcee.EnsembleSampler(nwalkers, ndim, post_lnlikelihood, args=[gp, tsample, fsample, flux_err], threads=threads)
     mcmc_sampling = sampler.run_mcmc(p0, niter)
