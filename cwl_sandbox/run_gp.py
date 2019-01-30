@@ -10,6 +10,8 @@ import textwrap
 
 import emcee
 import george
+# for parallel tempering
+from emcee import PTSampler
 
 from emcee_utils import walker_params
 from plotting import plot_lightcurve, plot_folded_lightcurve, plot_mcmc_sampling_results, plot_steps
@@ -49,7 +51,8 @@ def prior(params):
     p_log_amp = scipy.stats.uniform(-10,30).logpdf(params[1])
     #p_log_gamma = scipy.stats.uniform(np.log(0.1), (np.log(40)-np.log(0.1))).logpdf(np.log(params[2]))
     p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
-    p_period = scipy.stats.uniform(np.log(0.5/24), -np.log(0.5/24)).logpdf((params[3]))
+    ###print this line to get the prob value: p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
+    p_period = scipy.stats.uniform(np.log(1./24.), -np.log(1./24.)).logpdf((params[3]))
 
     sum_log_prior =  p_mean + p_log_amp + p_log_gamma + p_period
 
@@ -57,6 +60,20 @@ def prior(params):
         return -np.inf
 
     return sum_log_prior
+
+
+def logl(params, gp, tsample, fsample, flux_err):
+     # compute lnlikelihood based on given parameters
+     gp.set_parameter_vector(params)
+
+
+     try:
+         gp.compute(tsample, flux_err)
+         lnlike = gp.lnlikelihood(fsample)
+     except np.linalg.LinAlgError:
+         lnlike = -1e25
+
+     return lnlike
 
 
 def post_lnlikelihood(params, gp, tsample, fsample, flux_err):
@@ -85,13 +102,11 @@ def post_lnlikelihood(params, gp, tsample, fsample, flux_err):
     if np.isneginf(log_prior) == True:
         return -np.inf
 
-    # compute lnlikelihood based on given parameters
-    gp.set_parameter_vector(params)
-
     try:
-        gp.compute(tsample, flux_err)
-        ln_likelihood = gp.lnlikelihood(fsample)+log_prior
-    except np.linalg.LinAlgError:
+        lnlike = logl(params, gp, tsample, fsample, flux_err)
+        ln_likelihood = lnlike+log_prior
+
+    except np.linalg.linalg.LinAlgError:
         ln_likelihood = -1e25
 
     return ln_likelihood if np.isfinite(ln_likelihood) else -1e25
@@ -137,7 +152,7 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
     new_log_period = np.log(1./new_freq)
 
     ###change for examples
-    ###delete for final product
+    #####delete for final product
     true_period = 10.443 #3.603957
 
     fig, ax = plt.subplots(1,1, figsize=(6,5))
@@ -152,28 +167,64 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
     ax.legend()
     namestr=filename + "_plots"
     plt.savefig(namestr + "_lsp.pdf", format="pdf")
+    #####
 
 
-
-    ndim, nwalkers = 4, nchain
+    ndim = 4
+    nwalkers = nchain
+    # for parallel tempering
+    #ntemps = 20
 
     # initialize walker parameters
     best_log_amp = np.log(fsample.max()-fsample.min())
-
     params = [np.mean(fsample), best_log_amp, gamma, new_log_period]
-    p0, gp = walker_params(params, fsample, flux_err, nwalkers, cov_scale=cov_scale)
-    x = np.log(np.linspace(2,12,100)/24.)
-    p0.T[3] = x
+
+    #0, gp = walker_params(params, fsample, flux_err, nwalkers, cov_scale=cov_scale)
+    # formerly walker_param function
+    gp_mean, log_amp, gamma, log_period = params
+    amp = np.exp(log_amp)
+
+    print('amp : ' + str(amp))
+    kernel = amp * george.kernels.ExpSine2Kernel(gamma = gamma, log_period = log_period)
+    gp = george.GP(kernel, fit_mean=True, mean=gp_mean)
+    gp.compute(fsample, flux_err)
+
+
+    p_start = np.array(params)/100.
+    cov_matrix = np.sqrt(np.diag(p_start)**2)*cov_scale
+    print('params : [ mean, log_amp, gamma, log_period]')
+    print("params : " + str(params))
+    print("cov matrix : \n" + str(cov_matrix))
+
+    p0 = np.random.multivariate_normal(mean=params, cov=cov_matrix, size=(nwalkers))
+    #print(p0.shape)
+
+    # equally distributed starting period values
+    # overwrites guess from l-s previously
+    x = np.log(np.linspace(2,12,nwalkers)/24.)
+    #print(p0[:,:,3])
+    #for i in range(ntemps):
+    #    p0[i,:,3] = x
+    #print(p0[:,:,3])
+
 
     sampler = emcee.EnsembleSampler(nwalkers, ndim, post_lnlikelihood, args=[gp, tsample, fsample, flux_err], threads=threads)
+    #sampler = PTSampler(ntemps=ntemps, nwalkers=nwalkers, dim=ndim, logl=logl,
+    #                    logp=prior, loglargs=[gp, tsample, fsample, flux_err])
+
+
+
     mcmc_sampling = sampler.run_mcmc(p0, niter)
 
-    def save_chain(file_name, sampler):
+    #assert sampler.chain.shape == (ntemps, nwalkers, niter, ndim)
+    #results = sampler.chain.reshape(ntemps*nwalkers*niter,ndim)
+
+    def save_chain(file_name, sampler, results):
         header = str(sampler.chain.shape)
         np.savetxt(file_name, sampler.flatchain, header=header)
         return
 
-    save_chain(filename + "_results.txt", sampler)
+    save_chain(filename + "_results.txt", sampler, results)
 
     ###AVOID HAVING TO USE pd SO YOU DON'T HAVE TO CHANGE THIS TO A NP.ARRAY
     tsample = np.array(tsample)

@@ -341,7 +341,8 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         ax.legend()
     ax.set_xlabel("Rotational Phase")
     ax.set_ylabel("Plot")
-    ax.set_title(r"period $P = %.3f$"%period)
+    period_hours = period*24.
+    ax.set_title(r"period $P = %.3f$"%period_hours)
     if use_radians:
         ax.set_xlim(0, 2*np.pi)
     else:
@@ -405,6 +406,7 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     # conditional on the data points
     for i,j in enumerate(idx):
         p = new_samples[j]
+        print(p)
         pnew = [p[0], p[1], p[2], p[3]]
 
         gp.set_parameter_vector(pnew)
@@ -412,6 +414,7 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
         m_all[i] = mean_model
 
     fig, ax = plt.subplots(1, 1, figsize=(6,4))
+
     plot_lightcurve(tsample, fsample, true_lightcurve=true_lightcurve,
                         models=(t_pred, m_all), ax=ax)
 
@@ -440,11 +443,11 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
 
 
     #if true_period:
-    #    ax = plot_folded_lightcurve(tsample, fsample, true_period/24, flux_err=0.01,
+    #    ax = plot_tcurve(tsample, fsample, true_period/24, flux_err=0.01,
     #                      models=[t_pred, m_all[:2]],
     #                      true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
     #else:
-    #    ax = plot_folded_lightcurve(tsample, fsample, best_period, flux_err=flux_err,
+    #    ax = plot_tcurve(tsample, fsample, best_period, flux_err=flux_err,
     #                      models=[t_pred, m_all[:2]],
     #                      true_lightcurve=true_lightcurve, ax=bx, use_radians=False)
 

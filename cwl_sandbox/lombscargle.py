@@ -56,7 +56,7 @@ def make_lsp(time, flux, flux_err, p_min=1/24.0, p_max=1.0, oversampling=5, lsp_
         
     else:
         # initialize the lomb-scargle periodogram
-        ls = LombScargle(time, flux, dy=flux_err, **lsp_kwargs)
+        ls = LombScargle(time, flux, dy=flux_err, **lsp_kwargs, nterms=nterms)
 
         # compute the power at each given frequency
         power = ls.power(freq)
