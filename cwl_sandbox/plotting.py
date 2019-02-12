@@ -463,7 +463,7 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     labels[3] = 'period hours'
 
     # make a corner plot
-    corner.corner(new_samples[int(-len(new_samples)*0.1):], labels=labels)
+    corner.corner(new_samples[int(-(len(new_samples))*0.1):], labels=labels)
 
     # save to file
     plt.savefig(namestr + "_corner.pdf", format="pdf")
