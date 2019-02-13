@@ -352,10 +352,12 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
 def plot_steps(sampler, dims=None, p0=None, data_pts=None):
     fig, ax = plt.subplots(2, 2, figsize=(7,6))
     fig.subplots_adjust(wspace=0.25, hspace=0.3)
-
-    fig.suptitle("Data points: " + str(data_pts) + "\nMean acceptance fraction: {0:.3f}".format(np.mean(sampler.acceptance_fraction)))
-
-
+    
+    if data_pts is not None:
+        fig.suptitle("Data points: " + str(data_pts) + "\nMean acceptance fraction:{0:.3f}".format(np.mean(sampler.acceptance_fraction)))
+        
+    else:
+        fig.suptitle("Mean acceptance fraction: 0:.3f}".format(np.mean(sampler.acceptance_fraction)))
 
 
     axs = [ax[0,0], ax[0,1], ax[1,0], ax[1,1]]
@@ -383,12 +385,12 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
                           nmodels=10, npred=1000):
 
 
-
-    # resample from weights
     new_samples = sampler.flatchain
+    
+    
 
-    # plot some light curves with example models
-
+    ### plot light curve with example models ###
+    
     # first, get the total number of available samples
     nsamples = new_samples.shape[0]
 
@@ -421,7 +423,9 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     plt.tight_layout()
     plt.savefig(namestr + "_lc.pdf", format="pdf")
 
-    # plot histogram of periods
+    
+    
+    ### plot histogram of periods ###
     fig, ax = plt.subplots(1, 1, figsize=(5,4))
     ax.hist(np.exp(new_samples[:,-1])*24, bins=100, density=True,
                 label="posterior PDF", color="black", alpha=0.5)
@@ -437,38 +441,54 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     plt.tight_layout()
     plt.savefig(namestr + "_period_pdf.pdf", format="pdf")
 
-    # plot folded light curve
+    
+    
+    ### plot folded light curve ###
 
-    #fig, ax = plt.subplots(1, 1, figsize=(6,4))
+    fig, ax = plt.subplots(1, 1, figsize=(6,4))
+
+    if true_period:
+        ax = plot_folded_lightcurve(tsample, fsample, true_period/24., flux_err=0.01,
+                          models=[t_pred, m_all[:2]],
+                          true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
+    else:
+        guess_period = np.median(np.exp(sampler.chain[:,-1,-1]))
+        ax = plot_folded_lightcurve(tsample, fsample, guess_period, flux_err=flux_err,
+                          models=[t_pred, m_all[:2]],
+                          true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
+
+    plt.tight_layout()
+    plt.savefig(namestr + "_folded_lc.pdf", format="pdf")
 
 
-    #if true_period:
-    #    ax = plot_tcurve(tsample, fsample, true_period/24, flux_err=0.01,
-    #                      models=[t_pred, m_all[:2]],
-    #                      true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
-    #else:
-    #    ax = plot_tcurve(tsample, fsample, best_period, flux_err=flux_err,
-    #                      models=[t_pred, m_all[:2]],
-    #                      true_lightcurve=true_lightcurve, ax=bx, use_radians=False)
-
-    #plt.tight_layout()
-    #plt.savefig(namestr + "_folded_lc.pdf", format="pdf")
-
-
-    #convert period values from log days to hours
+    # convert period values from log days to hours
     x = (np.exp(new_samples.T[3])*24.)
     new_samples.T[3] = x
 
-    labels = list(gp.parameter_names)
+    labels = list(gp.get_parameter_names())
     labels[3] = 'period hours'
 
-    # make a corner plot
-    corner.corner(new_samples[int(-(len(new_samples))*0.1):], labels=labels)
+    
+    
+    ### make a corner plot ###
+    
+    # percentage of steps to plot
+    percent = 0.1
 
-    # save to file
+    # generate list of last steps spanning backwards
+    x = list(range(-1,-int(sampler.iterations*percent)-1,-1))
+
+    # only plot x last steps
+    # reshape into 2d array instead of 3d
+    #sampler.chain[walker, step, param]
+    figure = corner.corner(sampler.chain[:,x,:].reshape(int(sampler.iterations*percent*sampler.k),4), 
+                           labels=labels, quantiles=[0.16, 0.5, 0.84],
+                       show_titles=True, title_kwargs={"fontsize": 10})
     plt.savefig(namestr + "_corner.pdf", format="pdf")
 
-    #plot trace plot
-    fig, ax = plt.subplots(1, 1, figsize=(6,4))
+    
+    
+    ### plot trace plot ###
+    
     ax = plot_steps(sampler, dims = ['mean', 'log_amp', 'gamma', 'period'], data_pts=len(fsample))
     plt.savefig(namestr + "_trace.pdf", format="pdf")
