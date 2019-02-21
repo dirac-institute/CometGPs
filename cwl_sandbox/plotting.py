@@ -452,7 +452,7 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
                           models=[t_pred, m_all[:2]],
                           true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
     else:
-        guess_period = np.median(np.exp(sampler.chain[:,-1,-1]))
+        guess_period = np.quartile(np.exp(sampler.chain[:,-1,-1]), 0.1)
         ax = plot_folded_lightcurve(tsample, fsample, guess_period, flux_err=flux_err,
                           models=[t_pred, m_all[:2]],
                           true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
