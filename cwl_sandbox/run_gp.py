@@ -46,13 +46,10 @@ def prior(params):
 
     """
 
-    #p_mean = scipy.stats.uniform(0,20).logpdf(params[0])
     p_mean = scipy.stats.norm(1, 0.5).logpdf(params[0])
-    p_log_amp = scipy.stats.uniform(-10,30).logpdf(params[1])
-    #p_log_gamma = scipy.stats.uniform(np.log(0.1), (np.log(40)-np.log(0.1))).logpdf(np.log(params[2]))
+    p_log_amp = scipy.stats.norm(np.log(0.15), np.log(2)).logpdf(params[1])
     p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
-    ###print this line to get the prob value: p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
-    p_period = scipy.stats.uniform(np.log(1./24.), -np.log(1./24.)).logpdf((params[3]))
+    p_period = scipy.stats.norm(np.log(4./24.), (12./24.)).logpdf(params[3])
 
     sum_log_prior =  p_mean + p_log_amp + p_log_gamma + p_period
 
@@ -172,59 +169,42 @@ def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, 
 
     ndim = 4
     nwalkers = nchain
-    # for parallel tempering
-    #ntemps = 20
 
     # initialize walker parameters
-    best_log_amp = np.log(fsample.max()-fsample.min())
-    params = [np.mean(fsample), best_log_amp, gamma, new_log_period]
+    gp_mean = np.mean(fsample)
+    log_amp = np.log(fsample.max()-fsample.min())
+    gamma = 1
+    log_period = new_log_period
 
-    #0, gp = walker_params(params, fsample, flux_err, nwalkers, cov_scale=cov_scale)
-    # formerly walker_param function
-    gp_mean, log_amp, gamma, log_period = params
-    amp = np.exp(log_amp)
+    params = [np.mean(fsample), log_amp, gamma, log_period]
 
-    print('amp : ' + str(amp))
-    kernel = amp * george.kernels.ExpSine2Kernel(gamma = gamma, log_period = log_period)
+
+    # set up gp kernel
+    kernel = np.exp(log_amp) * george.kernels.ExpSine2Kernel(gamma = gamma, log_period = log_period)
     gp = george.GP(kernel, fit_mean=True, mean=gp_mean)
-    gp.compute(fsample, flux_err)
+    gp.compute(tsample, flux_err)
 
 
     p_start = np.array(params)/100.
-    cov_matrix = np.sqrt(np.diag(p_start)**2)*cov_scale
-    print('params : [ mean, log_amp, gamma, log_period]')
-    print("params : " + str(params))
-    print("cov matrix : \n" + str(cov_matrix))
-
+    cov_matrix = np.sqrt(np.diag(p_start)**2)
     p0 = np.random.multivariate_normal(mean=params, cov=cov_matrix, size=(nwalkers))
-    #print(p0.shape)
 
     # equally distributed starting period values
     # overwrites guess from l-s previously
     x = np.log(np.linspace(2,12,nwalkers)/24.)
-    #print(p0[:,:,3])
-    #for i in range(ntemps):
-    #    p0[i,:,3] = x
-    #print(p0[:,:,3])
+    p0[:,3] = x
 
 
     sampler = emcee.EnsembleSampler(nwalkers, ndim, post_lnlikelihood, args=[gp, tsample, fsample, flux_err], threads=threads)
-    #sampler = PTSampler(ntemps=ntemps, nwalkers=nwalkers, dim=ndim, logl=logl,
-    #                    logp=prior, loglargs=[gp, tsample, fsample, flux_err])
-
-
 
     mcmc_sampling = sampler.run_mcmc(p0, niter)
-
-    #assert sampler.chain.shape == (ntemps, nwalkers, niter, ndim)
-    #results = sampler.chain.reshape(ntemps*nwalkers*niter,ndim)
 
     def save_chain(file_name, sampler, results):
         header = str(sampler.chain.shape)
         np.savetxt(file_name, sampler.flatchain, header=header)
         return
 
-    save_chain(filename + "_results.txt", sampler, results)
+    #save_chain(filename + "_results.txt", sampler, results)
 
     ###AVOID HAVING TO USE pd SO YOU DON'T HAVE TO CHANGE THIS TO A NP.ARRAY
     tsample = np.array(tsample)
