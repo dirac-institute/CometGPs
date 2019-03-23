@@ -10,10 +10,7 @@ import textwrap
 
 import emcee
 import george
-# for parallel tempering
-from emcee import PTSampler
 
-from emcee_utils import walker_params
 from plotting import plot_lightcurve, plot_folded_lightcurve, plot_mcmc_sampling_results, plot_steps
 import matplotlib.pyplot as plt
 
@@ -49,9 +46,9 @@ def prior(params):
     p_mean = scipy.stats.norm(1, 0.5).logpdf(params[0])
     p_log_amp = scipy.stats.norm(np.log(0.15), np.log(2)).logpdf(params[1])
     p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
-    p_period = scipy.stats.norm(np.log(4./24.), (12./24.)).logpdf(params[3])
+    p_log_period = scipy.stats.norm(np.log(4./24.), (12./24.)).logpdf(params[3])
 
-    sum_log_prior =  p_mean + p_log_amp + p_log_gamma + p_period
+    sum_log_prior =  p_mean + p_log_amp + p_log_gamma + p_log_period
 
     if np.isnan(sum_log_prior) == True:
         return -np.inf
@@ -263,7 +260,7 @@ if __name__ == "__main__":
                         help="The number of walkers/chains for the MCMC run (default: 100).")
     parser.add_argument('-i', '--niter', action="store", dest="niter", required=False, type=int, default=100,
                         help="The number of iterations per chain/walker in the MCC run (default: 100).")
-    parser.add_argument('-g', '--gamma', action="store", dest="gamma", required=False, type=int, default=1,
+####    parser.add_argument('-g', '--gamma', action="store", dest="gamma", required=False, type=int, default=1,
                         help="The length scale of variations within a single period (default: 1).")
     parser.add_argument('-s', '--cov_scale', action="store", dest="cov_scale", required=False, type=int, default=1,
                         help="Determines the scatter of the multivariate distribution (default: 1).")
