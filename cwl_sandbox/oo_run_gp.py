@@ -190,10 +190,10 @@ def main():
 
     asteroid = GPFit(time, flux, flux_err)
     asteroid.set_params()
-    asteroid.set_walker_param_matrix(nchain)
+    asteroid.set_walker_param_matrix(nwalkers)
     asteroid.set_gp_kernel()
 
-    sampler = asteroid.run_emcee(niter=niter, nwalkers=nchain, threads=threads)
+    sampler = asteroid.run_emcee(niter=niter, nwalkers=nwalkers, threads=threads)
 
     plot_mcmc_sampling_results(np.array(asteroid.time), asteroid.flux, asteroid.flux_err,
                                asteroid.gp, sampler, namestr=filename + "_plots",

@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 
 import numpy as np
+import copy
 
 from dynesty import plotting as dyplot
 from dynesty import utils as dyfunc
@@ -209,7 +210,7 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         The flux uncertainties corresponding to the data.
 
     period : float
-        The period on which to fold **in hours**
+        The period on which to fold **in days**
 
     models : iterable of shape (model_time, numpy.ndarray of shape (nsamples, len(model_time)))
         First element here contains the time stamps for the models (which may not be the same
@@ -340,7 +341,7 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
     if legend:
         ax.legend()
     ax.set_xlabel("Rotational Phase")
-    ax.set_ylabel("Plot")
+    ax.set_ylabel("Flux")
     period_hours = period*24.
     ax.set_title(r"period $P = %.3f$"%period_hours)
     if use_radians:
@@ -352,10 +353,10 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
 def plot_steps(sampler, dims=None, p0=None, data_pts=None):
     fig, ax = plt.subplots(2, 2, figsize=(7,6))
     fig.subplots_adjust(wspace=0.25, hspace=0.3)
-    
+
     if data_pts is not None:
         fig.suptitle("Data points: " + str(data_pts) + "\nMean acceptance fraction:{0:.3f}".format(np.mean(sampler.acceptance_fraction)))
-        
+
     else:
         fig.suptitle("Mean acceptance fraction: 0:.3f}".format(np.mean(sampler.acceptance_fraction)))
 
@@ -386,16 +387,18 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
 
 
     new_samples = sampler.flatchain
-    
-    
+    #new_samples = sampler.chain
+
 
     ### plot light curve with example models ###
-    
+
     # first, get the total number of available samples
     nsamples = new_samples.shape[0]
 
-    # get some random samples from the
-    idx = np.random.choice(np.arange(0, nsamples, 1, dtype=int), size=nmodels)
+    # get some random samples from the total steps
+    #idx = np.random.choice(np.arange(0, nsamples, 1, dtype=int), size=nmodels)
+    idx = np.rint(np.linspace(sampler.iterations-1, nsamples-1, nmodels)).astype(int)
+
 
     # if the array for the predictions isn't given, make one
     if t_pred is None:
@@ -408,6 +411,7 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     # conditional on the data points
     for i,j in enumerate(idx):
         p = new_samples[j]
+        #p = new_samples[j, -1]
         print(p)
         pnew = [p[0], p[1], p[2], p[3]]
 
@@ -423,8 +427,8 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     plt.tight_layout()
     plt.savefig(namestr + "_lc.pdf", format="pdf")
 
-    
-    
+
+
     ### plot histogram of periods ###
     fig, ax = plt.subplots(1, 1, figsize=(5,4))
     ax.hist(np.exp(new_samples[:,-1])*24, bins=100, density=True,
@@ -441,20 +445,20 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     plt.tight_layout()
     plt.savefig(namestr + "_period_pdf.pdf", format="pdf")
 
-    
-    
+
+
     ### plot folded light curve ###
 
     fig, ax = plt.subplots(1, 1, figsize=(6,4))
 
     if true_period:
         ax = plot_folded_lightcurve(tsample, fsample, true_period/24., flux_err=0.01,
-                          models=[t_pred, m_all[:2]],
+                          models=[t_pred, m_all],
                           true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
     else:
-        guess_period = np.quantile(np.exp(sampler.chain[:,-1,-1]), 0.1)
+        guess_period = np.quantile(np.exp(sampler.chain[:,-1,-1]), 0.5)
         ax = plot_folded_lightcurve(tsample, fsample, guess_period, flux_err=flux_err,
-                          models=[t_pred, m_all[:2]],
+                          models=[t_pred, m_all],
                           true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
 
     plt.tight_layout()
@@ -462,16 +466,16 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
 
 
     # convert period values from log days to hours
-    x = (np.exp(new_samples.T[3])*24.)
-    new_samples.T[3] = x
+    new_samples.T[3] = copy.deepcopy(np.exp(new_samples.T[3])*24.)
+     #= x
 
     labels = list(gp.get_parameter_names())
     labels[3] = 'period hours'
 
-    
-    
+
+
     ### make a corner plot ###
-    
+
     # percentage of steps to plot
     percent = 0.1
 
@@ -481,14 +485,14 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     # only plot x last steps
     # reshape into 2d array instead of 3d
     #sampler.chain[walker, step, param]
-    figure = corner.corner(sampler.chain[:,x,:].reshape(int(sampler.iterations*percent*sampler.k),4), 
+    figure = corner.corner(sampler.chain[:,x,:].reshape(int(sampler.iterations*percent*sampler.k),4),
                            labels=labels, quantiles=[0.16, 0.5, 0.84],
                        show_titles=True, title_kwargs={"fontsize": 10})
     plt.savefig(namestr + "_corner.pdf", format="pdf")
 
-    
-    
+
+
     ### plot trace plot ###
-    
+
     ax = plot_steps(sampler, dims = ['mean', 'log_amp', 'gamma', 'period'], data_pts=len(fsample))
     plt.savefig(namestr + "_trace.pdf", format="pdf")
