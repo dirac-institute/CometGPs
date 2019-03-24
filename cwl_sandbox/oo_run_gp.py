@@ -253,7 +253,7 @@ if __name__ == "__main__":
 
     filename = clargs.filename
     datadir = clargs.datadir
-    nchain = clargs.nwalkers
+    nwalkers = clargs.nwalkers
     niter = clargs.niter
     threads = clargs.threads
     true_period = clargs.period
