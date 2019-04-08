@@ -300,6 +300,7 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         ax.plot(true_phase[istart:], true_flux[istart:], alpha=0.3, c=colours[1])
 
     if models:
+
         m_time = (models[0] - t0)
         m_flux = models[1]
 
@@ -311,6 +312,7 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         tdiff = np.diff(m_phase)
         # find all differences < 0, which is where the phase wraps around
         idx = np.where(tdiff < 0)[0]
+
 
 
         # loop through the different samples
@@ -452,11 +454,14 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     fig, ax = plt.subplots(1, 1, figsize=(6,4))
 
     if true_period:
-        ax = plot_folded_lightcurve(tsample, fsample, true_period/24., flux_err=0.01,
+        print("true period " + str(true_period/24.))
+        ax = plot_folded_lightcurve(tsample, fsample, true_period/24., flux_err=flux_err,
                           models=[t_pred, m_all],
                           true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
     else:
         guess_period = np.quantile(np.exp(sampler.chain[:,-1,-1]), 0.5)
+        print("guess period " + str(guess_period))
+
         ax = plot_folded_lightcurve(tsample, fsample, guess_period, flux_err=flux_err,
                           models=[t_pred, m_all],
                           true_lightcurve=true_lightcurve, ax=ax, use_radians=False)

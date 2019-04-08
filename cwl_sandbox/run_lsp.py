@@ -1,16 +1,17 @@
 
-import os
-os.environ["MKL_NUM_THREADS"] = "3"
+#import os
+#os.environ["MKL_NUM_THREADS"] = "3"
 
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 import george
 import emcee
 import scipy.stats
 import pandas as pd
 
 
-from plotting import plot_mcmc_sampling_results
+import plotting
 
 import argparse
 import textwrap
@@ -188,7 +189,7 @@ class GPFit():
 
         return sampler
 
-    def run_lsp(self, true_period):
+    def run_lsp(self, true_period, nterms):
         """Determines the Lomb-Scargle Periodogram."""
 
         from scipy.signal import argrelextrema
@@ -197,7 +198,7 @@ class GPFit():
         from lombscargle import make_lsp
         from astropy.stats import LombScargle
 
-        freq, power = make_lsp(self.time, self.flux, self.flux_err, p_max=5.0)
+        freq, power = make_lsp(self.time, self.flux, self.flux_err, p_max=5.0, nterms=nterms)
 
         # determine the indices of local power maxima
         best_idx = argrelextrema(power, np.greater)
@@ -218,17 +219,32 @@ class GPFit():
         self.true_period = true_period
 
         # plot all the frequencies
-        fig, ax = plt.subplots(1,1, figsize=(6,5))
+        fig, (ax, bx) = plt.subplots(1,2, figsize=(12,5))
         fig.set_tight_layout('tight')
         ax.plot((1./freq)*24.,power)
-        ax.set_xlabel('Period')
+        ax.set_xlabel('Period (hrs)')
         ax.vlines(new_period*24., 0, 1, colors='orange', linestyles='--',
                   label = 'Best fit : ' + str(round(new_period*24., 5)))
         ax.vlines(true_period, 0, 1, colors='blue', linestyles='--',
                   label = 'True fit : ' + str(true_period))
         ax.set_xlim([0,24])
         ax.legend()
+
+
+
+
         namestr=filename + "_plots"
+        plt.savefig(namestr + "_lsp.pdf", format="pdf")
+
+        return
+
+    def daniela_lsp(self, true_period, nterms):
+        """Testing out Daniela's LSP method."""
+
+        ax = plotting.plot_lsp(self.time, self.flux, self.flux_err, p_max=5.0, true_period=true_period,
+                                nterms=nterms)
+
+        namestr=filename + "_plots_daniela"
         plt.savefig(namestr + "_lsp.pdf", format="pdf")
 
         return
@@ -240,15 +256,16 @@ def main():
     time, flux, flux_err= read_data(filename, datadir)
 
     asteroid = GPFit(time, flux, flux_err)
-    asteroid.set_params()
-    asteroid.set_walker_param_matrix(nwalkers)
-    asteroid.set_gp_kernel()
+    asteroid.daniela_lsp(true_period, nterms)
+    #asteroid.set_params()
+    #asteroid.set_walker_param_matrix(nwalkers)
+    #asteroid.set_gp_kernel()
 
-    sampler = asteroid.run_emcee(niter=niter, nwalkers=nwalkers, threads=threads)
+    #sampler = asteroid.run_emcee(niter=niter, nwalkers=nwalkers, threads=threads)
 
-    plot_mcmc_sampling_results(np.array(asteroid.time), asteroid.flux, asteroid.flux_err,
-                               asteroid.gp, sampler, namestr=filename + "_plots",
-                               true_period=true_period)
+    #plot_mcmc_sampling_results(np.array(asteroid.time), asteroid.flux, asteroid.flux_err,
+    #                           asteroid.gp, sampler, namestr=filename + "_plots",
+    #                           true_period=true_period)
 
 
     return
@@ -291,22 +308,24 @@ if __name__ == "__main__":
                         help="Data file with observed time (in unit days) and flux.")
     parser.add_argument('-d', '--datadir', action="store", dest="datadir", required=False, default="./",
                         help="Directory with the data (default: current directory).")
-    parser.add_argument('-w', '--nwalkers', action="store", dest="nwalkers", required=False, type=int, default=100,
-                        help="The number of walkers/chains for the MCMC run (default: 100).")
-    parser.add_argument('-i', '--niter', action="store", dest="niter", required=False, type=int, default=100,
-                        help="The number of iterations per chain/walker in the MCC run (default: 100).")
-    parser.add_argument('-t', '--threads', action="store", dest="threads", required=False, type=int, default=1,
-                        help="The numer of threads used for computing the posterior (default: 1).")
+    #parser.add_argument('-w', '--nwalkers', action="store", dest="nwalkers", required=False, type=int, default=100,
+    #                    help="The number of walkers/chains for the MCMC run (default: 100).")
+    #parser.add_argument('-i', '--niter', action="store", dest="niter", required=False, type=int, default=100,
+    #                    help="The number of iterations per chain/walker in the MCC run (default: 100).")
+    #parser.add_argument('-t', '--threads', action="store", dest="threads", required=False, type=int, default=1,
+    #                    help="The numer of threads used for computing the posterior (default: 1).")
     parser.add_argument('-p', '--period', action="store", dest="period", required=False, type=float, default=None,
                         help="The true period of an asteroid in hours.")
+    parser.add_argument('-n', '--nterms', action="store", dest="nterms", required=False, type=int, default=None,
+                        help='The number of harmonics to plot apart from the true period.')
 
     clargs = parser.parse_args()
 
     filename = clargs.filename
     datadir = clargs.datadir
-    nwalkers = clargs.nwalkers
-    niter = clargs.niter
-    threads = clargs.threads
+    #nwalkers = clargs.nwalkers
+    #niter = clargs.niter
     true_period = clargs.period
+    nterms = clargs.nterms
 
     main()
