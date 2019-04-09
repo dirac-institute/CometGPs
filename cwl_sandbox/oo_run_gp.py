@@ -109,12 +109,12 @@ def post_lnlikelihood(params, gp, tsample, fsample, flux_err):
     return ln_likelihood if np.isfinite(ln_likelihood) else -1e25
 
 
-def read_data(filename, datadir="./"):
+def read_data(filename, whitespace=False, datadir="./"):
     """
     Read in light curve data from asteroid.
     """
 
-    data  = pd.read_csv(datadir+filename, header=None, delim_whitespace=False)
+    data  = pd.read_csv(datadir+filename, header=None, delim_whitespace=whitespace)
 
     tsample = data[0]
     fsample = data[1]
@@ -235,9 +235,8 @@ class GPFit():
 
 
 def main():
-
     # read in the data file
-    time, flux, flux_err= read_data(filename, datadir)
+    time, flux, flux_err= read_data(filename, whitespace, datadir)
 
     asteroid = GPFit(time, flux, flux_err)
     asteroid.set_params()
@@ -299,6 +298,9 @@ if __name__ == "__main__":
                         help="The numer of threads used for computing the posterior (default: 1).")
     parser.add_argument('-p', '--period', action="store", dest="period", required=False, type=float, default=None,
                         help="The true period of an asteroid in hours.")
+    parser.add_argument('-ws', '--whitespace', action="store_true", dest="whitespace", required=False, default=False,
+                        help="The delimeter for the input file, assumed to be whitespace.")
+
 
     clargs = parser.parse_args()
 
@@ -308,5 +310,6 @@ if __name__ == "__main__":
     niter = clargs.niter
     threads = clargs.threads
     true_period = clargs.period
+    whitespace = clargs.whitespace
 
     main()

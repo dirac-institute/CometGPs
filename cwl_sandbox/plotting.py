@@ -305,15 +305,18 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         m_flux = models[1]
 
         m_phase = (m_time/period) - np.floor(m_time/period)
+        print("mphase " + str(m_phase))
         if use_radians:
             m_phase *= 2.*np.pi
 
         # compute the difference from one phase bin to the next
         tdiff = np.diff(m_phase)
+
+        print("tdiff " + str(tdiff))
         # find all differences < 0, which is where the phase wraps around
         idx = np.where(tdiff < 0)[0]
-
-
+        #if idx.size == 0:
+        #    idx = np.array(0)
 
         # loop through the different samples
         for i,m in enumerate(m_flux):
@@ -332,7 +335,9 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
                         c=colours[2])
 
             for j, x in enumerate(idx[:-1]):
-                ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1, c=colours[2])
+                ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1,
+                        c=colours[2])
+
                 istart = x+1
                 iend = idx[j+1]+1
 
@@ -473,7 +478,7 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
         print("guess period " + str(guess_period))
 
         ax = plot_folded_lightcurve(tsample, fsample, guess_period, flux_err=flux_err,
-                          models=[t_pred, m_all],
+                          models=None,#[t_pred, m_all],
                           true_lightcurve=true_lightcurve, ax=ax, use_radians=False)
 
     plt.tight_layout()
