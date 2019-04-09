@@ -24,7 +24,6 @@ def run_subsample(filename, datadir="./", npoints=100, kind="random", days=1, de
     flux_err = np.ones_like(flux) * np.std(flux)/10.0
     tsample, fsample, flux_err = subsample(time, flux, flux_err=flux_err, npoints=npoints, kind=kind)
 
-    ###NEED TO FIND A GOOD FORMAT FOR RETURNING THE SAMPLED DATA
     df = pd.DataFrame()
 
     df['time'] = tsample
