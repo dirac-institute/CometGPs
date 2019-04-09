@@ -16,100 +16,6 @@ import plotting
 import argparse
 import textwrap
 
-def prior(params):
-
-    """
-    Calculated the log of the prior values, given parameter values.
-
-    Parameters
-    ----------
-    params : list
-        List of all kernel parameters
-
-    param[0] : float
-        mean (between 0 and 2)
-
-    param[1] : float
-        log amplitude (between -10 and 10)
-
-    param[2] : float
-        gamma (log gamma between 0.1 and 40)
-
-    param[3] : float
-        log period (period between 1h and 24hrs)
-
-    Returns
-    -------
-    sum_log_prior : int
-        sum of all log priors (-inf if a parameter is out of range)
-
-    """
-
-    p_mean = scipy.stats.norm(1, 0.5).logpdf(params[0])
-    p_log_amp = scipy.stats.norm(np.log(0.15), np.log(2)).logpdf(params[1])
-    p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
-    p_log_period = scipy.stats.norm(np.log(4./24.), (12./24.)).logpdf(params[3])
-    # log period (period between 0.5hrs and 36hrs)
-    #p_log_period = scipy.stats.uniform(np.log(0.5/24), -(np.log(2/3)+np.log(0.5/24))).logpdf((params[3]))
-
-    sum_log_prior =  p_mean + p_log_amp + p_log_gamma + p_log_period
-
-    if np.isnan(sum_log_prior) == True:
-        return -np.inf
-
-    return sum_log_prior
-
-
-def logl(params, gp, tsample, fsample, flux_err):
-     # compute lnlikelihood based on given parameters
-     gp.set_parameter_vector(params)
-
-
-     try:
-         gp.compute(tsample, flux_err)
-         lnlike = gp.lnlikelihood(fsample)
-     except np.linalg.LinAlgError:
-         lnlike = -1e25
-
-     return lnlike
-
-
-def post_lnlikelihood(params, gp, tsample, fsample, flux_err):
-
-    """
-    Calculates the posterior likelihood from the log prior and
-    log likelihood.
-
-    Parameters
-    ----------
-    params : list
-        List of all kernel parameters
-
-    Returns
-    -------
-    ln_likelihood : float
-        The posterior, unless the posterior is infinite, in which case,
-        -1e25 will be returned instead.
-
-    """
-
-    # calculate the log_prior
-    log_prior = prior(params)
-
-    # return -inf if parameters are outside the priors
-    if np.isneginf(log_prior) == True:
-        return -np.inf
-
-    try:
-        lnlike = logl(params, gp, tsample, fsample, flux_err)
-        ln_likelihood = lnlike+log_prior
-
-    except np.linalg.linalg.LinAlgError:
-        ln_likelihood = -1e25
-
-    return ln_likelihood if np.isfinite(ln_likelihood) else -1e25
-
-
 def read_data(filename, datadir="./"):
     """
     Read in light curve data from asteroid.
@@ -230,8 +136,7 @@ class GPFit():
         ax.set_xlim([0,24])
         ax.legend()
 
-
-
+        bx = plotting.plot_folded_lightcurve(self.time, self.flux, period=new_period, ax=bx)
 
         namestr=filename + "_plots"
         plt.savefig(namestr + "_lsp.pdf", format="pdf")
@@ -257,16 +162,6 @@ def main():
 
     asteroid = GPFit(time, flux, flux_err)
     asteroid.daniela_lsp(true_period, nterms)
-    #asteroid.set_params()
-    #asteroid.set_walker_param_matrix(nwalkers)
-    #asteroid.set_gp_kernel()
-
-    #sampler = asteroid.run_emcee(niter=niter, nwalkers=nwalkers, threads=threads)
-
-    #plot_mcmc_sampling_results(np.array(asteroid.time), asteroid.flux, asteroid.flux_err,
-    #                           asteroid.gp, sampler, namestr=filename + "_plots",
-    #                           true_period=true_period)
-
 
     return
 
@@ -308,12 +203,6 @@ if __name__ == "__main__":
                         help="Data file with observed time (in unit days) and flux.")
     parser.add_argument('-d', '--datadir', action="store", dest="datadir", required=False, default="./",
                         help="Directory with the data (default: current directory).")
-    #parser.add_argument('-w', '--nwalkers', action="store", dest="nwalkers", required=False, type=int, default=100,
-    #                    help="The number of walkers/chains for the MCMC run (default: 100).")
-    #parser.add_argument('-i', '--niter', action="store", dest="niter", required=False, type=int, default=100,
-    #                    help="The number of iterations per chain/walker in the MCC run (default: 100).")
-    #parser.add_argument('-t', '--threads', action="store", dest="threads", required=False, type=int, default=1,
-    #                    help="The numer of threads used for computing the posterior (default: 1).")
     parser.add_argument('-p', '--period', action="store", dest="period", required=False, type=float, default=None,
                         help="The true period of an asteroid in hours.")
     parser.add_argument('-n', '--nterms', action="store", dest="nterms", required=False, type=int, default=None,
@@ -323,8 +212,6 @@ if __name__ == "__main__":
 
     filename = clargs.filename
     datadir = clargs.datadir
-    #nwalkers = clargs.nwalkers
-    #niter = clargs.niter
     true_period = clargs.period
     nterms = clargs.nterms
 

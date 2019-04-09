@@ -432,8 +432,9 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
 
 
     ### plot histogram of periods ###
-    fig, ax = plt.subplots(1, 1, figsize=(5,4))
-    ax.hist(np.exp(new_samples[:,-1])*24, bins=100, density=True,
+    fig, (ax, bx) = plt.subplots(1, 2, figsize=(10,4))
+    p_hours = np.exp(new_samples[:,-1])*24
+    ax.hist(p_hours, bins=100, density=True,
                 label="posterior PDF", color="black", alpha=0.5)
 
     if true_period is not None:
@@ -443,6 +444,15 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
     ax.set_xlabel("Period in hours")
     ax.set_ylabel("Probability")
     ax.legend()
+
+    lower, upper = np.percentile(p_hours, [5,95])
+    bx.hist(p_hours[(p_hours > lower) & (p_hours < upper)], bins=100, density=True,
+                label="posterior PDF", color="black", alpha=0.5)
+
+    if true_period is not None:
+        ylim = bx.get_ylim()
+        bx.vlines(true_period, 0, ylim[-1], lw=1, color="red", linestyle="dashed", label="true period : " + str(true_period))
+
 
     plt.tight_layout()
     plt.savefig(namestr + "_period_pdf.pdf", format="pdf")
