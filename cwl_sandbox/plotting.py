@@ -448,11 +448,15 @@ def plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler,
 
     ax.set_xlabel("Period in hours")
     ax.set_ylabel("Probability")
+    ax.set_title("Period Distibution")
     ax.legend()
 
     lower, upper = np.percentile(p_hours, [5,95])
     bx.hist(p_hours[(p_hours > lower) & (p_hours < upper)], bins=100, density=True,
                 label="posterior PDF", color="black", alpha=0.5)
+    bx.set_title("5th - 95th Percentile")
+    bx.set_xlabel("Period in hours")
+    bx.set_ylabel("Probability")
 
     if true_period is not None:
         ylim = bx.get_ylim()

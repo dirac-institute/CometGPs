@@ -146,8 +146,12 @@ class GPFit():
     def daniela_lsp(self, true_period, nterms):
         """Testing out Daniela's LSP method."""
 
+        #fig, (ax, bx) = plt.subplots(1,2, figsize=(12,5))
+
         ax = plotting.plot_lsp(self.time, self.flux, self.flux_err, p_max=5.0, true_period=true_period,
                                 nterms=nterms)
+
+        #bx = plotting.plot_folded_lightcurve(self.time, self.flux, period=new_period, ax=bx)
 
         namestr=filename + "_plots_daniela"
         plt.savefig(namestr + "_lsp.pdf", format="pdf")
