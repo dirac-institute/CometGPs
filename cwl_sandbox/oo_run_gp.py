@@ -39,6 +39,9 @@ def main():
                                asteroid.gp, sampler, namestr=filename + "_plots",
                                true_period=true_period)
 
+    if lsp:
+        asteroid.run_lsp(filename, true_period, nterms)
+
 
     return
 
@@ -90,7 +93,10 @@ if __name__ == "__main__":
                         help="The true period of an asteroid in hours.")
     parser.add_argument('-ws', '--whitespace', action="store_true", dest="whitespace", required=False, default=False,
                         help="The delimeter for the input file, assumed to be whitespace.")
-
+    parser.add_argument('-n', '--nterms', action="store", dest="nterms", required=False, type=int, default=1,
+                        help='The number of harmonics to plot apart from the true period.')
+    parser.add_argument('-lsp', '--lsp', action="store_true", dest="lsp", required=False, default=False,
+                        help="Generates a Lomb-Scargle periodogram.")
 
     clargs = parser.parse_args()
 
@@ -101,5 +107,7 @@ if __name__ == "__main__":
     threads = clargs.threads
     true_period = clargs.period
     whitespace = clargs.whitespace
+    nterms = clargs.nterms
+    lsp = clargs.lsp
 
     main()
