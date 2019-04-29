@@ -1,0 +1,1443 @@
+ASTEROID LIGHTCURVE DATABASE (LCDB) NPAR (TUMBLING) (Complete)
+GENERATED: Jan 31, 2019
+
+Number    Asteroid/Reference             PAR   Period 1      Amp1 Period 2      Amp 2
+-------------------------------------------------------------------------------------
+    244   Sita                           T0     129.51       0.82                    
+          Brinsfield 2009a               0      129.51       0.82                   
+
+    253   Mathilde                       T      417.7        0.50                    
+          Mottola 1995b                  -3     417.7        0.45  250.             
+          Pravec 2005a                   -3     418.         0.5   250.             
+
+    288   Glauke                         T     1170.         0.9                     
+          Harris 1999a                   -1    1200.         0.9                    
+          Pravec 2014b                   0                                          
+          Pilcher 2015a                  -2    1170.         0.37  740.             
+
+    299   Thora                          T-     272.9        0.50                    
+          Pilcher 2014o                  0      274.         0.39                   
+          Pilcher 2017g                  +2     272.9        0.47                   
+
+    319   Leona                          T      430.         0.5                     
+          Pilcher 2017b                  -2     430.         0.5  1084.             
+
+    341   California                     T      318.         0.92                    
+          Pilcher 2017b                  -2     318.         0.9   250.             
+          Polakis 2017b                  -1     317.0        0.92                   
+          Polakis 2017b                  -2     317.0        0.54                   
+
+    408   Fama                           T0     202.1        0.58                    
+          Stephens 2008b                 0      202.1        0.58                   
+
+    437   Rhodia                         T      433.2        0.35                    
+          Pilcher 2018i                  -2     433.2        0.35                   
+
+    470   Kilia                          T0     290.         0.26                    
+          Stephens 2009d                 0                                          
+          Stephens 2009d                 0      290.         0.26                   
+
+    496   Gryphia                        T     1072.         1.25                    
+          Pilcher 2017g                  -2    1072.         1.25                   
+
+    571   Dulcinea                       T      126.3        0.50                    
+          Stephens 2011f                 -2     126.3        0.50                   
+
+    630   Euphemia                       T0     350.         0.45                    
+          Warner 2011j                   0      350.         0.45                   
+
+    703   Noemi                          T?     200.         0.78                    
+          Franco 2017c                   -2     200.         0.62                   
+          Noschese 2017a                 -1     201.7        0.78                   
+          Sada 2017                      0      115.108      0.28                   
+
+    707   Steina                         T0     414.         1.00                    
+          Pravec 2014b                   0                                          
+
+    763   Cupido                         T      151.5        0.45                    
+          Pilcher 2018d                  -2     151.5        0.45  101.             
+          Polakis 2018b                  -1     151.1        0.24                   
+
+    821   Fanny                          T0     236.6        0.28                    
+          Pilcher 2018k                  0      230.6        0.28                   
+          Pilcher 2018k                  0      236.6        0.22                   
+          Polakis 2018e                  -1     238.9        0.24                   
+
+    823   Sisigambis                     T0     146.         0.7                     
+          Pravec 2014b                   0                                          
+
+    824   Anastasia                      T-     250.         1.20                    
+          Stephens 2010e                 +2     250.         1.20                   
+          Pravec 2014b                   +2                                         
+
+    831   Stateira                       T0     861.         0.64                    
+          Polakis 2019                   0      861.         0.64                   
+
+    846   Lipperta                       T0    1641.         0.30                    
+          Buchheim 2011b                 0     1641.         0.30                   
+
+    887   Alinda                         T0      73.97       0.35                    
+          Pravec 2014b                   0                                          
+
+    912   Maritima                       T0    1332.         0.18                    
+          Pravec 2014b                   0                                          
+
+    950   Ahrensa                        T0     202.         0.40                    
+          Pravec 2014b                   0                                          
+
+    989   Schwassmannia                  T0     107.85       0.39                    
+          Benishek 2014b                 0      107.85       0.35                   
+          Stephens 2014d                 0      120.3        0.39                   
+
+   1042   Amazone                        T0     540.         0.25                    
+          Pravec 2014b                   0                                          
+
+   1144   Oda                            T      648.         0.55                    
+          Pilcher 2018j                  -2     648.         0.55  533.         0.55
+
+   1183   Jutta                          T0     212.5        0.10                    
+          Stephens 2011i                 0      212.5        0.10                   
+
+   1235   Schorria                       T0    1265.         1.40                    
+          Warner 2009h                   -1    1265.         1.40                   
+          Pravec 2014b                   0                                          
+
+   1244   Deira                          T0     210.6        0.50                    
+          Pravec 2014b                   0                                          
+
+   1255   Schilowa                       T0      29.536      0.26                    
+          Polakis 2018c                  0       76.275      0.26                   
+
+   1264   Letaba                         T?      32.74       0.28                    
+          Oey 2017b                      -1      63.74       0.13                   
+
+   1278   Kenya                          T      188.         0.75                    
+          Oey 2012b                      -2     188.         0.75  127.             
+
+   1329   Eliane                         T?     137.8        0.43                    
+          Polakis 2018e                  -1     137.8        0.43                   
+
+   1447   Utra                           T0     257.         0.63                    
+          Martinez 2011web               0      257.         0.63                   
+
+   1451   Grano                          T      138.00       0.65                    
+          Stephens 2010e                 -2     138.         0.65                   
+
+   1473   Ounas                          T+     139.1        0.6                     
+          Behrend 2013web                -1     139.1        0.57                   
+          Pilcher 2013f                  -2     139.1        0.6                    
+          Pravec 2014b                   -2                                         
+
+   1479   Inkeri                         T      660.         1.30                    
+          Ferrero 2012c                  -2     660.         1.3                    
+
+   1506   Xosa                           T0     292.         0.70                    
+          Warner 2011i                   0      292.         0.70                   
+
+   1512   Oulu                           T?     132.3        0.33                    
+          Galad 2010a                    -1     132.3        0.33                   
+          Pravec 2014b                   -1                                         
+
+   1536   Pielinen                       T+      66.22       0.85                    
+          Pravec 2011web                 -2      66.22       0.85   52.05           
+          Pravec 2014b                   -2                                         
+
+   1573   Vaisala                        T?     252.         0.76                    
+          Pravec 2012web                 -1     252.         0.76                   
+
+   1575   Winifred                       T0     125.         1.20                    
+          Pravec 2014b                   0                                          
+
+   1621   Druzhba                        T-      99.20       0.75                    
+          Pravec 2014b                   +2                                         
+
+   1663   van den Bos                    T0     740.         0.80                    
+          Pravec 2014b                   0                                          
+
+   1689   Floris-Jan                     T?     145.         0.4                     
+          Harris 1989b                   -1     144.85       0.4                    
+
+   1703   Barry                          T?     107.1        0.50                    
+          Galad 2007b                    0      107.1        0.5                    
+
+   1750   Eckert                         T      375.         0.87                    
+          Warner 2010e                   -2     375.         0.87                   
+
+   1775   Zimmerwald                     T      122.         0.6                     
+          Stephens 2011i                 -1     122.         0.60                   
+
+   1807   Slovakia                       T0     308.6        1.10                    
+          Pravec 2014b                   0                                          
+
+   1909   Alekhin                        T0     148.6        0.45                    
+          Dymock 2009a                   0      148.6        0.45                   
+          Pravec 2014b                   0                                          
+
+   1919   Clemence                       T0      67.4        0.60                    
+          Pravec 2014b                   0                                          
+
+   1954   Kukarkin                       T0     136.40       0.80                    
+          Alvarez 2013a                  +1     136.40       0.80                   
+
+   1989   Tatry                          T?     131.3        0.50                    
+          Galad 2009a                    0      131.3        0.5                    
+          Pravec 2014b                   -1                                         
+
+   2000   Herschel                       T+     130.         1.16                    
+          Warner 2011j                   -2     130.         1.16                   
+          Pravec 2014b                   -2                                         
+
+   2035   Stearns                        T       93.         0.7                     
+          Stephens 2014g                 -2      93.         0.63                   
+
+   2045   Peking                         T       82.4        0.8                     
+          Stephens 2017c                 -2      82.4        0.8                    
+
+   2062   Aten                           T0      40.77       0.26                    
+          Pravec 2014b                   0                                          
+
+   2423   Ibarruri                       T-     139.79       0.74                    
+          Pravec 2011web                 +1     139.79       0.74                   
+          Pravec 2014b                   +1                                         
+
+   2430   Bruce Helin                    T0     128.         0.67                    
+          Pravec 2014b                   0                                          
+
+   2437   Amnestia                       T0      85.         0.45                    
+          Pravec 2014b                   0                                          
+
+   2440   Educatio                       T0    1561.         0.80                    
+          Rowe 2018a                     0     1561.         0.80                   
+
+   2554   Skiff                          T?     273.         0.9                     
+          Skiff 2017web                  -1     273.         0.9                    
+
+   2639   Planman                        T0      89.5        0.40                    
+          Pravec 2014b                   0                                          
+
+   2672   Pisek                          T?     831.         0.90                    
+          Benishek 2018b                 -1     831.         0.90                   
+
+   2675   Tolkien                        T?    1060.         0.75                    
+          Durkee 2011e                   0     1060.         0.75                   
+          Pravec 2014b                   -1                                         
+
+   2696   Magion                         AT0    480.         0.31                    
+          Galad 2009a                    0      480.         0.31                   
+          Pravec 2014b                   0                                          
+
+   2705   Wu                             T      150.5        1.2                     
+          Oey 2010a                      -2     150.5        1.2                    
+
+   2731   Cucula                         T?      61.55       0.40                    
+          Brinsfield 2012a               -1      61.69       0.3                    
+
+   2733   Hamina                         T?      93.23       0.48                    
+          Pravec 2017web                 0       93.46       0.48                   
+          Sada 2018                      -1      93.23       0.36                   
+
+   2735   Ellen                          T0     159.         1.50                    
+          Pravec 2014b                   0                                          
+
+   2772   Dugan                          T0     235.         1.14                    
+          Pravec 2012web                 0      235.         1.14                   
+
+   2862   Vavilov                        T0     800.         0.4                     
+          Pravec 2014b                   0                                          
+
+   2870   Haupt                          T0     274.         0.60                    
+          Pravec 2011web                 0      274.         0.54                   
+
+   2874   Jim Young                      T0     131.3        0.75                    
+          Pravec 2014b                   0                                          
+
+   2942   Cordie                         T       80.0        1.1                     
+          Pravec 2006web                 -2      80.0        1.1                    
+
+   2974   Holden                         T0     856.         0.70                    
+          Stephens 2016d                 0      856.         0.70                   
+
+   3033   Holbaek                        T-     233.3        1.20                    
+          Brinsfield 2012a               2      233.3        1.20                   
+          Pravec 2014b                   +2                                         
+
+   3043   San Diego                      T0     105.7        0.60                    
+          Warner 2009p                   0      105.7        0.60                   
+
+   3102   Krok                           T-     149.4        1.6                     
+          Pravec 2005a                   +2     151.8        1.3                    
+
+   3138   Ciney                          DT0    113.         0.56                    
+          Pravec 2014b                   0                                          
+
+   3160   Angerhofer                     T?      44.720      0.32                    
+          Stephens 2018b                 -1      44.720      0.32                   
+
+   3233   Krisbarons                     T0     888.         1.44                    
+          Rowe 2018b                     0      888.         1.44                   
+
+   3288   Seleucus                       T       75.         1.0                     
+          Harris 1999a                   -1      75.         1.0                    
+          Pravec 2005a                   -2      75.         1.0                    
+
+   3353   Jarvis                         T0     202.0        0.50                    
+          Warner 2009p                   0      202.0        0.50                   
+
+   3447   Burckhalter                    T+      59.8        0.39                    
+          Warner 2011o                   -2      59.8        0.39   67.5        0.39
+          Pravec 2014b                   -2                                         
+
+   3527   McCord                         T0     321.         0.44                    
+          Pravec 2009web                 0      321.         0.44                   
+
+   3571   Milanstefanik                  T0     421.1        0.65                    
+          Warner 2017a                   0      421.1        0.65                   
+
+   3635   Kreutz                         T0     280.         0.25                    
+          Warner 2013d                   0      280.         0.25                   
+
+   3679   Condruses                      T0     172.         1.30                    
+          Hills 2017                     0      172.3        1.20                   
+
+   3691   Bede                           T      226.8        0.5                     
+          Pravec 1998b                   -2     226.8        0.5                    
+          Pravec 2005a                   -2     227.         0.5                    
+
+   3752   Camillo                        T-      37.846      1.1                     
+          Pravec 2005a                   +2                                         
+
+   3833   Calingasta                     T      199.         1.20                    
+          Pravec 2010web                 -2     199.         0.7                    
+          Owings 2013a                   0      195.         0.80                   
+
+   3888   Hoyt                           T0      84.2        0.70                    
+          Pravec 2014b                   0                                          
+
+   3940   Larion                         T0      84.         0.31                    
+          Pravec 2014b                   0                                          
+
+   4002   Shinagawa                      T0     175.0        0.95                    
+          Stephens 2015b                 0      175.0        0.95                   
+
+   4024   Ronan                          T-     356.         1.10                    
+          Stephens 2010d                 2      356.         1.10                   
+
+   4142   Dersu-Uzala                    T?     276.         0.60                    
+          Warner 2009p                   -1     140.         0.60                   
+          Polakis 2018e                  -1     276.         0.52                   
+
+   4179   Toutatis                       T      176.         1.46                    
+          Hudson 1995                    -2     130.         0.5                    
+          Spencer 1995                   +2                  1.1                    
+          Nakamura 1998                  -2     180.         1.0                    
+          Pravec 2005a                   -4     176.         1.2   130.             
+
+   4181   Kivi                           DT?    178.         0.77                    
+          Rowe 2019                      -1     178.         0.77                   
+
+   4232   Aparicio                       T0      54.4        0.83                    
+          Pravec 2014b                   0                                          
+
+   4283   Stoffler                       T0     136.         0.65                    
+          Pravec 2014b                   0                                          
+
+   4450   Pan                            T       56.48       0.64                    
+          Pravec 2008web                 -1      60.         0.6                    
+          Warner 2014e                   0       56.48       0.64                   
+
+   4486   Mithra                         RT0     67.5        1.                      
+          Brozovic 2010                  0       67.5                               
+
+   4524   Barklajdetolli                 T0    1069.         1.26                    
+          Pray 2010                      0     1069.         1.26                   
+
+   4544   Xanthus                        T0      37.65       0.27                    
+          Pravec 2014b                   0                                          
+
+   4660   Nereus                         T0      15.1        0.8                     
+          Pravec 2014b                   0                                          
+
+   4678   Ninian                         T?      56.72       1.04                    
+          Pravec 2014web                 -1      56.7        0.93                   
+
+   4689   Donn                           T0     122.5        0.64                    
+          Pravec 2016web                 0      122.5        0.64                   
+
+   4690   Strasbourg                     T       69.2        0.80                    
+          Warner 2011j                   -2      69.2        0.75   52.05           
+
+   4718   Araki                          T?      46.35       0.16                    
+          Pravec 2017web                 0       46.35       0.16   19.373      0.10
+
+   4750   Mukai                          T?      38.3        0.40                    
+          Pravec 2017web                 -1      38.3        0.40   24.             
+
+   4902   Thessandrus                    T      738.         0.60                    
+          French 2013                    -2     738.         0.60                   
+
+   5171   Augustesen                     T?     480.         0.8                     
+          Galad 2007b                    -1     480.         0.8                    
+
+   5202   Charleseliot                   T?     183.         0.58                    
+          Pravec 2012web                 -1     183.         0.58                   
+
+   5230   Asahina                        T-      89.3        0.67                    
+          Warner 2010e                   0       89.3        0.67                   
+          Pravec 2014b                   +2                                         
+
+   5247   Krylov                         T+      81.5        1.5                     
+          Pravec 2006web                 -3      81.5        1.5    62.85           
+          Pravec 2014b                   -2                                         
+
+   5378   Ellyett                        T+      47.32       0.48                    
+          Warner 2012g                   -2      47.32       0.48                   
+          Pravec 2014b                   -2                                         
+
+   5390   Huichiming                     T0     111.         0.75                    
+          Pravec 2014b                   0                                          
+
+   5511   Cloanthus                      T0     336.         0.49                    
+          Pravec 2014b                   0                                          
+
+   5518   Mariobotta                     T0     108.60       0.56                    
+          Pravec 2018web                 0      108.60       0.54                   
+
+   5561   Iguchi                         T0     112.4        0.43                    
+          Pravec 2014b                   0                                          
+
+   5577   Priestley                      T      160.         0.85                    
+          Stephens 2014a                 -2     160.         0.85   30.7            
+
+   5630   Billschaefer                   T0      69.         0.9                     
+          Pravec 2014b                   0                                          
+
+   5641   McCleese                       T0     418.         1.3                     
+          Pravec 2014b                   0                                          
+
+   5645   1990 SP                        T       30.39       0.7                     
+          Pravec 2005a                   -2      30.39       0.7                    
+
+   5691   Fredwatson                     T0     106.0        1.2                     
+          Pravec 2014b                   0                                          
+
+   5751   Zao                            T0      76.         0.2                     
+          Pravec 2014b                   0                                          
+
+   5752   1992 CJ                        T0      86.         0.80                    
+          Pravec 2014b                   0                                          
+
+   5774   Ratliff                        T0      61.         0.6                     
+          Pravec 2014b                   0                                          
+
+   5786   Talos                          NT0     38.52       0.23                    
+          Pravec 2014b                   0                                          
+
+   5851   Inagawa                        T?     367.5        0.90                    
+          Pravec 2014b                   -1                                         
+
+   5887   Yauza                          T?      54.78       0.30                    
+          Pravec 2017web                 -1      54.78       0.30   25.2            
+
+   5967   Edithlevy                      T       66.         0.7                     
+          Warner 2010k                   -2      66.         0.7                    
+
+   6063   Jason                          T       48.6        0.12                    
+          Warner 2014e                   -2      51.7        0.11  238.         0.12
+          Warner 2017n                   -1      48.6        0.12  682.0        0.25
+
+   6141   Durda                          T0     460.         0.50                    
+          Warner 2010e                   0      460.         0.50                   
+
+   6183   Viscome                        T?     453.         0.90                    
+          Pravec 2015web                 -1     437.         0.68                   
+          Stephens 2016d                 -1     453.         0.9                    
+
+   6192   Javiergorosabel                T+      78.85       0.95                    
+          Brinsfield 2012a               -2      78.74       0.95                   
+          Pravec 2014b                   -2                                         
+
+   6250   Saekohayashi                   T0      82.6        0.78                    
+          Pravec 2014b                   0                                          
+
+   6271   Farmer                         T?     250.         0.22                    
+          Warner 2011web                 -1     250.         0.22                   
+          Warner 2011web                 -1     250.         0.13                   
+          Pravec 2014b                   -1                                         
+
+   6425   1994 WZ3                       T0     103.9        0.92                    
+          Durkee 2011c                   0      103.9        0.92                   
+
+   6435   Daveross                       T-      51.25       0.67                    
+          Warner 2011r                   +2      51.25       0.67                   
+          Pravec 2014b                   +2                                         
+
+   6461   Adam                           T       74.         0.76                    
+          Warner 2012a                   -2      74.         0.76   74.         47.  
+
+   6485   Wendeesther                    T0      74.82       1.00                    
+          Pravec 2014b                   0                                          
+
+   6487   Tonyspear                      T-      74.91       1.24                    
+          Pravec 2014b                   +2                                         
+
+   6498   Ko                             T0     500.         0.6                     
+          Pravec 2014b                   0                                          
+
+   6779   Perrine                        T?      72.279      1.16                    
+          Hills 2018                     -1      72.279      1.16                   
+
+   6911   Nancygreen                     T0      54.7        0.75                    
+          Pravec 2014b                   0                                          
+
+   7352   1994 CO                        T      648.         0.30                    
+          Stephens 2014c                 -2     648.         0.30                   
+
+   7421   Kusaka                         T       96.5        0.70                    
+          Galad 2010a                    -2      96.5        0.7                    
+
+   7430   Kogure                         T      335.9        0.57                    
+          Polakis 2018d                  -1     335.9        0.57                   
+
+   7480   Norwan                         T0      35.90       0.5                     
+          Pravec 2014b                   0                                          
+
+   7509   Gamzatov                       T0     249.         0.75                    
+          Pravec 2017web                 0      249.         0.75                   
+          Benishek 2018b                 0      249.1        0.75                   
+
+   7743   1986 JA                        T?     146.8        0.93                    
+          Pravec 2008web                 -1     146.8        0.93                   
+
+   7781   Townsend                       T-      81.1        0.58                    
+          Warner 2011o                   +2      81.1        0.58                   
+          Pravec 2014b                   +2                                         
+
+   7824   Lynch                          T0      75.30       0.37                    
+          Pravec 2014b                   0                                          
+
+   8130   Seeberg                        T?      38.10       0.42                    
+          Warner 2017r                   0       38.10       0.23                   
+          Warner 2017r                   0       35.1        0.42                   
+
+   8709   Kadlu                          T-      50.6        0.40                    
+          Pravec 2014b                   +1                                         
+
+   8736   Shigehisa                      T0      80.5        1.2                     
+          Pravec 2014b                   0                                          
+
+   8885   Sette                          T0     212.         0.5                     
+          Pravec 2014b                   0                                          
+
+   9000   Hal                            T0     908.         0.9                     
+          Pravec 2014b                   0                                          
+
+   9165   Raup                           T0    1320.         1.34                    
+          Warner 2014j                   -1     560.         1.05                   
+          Warner 2016d                   0     1320.         1.34                   
+
+   9233   Itagijun                       T0     110.95       0.6                     
+          Pravec 2014b                   0                                          
+
+   9400   1994 TW1                       T?      97.1        1.04                    
+          Warner 2016c                   -1      82.8        0.80                   
+          Warner 2016n                   0       97.1        1.04                   
+
+   9556   Gaywray                        T0     920.         0.5                     
+          Pravec 2014b                   0                                          
+
+   9584   Louchheim                      T0     410.         0.3                     
+          Pravec 2009web                 0      410.         0.3                    
+
+   9739   Powell                         T?     109.         0.40                    
+          Stephens 2015b                 -1     109.         0.40                   
+
+   9969   Braille                        T0     226.4        0.9                     
+          Pravec 2014b                   0                                          
+
+  10302   1989 ML                        T0      19.         1.00                    
+          Pravec 2014b                   0                                          
+
+  10531   1991 GB1                       T0      55.1        0.21                    
+          Pravec 2014b                   0                                          
+
+  10772   1990 YM                        T?      68.98       1.3                     
+          Pravec 2006web                 -1      68.7        1.3                1.3 
+          Pravec 2014b                   -1                                         
+
+  11304   Cowra                          T0      95.7        1.0                     
+          Warner 2009k                   0       95.7        0.40                   
+          Warner 2012s                   0       94.5        1.0                    
+
+  11351   Leucus                         T0     445.732      0.7                     
+          French 2013                    0      515.         0.53                   
+
+  11398   1998 YP11                      T-      38.60       0.46                    
+          Pravec 2005a                   +2      38.60       0.25                   
+          Warner 2017l                   0       38.59       0.20                   
+
+  11500   Tomaiyowit                     NT0     73.0        0.5                     
+          Pravec 2014b                   0                                          
+
+  11579   Tsujitsuka                     T?      56.6        1.19                    
+          Pravec 2015web                 -1      56.6        0.8    24.             
+
+  11780   Thunder Bay                    T0     295.         0.70                    
+          Pravec 2014b                   0                                          
+
+  11789   Kempowski                      AT0     48.6        0.45                    
+          Pravec 2014b                   0                                          
+
+  12237   Coughlin                       T0      80.4        1.62                    
+          Rowe 2019                      0       80.4        1.62                   
+
+  12265   1990 FG                        T-      56.6        0.65                    
+          Warner 2011o                   +2      56.6        0.65                   
+          Pravec 2014b                   +2                                         
+
+  13331   1998 SU52                      T?     375.         0.80                    
+          Pravec 2014b                   -1                                         
+
+  13553   Masaakikoyama                  T       58.         1.1                     
+          Pravec 2005web                 -2      38.         1.1                    
+          Warner 2019b                   -2      58.         0.75   32.         0.75
+
+  13643   Takushi                        T0      83.838      1.00                    
+          Clark 2013a                    0       83.838      1.00                   
+
+  13651   1997 BR                        T       33.644      1.2                     
+          Pravec 1998b                   -1      33.644      1.2                    
+          Pravec 2005a                   -2      33.64       1.2                    
+
+  14040   Andrejka                       T0     310.         0.95                    
+          Pravec 2014b                   0                                          
+
+  14395   Tommorgan                      T       35.5        0.61                    
+          Warner 2013d                   -2      35.5        0.61   40.4            
+
+  14764   Kilauea                        T+      19.84       1.2                     
+          Warner 2012a                   -2      19.84       0.81   22.86           
+          Pravec 2014b                   -2                                         
+          Stephens 2015b                 0       19.59       0.50                   
+
+  14815   Rutberg                        T0     150.         1.0                     
+          Pravec 2014b                   0                                          
+
+  15231   Ehdita                         T+      40.0        0.72                    
+          Warner 2019c                   -1      40.0        0.72                   
+
+  15533   2000 AP138                     T0     114.         0.38                    
+          Pravec 2014b                   0                                          
+
+  15977   1998 MA11                      T?     250.         0.30                    
+          Stephens 2016j                 -1     250.         0.30                   
+
+  16064   Davidharvey                    T      178.5        0.7                     
+          Pravec 2005a                   -2     178.5        0.7                    
+
+  16256   2000 JM2                       T0      63.5        0.98                    
+          Warner 2012b                   0       63.5        0.98                   
+
+  16421   Roadrunner                     T0     174.         1.25                    
+          Warner 2012g                   0      173.         1.25                   
+          Warner 2014a                   0      174.         1.00                   
+
+  16558   1991 VQ2                       T0     170.         1.0                     
+          Pravec 2014b                   0                                          
+
+  16589   Hastrup                        T      128.         0.62                    
+          Warner 2012g                   -2     128.         0.62                   
+
+  16641   Esteban                                79.62       1.42                    
+          Pravec 2014web                 0       79.51       1.42                   
+
+  16843   1997 XX3                       T?     275.         0.41                    
+          Warner 2017a                   -1     275.         0.41                   
+
+  16896   1998 DS9                       T?     708.         0.43                    
+          Stephens 2014b                 -1     708.         0.43                   
+
+  17584   1994 XF1                       T        4.6392     0.56                    
+          Pravec 2015web                 -2       4.6398     0.56    5.7306         
+          Oey 2017a                      -2       4.6392     0.35                   
+
+  17681   Tweedledum                     T0      75.2        0.90                    
+          Pravec 2014b                   0                                          
+
+  18096   2000 LM16                      T0      86.         0.18                    
+          Pravec 2014b                   0                                          
+
+  18582   1997 XK9                       T0     114.         0.94                    
+          Pravec 2014b                   0                                          
+
+  18906   2000 OJ19                      T0      77.90       0.80                    
+          Pravec 2014b                   0                                          
+
+  19034   Santorini                      T0     247.         0.43                    
+          Warner 2017d                   0      247.         0.43                   
+
+  19537   1999 JL8                       AT0     50.1        0.10                    
+          Pravec 2014b                   0                                          
+
+  19711   Johnaligawesa                  T0      54.3        0.25                    
+          Pravec 2016web                 0       54.3        0.25                   
+
+  19763   Klimesh                        T?     101.         0.67                    
+          Pravec 2011web                 -1     101.         0.67                   
+
+  19764   2000 NF5                       NT0     59.3        0.80                    
+          Pravec 2014b                   0                                          
+
+  20231   1997 YK                        T?     178.         0.70                    
+          Warner 2009p                   0                   0.4                    
+          Warner 2014a                   0      178.         0.70                   
+
+  20562   1999 RV120                     T0     135.4        0.43                    
+          Pravec 2014web                 0      135.4        0.43                   
+
+  20571   Tiamorrison                    T0     450.         0.60                    
+          Pravec 2014b                   0                                          
+
+  20628   1999 TS40                      T?      68.1        1.04                    
+          Warner 2018j                   -1      68.1        1.04                   
+
+  20996   1986 PB                        T0      43.6        0.4                     
+          Pravec 2014b                   0                                          
+
+  21609   Williamcaleb                   T0     112.         0.5                     
+          Pravec 2014b                   0                                          
+
+  22166   2000 WX154                     T0     800.         0.46                    
+          Pravec 2011web                 0      800.         0.46                   
+
+  22357   1992 YJ                        T0     103.         0.54                    
+          Warner 2011l                   0      103.         0.54                   
+
+  24077   1999 TD233                     T       30.86       1.61                    
+          Warner 2014f                   -2      30.86       1.61   33.13           
+
+  24242   1999 XY100                     T+      49.94       0.6                     
+          Pravec 2008web                 -2      49.94       0.6                    
+          Pravec 2014b                   -2                                         
+
+  24702   1991 OR                        T0      59.5        0.19                    
+          Pravec 2014b                   0                                          
+
+  25076   1998 QM98                      T       58.3        0.35                    
+          Warner 2015j                   -2      58.3        0.35                   
+
+  25143   Itokawa                        T-      12.132      1.45                    
+          Pravec 2005a                   +4                                         
+
+  25320   1999 CP15                      T0      55.25       0.71                    
+          Stephens 2017c                 0       55.25       0.71                   
+
+  27810   Daveturner                     T0     546.         0.43                    
+          Warner 2011p                   0      546.         0.43                   
+
+  28017   1997 YV13                      T?      47.         0.15                    
+          Pravec 2005web                 -1      47.         0.15               0.15
+          Pravec 2014b                   -1                                         
+
+  29147   1988 GG                        T       99.         0.80                    
+          Warner 2010p                   -2      99.         0.80                   
+
+  29292   Conniewalker                   T+      30.6        0.63                    
+          Pravec 2011web                 -2      30.5        0.63                   
+          Brinsfield 2012b               -2      30.6        0.62   22.55           
+          Pravec 2014b                   -2                                         
+
+  29780   1999 CJ50                      T0      63.50       0.58                    
+          Pravec 2014b                   0                                          
+
+  31013   1996 DR                        T0     280.         0.5                     
+          Pravec 2016web                 0      280.         0.5                    
+
+  31076   1996 XH1                       AT0    350.         0.17                    
+          Pravec 2014b                   0                                          
+
+  31173   1997 XF1                       T0     122.8        0.67                    
+          Warner 2014f                   0      122.8        0.67                   
+
+  31182   1997 YZ3                       T0     380.         0.90                    
+          Pravec 2014b                   0                                          
+
+  31832   2000 AP59                      T       64.         0.8                     
+          Stephens 2015d                 -2      64.         0.8                    
+
+  32928   Xiejialin                      T0      38.9        0.56                    
+          Pravec 2014b                   0                                          
+
+  33319   Kunqu                          T?     105.         0.9                     
+          Warner 2016i                   -1     105.         0.9                    
+
+  33341   1998 WA5                       T-     204.         0.57                    
+          Warner 2010k                   +1     204.         0.57                   
+
+  33356   1999 AM3                       T-      37.59       0.92                    
+          Warner 2012b                   +2      37.59       0.92                   
+
+  33736   1999 NY36                      T?     211.         0.4                     
+          Stephens 2012f                 -1     211.         0.4                    
+
+  33816   2000 AL42                      AT0    193.         0.12                    
+          Pravec 2014b                   0                                          
+
+  35259   1996 HN24                      T0     230.         0.45                    
+          Pravec 2016web                 0      230.         0.45                   
+
+  36298   2000 JF10                      T?      82.         0.75                    
+          Warner 2010k                   -1      82.         0.75                   
+
+  36316   2000 LC12                      T       56.5        1.22                    
+          Warner 2012a                   -2      56.5        1.22   46.4            
+
+  37586   1991 BP2                       T0     900.         0.96                    
+          Pravec 2016web                 0      900.         0.96                   
+
+  37634   1993 UZ                        T0      82.0        0.70                    
+          Warner 2010e                   0       82.0        0.70                   
+
+  37635   1993 UJ1                       T0     600.         0.8                     
+          Pravec 2014b                   0                                          
+
+  38063   1999 FH                        T?     990.         0.55                    
+          Stephens 2015b                 -1     990.         0.55                   
+
+  38071   1999 GU3                       T?     216.         1.50                    
+          Pravec 2000d                   -1     216.         1.4                    
+          Pravec 2002web                 -1     215.         1.5                    
+
+  39240   2000 YZ69                      T0     105.         1.6                     
+          Pravec 2014b                   0                                          
+
+  39420   Elizabethgaskell               T0     105.         1.6                     
+          Pravec 2014b                   0                                          
+
+  39618   1994 LT                        T      140.         0.85                    
+          Warner 2012g                   -2     140.         0.85                   
+
+  39796   1997 TD                        T?     223.5        0.92                    
+          Warner 2015n                   -1     223.5        0.92                   
+
+  41424   2000 CK40                      T0      48.0        0.35                    
+          Pravec 2014b                   0                                          
+
+  41503   2000 QG148                     T0      42.81       1.00                    
+          Warner 2014a                   0       42.81       1.00                   
+
+  41660   2000 SV362                     T0      77.2        0.65                    
+          Stephens 2014a                 0       77.2        0.65                   
+
+  42286   2001 TN41                      T-      77.9        0.44                    
+          Warner 2017i                   0       77.9        0.44                   
+
+  42843   1999 RV11                      T      894.         1.32                    
+          Pravec 2017web                 -2     894.         1.32   24.             
+
+  43606   2001 XQ2                       T?      87.         1.3                     
+          Warner 2010k                   -1      87.         1.3                    
+
+  44534   1998 YZ9                       ADT0    45.0        0.75                    
+          Pravec 2014b                   T0                                         
+
+  48707   1996 KR1                       T0     230.         0.75                    
+          Pravec 2014b                   0                                          
+
+  51371   2000 XF15                      AT0     54.         0.09                    
+          Pravec 2014b                   0                                          
+
+  51386   2001 CN35                      T0      48.0        0.36                    
+          Pravec 2014b                   0                                          
+
+  52387   Huitzilopochtli                T0      26.         0.4                     
+          Pravec 2014b                   0                                          
+
+  53008   1998 VY5                               47.         0.30                    
+          Pravec 2013web                 0       47.         0.3                    
+
+  53319   1999 JM8                       T      136.         0.7                     
+          Pravec 2005a                   -2     136.         0.7                    
+
+  53789   2000 ED104                     NT0     43.         1.1                     
+          Pravec 2014b                   0                                          
+
+  54071   2000 GQ146                     NT0     51.         0.2                     
+          Pravec 2014b                   0                                          
+
+  54789   2001 MZ7                       T+      37.57       1.4                     
+          Pravec 2005a                   -3      37.57       1.4    52.79           
+          Pravec 2014b                   -3                                         
+
+  55532   2001 WG2                       T       46.08       0.55                    
+          Stephens 2014e                 -2      46.08       0.55   32.4            
+
+  56367   2000 EF                        AT0     98.         0.8                     
+          Pravec 2014b                   0                                          
+
+  57868   Pupin                          T0     108.10       0.93                    
+          Benishek 2016c                 0      108.10       0.93                   
+
+  58155   1988 VD                        T?       7.093      0.36                    
+          Warner 2016i                   -1       7.093      0.36    8.02       0.14
+
+  59493   1999 JG5                       T0      57.4        0.90                    
+          Pravec 2014b                   0                                          
+
+  64107   2001 TK8                       T?      68.5        1.31                    
+          Warner 2015d                   -1      68.5        1.31                   
+
+  65407   2002 RP120                     T0     200.         0.6                     
+          Pravec 2014b                   0                                          
+
+  65637   Tsniimash                      T      220.         0.90                    
+          Stephens 2014a                 -1     220.         0.90                   
+
+  65717   1993 BX3                       T0      20.463      0.91                    
+          Pravec 2014b                   0                                          
+
+  66092   1998 SD                        T0     448.         0.42                    
+          Warner 2013m                   0      448.         0.42                   
+
+  66419   1999 NR13                              56.71       0.80                    
+          Alvarez 2013c                  +2      56.71       0.80                   
+
+  68547   2001 XW29                      T+      36.7        0.60                    
+          Warner 2010k                   -2      36.7        0.60                   
+          Pravec 2014b                   -2                                         
+
+  69350   1993 YP                        AT?     31.79       0.95                    
+          Warner 2012g                   -1      32.34       0.95                   
+          Pravec 2014b                   -1                                         
+
+  74081   1998 OU1                       T0      46.1        0.23                    
+          Pravec 2014b                   0                                          
+
+  76800   2000 OQ35                      T0     392.         1.4                     
+          Pravec 2014b                   0                                          
+
+  79316   Huangshan                      T?     493.         0.62                    
+          Stephens 2015e                 -1     493.         0.62                   
+
+  85953   1999 FK21                      T?      68.44       0.87                    
+          Skiff 2011web                  0       28.1        0.60                   
+
+  86039   1999 NC43                      T?A     34.49       1.10                    
+          Warner 2014k                   -1      34.29       1.00                   
+
+  86666   2000 FL10                      T?     206.         0.85                    
+          Warner 2016c                   -1     206.         0.85                   
+
+  89136   2001 US16                      T       14.39       0.90                    
+          Pravec 2004web                 -3      14.39       0.90   37.4            
+
+  89355   2001 VS78                      T-      40.553      0.52                    
+          Pravec 2005a                   +2      40.553      0.52                   
+
+  95711   2003 AK                        NT0    100.         0.7                     
+          Pravec 2014b                   0                                          
+
+  96590   1998 XB                        NT0    520.         1.0                     
+          Pravec 2014b                   0                                          
+
+  99475   2002 CR118                     T0      81.         0.74                    
+          Pravec 2014b                   0                                          
+
+  99812   2002 LW31                      T0     150.         0.8                     
+          Pravec 2014b                   0                                          
+
+  99942   Apophis                        T       30.56       1.14                    
+          Pravec 2014b                   -3      30.56       1.14   27.38           
+          Brozovic 2018                  -3                                         
+
+ 101430   1998 VE32                      T0      40.66       0.22                    
+          Pravec 2014b                   0                                          
+
+ 101549   1998 YY29                      T0      56.7        0.70                    
+          Warner 2009p                   0       56.7        0.51                   
+
+ 105844   2000 SH160                     T0      38.26       1.45                    
+          Pravec 2014b                   0                                          
+
+ 106620   2000 WL124                     T-     104.5        0.58                    
+          Warner 2012c                   +2     104.5        0.58                   
+          Pravec 2014b                   +2                                         
+
+ 120578   1995 QV12                      T?      72.4        0.51                    
+          Warner 2014f                   0       72.4        0.51                   
+
+ 121514   1999 UJ7                       T?      46.46       0.65                    
+          Borisov 2018                   -1      46.46       0.65                   
+
+ 122463   2000 QP148                     T0     426.         1.13                    
+          Pravec 2016web                 0      426.         1.13                   
+
+ 123937   2001 EX16                      T0      39.82       0.07                    
+          Pravec 2014b                   0                                          
+
+ 125742   2001 XT117                     T?      60.8        1.40                    
+          Warner 2013o                   -1      60.8        1.15                   
+
+ 134422   1998 QM3                       T       25.4        0.65                    
+          Warner 2015d                   -1      25.4        0.65   34.2        0.60
+
+ 134549   1999 RN154                     T?     124.         0.55                    
+          Warner 2014f                   -1     124.         0.55                   
+
+ 135486   2001 XP2                       T0      69.         1.2                     
+          Pravec 2014b                   0                                          
+
+ 141018   2001 WC47                      T0      16.51       0.18                    
+          Warner 2012g                   0       16.51       0.18                   
+
+ 143404   2003 BD44                      T?      78.64       1.05                    
+          Warner 2017l                   -1      78.64       0.95                   
+          Warner 2017p                   0       78.863      1.05                   
+          Sada 2018                      0       78.617      0.66                   
+
+ 143651   2003 QO104                     T?     114.4        1.60                    
+          Warner 2009r                   -1     114.4        1.60                   
+          Koehn 2014                     -1     114.         1.25                   
+
+ 143678   2003 SA224                     NAT0    35.         0.24                    
+          Pravec 2014b                   0                                          
+
+ 144411   2004 EW9                       T-      49.94       1.9                     
+          Pravec 2004web                 +2      49.94       0.9                    
+
+ 152664   1998 FW4                       T0      17.38       0.34                    
+          Warner 2014b                   0       17.38       0.34                   
+
+ 152679   1998 KU2                       T      125.         1.35                    
+          Warner 2016e                   -2     125.         1.35                   
+
+ 154807   2004 PP97                      T?     161.         0.96                    
+          Warner 2016c                   -1     161.         0.96                   
+
+ 162004   1991 VE                        T+      13.4802     1.11                    
+          Pravec 2012web                 -2      13.4802     1.08   17.316          
+
+ 162058   1997 AE12                      NT0   1880.         0.6                     
+          Pravec 2014b                   0                                          
+
+ 162416   2000 EH26                      RT0     24.                                 
+          Pravec 2014b                   0                                          
+
+ 162900   2001 HG31                      T       60.61       0.56                    
+          Pravec 2008web                 -3      60.61       0.50   39.0            
+          Warner 2009f                   -1      59.58       0.56                   
+
+ 162998   2001 SK162                     NT0     68.         0.40                    
+          Pravec 2014b                   0                                          
+
+ 163081   2002 AG29                      T0      19.70       0.25                    
+          Pravec 2014b                   0                                          
+
+ 163696   2003 EB50                      T0      62.4        1.64                    
+          Warner 2014e                   -1      27.2        0.73   31.4            
+          Warner 2016j                   0       62.4        0.83                   
+          Warner 2017p                   -1      62.9        1.43                   
+
+ 163732   2003 KP2                       NT?    151.1        1.7                     
+          Pravec 2003web                 -1     151.1        1.7                    
+
+ 163899   2003 SD220                     T?     285.         2.2                     
+          Warner 2016e                   -1     285.         2.2                    
+
+ 164400   2005 GN59                      T-      38.69       1.30                    
+          Skiff 2012a                    0       38.69       1.30                   
+          Pravec 2014b                   +1                                         
+
+ 168381   1997 LY4                       T       46.07       1.0                     
+          Pravec 2000a                   -2      46.07       1.0                    
+
+ 179806   2002 TD66                      T0       9.455      1.16                    
+          Pravec 2014b                   0                                          
+
+ 181882   1999 RF14                      T?       2.5        0.20                    
+          Skiff 2011web                  0        2.5        0.20                   
+
+ 183581   2003 SY84                      T?     260.         0.87                    
+          Warner 2015q                   -1     260.         0.87                   
+
+ 188077   2001 XW47                      T0     525.         0.3                     
+          Pravec 2014b                   0                                          
+
+ 206378   2003 RB                        T?      37.5        0.43                    
+          Pravec 2014b                   0                                          
+          Warner 2016c                   0       37.5        0.43                   
+
+ 214869   2007 PA8                       T      102.24       0.58                    
+          Brozovic 2017b                 -3     102.24             493.             
+
+ 217807   2000 XK44                      T       51.9        1.2                     
+          Hicks 2010c                    -1      66.75       0.5    25.7            
+          Warner 2010c                   -3      51.9        1.2    66.8            
+
+ 218144   2002 RL66                      T0     587.         0.32                    
+          Warner 2010e                   0      590.         0.32                   
+          Warner 2010m                   0      587.         0.25                   
+
+ 232368   2003 AZ2                       T?      31.1        0.96                    
+          Warner 2018a                   -1      31.1        0.96                   
+
+ 234145   2000 EW70                      RT0     33.                                 
+          Pravec 2014b                   0                                          
+
+ 242191   2003 NZ6                       T0      13.531      1.5                     
+          Pravec 2014b                   0                                          
+
+ 253106   2002 UR3                       T?     180.         0.36                    
+          Warner 2016e                   -1     180.         0.36                   
+
+ 267337   2001 VK5                       T?      39.05       0.92                    
+          Warner 2014k                   -1      39.05       0.92                   
+
+ 267729   2003 FC5                       NT0    129.5        0.5                     
+          Pravec 2014b                   0                                          
+
+ 275974   2001 XD                        T0      26.1        0.50                    
+          Warner 2016j                   0       26.1        0.50                   
+
+ 302831   2003 FH                        T0      13.94       0.99                    
+          Pravec 2014b                   0                                          
+
+ 306790   2001 KB1                       T?      71.         0.85                    
+          Warner 2015d                   -1      71.         0.85                   
+
+ 308635   2005 YU55                      AT0     19.31       0.30                    
+          Muller 2013                    -1                                         
+          Pravec 2014b                   0                                          
+
+ 329770   2004 JA                        NT0     52.1        0.4                     
+          Pravec 2014b                   0                                          
+
+ 331471   1984 QY1                       T       45.5        0.65                    
+          Warner 2016k                   -2      45.5        0.65   36.6            
+
+ 345853   2007 PU11                      T0      56.8        0.98                    
+          Pravec 2014b                   0                                          
+
+ 363084   2000 RD53                      NT0     14.96       0.09                    
+          Pravec 2014b                   0                                          
+
+ 367943   Duende                         T        8.724      1.79                    
+          Benson 2017                    -3       8.724              6.359          
+
+ 368664   2005 JA22                      T?      31.7        0.92                    
+          Warner 2014b                   -1      31.7        0.92                   
+
+ 369984   1998 QR52                      NT-    234.         0.88                    
+          Pravec 2014b                   +1                                         
+
+ 374158   2004 UL                        T       38.         1.2                     
+          Warner 2015h                   -2      38.         1.2                    
+
+ 374851   2006 VV2                                2.425      0.57                    
+          Vereshchagina 2009             -1       1.704      0.2    94.         0.3 
+
+ 380929   2006 HU30                      T?      49.0        0.17                    
+          Warner 2014e                   -1      49.0        0.17  450.             
+
+ 388945   2008 TZ3                       T?      44.2        0.56                    
+          Warner 2016n                   -1      44.2        0.56   52.4        0.49
+
+ 398188   Agni                           T       21.99       1.12                    
+          Warner 2015c                   -2      21.99       1.12                   
+
+ 411201   2010 LJ14                      T0     113.         0.85                    
+          Warner 2014k                   0      113.         0.85                   
+
+ 413260   2003 TL4                       NT0     27.2        1.0                     
+          Pravec 2014b                   0                                          
+
+ 415949   2001 XY10                      T0      43.5        0.35                    
+          Warner 2015h                   0       43.5        0.35                   
+
+ 416186   2002 TD60                      T+       2.8513     2.0                     
+          Pravec 2005a                   -3       2.8516     1.5     6.784          
+          Pravec 2005a                   -3       2.8513     1.4     6.781          
+          Pravec 2005a                   -3       2.8512     2.0     6.784          
+          Pravec 2014b                   -4                                         
+          Warner 2015r                   -3       2.8504     1.15    6.783          
+
+ 422638   1994 CB                        T-       8.676      0.90                    
+          Pravec 2014b                   +1                                         
+
+ 423321   2005 ED318                     NT0     17.157      0.48                    
+          Skiff                          0                                          
+
+ 429584   2011 EU29                      T0      43.5        0.65                    
+          Warner 2015n                   0       43.5        0.65                   
+
+ 443103   2013 WT67                      T?     135.         1.1                     
+          Warner 2015c                   -1     135.         1.1                    
+
+ 444193   2005 SE71                      T       66.8        0.8                     
+          Warner 2018m                   -2      66.8        0.8                    
+
+ 446791   1998 SJ70                      T0      19.15       0.90                    
+          Pravec 2014b                   0                                          
+
+ 446804   1999 VN6                       NAT0    24.1        0.7                     
+          Pravec 2014b                   0                                          
+
+ 455192   2000 QN130                     NT0     30.33       0.3                     
+          Pravec 2014b                   0                                          
+
+ 456051   2006 AW                        T0      53.19       0.95                    
+          Warner 2016c                   0       53.19       0.95                   
+
+ 464798   2004 JX20                      T+      36.         0.38                    
+          Warner 2016n                   -2      36.         0.38                   
+          Skiff                          -2                                         
+          Skiff                          -2                                         
+
+ 467317   2000 QW7                       NT?     71.3        1.0                     
+          Pravec 2000web                 -1      71.3        1.0                    
+
+ 467336   2002 LT38                      T?      21.80       1.16                    
+          Warner 2017c                   -1      21.80       1.16                   
+
+ 468738   2010 TN54                      AT0     12.12       0.07                    
+          Pravec 2014b                   0                                          
+
+ 470510   2008 CJ116                     T0      32.26       1.12                    
+          Warner 2017c                   0       32.26       1.00                   
+
+ 474158   1999 FA                        T-      10.092      1.2                     
+          Pravec 2005a                   +2      10.092      1.2                    
+
+ 477762   2010 XZ67                      T?      15.04       0.21                    
+          Warner 2014e                   0       15.04       0.21   30.76       0.20
+
+ 490581   2009 WZ104                     AT0     19.304      0.52                    
+          Pravec 2014b                   0                                          
+
+ 496817   1989 VB                        T0      16.         0.32                    
+          Pravec 2014b                   0                                          
+
+ 497176   2004 TQ13                      T0      60.52       0.63                    
+          Warner 2018a                   0       60.52       0.63                   
+
+ 511137   2013 XM24                      T       37.9        0.80                    
+          Warner 2015c                   -2      37.9        0.80   53.2            
+
+ 515082   2010 TM3                                0.043081   0.55                    
+          Statler 2013                   0        0.043081   0.55                   
+
+      0   103P/Hartley                   T?RA    18.1                                
+          Knight 2011                    -1      16.7               56.             
+          Belton 2013                    2       18.40              26.72           
+
+      0   1990 UP                        T0      20.         0.8                     
+          Pravec 2014b                   0                                          
+
+      0   1995 FJ                        T0       9.2        0.3                     
+          Pravec 2014b                   0                                          
+
+      0   1I/'Oumuamua                   T        7.937      2.5                     
+          Fraser 2017                    -2       7.937      2.5     7.407          
+
+      0   2000 WL107                     T+       0.1609     1.1                     
+          Pravec 2005a                   -3       0.1609     1.1     0.2188         
+          Pravec 2014b                   -3                                         
+
+      0   2001 JV1                       RNT0    29.                                 
+          Pravec 2014b                   0                                          
+
+      0   2001 QP181                     T0      17.05       0.16                    
+          Pravec 2014b                   0                                          
+
+      0   2002 CX58                      T?      51.7        1.12                    
+          Warner 2016n                   -1      51.7        1.12                   
+
+      0   2002 NY40                      T       19.98       1.3                     
+          Pravec 2005a                   -2      19.98       1.3    18.43           
+
+      0   2002 VE68                      T0      13.50       0.90                    
+          Pravec 2014b                   0                                          
+
+      0   2003 MS2                       T0       7.         0.5                     
+          Pravec 2014b                   0                                          
+
+      0   2003 NW1                       T       37.7        0.74                    
+          Warner 2019f                   -2      37.7        0.74  158.         0.9 
+
+      0   2004 FH                        T        0.0504     1.16                    
+          Pravec 2004web                 -3       0.0504     1.16    0.0372         
+
+      0   2004 XP14                      ORNT0  100.                                 
+          Skiff                          0                                          
+
+      0   2005 OE3                       RNT0   100.                                 
+          Pravec 2014b                   0                                          
+
+      0   2006 CT                        T?      16.69       0.80                    
+          Warner 2014e                   0       16.69       0.80                   
+
+      0   2006 MV1                       T?       0.0951     1.14                    
+          Hergenrother 2011              0        0.0951     1.14                   
+
+      0   2006 SQ242                     T0      51.6        0.8                     
+          Pravec 2014b                   0                                          
+
+      0   2007 PF28                      T0      22.1        0.31                    
+          Pravec 2014b                   0                                          
+
+      0   2007 TU24                      T       26.         1.0                     
+          Pravec 2008web                 -2      26.         1.0                    
+
+      0   2007 VM184                     T?      42.         0.36                    
+          Warner 2017i                   -1      42.         0.36                   
+
+      0   2008 QS11                      T0      46.65       0.30                    
+          Pravec 2014b                   0                                          
+
+      0   2008 SV11                      T0      32.4        0.50                    
+          Warner 2009n                   -2      32.4        0.50                   
+          Pravec 2014b                   0                                          
+
+      0   2008 TC3                       T        0.0269409  1.02                    
+          Pravec 2008a                   -3       0.0269409  1.02    0.0136205      
+          Scheirich 2010                 -3       0.0269408  0.24    0.0136205      
+          Aleshkina 2011                 -2       0.0135     0.27    0.02694        
+
+      0   2009 DL46                      T?      42.26       1.08                    
+          Warner 2016n                   -1      42.26       1.08                   
+
+      0   2009 UU1                                0.12367    2.2                     
+          McLelland 2011web              0        0.1268     2.2                    
+
+      0   2010 RC130                     T+       2.8915     0.85                    
+          Harris 2014                    -3       2.8915     0.85    1.7378         
+          Pravec 2014b                   -2                                         
+          Skiff                          -3                                         
+
+      0   2010 WC9                       T        0.18469    0.95                    
+          Warner 2018m                   -3       0.18469    0.95    0.12376    0.45
+
+      0   2011 GP59                      T+       0.12251    2.0                     
+          Skiff 2011web                  -3       0.12251    2.0     0.17096        
+          Pravec 2014b                   -2                                         
+
+      0   2011 HS                        DT?      6.         1.8                     
+          Skiff 2011web                  -1       6.         1.8                    
+
+      0   2012 AA11                      T-      14.19       0.72                    
+          Warner 2012s                   -2      14.19       0.72                   
+
+      0   2012 DO                        T0      38.7        0.24                    
+          Pravec 2014b                   0                                          
+
+      0   2012 LZ1                       T0      12.87       0.27                    
+          Warner 2012q                   +2      12.87       0.27                   
+
+      0   2012 QG42                      T?      24.22       1.18                    
+          Warner 2013c                   -1      24.22       1.18                   
+
+      0   2012 TC4                       T        0.204155   0.93                    
+          Tan 2018b                      -2       0.2041     0.91    0.1415     0.41
+          Warner 2018a                   -3       0.20362    0.73    0.14184    0.34
+          Warner 2018a                   -3       0.204155   0.83    0.141264   0.38
+
+      0   2013 BE19                      T0     115.         0.40                    
+          Pravec 2014b                   0                                          
+
+      0   2013 ET                        T+       1.9032     1.06                    
+          Pravec 2013web                 -2       1.9032     1.06    3.580          
+          Pravec 2014b                   -2                                         
+
+      0   2013 GL8                       T?      64.6        0.68                    
+          Warner 2017l                   0       64.6        0.68                   
+
+      0   2013 RM43                      T       32.6        0.75                    
+          Warner 2014e                   -2      32.6        0.75                   
+
+      0   2013 SU24                      T        0.23335    1.60                    
+          Warner 2014e                   -3       0.23335    1.21    0.19894    1.09
+
+      0   2013 YL2                       T        2.97       0.96                    
+          Warner 2014e                   -3       2.97       0.96    2.32       0.71
+
+      0   2014 BR8                       T0      13.85       0.80                    
+          Warner 2014i                   0       13.85       0.80                   
+
+      0   2014 CU13                      T?A     14.36       0.45                    
+          Warner 2014i                   -1      14.36       0.45                   
+
+      0   2014 HS184                     T?       1.9557     0.89                    
+          Warner 2014k                   -1       1.9557     0.89                   
+
+      0   2014 QK434                     T0      78.4        0.60                    
+          Warner 2015n                   0       78.4        0.60                   
+
+      0   2014 SC324                     T        0.36156    0.69                    
+          Warner 2015h                   -3       0.36156    0.69    0.6003         
+
+      0   2014 TL17                      T0      39.         0.53                    
+          Warner 2015h                   0       39.         0.53                   
+
+      0   2014 VH2                       T0      38.9        0.31                    
+          Warner 2015h                   0       38.9        0.31                   
+
+      0   2015 BW92                      T-      26.80       0.75                    
+          Warner 2015n                   2       26.80       0.75                   
+
+      0   2015 JY1                       T        6.442      1.16                    
+          Warner 2016c                   -2       6.442      1.16   11.417          
+
+      0   2015 KN120                     T?      46.3        0.59                    
+          Warner 2018a                   -1      46.3        0.59    9.107      0.34
+
+      0   2015 SZ                        T0      41.0        1.33                    
+          Warner 2016e                   0       41.0        1.33                   
+
+      0   2015 SV2                       T0      43.91       0.80                    
+          Warner 2016e                   0       43.91       0.80                   
+
+      0   2015 VY105                     T        0.0384     0.96                    
+          Carbognani 2016b               -3       0.0384     0.96    0.059      0.57
+
+      0   2015 XC                        T        0.181099   0.55                    
+          Warner 2016e                   -3       0.181099   0.55    0.27998    0.28
+
+      0   2016 BC14                      T?      28.5        1.08                    
+          Warner 2016j                   -1      28.5        1.08                   
+
+      0   2016 NH15                      T0      52.6        0.29                    
+          Warner 2017c                   0       52.6        0.29                   
+
+      0   2016 QS11                      T                                           
+          Pravec                         -3                                         
+
+      0   2016 UE                        TN                                          
+          Pravec                         -2                                         
+
+      0   2017 BW                        T       14.52       0.53                    
+          Pravec 2017web                 -2      14.52       0.53   18.25       0.40
+
+      0   2017 BY93                      T?A      1.75       0.14                    
+          Pravec                         -1                                         
+
+      0   2017 CF32                      TN                                          
+          Pravec                         -2                                         
+
+      0   2017 NH                        T        2.481      1.1                     
+          Warner 2018a                   -2       2.481      1.1     3.808      0.51
+
+      0   2018 AJ                        T        0.6722     1.09                    
+          Warner 2018k                   -3       0.6722     1.09    0.986          
+
+      0   2018 NB                        T       50.2        0.39                    
+          Pravec 2018web                 -2      50.3        0.34   57.1        0.34
+
+      0   2018 XV                               290.         0.28                    
+          Pravec 2019web                 0       31.2        0.08                   
+          Warner 2019f                   0      290.         0.28                   
+
+      0   333P/LINEAR                    T?      21.04       0.45                    
+          Hicks 2016a                    -1      21.04       0.45                   
+
+      0   P/2016 BA14                    T       36.6        0.32                    
+          Warner 2016j                   -2      36.6        0.32                   
+

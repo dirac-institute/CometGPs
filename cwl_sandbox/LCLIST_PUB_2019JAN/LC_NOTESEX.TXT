@@ -1,0 +1,3283 @@
+ASTEROID LIGHTCURVE DATABASE (LCDB) EXTENDED NOTES
+GENERATED: Jan 29, 2019
+
+      1 Ceres                         
+        Drummond 2014                  D_equatorial: 967 ± 10 km; D_polar: 892 ± 10 km.
+
+        AKARI                          This note applies to all 'AKARI' details records. The Usui
+                                       (2011) paper (AKARI/IRC Survey) used H values from Lowell
+                                       Observatory's ASTORB file and assumed ± 0.05 mag error. In
+                                       some cases, using the stated values for albedo and diameter
+                                       in the standard formulae to compute H (see LCDB README) does
+                                       not give the ASTORB value of H, usually differing by
+                                       0.01-0.02 mag.
+
+
+      2 Pallas                        
+        Carry 2010a                    Density = 3.4 ± 0.9 g/cc.  Dimensions: a = 275 ± 4 km; b =
+                                       258 ± 3 km; c = 238 ± 3 km.
+
+        Durech 2011a                   This applies to all entries for Durech 2011a. All but 14 of
+                                       the spin axis values in Durech 2011a are assumed values taken
+                                       from the literature. See the original paper for specifics.
+
+        Hanus 2017b                    Hanus 2017b is based on combining photometric, adaptive
+                                       optics, and occulation observations.
+
+
+      3 Juno                          
+        Pravec 2012b                   This note applies to all Pravec 2012b entries. In almost all
+                                       cases, the original Pravec values were H_R. The H_V values
+                                       were derived using assumed V-R values from various sources
+                                       based on known taxonomic class or orbital position. If a
+                                       diameter and albedo are given, these are revised values based
+                                       on the original WISE H, G, D, and pV, corrected using the new
+                                       H-G values and Harris and Harris (1997).
+
+
+      4 Vesta                         
+        Fornasier 2011b                Observations made from Rosetta spacecraft.
+
+        Hasegawa 2014b                 H_B: 3.96 ± 0.01, G_B: 0.30 ± 0.02; H_SZ: 3.08 ± 0.02, G_SZ:
+                                       0.25 ± 0.01.
+
+
+      5 Astraea                       
+        Durech 2009                    The pole (126, +40) agrees well with occultation profiles.
+
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+      6 Hebe                          
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+        Marsset 2017                   Marsset 2017 combined photometric, adaptive optics, and
+                                       occultation data.
+
+
+      7 Iris                          
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+      8 Flora                         
+        Torppa 2003                    The sidereal period is believed incorrect (see Durech entry
+                                       from DAMIT web site). The pole solution is still in close
+                                       agreement with other solutions.
+
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Hanus 2013b                    Diameter is derived from occultation-inversion model for
+                                       preferred pole solution, which was reported in a previous
+                                       work.
+
+
+      9 Metis                         
+        Durech 2011web                 Pole solution verified by Keck AO and occulation
+                                       observations.
+
+        Drummond 2012                  Effective diameter derived from ellipsoid of 218x175x129 km.
+
+
+     10 Hygiea                        
+        Durech 2011a                   Second pole solution (312,-42) gives a diameter of 443 ± 45
+                                       km. This is not the preferred solution.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     13 Egeria                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Masiero 2017                   The albedo error given for Masiero 2017 is the maximum
+                                       possible value when converting from albedo values from log
+                                       space to value space.
+
+
+     14 Irene                         
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     15 Eunomia                       
+        Hanus 2012a                    Diameter derived from combined LC inversion model and
+                                       adaptive optics data.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     16 Psyche                        
+        Durech 2011a                   Second pole solution (213,1) has a slightly larger error bar
+                                       (36 km) for the diameter.
+
+        Hanus 2013b                    Diameter is derived from occultation-inversion model for
+                                       preferred pole solution, which was reported in a previous
+                                       work.
+
+
+     17 Thetis                        
+        Behrend 2007web                Originally reported P = 12.27 ± 0.05. Updated in 2011.
+
+        Behrend 2011web                Originally reported P = 12.259 ± 0.007 h. Updated in 2011
+                                       with additional data.
+
+
+     19 Fortuna                       
+        Durech 2011web                 Pole confirmed by HST and occultation observations.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+        Veres 2015                     Veres et al. (2015) from Pan-STARRS photometry.
+
+
+     21 Lutetia                       
+        Belskaya 2010a                 The period given was adopted from work by Faury (2008).
+
+        Carry 2010b                    Shape model is non-convex.
+
+        Durech 2017                    Durech 2017: Combined photometric and thermal data.
+
+
+     22 Kalliope                      
+        Descamps 2008a                 Linus D = 28 ± 2 km. Kalliope a = 117.5, b = 82, c = 62 km.
+
+        Marchis 2008c                  D(Linus) > 22 km
+
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     23 Thalia                        
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     27 Euterpe                       
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+     28 Bellona                       
+        Behrend 2006web                Originally reported as 16.3 h.
+
+        Behrend 2007web                Originally reported as 16.32 h.
+
+        Behrend 2008web                Originally reported as 16.623 h. Modified to fit period found
+                                       with 2012 data.
+
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     29 Amphitrite                    
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     30 Urania                        
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     31 Euphrosyne                    
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+     32 Pomona                        
+        Behrend 2008web                Originally reported with P = 7.1. Updated in 2011 to fit
+                                       period found with 2011 data (11.7 h). Updated in 2016 to fit
+                                       period found from 2016 data.
+
+        Behrend 2011web                Originally reported P = 7.1 h. Updated in 2011 to fit period
+                                       found from 2011 data. Updated in 2016 to force fit to period
+                                       found from 2016 data.
+
+        Behrend 2012web                Originally reported 11.7 h. Changed to force a fit to period
+                                       found from 2016 data.
+
+
+     34 Circe                         
+        Durech 2011a                   Second pole (275,51) gives a diameter of 107 ± 10 km. The two
+                                       solutions are about equally likely.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     35 Leukothea                     
+        Pilcher 2009d                  Pole solution was determined using "amplitude-aspect" method.
+
+
+     36 Atalante                      
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+     37 Fides                         
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     39 Laetitia                      
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     40 Harmonia                      
+        Hanus 2012a                    Diameter derived from combined LC inversion model and
+                                       adaptive optics data.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     41 Daphne                        
+        Conrad 2008b                   Discovey of S/2008 (41) 1.
+
+        Matter 2011                    The diameter is based on a non-convex model using lightcurves
+                                       and AO images. A convex model gives an effective diameter of
+                                       194-209 km.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     42 Isis                          
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     45 Eugenia                       
+        Merline 1999                   Discovery of S/1998 (45) 1
+
+        Marchis 2006c                  Detection of known satellite.
+
+        Marchis 2007                   Discovery of second satellite. D ~ 6 km.
+
+        Hanus 2012a                    Diameter derived from combined LC inversion model and
+                                       adaptive optics data.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     47 Aglaja                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+     50 Virginia                      
+        Fornasier 2011a                The taxonomic classes given by Fornasier et al. are on the
+                                       Tholen system.
+
+
+     52 Europa                        
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+        Merline 2013a                  Diameter and albedo based on a rocky body. An equally likely
+                                       solution assuming a collection of bare rock slabs gives D =
+                                       0.004 ± 0.001 km and pV = 0.45 ± 0.35.
+
+
+     53 Kalypso                       
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+     54 Alexandra                     
+        Torppa 2008a                   Sidereal period is for (307,  20) solution.
+
+        Durech 2011a                   The second pole solution (156,13) is the least preferred. It
+                                       also gives a different diameter of 135 ± 20 km and sidereal
+                                       period of 7.022641 h.
+
+        Durech 2011web                 The pole solution (318, +23) has P_sidereal = 7.022649 h.
+
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Hanus 2013b                    Diameter is derived from occultation-inversion model for
+                                       preferred pole solution, which was reported in a previous
+                                       work.
+
+
+     68 Leto                          
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     69 Hesperia                      
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     72 Feronia                       
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     80 Sappho                        
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     81 Terpsichore                   
+        Timerson 2010                  The diameter was calculated from the a/b values for the
+                                       best-fit ellipse. It represents a minimum value.
+
+        Timerson 2010                  The diameter was calculated from the a/b values for the
+                                       best-fit ellipse. It represents a minimum value.
+
+
+     82 Alkmene                       
+        Timerson 2015                  Occultation profile gives ellipsoid of 62.8 ± 0.9 x 55.4 ±
+                                       0.9 km. Effecitve diameter is based on area of the ellipse.
+                                       The shape supports model 146 on the DAMIT site
+                                       (http://astro.troja.mff.cuni.cz/projects/asteroids3D/web.php)
+                                       
+
+
+     83 Beatrix                       
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+     85 Io                            
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     87 Sylvia                        
+        Behrend 2012web                Single lightcurve from data spanning two months. The
+                                       amplitude, and possibly synodic period, seemed to have
+                                       changed over the interval.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     88 Thisbe                        
+        Durech 2011a                   The second pole solution (247,50) gives a slightly larger
+                                       effective diameter: 220 ± 16 km. This is the least preferred
+                                       solution.
+
+        Hanus 2013b                    Diameter is derived from occultation-inversion model for
+                                       preferred pole solution, which was reported in a previous
+                                       work.
+
+
+     89 Julia                         
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     90 Antiope                       
+        Merline 2000a                  Discovery of satellite.
+
+        Bartczak 2014                  D1: 80.8 ± 1.8 km. D2: 80.4 ± 1.8 km. Separation: 174 ± 4 km.
+
+
+     93 Minerva                       
+        Torppa 2008a                   Sidereal period is for (49, -40) pole solution.
+
+        Marchis 2009                   Estimated sizes: S1 4km; S2 3 km.
+
+        Behrend 2011web                Originally reported as P = 5.98 ± 0.05 h. Forced in 2012 to
+                                       agree with period found using 2012 data.
+
+        Marchis 2011a                  D_MinervaI = 4 ± 2 km. D_MinervaII = 3 ± 1 km. P_Orb(MI) =
+                                       57.79 h. P_Orb(MII) = 26.74 h.
+
+
+     94 Aurora                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+     97 Klotho                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+     99 Dike                          
+        Waszczak 2015                  Waszczak (2016) H values are based on G12 system. The G12
+                                       value is given instead of G and carries "G" for the source
+                                       flag. The LCDB U value is based on the Waszczak et al.
+                                       "relflag" value, with relflag = 0 given U = 1 and relflag = 1
+                                       given U = 2
+
+
+    105 Artemis                       
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    107 Camilla                       
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+        Marsset 2016                   Discovery of second satellite.
+
+        Pajuelo 2018a                  Orbital period in binaries table is for S1. S2 orbital
+                                       period:33.0 ± 0.4 h. Numerous partial lightcurves were shown
+                                       in comparison to the shape model. Even though no composite
+                                       curve was given, a U = 3 was assigned as an overall
+                                       assessment of the results.
+
+
+    108 Hecuba                        
+        Behrend 2005web                Originally reported 19.8 h. Updated in 2016 to fit new
+                                       period.
+
+
+    114 Kassandra                     
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    119 Althaea                       
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    121 Hermione                      
+        Descamps 2009a                 Pole (4, +13) has P_sidereal = 5.550878 h and is based on
+                                       non-convex model.
+
+
+    125 Liberatrix                    
+        Durech 2007                    The pole (280, +74) has P_sidereal = 3.968199 h.
+
+
+    126 Velleda                       
+        Behrend 2011web                Originally reported P = 5.36 ± 0.05 h, A = 0.05 ± 0.01 mag.
+                                       Updated in 2011 after additional data obtained.
+
+
+    128 Nemesis                       
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    129 Antigone                      
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    130 Elektra                       
+        Behrend 2001web                Originally reported P = 5.43 h. Data forced to fit period
+                                       found in 2011.
+
+        Behrend 2009web                Period originally reported as 5.43 ± 0.01 h.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+        Yang 2014                      S/2014 (130) 1. Second satellite. Projected separation from
+                                       primary approx. 550 km.
+
+
+    135 Hertha                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    136 Austria                       
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+        Durech 2016                    Models from Durech et al. (2016) are posted on the DAMIT web
+                                       site.
+                                       http://astro.troja.mff.cuni.cz/projects/asteroids3D/web.php
+
+
+    139 Juewa                         
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    145 Adeona                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Wang 2018                      Sidereal period for pole (122, -3): 15.0733 ± 0.0001 hr.
+
+
+    146 Lucina                        
+        Durech 2009                    The pole (305, -41) has P_sidereal = 18.55390 h.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    152 Atala                         
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    155 Scylla                        
+        Hanus 2018b                    The Hanus 2018b entries include results only if they are
+                                       revisions or rejections of previously reported pole
+                                       solutions.
+
+
+    160 Una                           
+        Marciniak 2009a                Pole (308, -41) has P_sidereal = 11.03316 h.
+
+
+    161 Athor                         
+        Pilcher 2010b                  Pole solution was determined using "amplitude-aspect" method.
+
+
+    165 Loreley                       
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    167 Urda                          
+        Durech 2011a                   The second pole solution (107,-69) gives a slightly larger
+                                       effective diameter: 51 ± 15 km. This is the least preferred
+                                       solution.
+
+
+    176 Iduna                         
+        Wang 2018                      Sideral period for pole solution (156,+73): 11.29382 ±
+                                       0.00002 hr.
+
+
+    184 Dejopeja                      
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    194 Prokne                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    196 Philomela                     
+        Durech 2007                    Pole (276, -49) has P_sidereal = 8.332827 h.
+
+
+    198 Ampella                       
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    201 Penelope                      
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    202 Chryseis                      
+        Behrend 2005web                Originally reported P = 11.8 ± 0.5. Updated in 2011.
+
+
+    208 Lacrimosa                     
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    211 Isolda                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    216 Kleopatra                     
+        Marchis 2008e                  AO observations show two satellites, ~5 km and ~3 km.
+                                       Distances: 650 km and 380 km, respectively.
+
+        Shepard 2018                   DimensionsL 276 x 94 x 178 km ± 15%. The DateObs field is the
+                                       mid-date for the 2013 observations. Other observations go
+                                       back to 1999.
+
+
+    221 Eos                           
+        Hanus 2018a                    Hanus 2018 combined optical photometric and IR (WISE) data
+                                       for shape modeling. Shape modeling quality rating (QF) is
+                                       from Hanus 2017c.
+
+
+    224 Oceana                        
+        Behrend 2006web                Originally reported P = 18.93 ± 0.05. Updated in 2011.
+
+
+    228 Agathe                        
+        Szabo 2016                     The plots for Szabo 2016a were made available off-line. They
+                                       were not included in the original paper or in supplemental
+                                       data.
+
+
+    230 Athamantis                    
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    238 Hypatia                       
+        Behrend 2004web                Originally reported 8.88 h. Updated in 2011.
+
+
+    239 Adrastea                      
+        Behrend 2007web                Originally reported as 19.846 h. Modified based on results
+                                       from later observations.
+
+
+    250 Bettina                       
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    266 Aline                         
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    276 Adelheid                      
+        Durech 2011a                   The second pole solution (199,-20) gives a slightly smaller
+                                       diameter: 117 ± 15 km. The two solutions are about equally
+                                       likely.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+                                       Occultation-inversion gives D = 125 ± 15.
+
+
+    283 Emma                          
+        Durech 2011web                 Pole (251, +22) has P_sidereal = 6.895222 h.
+
+
+    298 Baptistina                    
+        Carvano 2010                   H_R = 10.92 was directly measured value. The H = 11.30 is the
+                                       result of using H_R and V-R = 0.38 measured by the authors.
+
+
+    302 Clarissa                      
+        Durech 2011a                   The first pole solution (28,-72) is preferred.
+
+
+    306 Unitas                        
+        Durech 2011a                   The second pole solution (253,-17) gives a slightly larger
+                                       diameter: 53 ± 5. This is the least preferred solution.
+
+
+    308 Polyxo                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    312 Pierretta                     
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    317 Roxane                        
+        Merline 2009                   Estimated Ds/Dp: 0.26 (based on magnitude differences).
+
+
+    331 Etheridgea                    
+        Warner 2010i                   Presuming the nightly calibrations were correct, the data
+                                       provide any number of solutions. If the two sessions are
+                                       forced to overlay, a number of solutions, less than 24 h, are
+                                       still possible.
+
+
+    345 Tercidina                     
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    349 Dembowska                     
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    350 Ornamenta                     
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    354 Eleonora                      
+        Behrend 2001web                Originally reported P = 4.3 ± 0.1. Updated in 2011 to fit
+                                       data to a period found with a different data set.
+
+        Behrend 2002web                Originally reported P = 4.282 ± 0.005, A = 0.52 ± 0.02.
+                                       Updated in 2011.
+
+        Behrend 2006web                Originally reported P  = 4.27750 ± 0.00003 h, A = 0.20 ±
+                                       0.01. Updated in 2011.
+
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    355 Gabriella                     
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    362 Havnia                        
+        Wang 2015b                     Period for second pole is 16.918935 ± 0.000043 h.
+
+
+    372 Palma                         
+        Durech 2011a                   The second pole solution (44,17) gives a different diameter
+                                       (198 ± 26 km) and sidereal period (8.58191 h). The two
+                                       solutions are about as likely.
+
+
+    374 Burgundia                     
+        Behrend 2018web                Two halves of 13-h period are identical, leaving half-period
+                                       a distinct possibility.
+
+
+    386 Siegena                       
+        Behrend 2004web                Period originally reported as 7.6 h.
+
+
+    390 Alma                          
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    394 Arduina                       
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    409 Aspasia                       
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+                                       Occultation-inversion gives D = 173 ± 17 km.
+
+
+    414 Liriope                       
+        Chang 2015                     Chang (2015) H values are based on H-G system. The G values
+                                       are in R, not V. All lightcurves rated U=2-3 by Chang were
+                                       reviewed and a formal U code was assigned by the LCDB
+                                       authors. The objects in their U = 1 list were all given U =
+                                       1.
+
+
+    418 Alemannia                     
+        Gorby 2018                     Results table has incorrect period.
+
+
+    423 Diotima                       
+        Hanus 2013b                    Diameter is derived from AO-inversion model for preferred
+                                       pole solution, which was reported in a previous work.
+
+
+    433 Eros                          
+        Trilling 2010                  The Trilling (2010) results are based on using values for H
+                                       taken from the JPL Horizons site. In Trilling (2010), there
+                                       is often a significant disagreement among the albedo,
+                                       diameter, and H values when they are applied to the standard
+                                       formula that relates these three values (see LCDB README
+                                       file), i.e., using the Trilling albedo and diameter values
+                                       gives a differnt value for H than stated, sometimes by up to
+                                       0.1 mag.
+
+        Mueller 2011a                  H and G taken from other sources.
+
+        Thomas 2011b                   This note applies to all entries for Thomas 2011b. Warm
+                                       Spitzer observations. The error is the larger of the + or -
+                                       (which were not the same).
+
+
+    434 Hungaria                      
+        Morrison 1979                  Morrison values were based on V(1,0) magnitude system. They
+                                       have been converte
+
+        Lucas 2017                     The Lucas 2017 taxonomic classifications are on the Bus-DeMeo
+                                       system.
+
+
+    435 Ella                          
+        Chang 2016                     Chang (2016) H values are based on H-G system. The G values
+                                       are in R, not V. All lightcurves with a period were initially
+                                       given U = 2 regardless of rating by Chang et al. The plots
+                                       for the 352 lightcurves that did not have complete coverage
+                                       were reviewed and the U codes revised. In many of those
+                                       cases, it appears that the half-period was found. For those,
+                                       if the summary line depended on the Chang et al. entry, the
+                                       period on the summary line is double that found by Chang et
+                                       al. and carries a 'D' (determined) flag in the NOTES field.
+                                       No errors were given for amplitudes, which were often
+                                       dramatically overstated.
+
+
+    437 Rhodia                        
+        Behrend 2005web                Originally reported 52.8 h. Updated to fit period found with
+                                       2016 data.
+
+
+    444 Gyptis                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    469 Argentina                     
+        Wang 2003                      BIN: Reported possibility of being binary.      Considered
+                                       unreliable.
+
+        Wang 2005                      NPA: Reported secondary period of 8.74 hr.       Considered
+                                       unreliable.
+
+
+    471 Papagena                      
+        Torppa 2008a                   Sidereal period is for (29, 41) solution.
+
+
+    479 Caprera                       
+        Behrend 2002web                Originally reported P = 5.259 ± 0.002 h, A = 0.34 ± 0.09 h.
+                                       Updated in 2011 to fit data to a new period found with a
+                                       different data set.
+
+        Behrend 2004web                Originally reported P = 5.247 ± 0.006 h, A = 0.08 ± 0.01 mag.
+                                       Updated in 2011 to fit to a new period found from a different
+                                       data set.
+
+        Behrend 2007web                Originally reported P = 5.2491 ± 0.0002, A = 0.07 ± 0.01 mag.
+                                       Updated in 2011 to fit data a new period found with a
+                                       different data set.
+
+
+    488 Kreusa                        
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    506 Marion                        
+        Wang 2015b                     Period for second pole solution is 16.549751 ± 0.000060
+
+
+    511 Davida                        
+        Conrad 2007                    Measured ellipsoid (a,b,c): 357±2, 294±2, 231±50 km.
+
+
+    522 Helga                         
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    531 Zerlina                       
+        Behrend 2002web                Originally reported 7.2 h. Updated to fit period found with
+                                       2016 data.
+
+
+    540 Rosamunde                     
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    544 Jetta                         
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    550 Senta                         
+        Behrend 2004web                Originally reported 19.584 h. Updated to fit period found in
+                                       2016.
+
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    566 Stereoskopia                  
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    585 Bilkis                        
+        Wang 2016                      All lightcurves for Wang et al. 2016 were forced to sidereal
+                                       period and were in intensity units of the inversion model
+                                       curve, therefore there were no amplitudes in magnitude given.
+                                       
+
+
+    617 Patroclus                     
+        Buie 2015                      Volume equivalent diameters based on derived ellipsods are
+                                       D_Patroclus: 113 km; D_Menoetius: 104 km
+
+        Chatelain 2016                 The B-V and V-R magnitudes for the Chatelain 2016 (Icarus
+                                       271) were derived from the data table in Appendix A. The
+                                       median errors for these color indexes in the paper are given,
+                                       not the actual values for the individual results. The B-R and
+                                       V-I magnitudes are from Table 3. The B-V and V-R values may
+                                       not yield the exact numbers of the stated B-R and V-I
+                                       magnitudes.
+
+
+    624 Hektor                        
+        The objects under Sonnett 2015 were observed in the W3 (12 um) band by WISE. The amplitude
+        given is the maximum range of values, not the range of a fitted lightcurve. No periods were
+        given for the data.
+
+
+    636 Erika                         
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    654 Zelinda                       
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    676 Melitta                       
+        Behrend 2002web                Originally reported as 8.5734.
+
+        Behrend 2006web                Originally reported as 14.09 h.
+
+
+    694 Ekard                         
+        Timerson 2010                  A least squares fit to the irregular shape derived from the
+                                       occultation observations and based on a shape model by Torppa
+                                       et al. (2003) yields the stated diameter.
+
+        Timerson 2010                  A least squares fit to the irregular shape derived from the
+                                       occultation observations and based on a shape model by Torppa
+                                       et al. (2003) yields the stated diameter.
+
+
+    699 Hela                          
+        Behrend 2003web                Originally reported 4.765 h. Updated to fit period found with
+                                       2016 data.
+
+
+    702 Alauda                        
+        Rojo 2011                      R_orbit = 1230 km.
+
+
+    704 Interamnia                    
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    728 Leonisis                      
+        Galad 2010c                    The lightcurves from Galad 2010c are based on data from the
+                                       SDSS Moving Object Catalog.
+
+
+    763 Cupido                        
+        Pilcher 2018d                  Ambiguous second period. Other possibility is 121 h.
+
+
+    777 Gutemberga                    
+        Polakis 2018d                  The ambiuous table includes the half-period for this work.
+                                       However, given the amplitude and low phase angle, the LCDB
+                                       authors chose not to include the 'A' flag in the Notes field
+                                       of this record or the summary line.
+
+
+    809 Lundia                        
+        Marchis 2012                   Hv assumed V-R = 0.54.
+
+        Bartczak 2017                  Reported pole is the pole of the orbit for the fully
+                                       syncrhonous binary. Amplitudes are for out of eclipse
+                                       lightcurve.
+
+
+    825 Tanina                        
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    853 Nansenia                      
+        Behrend 2001web                Originally reported P = 9.31 h. Update in 2011 based on a new
+                                       period but the solution is still highly ambiguous.
+
+
+    854 Frostia                       
+        Marchis 2012                   Hv assumed V-R = 0.54.
+
+
+    887 Alinda                        
+        Morrison 1974                  Morrison gives D = 5. in his table as well as log(D). The
+                                       latter results in a value of 5.2 km. We used the latter.
+
+        Dunlap 1979                    The authors give H_v(1,0) = 14.10 ± 0.08. For conversion to
+                                       the current H-G system, we use Ho = H(1,0) - 0.34.
+
+
+    901 Brunsia                       
+        Wisniewski 1997                A period of 3.139 h (with bimodal curve) was also found by
+                                       Wisniewski but the final paper adopted the triply-periodic
+                                       value of 4.872 h.
+
+
+    911 Agamemnon                     
+        Timerson 2013                  Ds = 3-10 km. Based on single video observation.
+
+
+    925 Alphonsina                    
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    939 Isberga                       
+        Carry 2015                     D1: 12.4 ± 2.5 km; Ds: 3.6 ± 0.7 km
+
+
+    951 Gaspra                        
+        Thomas 1994                    Diameter is mean radius of irregular object with principal
+                                       diam
+
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+    966 Muschi                        
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+    987 Wallia                        
+        Behrend 2008web                Period originally reported as 7.0 h.
+
+
+   1011 Laodamia                      
+        Apostolovska 2014              a/b: 0.83; b/c: 1.3
+
+
+   1016 Anitra                        
+        Pilcher 2016f                  Orbital period an approximate estimate based on four possible
+                                       mutual events. First entry (Date: Nov 8, 2015) is for full
+                                       data set covering three months. Subsequent entries are based
+                                       on subsets.
+
+
+   1036 Ganymed                       
+        Velichko 2012                  Obs date estimated from phase angle given in paper.
+
+        Velichko 2013                  Ellipsoid lengths: a = 960 km, b = 770 km, c = 495 km.
+
+
+   1052 Belgica                       
+        Franco 2013b                   Ds/Dp >= 0.36 ± 0.02
+
+        Franco 2013c                   Ds/Dp = 0.36 ± 0.02
+
+
+   1055 Tynka                         
+        Behrend 2012web                Originally reported as P = 12.8 ± 0.5 h.
+
+
+   1061 Paeonia                       
+        Pilcher 1987                   Pilcher's notes for 1986 Dec. 4 show observations form
+                                       4:20-8:00 UT with fading by about 0.5 magnitude 5:10-7:00 UT,
+                                       then brightening by 8:00.  For 1986 Dec. 5, 1061 Paeonia was
+                                       "fairly easy at 5:20, 6:15, invisible at 7:20, dimly seen
+                                       again 8:05 at lower altitude.
+
+
+   1069 Planckia                      
+        Behrend 2006web                Originally reported P = 11. h, A = 0.18. Updated in 2011 to
+                                       fit data to new period.
+
+
+   1070 Tunica                        
+        Waszczak (2015) H values are based on G12 system. The G12 value is given instead of G and
+        carries "G" for the source flag. The LCDB U value is based on the Waszczak et al. "relflag"
+        value, with relflag = 0 given U = 1 and relflag = 1 given U = 2
+
+
+   1082 Pirola                        
+        Baker 2011a                    When using maximum light, H = 10.320 ± 0.013, G = 0.107 ±
+                                       0.016.
+
+
+   1089 Tama                          
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+        Behrend 2011web                Originally reported P = 16.45 ± 0.05, A = 0.12 ± 0.02 mag.
+                                       Updated in 2011 with additional data.
+
+
+   1095 Tulipa                        
+        Behrend 2005web                Originally reported P = 2.78730 ± 0.00005 h, A = 0.20 ± 0.01
+                                       mag. Updated in 2011.
+
+
+   1100 Arnica                        
+        Slivan 2008                    A footnote to Table 2 in the Slivan et al. (2008) paper
+                                       indicates that subsquent data (not included in the paper)
+                                       show the period to be 14.535 h instead of the ~29 h reported
+                                       in the paper. The 2007 data were not plotted in the paper.
+
+
+   1188 Gothlandia                    
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+        Baker 2012a                    Using maximums of lightcurves, the authors found H = 11.425 ±
+                                       0.014 and G = 0.230 ± 0.015. Diameter and albedo are
+                                       revisions to WISE values applying the author's H-G and Harris
+                                       and Harris (1997) correction.
+
+
+   1207 Ostenia                       
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+   1270 Datura                        
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+   1278 Kenya                         
+        Oey 2012b                      The second tumbling period of 127 h is a likely but not
+                                       definitive candidate.
+
+
+   1313 Berna                         
+        Marchis 2012                   Hv assumed V-R = 0.54.
+
+
+   1333 Cevenola                      
+        Marchis 2012                   Hv assumed V-R = 0.54.
+
+
+   1346 Gotha                         
+        Behrend 2006web                Originally reported P = 2.6540 ± 0.0003 h.
+
+
+   1406 Komppa                        
+        Behrend 2011web                Authors reported P = 7.02 with 4 max/min.
+
+
+   1428 Mombasa                       
+        Stephens 2012web               A half-period of 8.38 h cannot be formally excluded.
+
+
+   1453 Fennia                        
+        Warner 2016i                   To find the primary period, the satellite orbital period was
+                                       forced to near previous results.
+
+
+   1499 Pori                          
+        Behrend 2008web                Originally 3.36 h. Updated to fit period found in 2016.
+
+
+   1509 Esclangona                    
+        Merline 2003a                  Ds ~4 km. Distance from Primary: 140 km.
+
+        Marchis 2012                   Hv assumed V-R = 0.54.
+
+
+   1512 Oulu                          
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+   1514 Ricouxa                       
+        Durech 2009                    Ambiguous pole solution. The longitude is unknown and the
+                                       beta is an average of several solutions with the error being
+                                       the dispersion.
+
+
+   1536 Pielinen                      
+        Casalnuovo 2016                Secondary period P = 6.43 ± 0.01 h reported. Likely harmonic
+                                       of main period.
+
+
+   1627 Ivar                          
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Mueller 2011a                  H taken from another source.
+
+
+   1723 Klemola                       
+        Behrend 2005web                Originally reported P = 6.22 h. Updated in 2011 to fit period
+                                       found with 2011 data.
+
+
+   1727 Mette                         
+        Behrend 2003web                Period originally reported as 2.982 ± 0.002 h.
+
+        Behrend 2006web                Originally reported as P = 2.98141 ± 0.00005 h.
+
+        Warner 2013i                   Ds/Dp: >= 0.20 ± 0.02. Unusual because primary is moderately
+                                       elongated, a/b = 1.36:1 assuming equatorial view of triaxial
+                                       ellipsoid.
+
+        Warner 2013l                   Ds/Dp = 0.21 ± 0.02
+
+        Warner 2016l                   Orbital period forced to range near previous results. As
+                                       stand-alone data set, insufficient evidence to suggest a
+                                       satellite.
+
+
+   1770 Schlesinger                   
+        Pravec 2016web                 Orbital periods for 2016 have no real meaning. They were used
+                                       to demonstrate behavior of lightcurve data beyond primary
+                                       lightcurve. The 2015 secondary period could be independent
+                                       rotation of the satellite or signs of a third member.
+
+
+   1777 Gehrels                       
+        Pravec 1990web                 Reanalysis of the Wisniewski data.
+
+
+   1778 Alfven                        
+        Chang 2014a                    This note applies to all entries from Chang et al. (2014, ApJ
+                                       788, A17) where they used 2nd order Fourier fits This
+                                       produced amplitudes that didn't necessarily fit the data. The
+                                       amplitudes in the LCDB were determined by the LCDB authors.
+                                       In some cases, the precision of the period was considered too
+                                       high and rounded to the nearest 0.1 h while in other cases,
+                                       the stated period was converted to a >X h estimate.
+
+
+   1829 Dawson                        
+        Galad 2010c                    Combined with data from Pray (2006a)
+
+
+   1830 Pogson                        
+        Pravec 2012a                   D2/D1 = 0.28 ± 0.02. Value of D2/D1 = 0.30 ± 0.02 was adopted
+                                       as mean of data from three apparitions.
+
+        Pravec 2012a                   Asynchronous status assigned to satellite generating mutual
+                                       events.
+
+
+   1850 Kohoutek                      
+        Chang (2016) H values are based on H-G system. The G values are in R, not V. All lightcurves
+        with a period were initially given U = 2 regardless of rating by Chang et al. The plots for
+        the 352 lightcurves that did not have complete coverage were reviewed and the U codes
+        revised. In many of those cases, it appears that the half-period was found. For those, if
+        the summary line depended on the Chang et al. entry, the period on the summary line is
+        double that found by Chang et al. and carries a 'D' (determined) flag in the NOTES field. No
+        errors were given for amplitudes, which were often dramatically overstated.
+
+
+   1862 Apollo                        
+        Kaasalainen 2007               Period is for zero-epoch of November 13, 1980. Paper proved
+                                       spin up due to YORP effect.
+
+        Rozitis 2013                   The authors assumed the pole and sidereal period from
+                                       previous works to derive the required diameter and albedo to
+                                       fit a thermophysical model that accuratly predicts Yarkovsky
+                                       and YORP rates of change.
+
+
+   1863 Antinous                      
+        Masiero 2017                   The albedo error given for Masiero 2017 is the maximum
+                                       possible value when converting from albedo values from log
+                                       space to value space.
+
+
+   1866 Sisyphus                      
+        Benner 1985                    Ds/Dp ~ 0.1
+
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+   1876 Napolitania                   
+        Warner 2016b                   Suspected wide binary where primary has long period and large
+                                       amplitude and the satellite has a short period and low
+                                       amplitude.
+
+
+   1943 Anteros                       
+        Mueller 2011a                  H and G taken from other sources.
+
+
+   1947 Iso-Heikkila                  
+        Galad 2010c                    For Galad 2010c entries, a compromise date of 2005 Oct 5 was
+                                       used to compute phase and PAB for those objects based on SDSS
+                                       data where no specific date information was provided.
+
+
+   1979 Sakharov                      
+        Pravec 2011web                 Some suspected events seen but there was no consisetent
+                                       solution for a secondary period.
+
+
+   1981 Midas                         
+        McGlasson 2019                 A shape was reported (4x2x2) with one lobe being 30% larger.
+                                       The neck joining the two lobes is about 60% of the width of
+                                       the lobes.
+
+
+   2006 Polonskaya                    
+        Pray 2005c                     Second period due to 1) asynchronous single satelltie or 2)
+                                       second satellite.
+
+
+   2020 Ukko                          
+        Pilcher 2015i                  Alternation solutions with bimodal and trimodal solutions are
+                                       considered unlikely.
+
+
+   2060 Chiron                        
+        Belskaya 2010b                 To derive H, used V-R=0.36 and phase coefficient (not G) of
+                                       0.06 mag/degree.
+
+        Belskaya 2015                  The Belskaya et al. (2015) provides updated color index
+                                       values for TNOs based on numerous references. See that paper
+                                       for the original references.
+
+
+   2110 Moore-Sitterly                
+        Asteroid pair with (44612) 199 RP27 (Pravec 2010a).
+
+
+   2178 Kazakhstania                  
+        Benishek 2018m                 Secondary has lightcurve amplitude of 0.02 mag; suggests a
+                                       1.3 ± 0.1 a/b ellipsoid.
+
+
+   2207 Antenor                       
+        Stephens 2018k                 Orbital period is Binaries table is one of several solutions.
+
+
+   2242 Balaton                       
+        Marchini 2016b                 Estimated Ds/Dp is a minimum.
+
+
+   2343 Siding Spring                 
+        Pollock 2015b                  Secondary period in binary report attributed to third body.
+
+
+   2384 Schulhof                      
+        Vokrouhlicky 2016b             V-R = 0.49 ± 0.05 assumed. H_R = 11.64 ± 0.03.
+
+
+   2453 Wabash                        
+        Galad 2010c                    Combined with data from Pray (2006c)
+
+
+   2462 Nehalennia                    
+        Szabo 2016 entries are based on Kepler 2 data. Most objects did not have a reported
+        period/amplitude.
+
+
+   2483 Guinevere                     
+        The objects under Sonnett 2015 were observed in the W3 (12 um) band by WISE. The amplitude
+        given is the maximum range of values, not the range of a fitted lightcurve. No periods were
+        given for the data.
+
+
+   2577 Litva                         
+        Warner 2009q                   P2 is assumed to be due to the rotation of the secondary.
+                                       There is slight evidence that the secondary may be tidally
+                                       locked and, therefore, P2 is due to the rotation of a third
+                                       body in the system.
+
+        Merline 2013b                  P_Orb(S2): 214 d (107 d). D(S2): 1.2 km.
+
+        Merline 2013c                  P_Orb(S2): 214 d (107 d). D(S2): 1.2 km. D(S1): 1.4 km.
+
+
+   2691 Sersic                        
+        Oey 2016a                      No mutual events seen but second period found. See binary
+                                       data table.
+
+
+   2754 Efimov                        
+        Pray 2006g                     Ds/Dp = 0.20 ± 0.03.
+
+
+   2802 Weisell                       
+        Behrend 2006web                Originally reported as P = 37.74 ± 0.06 h, A = 0.41 ± 0.03
+                                       mag. Data forced to fit period found in 2011.
+
+
+   2815 Soma                          
+        Pollock 2011                   Ds/Dp = 0.25 ± 0.02.
+
+
+   2847 Parvati                       
+        Behrend 2018web                Overlooked binary?
+
+
+   2867 Steins                        
+        Jorda 2008                     Lightcurve data obtained by OSIRIS/Rosetta spacecraft. The
+                                       phase angle was 41.7 as seen from the craft, not the Earth.
+
+        Lamy 2008a                     Axis ratios: a/b: 1.17; a/c: 1.25. Size: 5.73 ± 0.52, 4.95 ±
+                                       0.45, 4.58 ± 0.41 km
+
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+   2881 Meiden                        
+        Polakis 2017a                  The assignment of the primary and secondary periods may be
+                                       reversed, i.e., the longer of the two periods may be the
+                                       primary. The rotation of the satellite responsible for events
+                                       is locked to the orbital period.
+
+
+   3025 Higson                        
+        Behrend 2010web                Originally reported 10.8 h. Updated to fit to period found
+                                       with 2016 data.
+
+
+   3103 Eger                          
+        Durech 2012                    YORP acceleration: (1.4 ± 0.6) x 10^-8 rad d^-2
+
+
+   3122 Florence                      
+        Radar Team 2017c               P_ORB_Inner: ~8h. P_ORB_Outer: ~24h. Satellites are assumed
+                                       to be tidally locked to orbital period.
+
+
+   3138 Ciney                         
+        Hills 2014a                    Author reported P = 56.1 h with monomodal lightcurve but 0.56
+                                       mag amplitude virtually assures a bimodal curve and,
+                                       therefore, double period.
+
+
+   3200 Phaethon                      
+        Ansdell 2014                   Color index values are the average of three values derived
+                                       over several years. The errors were added in quadrature.
+
+        Radar Team 2017d               Diameter based on high-res (75m/pixel) images.
+
+
+   3250 Martebo                       
+        Alvarez 2014b                  Author found H_R = 10.84. A V-R = 0.38 was assumed to give
+                                       H_V = 11.22 ± 0.06.
+
+
+   3260 Vizbor                        
+        Diameter and albedo taken from Warner 2012, which revised WISE diameter and albedo with new
+        H-G and Harris and Harris (1997).
+
+
+   3309 Brorfelde                     
+        Warner 2009i                   Ds/Dp: 0.26 ± 0.02
+
+
+   3481 Xianglupeak                   
+        Pravec 2012web                 A single suspect attentuation was seen.
+
+
+   3494 Purple Mountain               
+        Cantu 2016                     Authors adopted shorter (monomodal) period. However, the
+                                       amplitude and phase angle dictated a bimodal solution at the
+                                       longer period.
+
+
+   3623 Chaplin                       
+        Marchis 2012                   Hv assumed V-R = 0.54.
+
+
+   3671 Dionysus                      
+        Mueller 2011a                  H taken from another source.
+
+
+   3673 Levy                          
+        Pravec 2007web                 Refinements on the original parameters reported by Pray et al
+                                       in CBET 1165.
+
+
+   3704 Gaoshiqi                      
+        Pravec 2010web                 Systematic residuals seen, possibly due to another lightcurve
+                                       component, but no good solution could be found.
+
+
+   3749 Balam                         
+        Merline 2002a                  Estimated size of satellite: 1.5 km.
+
+        Marchis 2008b                  This is a trinary system, with a more distant satellite
+                                       reported via AO observations (2002, IAUC 7827)
+
+        Behrend 2014web                Lightcurve shows mutual events (Amp_max = 0.46 ± 0.03) but
+                                       rotation of primary not isolated.
+
+
+   3782 Celle                         
+        Marchis 2012                   Hv found using assumged V-I = 0.88.
+
+
+   3792 Preston                       
+        Pravec 2016web                 The 23.8 h orbital period is based on a bimodal solution
+                                       derived from a monomodal solution of 11.91 h. Possible, very
+                                       shallow mutual events.
+
+        Benishek 2017c                 If not binary, the two periods may indicate low-level
+                                       tumbling.
+
+
+   3800 Karayusuf                     
+        Warner 2008m                   Two possible mutual events. Insufficient data to calculate a
+                                       period.
+
+
+   3841 Dicicco                       
+        Klinglesmith 2015d             Ds/Dp in Binary table is a minimum.
+
+
+   3854 George                        
+        Warner 2006f                   Suspicious attenutations but insufficient data for valid
+                                       analysis.
+
+
+   3951 Zichichi                      
+        Franco 2018c                   Some attenuations due to satellite observed. Period is based
+                                       on single-period solution.
+
+
+   3982 Kastel'                       
+        Pravec 2005b                   Second period in binary table may be 2.918 h.
+
+
+   4015 Wilson-Harrington             
+        Also know as 107P/Wilson-Harrington. It has been observed to exhibit a cometary appearance.
+        Photometry of this object may be contaminated by unresolved coma and not represent net
+        nucleus brightness.
+
+        Urakawa 2011                   The authors reported pole solutions. However, these are not
+                                       considered reliable since they are based on data that are too
+                                       limited for proper spin axis modeling.
+
+        Urakawa 2012                   The authors provided four possible solutions that involved
+                                       either tumbling, a binary object, or a single body in PA
+                                       rotation. The spin axis and period are for for the PA
+                                       solution.
+
+
+   4022 Nonna                         
+        Behrend 2013web                Authors reported P = 1.31 h; this seems unlikely and so the
+                                       double period was entered for the details record.
+
+
+   4263 Abashiri                      
+        Pravec 2012web                 A few deviations were see but nothing significant or
+                                       convincing.
+
+
+   4336 Jasniewicz                    
+        Owings 2018                    The longer period is determined from data and based on
+                                       removing one night from the lightcurve.
+
+
+   4435 Holt                          
+        Stephens 2018c                 Mutual events not tied to orbital period seen: possible
+                                       second satellite.
+
+        Stephens 2018g                 Attenuations not tied to the orbital period may indicate a
+                                       second satellite. See original paper for the evolution of the
+                                       primary lightcurve and mutual events.
+
+
+   4450 Pan                           
+        Carbognani 2008b               Values for G and Pv were assumed based on Wisniewski (1997).
+
+
+   4486 Mithra                        
+        The amplitude, A = 0.5, is an estimate based on the derived shape of the asteroid and an
+        equatorial view.
+
+
+   4492 Debussy                       
+        Marchis 2012                   Hv found using V-R 0.54.
+
+
+   4495 Dassanowsky                   
+        Ambiguity is for P1. Binary status not in doubt.
+
+        Warner 2019i                   Ambiguity is for P1. Adopted period is favored because of
+                                       estimated size ratio of system and binary modeling (Pravec et
+                                       al., 2010)
+
+
+   4541 Mizuno                        
+        Pray 2015b                     Ds/Dp >= 0.24
+
+
+   4555 Josefaperez                   
+        Pravec 2007web                 Variations in mean levels of the calibrated Ondrejov R data
+                                       suggest that there may be a rotation of an unresolved
+                                       satellite.
+
+
+   4666 Dietz                         
+        Pravec 2015web                 One suspected event captured.
+
+        Oey 2018a                      Data from 2011 and 2015 included in analysis. Possible third
+                                       period seen in 2015 and 2018 data.
+
+
+   4690 Strasbourg                    
+        Warner 2011j                   Multiple solutions possible because of the limited data set.
+                                       Analysis by Petr Pravec.
+
+
+   4708 Polydoros                     
+        Stephens 2018i                 Period taken from plot. Results table and text each have a
+                                       different period.
+
+
+   4718 Araki                         
+        Pravec 2017web                 The nature of the two periods is uncertain. They could be the
+                                       result of a binary or low level tumbling, thus this record
+                                       carries both flags.
+
+
+   4729 Mikhailmil'                   
+        Ruthroff 2012a                 Lightcurve has very unusual shape. The period could really
+                                       lie between 15-30 h.
+
+
+   4765 Wasserburg                    
+        Asteroid pair with 2001 XO105 (Pravec 2010a)
+
+
+   5003 Silvanominuto                 
+        Waszczak (2016) H values are based on G12 system. The G12 value is given instead of G and
+        carries "G" for the source flag. The LCDB U value is based on the Waszczak et al. "relflag"
+        value, with relflag = 0 given U = 1 and relflag = 1 given U = 2
+
+
+   5026 Martes                        
+        Asteroid pair with 2005 WW113 (Pravec 2010a)
+
+
+   5076 Lebedev-Kumach                
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+   5143 Heracles                      
+        Taylor 2012b                   Dp = 3.6 ± 1.2 km; Ds = 0.6 ± 0.3 km. Orbital period of 16 h
+                                       is based on period 14-17 h. A period of 40-57 h cannot be
+                                       excluded, but it is inconsistent with the assumption of a
+                                       synchronously rotating secondary.
+
+
+   5145 Pholus                        
+        Tegler 2005                    Dimensions (diameters) determined by calculation to be 310 X
+                                       160 x 150 km. This gives an effective spheroidal diameter of
+                                       ~190 km.
+
+        Belskaya 2010b                 To derive H, used V-R=0.77 and phase coefficient (not G) of
+                                       0.083 mag/degree.
+
+
+   5384 Changjiangcun                 
+        The low WISE and AKARI albedos indicate that C-type is a better choice rather than the LCDB
+        default of ES for Hungaria members.
+
+
+   5402 Kejosmith                     
+        Benishek 2018j                 The ambiguity is for Porb. It may be 32.62 h instead of the
+                                       adopted 16.31 h.
+
+
+   5425 Vojtech                       
+        Vander Haagen 2012a            Author reported a trimodal solution of 3.972 h. This is
+                                       considered highly unlikely.
+
+
+   5535 Annefrank                     
+        Hillier 2011                   Stardust and ground-based observations.
+
+
+   5573 Hilarydownes                  
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+   5656 Oldfield                      
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+   5674 Wolff                         
+        Aznar 2016b                    Ds/Dp >= 0.80
+
+
+   5899 Jedicke                       
+        Warner 2010h                   The amplitude of the primary was too low to establish a
+                                       period with certainty. The mutual events, however, were
+                                       well-defined.
+
+        Warner 2010n                   The amplitude of the primary was too low to establish a
+                                       period with certainty. The mutual events, however, were
+                                       well-defined.
+
+
+   5968 Trauger                       
+        Warner 2014d                   Unexplained "event" on Sep 5. Possible period solutions
+                                       assuming a satellite are P_orb = 15.9 or 31.7 h.
+
+
+   6053 1993 BW3                      
+        Warner 2015s                   Result of combining data sets from 2015 January and March.
+
+
+   6063 Jason                         
+        Warner 2017n                   Radar could not confirm long period.
+
+
+   6070 Rheinland                     
+        Asteroid pair with 54827 (Pravec 2010a)
+
+        Vokrouhlicky 2011              H_R actually found. Authors used V-R = 0.49 ± 0.05 to convert
+                                       to H.
+
+        Vokrouhlicky 2017b             See paper for discussion of pole solution uncertainties.
+
+
+   6084 Bascom                        
+        Pravec 2012a                   Residual variations of 0.02 mag may indicate rotation of a
+                                       satellite.
+
+
+   6186 Zenon                         
+        Benishek 2017b                 S1 has amplitude of 0.04 mag.
+
+
+   6456 Golombek                      
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a p_V = 0.18.
+
+
+   6611 1993 VW                       
+        Pravec 2005web                 The second period maybe the secondary's rotation or the
+                                       orbtial period.
+
+
+   6809 Sakuma                        
+        Pravec 2018web                 Suspected mutual events observed on two nights.
+
+
+   7187 Isobe                         
+        Warner 2011o                   Weak secondary period: P = 16.378 ± 0.05 h, A = 0.05 ± 0.01
+                                       mag.
+
+        Warner 2011o                   Weak secondary period: P = 16.33 ± 0.04 h, A = 0.12 ± 0.01
+                                       mag.
+
+
+   7335 1989 JA                       
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+   7343 Ockeghem                      
+        Asteroid pair with 154634 (Pravec 2010a)
+
+
+   7393 Luginbuhl                     
+        Warner 2019k                   Out of event satellite lightcurve indicates elongation of
+                                       about 1.7:1
+
+
+   7517 Alisondoane                   
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+   7560 Spudis                        
+        Warner 2013d                   There is a weak secondary period of 22.6 h. The 2004
+                                       apparition showed a possible binary with orbital period of
+                                       23.4 h.
+
+
+   7757 Kameya                        
+        Warner 2011web                 Data too noisy to give reasonable period or amplitude.
+
+
+   7758 Poulanderson                  
+        Warner 2012m                   Only one event well seen, maybe a second. Several other
+                                       orbital period solutions fit, ranging out to about 100 hours.
+                                       
+
+
+   7760 1990 RW3                      
+        Galad 2010c                    Combined with data from Pray (2006f)
+
+
+   8306 Shoko                         
+        Polishook 2014a                Likely mutual events seen twice, but insufficient data to
+                                       determine the orbital period for a satellite.
+
+        Pravec 2014a                   Possible third body.
+
+
+   8345 Ulmerspatz                    
+        The lightcurves from the 2011-2012 apparition give strong indications that this asteroid
+        might be a tidally-locked binary of nearly equal sized components, similar to 90 Antiope.
+
+        Klinglesmith 2012c             When using the full data set, P = 17.1192 ± 0.0008 h.
+
+
+   8356 Wadhwa                        
+        Pravec 2008web                 http://www.asu.cas.cz:80/~asteroid/08356.png
+
+
+   8369 Miyata                        
+        Warner 2011s                   Subtracting a weak secondary period of 49.24 h improves the
+                                       RMS fit of the 2.73 h period noticeably.
+
+
+   8567 1996 HW1                      
+        Magri 2011                     Authors give ellipsoid of 3.8x1.6x1.5 km, which gives an
+                                       effective spheroidal diameter of about 2 km.  Composite
+                                       lightcurves were not provided, only overlays of the
+                                       lightcurve data over the model curve. The U=3 rating refers
+                                       to the overall quality of the data set used to find the pole,
+                                       shape, and sidereal period.
+
+        Trilling 2016                  This applies to all Trilling 2016 (AJ 152): the listed errors
+                                       for the diameter and albedo are the larger of the ± values,
+                                       which were not the same.
+
+
+   8828 1988 RC7                      
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+   8864 1991 VU                       
+        The albedo error given for Masiero 2017 is the maximum possible value when converting from
+        albedo values from log space to value space.
+
+
+   9068 1993 OD                       
+        Asteroid pair with 2002 OP28 (Pravec 2010a)
+
+
+   9069 Hovland                       
+        Marchis 2012                   Hv assumed V-R = 0.54.
+
+
+   9992 1997 TG19                     
+        Higgins 2006f                  Incorrectly referenced in text as 1997 TH19.
+
+
+  10132 Lummelunda                    
+        Benishek 2018f                 See original paper for evolution of the primary lightcurve
+                                       and attenuation events.
+
+        Salvaggio 2018b                Shorter period in ambiguous table comes from lightcurve plot
+                                       while longer period in detail record comes from text.
+
+
+  10199 Chariklo                      
+        Belskaya 2010b                 To derive H, used V-R=0.48 and phase coefficient (not G) of
+                                       0.06 mag/degree.
+
+
+  10261 Nikdollezhal'                 
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  10484 Hecht                         
+        Asteroid pair with 44645 (Pravec 2010a)
+
+
+  10779 1991 LW                       
+        Warner 2011o                   One-night stand. Period is based on a half-period analysis.
+
+
+  11001 Andrewulff                    
+        Pravec 2012web                 Partial attenuations seen but not enough to confirm binary
+                                       status.
+
+
+  11842 Kap'bos                       
+        Asteroid pair with 228747 (Pravec 2010a)
+
+        Ye 2011                        Asteroid pair with (228747) 2002 VH3, for which Ye found B-V
+                                       = 0.704 ± 0.154, V-R = 0.480 ± 0.057, and V-I = 0.829 ±
+                                       0.111.
+
+
+  12016 Green                         
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  12326 Shirasaki                     
+        Pray 2017a                     Secondary period may be due to rotation of the satellite or a
+                                       third body. If the former, the system would be
+                                       fully-asynchronous and not singly-asychronous.
+
+
+  12376 Cochabamba                    
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  12538 1998 OH                       
+        Vaduvescu 2017                 Sloan g magnitudes
+
+        Warner 2019h                   Two close solutions that are not harmonically related. See
+                                       the binaries file.
+
+
+  13331 1998 SU52                     
+        Warner 2011k                   A weak secondary period of ~15.1 h was observed but could not
+                                       be explained.
+
+
+  13553 Masaakikoyama                 
+        Warner 2019b                   Single period found 39 h, very similar to Pravec et al. 2005.
+
+
+  13732 Woodall                       
+        Asteroid pair with 1979 (Pravec 2010a)
+
+        Ye 2011                        Asteroid pair with (1979) Sakharov, for which Ye found B-V =
+                                       1.086 and V-R = 0.409.
+
+
+  14395 Tommorgan                     
+        Warner 2013d                   Second period of 40.4 provided by P. Pravec. The second
+                                       solution is not unique. Others are possible.
+
+
+  14868 1990 RA7                      
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  15107 Toepperwein                   
+        Asteroid pair with 2006 AL54 (Pravec 2010a)
+
+
+  15350 Naganuma                      
+        Pravec 2010web                 Period taken from 2005 observations.
+
+
+  15430 1998 UR31                     
+        Pravec 2010web                 Brightness drops by >0.10 mag seen on 2010-05-06 and 07, but
+                                       period not established.
+
+
+  15607 2000 GA124                    
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  15700 1987 QD                       
+        Durkee 2010c                   Two possible periods for the orbit were 50.3 and 62.9 h.
+                                       Neither could be conclusively established.
+
+
+  15745 Yuliya                        
+        Warner 2018m                   The primary and orbital period were found by forcing the data
+                                       to fit near the periods found by Aznar et al. (2018). The
+                                       listed primary period is one of dozens of possible solutions.
+                                       
+
+
+  15778 1993 NH                       
+        Warner 2015e                   Possible wide binary. The long period is the rotation of the
+                                       primary.
+
+
+  15822 1994 TV15                     
+        Warner 2011c                   Suspected events seen on three nights in 2010 mid-June. None
+                                       seen in 2010 late June or early July.
+
+
+  16426 1988 EC                       
+        Diameter and albedo based on H from Warner (2012) and application of Harris and Harris
+        (1997) correction to WISE diameter and albedo.
+
+
+  17198 Gorjup                        
+        Asteroid pair with 229056 (Pravec 2010a)
+
+
+  17700 1997 GM40                     
+        Pray 2018a                     Additional attenuations of 0.14-0.18 mag are not tied to
+                                       orbital period and may indicate a third body.
+
+
+  18109 2000 NG11                     
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  19204 Joshuatree                    
+        Stephens 2016h                 Main period forced to solution from 2016 data.
+
+
+  19289 1996 HY12                     
+        Asteroid pair with 2006 YY40 (Pravec 2010a)
+
+
+  19309 1996 UK1                      
+        Galad 2008c                    Several bimodal solutions possible in the range of 4.16-5.91
+                                       h.
+
+
+  20452 1999 KG4                      
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  20749 2000 AD199                    
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  21436 Chaoyichi                     
+        Asteroid pair with 2003 YK39 (Pravec 2010a)
+
+
+  21601 1998 XO89                     
+        French 2013                    Authors confirmed that the period in paper's table and not
+                                       the one in the lightcurve plot is the correct value.
+
+
+  23615 1996 FK12                     
+        Warner 2015l                   A suspected "wide binary". The long period is the primary.
+                                       The short period (U = 3) is for the fully asynchronous
+                                       satellite.
+
+
+  23971 1998 YU9                      
+        The Masi et al. paper gave this as a C-type on the basis of a netural spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  23998 1999 RP29                     
+        Asteroid pair with 205383 (Pravec 2010a)
+
+
+  24077 1999 TD233                    
+        Warner 2014f                   Given periods may not be actual values, but linear
+                                       combinations of the true NPAR periods.
+
+
+  25143 Itokawa                       
+        Mueller 2011a                  H and G taken from other sources.
+
+        Nishihara 2018                 Using all data from 2001-2004, P = 12.1324 ± 0.0001 h.
+
+
+  25332 1999 KK6                      
+        Warner 2013b                   Alternate suspected P2: 16.18 h.
+
+
+  25916 2001 CP44                     
+        Warner 2018m                   Period revised based on 2018 data/analysis.
+
+
+  26093 1987 UA1                      
+        Pravec 2012web                 Double period not formally excluded.
+
+
+  26308 1998 SM165                    
+        Brown 2002                     Sep ~ 6000 km
+
+
+  28736 2000 GE133                    
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  28913 2000 OT                       
+        Behrend 2003web                Period originally reported as 15.30 h.
+
+
+  29292 Conniewalker                  
+        Pravec 2011web                 Several possible tumbling solutions.
+
+
+  33046 1997 UF2                      
+        Pravec 2014web                 P2 not determined. One attenuations seen, but unexplained.
+
+
+  35107 1991 VH                       
+        Merline 2008                   AO observations separated primary and satellite. Angular
+                                       separation of 0.08" (~3.1 km). Satellite ~2.0 mag fainter.
+                                       Separation and size agree with Pravec (IAUC 6607).
+
+
+  38707 2000 QK89                     
+        Asteroid pair with 32957 (Pravec 2010a)
+
+
+  42355 Typhon                        
+        Noll 2006a                     Ds/Dp: ~0.5, assuming same albedo for both bodies.
+
+        Grundy 2008                    Orbit SMA: 1628 ± 29 km. Ds: 84 ± 16 km.
+
+        Benecchi 2009                  See note under 2001 QC298.
+
+
+  44534 1998 YZ9                      
+        Polishook 2012b                Authors gave P=22.5 h but with monomodal solution. The
+                                       amplitude virtually assures a bimodal lightcurve with a
+                                       period about double the stated value.
+
+
+  44612 1999 RP27                     
+        Asteroid pair with 2110 (Pravec 2010a)
+
+        Pravec 2012web                 Period assumed from work in 2010.
+
+        Pravec 2012web                 Period assumed from work in 2010.
+
+
+  45991 2001 BQ70                     
+        The Masi et al. paper gave this as a C-type on the basis of a neutral spectrum. However,
+        given its location in the inner main belt, we adopted class X and a Pv = 0.18.
+
+
+  47171 Lempo                         
+        Benecchi 2009                  See note under 2001 QC298.
+
+
+  48652 1995 VB                       
+        Asteroid pair with 139156 (Pravec 2010a)
+
+
+  51609 2001 HZ32                     
+        Asteroid pair with 1999 TE221 (Pravec 2010a)
+
+
+  52750 1998 KK17                     
+        Warner 2017c                   Suspected very wide binary.
+
+
+  52773 1998 QU12                     
+        Asteroid pair with 2001 HU24 (Pravec 2010a)
+
+
+  52852 1998 RB75                     
+        Asteroid pair with 2003 SC7 (Pravec 2010a)
+
+
+  53431 1999 UQ10                     
+        Warner 2010k                   A weak signal with a period of 38.4 h was found. If this is
+                                       subtracted from the data, the scatter in the data was reduced
+                                       significantly. There was insufficent evidence to attribute
+                                       the signal to a specific cause.
+
+
+  54041 2000 GQ113                    
+        Asteroid pair with 220143 (Pravec 2010a)
+
+
+  54509 YORP                          
+        Lowry 2007a                    Date for phase is end of period: Jul 28, 2001 - Jul 27, 2002.
+                                       Paper proved spin up due to YORP effect.
+
+        Lowry 2007a                    Date for phase is end of period: Jul 27, 2002 - Aug. 27,
+                                       2003. Paper proved spin up due to YORP effect.
+
+        Lowry 2007a                    Date for phase is end of period: Jul. 29, 2003 - Sep. 11,
+                                       2004. Paper proved spin up due to YORP effect.
+
+        Lowry 2007a                    Date for phase is end of period: Aug. 12, 2004 - Aug. 31,
+                                       2005. Paper proved spin up due to YORP effect.
+
+        Taylor 2007                    Date for phase is for beginning of observations that spanned
+                                       from 2001 - 2005. Diameter and spin axis were determined from
+                                       radar observations. Paper proved spin up due to YORP effect.
+                                       
+
+
+  54827 Kurpfalz                      
+        Asteroid pair with 6070 (Pravec 2010a)
+
+
+  55532 2001 WG2                      
+        Stephens 2014e                 Unique solution not possible. Second period for NPAR table is
+                                       one of several contenders.
+
+
+  55576 Amycus                        
+        Thirouin 2010                  Number given as 55567, which is 2002 CS6. The LCDB authors
+                                       presumed the name/designation were correct.
+
+
+  56150 1999 CT103                    
+        Originally Derm4l in Dermawan Ph.D. thesis.
+
+
+  56232 1999 JM31                     
+        Asteroid pair with 115978 (Pravec 2010a)
+
+
+  61461 2000 QA31                     
+        Warner 2011o                   One-night stand. Solution is based on a half-period analysis.
+
+
+  63095 2000 WS142                    
+        Popescu 2018b                  The original Popescu group/family was not used. Instead, one
+                                       of the LCDB defaults was used based on the orbital elements
+
+
+  63440 2001 MD30                     
+        Asteroid pair with 2004 TV14 (Pravec 2010a)
+
+
+  65489 Ceto                          
+        Benecchi 2009                  See note under 2001 QC298.
+
+
+  65679 1989 UQ                       
+        Mueller 2011a                  H taken from another source.
+
+
+  65803 Didymos                       
+        The Schierich (2009) results use previous lightcurve data to model the satellite:primary
+        size ratio (D2/D1), pole of the orbital plane, and sidereal period of the orbit. The spin
+        axis pole of the primary is considered to be the same as that of the orbit, i.e., the orbit
+        lies in the primary's equatorial plane.
+
+
+  66063 1998 RO1                      
+        The Schierich (2009) results use previous lightcurve data to model the satellite:primary
+        size ratio (D2/D1), pole of the orbital plane, and sidereal period of the orbit. The spin
+        axis pole of the primary is considered to be the same as that of the orbit, i.e., the orbit
+        lies in the primary's equatorial plane.
+
+
+  66391 1999 KW4                      
+        The Schierich (2009) results use previous lightcurve data to model the satellite:primary
+        size ratio (D2/D1), pole of the orbital plane, and sidereal period of the orbit. The spin
+        axis pole of the primary is considered to be the same as that of the orbit, i.e., the orbit
+        lies in the primary's equatorial plane.
+
+        Behrend 2018web                Apparent mutual event on 2018 June 7 (UT) but not mentioned.
+
+
+  66652 Borasisi                      
+        Benecchi 2009                  See note under 2001 QC298.
+
+        Grundy 2011                    Orbital period determined from astrometric measurements.
+
+
+  68216 2001 CV26                     
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+        Stephens 2015g                 No satellite found with radar observations in 2009.
+
+
+  69142 2003 FL115                    
+        Asteroid pair with 127502 (Pravec 2010a)
+
+
+  69406 1995 SX48                     
+        Warner 2011k                   If the shorter period is correct, this makes the asteroid a
+                                       good binary candidate.
+
+
+  70030 Margaretmiller                
+        Warner 2012b                   No mutual events seen but independent observations from two
+                                       locations show a secondary period of either 15.8 or 11.5 h.
+
+
+  72748 2001 FR126                    
+        Popescu 2018b                  The original Popescu group/family was not used. Instead, one
+                                       of the LCDB defaults was used based on the orbital elements
+
+
+  76111 2000 DK106                    
+        Asteroid pair with 2005 JY103 (Pravec 2010a)
+
+
+  78024 2002 JO70                     
+        Asteroid pair with 40366 (Pravec 2010a)
+
+
+  79360 Sila-Nunam                    
+        Benecchi 2009                  See note under 2001 QC298.
+
+
+  80806 2000 CM105                    
+        Benecchi 2009                  See note under 2001 QC298. In this case, V-I is for the
+                                       combined light since the binary pair could not be resolved.
+
+
+  82075 2000 YW134                    
+        Benecchi 2009                  See note under 2001 QC298. In this case, V-I is for the
+                                       combined light since the binary pair could not be resolved.
+
+
+  84203 2002 RD133                    
+        Asteroid pair with 2000 SS4 (Pravec 2010a)
+
+
+  85989 1999 JD6                      
+        Aznar 2018b                    Published lightcurve is inverted, i.e., faintest when at top.
+
+
+  85990 1999 JV6                      
+        Giorgini 2016                  Yarkovsky detection.
+
+
+  88259 2001 HJ7                      
+        Asteroid pair with 1999 VA117 (Pravec 2010a)
+
+
+  88604 2001 QH293                    
+        Asteroid pair with 60546 (Pravec 2010a)
+
+
+  90482 Orcus                         
+        Brown 2010                     The stated diameter is the effecitve size of the Orcus-Vanth
+                                       system. Individual diameters are 900 and 280 km, assuming the
+                                       desnities and albedos are the same. If Vanth's albedo is 0.5
+                                       that of Orcus, the diameters are 860 and 380 km.  The
+                                       semi-major axis of the satellite orbit is 8980 ± 20 km.
+
+        Sickafoose 2019                Diameter assumes a spherical shape.
+
+
+  92336 2000 GY81                     
+        Asteroid pair with 143662 (Pravec 2010a)
+
+
+  95711 2003 AK                       
+        Pravec 2007web                 Period > 10h. 100 hr is one of several possible solutions.
+
+
+  99942 Apophis                       
+        Licandro 2016b                 Diameter and albedo are the averages of the min/max values.
+
+
+ 100085 1992 UY4                      
+        Mueller 2011a                  H taken from another source.
+
+
+ 101065 1998 RV11                     
+        Asteroid pair with 2002 PY103 (Pravec 2010a)
+
+
+ 101703 1999 CA150                    
+        Asteroid pair with 142694 (Pravec 2010a)
+
+
+ 105155 2000 NG26                     
+        Warner 2012g                   Many possible periods.
+
+
+ 115978 2003 WQ56                     
+        Asteroid pair with 56232 (Pravec 2010a)
+
+
+ 119067 2001 KP76                     
+        Marchis 2008a                  No lightcurves per se. Hubble observations show a binary
+                                       system with components about the same size separated by
+                                       0".29, or about 8200 km.
+
+
+ 119979 2002 WC19                     
+        Benecchi 2009                  See note under 2001 QC298. In this case, V-I is the combined
+                                       light since the binary pair could not be resolved.
+
+
+ 120347 Salacia                       
+        Noll 2006e                     Satellite 2.3 mag fainter.
+
+        Stansberry 2012                SMAxis of orbit: 5619 ± 87 km. Individual diameters: Primary:
+                                       905 ± 103 km; Secondary: 303 ± 35 km.
+
+
+ 120578 1995 QV12                     
+        Warner 2014f                   Large zero-point offsets required to get period. Could be
+                                       signs of tumbling.
+
+
+ 122011 2000 GL28                     
+        Originally Derm8f in Dermawan Ph.D. thesis.
+
+
+ 134340 Pluto                         
+        Tholen 1997                    The diameter of 2700 km is the effective diameter of the
+                                       Pluto/Charon system based on Pv and H.  Pluto: D = 2350 ± 50
+                                       km.  Charon (primary satellite): D = 1250 ± 50 km  Nix
+                                       (S/2005 P1): Sep: 48700 km. D ~ 46 km  Hydra (S/2005 P2): Sep
+                                       64800 km. D ~ 61 km.
+
+
+ 134422 1998 QM3                      
+        Warner 2015d                   The periods are two of several sets of solutions.
+
+
+ 134860 2000 OJ67                     
+        Benecchi 2009                  See note under 2001 QC298.
+
+
+ 136108 Haumea                        
+        Lellouch 2010                  Visible and Thermal observations.
+
+        Lockwood 2014                  Ellipsoid lengths: a = 960 km, b = 770 km, c = 495 km.
+
+
+ 136472 Makemake                      
+        Lim 2010                       A dark area has 0.02 < p_v < 0.12 and 310 < D_eff < 380 km.
+
+
+ 136617 1994 CC                       
+        Brozovic 2009b                 Estimated sizes: S1 > 100 m; S2 > 5 m.
+
+        Brozovic 2011                  Inner satellite: D = 113 ± 30 m. P = 26 ± 12 h. P_orb =
+                                       29.832 ± 2.400 h.   Outer satellite: D = 80 ± 30m. P = 14 ±
+                                       7h. P_orb = 201.024 ± 12.0 h.
+
+
+ 137170 1999 HF1                      
+        Warner 2016n                   No indications of known satellite.
+
+
+ 139345 2001 KA67                     
+        Stephens 2018j                 Suspected very wide binary.
+
+
+ 139537 2001 QE25                     
+        Asteroid pair with 210904 (Pravec 2010a)
+
+
+ 139775 2001 QG298                    
+        Lacerda 2011                   The paper presumes a "contact binary." However, the
+                                       lightcurves presented do not show the obvious indicators of
+                                       "shoulders" in the descending and ascending branches. The
+                                       lightcurve can be equally explained by a simple,
+                                       highly-elongated body.
+
+
+ 141670 2002 JS100                    
+        Warner 2018a                   Period of 4.719 h cannot be formally excluded, but is not
+                                       likely.
+
+
+ 142781 2002 UM11                     
+        Warner 2014e                   Multiple solutions possible due to the nearly flat
+                                       lightcurve.
+
+
+ 148780 Altjira                       
+        Grundy 2011                    Orbital period determined from astrometric measurements.
+
+
+ 150398 2000 EC59                     
+        Originally Derm1e in Dermawan Ph.D. thesis.
+
+
+ 152858 1999 XN35                     
+        Hills 2013b                    Several possible solutions for P_Orb, ranging from 11 to 36
+                                       h, if the deviations are due to a satellite.
+
+
+ 153591 2001 SN263                    
+        Becker 2008                    Density (Primary): 1.2 ± 0.4 g/cm^3
+
+        Nolan 2008                     Radar observations show three objects in the 2001 SN263
+                                       system. Estimated sizes are 2 km, 1 km, and 0.400 km.
+
+        Becker 2015b                   Dp: 2.5 ± 0.3 km; Ds1: 0.77 ± 0.12 km; Ds2: 0.43 ± 0.14 km.
+                                       Porb1: 16.464 ± 0.048; Porb2: 150 ± 3 h.
+
+
+ 154634 2003 XX38                     
+        Asteroid pair with 7343. (Pravec 2010a)
+
+
+ 160091 2000 OL67                     
+        Marchis 2008a                  No lightcurve per se. Hubble observations show a binary
+                                       system with the components separated by 0".29, or about 7800
+                                       km. The secondary was about 0.6m fainter than the primary.
+
+
+ 161989 Cacus                         
+        Durech 2018a                   YORP detection.
+
+
+ 161998 1988 PA                       
+        Franco 2011web                 Author gave P = 6.70 h for a monomodal solution. The
+                                       amplitude virtually assures a bimodal curve and, therefore,
+                                       double the reported period.
+
+
+ 162483 2000 PJ5                      
+        Polishook 2008a                P_orb = 56.6 h is also possible.
+
+
+ 162510 2000 QW69                     
+        The albedo error given for Masiero 2017 is the maximum possible value when converting from
+        albedo values from log space to value space.
+
+
+ 162900 2001 HG31                     
+        Pravec 2008web                 Pravec analysis based on data from Warner 2009f and from
+                                       Lowell Observatory (unpublished).
+
+
+ 163693 Atira                         
+        Rivera-Valentin 2017           Diameter is that estimated for the primary. The satellite
+                                       diameter is 1.0 ±0.3 km
+
+
+ 164121 2003 YT1                      
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+ 171677 2000 QG136                    
+        Masiero 2009                   The asteroid appears to have been independently analyzed
+                                       twice in the TALCS survey, each time under a different MPC
+                                       designation. TALCS 224 = 2000 QG136. TALCS 1238 = 171677.
+
+
+ 173885 2001 UA61                     
+        Masiero 2009                   The asteroid appears to have been independently analyzed
+                                       twice in the TALCS survey, each time under a different MPC
+                                       designation. TALCS 158 = 2001 UA61. TALCS 1699 = 173885.
+
+
+ 173974 2001 XV127                    
+        Masiero 2009                   The asteroid appears to have been independently analyzed
+                                       twice in the TALCS survey, each time under a different MPC
+                                       designation. TALCS 200 = 2001 VV127. TALCS 1054 = 173974.
+
+
+ 173991 2001 XR170                    
+        Masiero 2009                   The asteroid appears to have been independently analyzed
+                                       twice in the TALCS survey, each time under a different MPC
+                                       designation. TALCS 249 = 2001 XR170. TALCS 2205 = 173991.
+
+
+ 174567 Varda                         
+        Grundy 2015                    Periods are based on Orbit1 solution. Diameters: Varda 722 ±
+                                       82; Ilmare 326 ± 38.
+
+
+ 175047 2004 FK93                     
+        Masiero 2009                   The asteroid appears to have been independently analyzed
+                                       twice in the TALCS survey, each time under a different MPC
+                                       designation. TALCS 152 = 2004 FK93. TALCS 1699 = 175047.
+
+
+ 175706 1996 FG3                      
+        Scheirich 2009                 Satellite:primary size ratio (D2/D1): 0.28 ± 0.02.
+                                       Orbit:primary diameter ratio (a/A1): 3.1 ± 0.9.
+
+        Mueller 2011a                  H and G taken from other sources.
+
+        Wolters 2011                   D_sat = 0.51 0.03, assuming the same albedo as the primary.
+
+        Scheirich 2015                 Data covered multipl apparitions from 1999-2013.
+
+
+ 185851 2000 DP107                    
+        The Schierich (2009) results use previous lightcurve data to model the satellite:primary
+        size ratio (D2/D1), pole of the orbital plane, and sidereal period of the orbit. The spin
+        axis pole of the primary is considered to be the same as that of the orbit, i.e., the orbit
+        lies in the primary's equatorial plane.
+
+        Margot 2000                    Estimated diameters: 800 m and 300 m.
+
+        Ostro 2000b                    Radar images show separations up to at least 1 km between
+                                       components.
+
+        Pravec 2000e                   Lightcurve observations confirmed binary nature discovered by
+                                       radar.
+
+        Scheirich 2009                 Solution 1: Satellite:primary size ratio (D2/D1): 0.43 ± 0.3.
+                                       Orbit:primary diameter ratio (a/A1): 5.0 ± 2.0. Orbit period
+                                       (sidereal): 42.09 ± 0.13  Solution 2: Satellite:primary size
+                                       ratio (D2/D1): 0.43 ± 0.2. Orbit:primary diameter ratio
+                                       (a/A1): 4.9 ± 1.2. Orbit period (sidereal): 42.79 ± 0.11
+
+
+ 190208 2006 AQ                       
+        Warner 2015g                   No events seen and not likely so because of the long second
+                                       period. The long period is attributed to the primary body
+                                       while the short period is presumed to be due to the rotation
+                                       of the fully asynchronous satellite.
+
+
+ 205383 2001 BV47                     
+        Asteroid pair with 23998 (Pravec 2010a)
+
+
+ 214088 2004 JN13                     
+        Warner 2015h                   Period forced to solution derived from 2014 December
+                                       observations by Warner.
+
+
+ 214869 2007 PA8                      
+        Lin 2018                       Additional observations in 2013 Jan were at much larger phase
+                                       angles. Phase reddening may have affected the final result.
+
+
+ 216202 2006 UJ13                     
+        Popescu 2018b                  The original Popescu group/family was not used. Instead, one
+                                       of the LCDB defaults was used based on the orbital elements
+
+
+ 218099 2002 MH3                      
+        Asteroid pair with 60744 (Pravec 2010a)
+
+
+ 218144 2002 RL66                     
+        Warner 2010e                   The short period, low amplitude component of the lightcurve
+                                       may be due to a widely separated component of a binary that
+                                       is a relatively small and irregularly shaped, or a larger but
+                                       more regularly shaped body.   If a binary, the period of the
+                                       orbit cannot be determined from the observations but is
+                                       probably long based on the absence of mutual events and
+                                       asynchronous rotation of the two components.  The
+                                       low-amplitude component of the lightcurve is U = 1/1+. This
+                                       applies not only to the quality of the solution for the
+                                       component but to the probability of the asteroid being binary
+                                       as well.
+
+        Warner 2010m                   The assignment of primary and secondary in this system is
+                                       arbitrary.
+
+
+ 220143 2002 TO134                    
+        Asteroid pair with 54041 (Pravec 2010a)
+
+
+ 226268 2003 AN55                     
+        Asteroid pair with 2003 UW156 (Pravec 2010a)
+
+
+ 229401 2005 SU152                    
+        Asteroid pair with 2005 UY97 (Pravec 2010a)
+
+
+ 250112 2002 KY14                     
+        Also designated 2007 UL126.
+
+
+ 252793 2002 FW5                      
+        Warner 2017i                   Suspected very wide binary.
+
+
+ 267182 2000 QX57                     
+        Popescu 2018b                  The original Popescu group/family was not used. Instead, one
+                                       of the LCDB defaults was used based on the orbital elements
+
+
+ 275677 2000 RS11                     
+        Warner 2014i                   This entry is for the combined plot from 2014 March 16 and
+                                       17.
+
+
+ 276049 2002 CE26                     
+        Warner 2015g                   Using either P1 = 3.088 or 3.298 (found by Pravec et al.,
+                                       2006) produces the same period and lightcurve for P2.
+
+
+ 303712 2005 PR21                     
+        Noll 2008d                     No lightcurve observations per se. Two components separated
+                                       by 0".123 ± 0".009, or about 4000 km. Secondary component
+                                       about 1.1 mag fainter than primary.
+
+
+ 308635 2005 YU55                     
+        Bodewits 2011                  H_V was derived from UV observations that gave H_UV = 25.6.
+
+        Merline 2012                   a = 337 ± 14 m; b = 326 ± 8 m; c = 263 ± 12 m.
+
+
+ 310226 2011 SU230                    
+        Masiero 2009                   Also identified as 2005 ED209 during the TALCS survey.
+
+
+ 311066 2004 DC                       
+        Taylor 2006                    Ds ~ 0.060 km.
+
+
+ 331471 1984 QY1                      
+        Warner 2016k                   P2 is not unique (Petr Pravec); it is not possible to
+                                       attribute P1 specifically to the period of rotation and P2 to
+                                       that of precession.
+
+
+ 341520 Mors-Somnus                   
+        Sheppard 2011                  R_orbit = 21000 ± 160 km.
+
+        Sheppard 2012a                 Color index: g-i 1.49 ± 0.01. Delta mag between two object:
+                                       0.1 mag. Orbital parameters: a = 21000 ± 160 km; e = 0.1529 M
+                                       0.0028.
+
+
+ 341843 2008 EV5                      
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+ 348400 2005 JF21                     
+        Period for first entry from Oey 2016b (Date = 09/24/2015) is for the combined data set
+        covering five months. Subsequent listings are for subsets within the overall span.
+
+        Naidu 2015c                    Possible indications of a second satellite. No period for
+                                       primary or orbital period of first satellite given.
+
+
+ 353866 2012 WN2                      
+        The designation of 2006 SU210 originally assigned to this object was updated. The MPC has
+        since designated this as (353866) 2012 WN2.
+
+
+ 357439 2004 BL86                     
+        Radar Team 2015a               D_primary: 0.325 km. D_satellite: 0.070 km. Discovey credit
+                                       goes to Pollock et al.
+
+
+ 359995 2012 VA102                    
+        The original designation was 2006 SW275. This is now identified by the MPC as 2012 VA102.
+
+        Masiero 2009                   The original designation was 2006 SW275. This is now
+                                       identified by the MPC as 2012 VA102.
+
+
+ 363067 2000 CO101                    
+        Taylor 2009                    Estimated sizes: P = 0.525 km; S = 0.045 km.
+
+
+ 364171 2006 JZ81                     
+        Parker 2011                    Satellite obrital period: 4.11 ± 0.15 years.
+
+
+ 367943 Duende                        
+        Gary 2013a                     H, D, and pV assume a type S asteroid. A type V was also
+                                       considered possible from spectrophotometric observations.
+
+
+ 374158 2004 UL                       
+        Warner 2015h                   Period is a best-fit single period.
+
+
+ 399497 2002 TV190                    
+        Masiero 2009                   Maisero et al. identified TALCS 126 as 2006 SZ2. This is a
+                                       newer designation for 2002 TV190, which is the one included
+                                       in the MPCORB file.
+
+
+ 416186 2002 TD60                     
+        Warner 2015r                   Period analysis by Pravec (Czech Institute).
+
+
+ 430484 2001 ST246                    
+        Chang (2015) H values are based on H-G system. The G values are in R, not V. All lightcurves
+        with a period were given U = 2 regardless of rating by Chang et al.
+
+
+ 443103 2013 WT67                     
+        Warner 2015c                   Period is estimate for one of the two tumbling periods.
+
+
+ 450894 2008 BT18                     
+        Benner 2008a                   Arecibo and Goldstone observations show: D1: 0.6 km D2: >0.2
+                                       km Sep: 1.5 km.
+
+        Warner 2018h                   No sign of primary rotatin of about 2.5 h.
+
+
+ 451397 2011 EZ78                     
+        Pravec 2011web                 Two suspect attentuations were seen but not confirmed.
+
+        Skiff 2011web                  Data suggests possibility of tumbling or binary.
+
+
+ 461852 2006 GY2                      
+        Benner 2006b                   Secondary diameter estimated to be 0.08 km and orbital
+                                       separation at least 0.5 km.
+
+
+ 464798 2004 JX20                     
+        Skiff                          The solutions are not unique.
+
+
+ 465616 2009 EC                       
+        Warner 2016m                   Suspected very wide binary.
+
+
+ 469438 2002 GV31                     
+        Pal 2015b                      V-R assumed.
+
+
+ 469896 2005 WC1                      
+        Miles 2008b                    Given period based on 3 nights (Miles, private
+                                       communications). JBAA publication gives period of 2.57 h base
+                                       on one night.
+
+
+ 481532 2007 LE                       
+        Brozovic 2012                  Estimated sizes: Dp 0.5 km; Ds 0.18 km. Orbital separation >
+                                       0.8 km.
+
+
+ 496923 2001 UW57                     
+        Originally Derm3d in Dermawan Ph.D. thesis.
+
+
+ 505476 2013 UL15                     
+        Alexandersen 2018              Applies to all Alexandersen 2018: For those objects in their
+                                       list that were found in MPCOrb, the Hv magnitude was nearly
+                                       the same as their Hr (Pan-STARRS r). The original Hr is
+                                       reported in the detail record _and_ used for H in the summary
+                                       table if an MPCOrb value was not available.
+
+
+ 523625 2008 DG17                     
+        Warner 2018h                   2018 radar observations indicate a period of ~2.8 h, but a
+                                       slightly longer period is possible. The photometric data do
+                                       not allow formally excluding a solution near 7.3 h.
+
+
+ 523775 2014 YB35                     
+        Naidu 2015b                    Ds: < 150 m.
+
+
+        103P/Hartley                  
+        Harmon 2010                    The diameter is based the long-axis dimension of a
+                                       highly-elongated, bilobate object as observed by radar. The
+                                       radar cross section was 0.04 km^2, which corresponds to a
+                                       diameter of ~100 m.
+
+
+        10P/Temple 2                  
+        A'Hearn 1989                   Amplitude is for observations at 4845 Angstroms. Other
+                                       amplitudes: 6840 A, 0.45 mag; 10100 A, 0.8 mag.
+
+
+        169P/NEAT                     
+        Determined to be a comet (by Warner) after receiving an asteroid designation. Current MPC
+        designation is P/2002 EX12.
+
+
+        1994 CJ1                      
+        Radar Team 2014b               First estimate is two 100-m bodies about 500-m apart.
+
+
+        1994 ES2                      
+        Terai 2017                     Entries for Terai 2017 in the Color Index table were derived
+                                       from their Hg-r and Hr-i. The errors were found by adding the
+                                       individual errors in quadrature.
+
+
+        1998 WV24                     
+        Benecchi 2008                  The two components were separated by an angular distance of
+                                       0".051 ± 0".002, with the secondary fainter by 0.3 magnitude.
+                                       The secondary was located at 0".033 ± 0".003 in R.A. and
+                                       0".039 ± 0".003 in Decl. relative to the primary.
+
+
+        2000 CF105                    
+        Parker 2011                    Satellite orbital period: 10.92 ± 0.12 years.
+
+
+        2000 UK11                     
+        Nolan 2001                     It appears that Nolan made a factor of 2 error in his
+                                       reported period. The LCDB adopts the 0.025 h period based on
+                                       the reported observational data of radar bandwidth and
+                                       estimated size of 30 meters.
+
+
+        2001 QQ322                    
+        Noll 2008d                     No lightcurve observations per se. Two components of about
+                                       equal size separated by 0".1272 ± 0".0015, or about 4000 km.
+                                       
+
+
+        2001 QW322                    
+        Parker 2011                    Satellite orbital period: 17.01 ± 1.55 years.
+
+
+        2003 QY90                     
+        Benecchi 2009                  See note under 2001 QC298.
+
+        Grundy 2011                    Orbital period determined from astrometric measurements.
+
+
+        2003 UN284                    
+        Parker 2011                    Satellite orbital period: 8.73 ± 0.65 years.
+
+
+        2004 RF84                     
+        Benner (2006a) observed with radar and found a dimension of at least 1.2 km based on echo
+        delay range. However, the images indicate the possibility of a bifurcated body with an
+        effective diameter of about 1.5 km. Based on the total information, we presumed a dark
+        (C-type) asteroid and used the default albedo for that class and MPCORB H to derive a
+        diameter.
+
+
+        2005 CR37                     
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+        2006 BR284                    
+        Parker 2011                    Satellite orbital period: 4.11 ± 0.04 years.
+
+
+        2006 CH69                     
+        Parker 2011                    Satellite orbital period: 3.89 ± 0.07 years.
+
+
+        2006 SF369                    
+        Noll 2008b                     No lightcurves per se. Hubble observations show a binary
+                                       system of about the same size separated by 0".109 ± 0".003,
+                                       or about 3200 km.
+
+
+        2008 TC3                      
+        Aleshkina 2011                 Periods of 18 m and 6.89 h were also reported. The LCDB
+                                       authors believe these to be spurious, possibly because
+                                       non-principal axis rotation was not taken into account.
+
+
+        2008 TT26                     
+        Ryan 2009                      http://infohost.nmt.edu/~bryan/research/work/mro_images/k08t2
+                                       6t/k08t26t_081019.jpg
+
+
+        2009 BD                       
+        Mommert 2014c                  Diameter and albedo based on a rocky body. An equally likely
+                                       solution assuming a collection of bare rock slabs gives D =
+                                       0.004 ± 0.001 km and pV = 0.45 ± 0.35.
+
+
+        2010 RC130                    
+        Skiff                          Analysis by P. Pravec. A single period of 8.687 h was
+                                       initially found, but this is a beat period based on a 3:5
+                                       ratio of the periods found with 2-dimensional Fourier
+                                       analysis. The periods could be a linear combination of the
+                                       two actual periods (precession and rotation).
+
+
+        2011 UT239                    
+        Masiero 2009                   At the time of the TALCS survey, this object had the
+                                       desgination of 2006 SP242. The MPCORB file not identifies it
+                                       as 2011 UT239.
+
+
+        2011 XA3                      
+        Urakawa 2014                   H, D, and pV assume a type S asteroid. A type V was also
+                                       considered possible from spectrophotometric observations.
+
+
+        2012 LZ1                      
+        Hicks 2012d                    Authors gave period as 5-16 hours. The two periods given are
+                                       the approximae values based on their period spectrum from
+                                       Fourier analysis.
+
+        Howell 2012b                   The diameter is the approximate effecitve diameter based on a
+                                       longest dimension of about 1 km. The albedo is the average of
+                                       the range estimated based on H = 19.8.
+
+
+        2013 FY27                     
+        Sheppard 2018c                 Separation from primary about 9800 km.
+
+
+        2014 AC                       
+        The albedo error given for Masiero 2018a is the maximum possible value when converting
+        albedo values from log space to value space. The phase angle in the details record is from
+        the file; the actual date of observation was not given.
+
+        Masiero 2018a                  The albedo error given for Masiero 2018a is the maximum
+                                       possible value when converting albedo values from log space
+                                       to value space. The phase angle in the details record is from
+                                       the file; the actual date of observation was not given.
+
+
+        2014 AN51                     
+        The albedo error given for Masiero 2018a is the maximum possible value when converting
+        albedo values from log space to value space. The phase angle in the details record is from
+        the file; the actual date of observation was not given.
+
+        Masiero 2018a                  The albedo error given for Masiero 2018a is the maximum
+                                       possible value when converting albedo values from log space
+                                       to value space. The phase angle in the details record is from
+                                       the file; the actual date of observation was not given.
+
+
+        2014 GN1                      
+        Hicks 2014d                    V-R = 0.40 assumed to give H = 24.1
+
+
+        2014 SC324                    
+        Warner 2015h                   P2 in NPAR table is not unique. Low amplitude tumbler:
+                                       A2/A1_secondharmonic ~ 0.21.
+
+
+        2014 WK368                    
+        The albedo error given for Masiero 2018a is the maximum possible value when converting
+        albedo values from log space to value space. The phase angle in the details record is from
+        the file; the actual date of observation was not given.
+
+        Masiero 2018a                  The albedo error given for Masiero 2018a is the maximum
+                                       possible value when converting albedo values from log space
+                                       to value space. The phase angle in the details record is from
+                                       the file; the actual date of observation was not given.
+
+
+        2015 KN120                    
+        Warner 2018a                   P3/A3: 7.448 ± 0.006, 0.12 ± 0.03 mag. P2 and P3 may be a
+                                       single period corrupted by harmonics of P1, or P1 and the
+                                       true P2 are tumble frequencies beating to produce a third
+                                       apparent frequency.
+
+
+        2015 OH                       
+        Warner 2016c                   Ambiguous: P_alt: 2.630 cannot be formally excluded but is
+                                       not likely.
+
+
+        2015 OS35                     
+        Ieva 2018                      Computed phase angle significantly different from that in
+                                       paper. Possible wrong date or object.
+
+
+        2015 RF36                     
+        Taylor 2015b                   Period estimated from spread of CW radar data
+
+
+        2016 AZ8                      
+        Virkki 2019                    The periods are based on upper limits and accounting for the
+                                       mutual orbit plane being inclined several tens of degrees
+                                       from the line of sight.
+
+
+        2016 BU13                     
+        Warner 2016m                   Suspected P3 = 16.46 ± 0.02, A3 = 0.04 ± 0.01
+
+
+        2016 EV27                     
+        Warner 2016j                   Second period may be artificat of Fourier analysis. However,
+                                       the two periods do not have a simple integral multiple ratio.
+                                       
+
+
+        2017 BW                       
+        Pravec 2017web                 Second period is no unique. First period could be rotation or
+                                       precession.
+
+
+        2017 NH                       
+        Warner 2018a                   Second NPA period is one of many possibilities.
+
+
+        2017 YE5                      
+        JPL 2018                       Each body about 900 m, widely separated (~2500 m).
+
+
+        2018 AJ                       
+        Warner 2018k                   Second period may be actual second period or linear
+                                       combination of the two frequencies of NPA rotation with the
+                                       main frequency.
+
+
+        2018 JE1                      
+        Warner 2018m                   Secondary period is likely wrong, even spurious. It was
+                                       needed to overcome an excessively large nightly zero point
+                                       shift of 0.8 mag.
+
+
+        2018 KE3                      
+        Warner 2019b                   Possible very wide binary, in which case the primary period
+                                       is the longer of the two. The shorter period is rated U=3;
+                                       the secondary period is U=2.
+
+
+        2018 LK                       
+        Warner 2018m                   Period is for combined data set from 2018 June 12-13.
+                                       Individual results are reported seperatedly.
+
+
+        2018 TF3                      
+        Pravec 2018b                   The secondary period/amplitude given in the LC_BINARY table
+                                       are for the synchronous satellite.
+
+        Warner 2019f                   Orbital period derived from half-period analysis that allowed
+                                       full coverage of the P_orb lightcurve.
+
+
+        C/2003 WT42                   
+        Determined to be a comet after discovery and given asteroid designation. Current MPC
+        designation is C/2003 WT42.
+
+
+        Derm0a                        
+        Dermawan 2002b, Doctoral Thesis This paper included approximately 50 objects, named in this
+        list as DermXx, with X being a number and x a letter. The paper used the following values,
+        which were adopted in lieu of the defaults used in this publication that are based on the
+        semi-major axis:  SMA: 2.3 < a < 2.8, Type = C, V-R = 0.53±0.04, Pv = 0.21±0.05;   SMA: 2.8
+        < a < 3.3, Type = C, V-R = 0.37±0.03, Pv = 0.06±0.02.  The listed diameters are those listed
+        by Dermawan as computed from these assumed values and his measured value of Hv.
+
+
+        Derm1c                        
+        Dermawan 2011                  Only 22 data points.
+
+
+        Derm2b                        
+        Dermawan 2011                  D flag applies to amplitude only.
+
+
+        Derm2h                        
+        Dermawan 2011                  D flag applies to amplitude only.
+
+
+        Derm2K                        
+        Dermawan 2011                  Only 18 data points.
+
+
+        Derm2O                        
+        Dermawan 2011                  Only 9 data points.
+
+
+        Derm3b                        
+        Dermawan 2011                  Any number of period solutions are possible.
+
+
+        Derm4m                        
+        Dermawan 2011                  Dermawan paper gave amplitude as A = 0.35. It should have
+                                       been 0.035. The value was rounded up to 0.04 mag for entry.
+
+
+        Derm6e                        
+        Dermawan 2011                  R = 24.
+
+
+        Derm6j                        
+        Dermawan 2011                  R = 24.
+
+
+        Himalia                       
+        Mainzer 2011                   The diameters and H values were taken from other sources and
+                                       then used to calibrate expected errors in diameters and
+                                       albedo derived from WISE data.
+
+
+        P/2006 HR30                   
+        Determined to be a comet after initial discovery and asteroid designation (2006 HR30).
+        Current MPC designation is P/2006 HR30.
+
+
+        P0007F                        
+        Polishook 2012b                Object could not be tied to one in the MPCORB file.
+
+
+        P00095                        
+        Polishook 2012b                Object could not be tied to one in the MPCORB file.
+
+
+        P000DV                        
+        Polishook 2012b                Object could not be tied to one in MPCORB file.
+
+
+        P000K7                        
+        Polishook 2012b                Object could not be tied to one in MPCORB file.
+
+
+        P000ZE                        
+        Polishook 2012b                Object could not be tied to one in MPCORB file.
+
+
+        P000ZL                        
+        Polishook 2012b                Object could not be tied to one in the MPCORB file.
+
+

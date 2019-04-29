@@ -18,6 +18,7 @@ class GPFit():
         self.walker_params = None
         self.gp = None
         self.sampler = None
+        self.lsp_period = None
 
     def set_params(self):
         """Calculates initial gp parameter values based on data."""
@@ -100,6 +101,7 @@ class GPFit():
         new_log_period = np.log(1./new_freq)
 
         self.true_period = true_period
+        self.lsp_period = new_period*24.
 
         # plot all the frequencies
         fig, (ax, bx) = plt.subplots(1,2, figsize=(12,5))

@@ -1,0 +1,2072 @@
+ASTEROID LIGHTCURVE DATABASE (LCDB) AMBIGUOUS PERIODS (Complete)
+GENERATED: Jan 31, 2019
+
+Number    Asteroid/Reference             Note  Per1          Amp1 Per2          Amp2 Per3          Amp3 Per4          Amp4
+--------------------------------------------------------------------------------------------------------------------------
+     33   Polyhymnia                             18.608      0.20                                                         
+          Zappala 1982b                  A       18.601      0.14    9.3        0.14                                      
+          Pilcher 2009b                  A       18.609      0.15    9.3        0.15                                      
+
+     53   Kalypso                                 9.036      0.14                                                         
+          Surdej 1983a                   A       26.56       0.1                                                          
+
+     56   Melete                                 18.147      0.16                                                         
+          Harris 1979                    A       13.7        0.06   19.0        0.06                                      
+
+     70   Panopaea                               15.8052     0.18                                                         
+          Marciniak 2015                 A       31.619      0.14   15.812      0.14                                      
+
+    140   Siwa                                   34.445      0.15                                                         
+          Harris 1980b                   A       22.         0.05   32.         0.01                                      
+
+    153   Hilda                                   5.9570     0.22                                                         
+          Warner 2017a                   A        5.954      0.04    4.768      0.03                                      
+
+    161   Athor                                   7.280      0.27                                                         
+          Carlsson 1983                  A        7.288      0.1    10.9        0.1                                       
+          Higgins 2008b                  A       14.561      0.09    7.281      0.09                                      
+
+    165   Loreley                                 7.226      0.17                                                         
+          Pilcher 2006b                  A        7.224      0.15    9.632      0.15   13.515      0.15   14.448      0.15
+
+    178   Belisana                               12.323      0.38                                                         
+          Oey 2008a                      A       24.6510     0.12   12.321      0.10                                      
+
+    198   Ampella                                10.379      0.22                                                         
+          Warner 2009n                   A       20.778      0.13   10.383      0.13                                      
+
+    199   Byblis                         A        5.2201     0.15                                                         
+          Klinglesmith 2014c             A        5.221      0.08   10.444      0.09                                      
+
+    202   Chryseis                               23.670      0.23                                                         
+          Slivan 2002b                   A       15.74       0.08   16.82       0.08                                      
+
+    205   Martha                                 14.911      0.50                                                         
+          Chiorny 2007                   A        9.78       0.13   12.0        0.13                                      
+          Hawkins 2008                   A        9.74       0.10   11.9        0.10                                      
+
+    223   Rosa                                   20.283      0.13                                                         
+          Warner 2007h                   1A       9.91       0.06   19.83       0.06                                      
+
+    224   Oceana                                  9.401      0.14                                                         
+          Warner 2006k                   A        9.385      0.10   18.782      0.10                                      
+
+    227   Philosophia                            26.468      0.20                                                         
+          Pilcher 2014k                  A       52.98       0.15   26.48       0.15                                      
+          Pilcher 2014p                  A       26.48       0.12   52.955      0.12                                      
+
+    264   Libussa                                 9.2276     0.59                                                         
+          Pilcher 2006a                  A        9.238      0.04   18.476      0.04                                      
+
+    266   Aline                                  13.018      0.10                                                         
+          Pilcher 2011a                  A       13.011      0.07   26.023      0.07                                      
+
+    275   Sapientia                              14.931      0.12                                                         
+          Warner 2007e                   A       14.766      0.06   29.53       0.06                                      
+
+    279   Thule                                  23.896      0.10                                                         
+          Pravec 2008web                 A       11.942      0.04   23.931      0.07                                      
+          Pilcher 2014f                  A        7.970      0.06   15.960      0.06                                      
+
+    300   Geraldina                      A        6.8423     0.32                                                         
+          Klinglesmith 2018b             A        6.860      0.04   13.726      0.05                                      
+
+    313   Chaldaea                                8.392      0.24                                                         
+          Hawkins 2008                   A        8.38       0.10   10.08       0.10                                      
+
+    369   Aeria                                   4.778      0.13                                                         
+          Higgins 2011a                  A        4.7776     0.06    9.555      0.06                                      
+
+    372   Palma                                   8.567      0.17                                                         
+          Weidenschilling 1990           A       17.3        0.17    8.67       0.17                                      
+
+    374   Burgundia                      A        6.972      0.18                                                         
+          Behrend 2018web                A       13.926      0.08    6.963      0.08                                      
+
+    393   Lampetia                               38.455      0.14                                                         
+          Scaltriti 1979a                A       38.7        0.14   19.35       0.14                                      
+
+    419   Aurelia                                16.784      0.27                                                         
+          Harris 1989b                   A       16.709      0.08   16.804      0.08                                      
+
+    421   Zahringia                      A        6.42       0.17                                                         
+          Warner 2010i                   A        6.42       0.10   12.86       0.10                                      
+
+    439   Ohio                                   37.46       0.24                                                         
+          Lagerkvist 1987b               A       19.2        0.24   38.4        0.24                                      
+
+    521   Brixia                                 28.479      0.12                                                         
+          Warner 2009m                   A        9.78       0.11   19.57       0.11                                      
+
+    565   Marbachia                               4.587      0.70                                                         
+          Koff 2000c                     DA       4.59       0.22    5.084      0.22                                      
+
+    576   Emanuela                       A       20.404      0.13                                                         
+          Pilcher 2017f                  A       20.406      0.13   40.816                                                
+          Pilcher 2018a                  A       20.404      0.13   40.812      0.13                                      
+
+    613   Ginevra                                12.906      0.20                                                         
+          Saylor 2012                    A       16.9        0.22    9.05       0.22                                      
+
+    614   Pia                                     4.572      0.42                                                         
+          Behrend 2007web                A        4.5793     0.40    4.558      0.40                                      
+
+    634   Ute                            A       11.7554     0.17                                                         
+          Pilcher 2009a                  A       11.7554     0.17   23.51       0.17                                      
+
+    676   Melitta                                16.743      0.20                                                         
+          Ferrero 2013                   A       16.767      0.08    8.393      0.08   12.420      0.08                   
+
+    684   Hildburg                       A       15.89       0.23                                                         
+          Ferrero 2014c                  A       15.89       0.22   11.92       0.22                                      
+
+    688   Melanie                        A       18.87       0.14                                                         
+          Violante 2012                  A       16.10       0.09   14.74       0.09                                      
+
+    702   Alauda                         A        8.3531     0.12                                                         
+          Harris 1983a                            8.36       0.10                                                         
+          Fauerbach 2005b                         8.348      0.09                                                         
+          Benishek 2008a                          8.3539     0.09                                                         
+          Behrend 2009web                        16.7043     0.09                                                         
+          Alkema 2014b                            8.3531     0.10                                                         
+          Behrend 2014web                        16.7025     0.12                                                         
+
+    721   Tabora                                  7.982      0.30                                                         
+          Zappala 1989                   A        8.0        0.19   12.0        0.19                                      
+
+    728   Leonisis                                5.5783     0.39                                                         
+          Galad 2010c                    A        5.5789     0.33    3.6358     0.33    4.5253     0.33                   
+
+    730   Athanasia                               5.7348     0.63                                                         
+          Pilcher 2013j                  A        5.7345     0.14    8.6016     0.14                                      
+
+    777   Gutemberga                     A       12.838      0.28                                                         
+          Polakis 2018d                  A       12.838      0.28    6.411      0.25                                      
+
+    788   Hohensteina                            37.137      0.18                                                         
+          Stephens 2015a                 A       29.94       0.10   40.87       0.10                                      
+          Oey 2016a                      A       33.02       0.18   43.49       0.17                                      
+
+    804   Hispania                               14.845      0.24                                                         
+          Pray 2004b                     A       14.64       0.24    7.462      0.20                                      
+
+    811   Nauheima                                4.0011     0.20                                                         
+          Galad 2008a                    A        4.0011     0.13    6.0        0.13    4.8                3.43           
+
+    862   Franzia                                 7.5236     0.13                                                         
+          Warner 2005d                   A       15.05       0.12    7.6        0.12                                      
+          Warner 2010i                   A        7.65       0.10   15.27       0.10                                      
+
+    869   Mellena                                 6.5155     0.27                                                         
+          Saylor 2012                    A       11.8        0.20    7.5        0.20                                      
+
+    872   Holda                                   5.945      0.47                                                         
+          Lagerkvist 1998                A        7.20       0.34    6.78       0.34                                      
+
+    896   Sphinx                         A       21.038      0.16                                                         
+          Polakis 2018e                  A       21.038      0.16   10.541      0.17                                      
+
+    903   Nealley                        A       21.60       0.15                                                         
+          Warner 2012b                   A       19.72       0.15   21.52       0.15                                      
+          Warner 2012b                   A       19.58       0.15   21.52       0.15                                      
+
+    913   Otila                                   4.8720     0.45                                                         
+          Schiller 2008                  A        4.8024     0.45   24.1205     0.45   12.0799     0.45    8.0402     0.45
+
+    938   Chlosinde                      A       19.204      0.16                                                         
+          Stephens 2011b                 A       19.204      0.16   13.72       0.16                                      
+
+    946   Poesia                                108.5        0.32                                                         
+          Vander Haagen 2009b            A       73.5        0.24  102.9        0.24                                      
+
+    983   Gunila                         A        8.37       0.12                                                         
+          Hayes-Gehrke 2014b                      8.37       0.11                                                         
+          Polakis 2019                           16.633      0.12                                                         
+
+    995   Sternberga                             14.612      0.20                                                         
+          Marciniak 2014                 NA      22.404      0.12   11.201      0.12                                      
+
+   1030   Vitja                                   7.749      0.33                                                         
+          Ferrero 2014a                  A        6.332      0.21    5.590      0.21    7.29       0.21                   
+
+   1044   Teutonia                                3.153      0.32                                                         
+          Betzler 2008b                  A        2.84       0.20    3.153      0.20                                      
+
+   1046   Edwin                                   5.2906     0.27                                                         
+          Betzler 2008b                  A        2.84       0.20    3.153      0.20                                      
+
+   1060   Magnolia                       A        2.911      0.32                                                         
+          Strabla 2013a                  A        2.910      0.08    5.821      0.08                                      
+
+   1110   Jaroslawa                              97.4        0.80                                                         
+          Clark 2007                     1A       9.41       0.16   18.8        0.16                                      
+
+   1145   Robelmonte                              8.002      0.18                                                         
+          Gartrelle 2012                 A        9.01       0.18    8.95       0.18   20.61       0.18                   
+
+   1175   Margo                                   6.0136     0.40                                                         
+          Brinsfield 2010a               A        6.015      0.40    8.0        0.40   12.0        0.40                   
+
+   1203   Nanna                                  18.54       0.15                                                         
+          Warner 2010a                   A       25.80       0.15   12.90       0.15                                      
+
+   1238   Predappia                      1A       8.94       0.03                                                         
+          Warner 2006k                   1A       8.94       0.03   17.89       0.03                                      
+
+   1266   Tone                                   15.55       0.19                                                         
+          Warner 2010i                   A        7.40       0.06   14.8        0.06                                      
+
+   1269   Rollandia                      A       19.98       0.13                                                         
+          Warner 2017a                   A       19.98       0.06    9.99       0.06                                      
+
+   1306   Scythia                                 7.525      0.25                                                         
+          Stephens 2004d                 A       15.05       0.15    7.5        0.15                                      
+
+   1325   Inanda                         A       20.52       0.12                                                         
+          Warner 2008i                   A       20.52       0.12   35.83       0.12                                      
+
+   1355   Magoeba                                 2.9712     0.22                                                         
+          Warner 2013o                   A        2.972      0.10    5.95       0.10                                      
+          Warner 2013o                   A        2.975      0.17    5.95       0.17    5.6        0.17                   
+
+   1374   Isora                          A       36.699      0.12                                                         
+          Stephens 2014e                 A       36.699      0.12   18.35       0.12                                      
+
+   1384   Kniertje                                9.807      0.33                                                         
+          Warner 2006m                   A       12.255      0.33    9.816      0.33                                      
+          Hawkins 2008                   A        9.824      0.20   12.255      0.20                                      
+
+   1465   Autonoma                                4.882      0.15                                                         
+          Brinsfield 2008a               1A       4.88       0.13    9.76       0.13                                      
+
+   1490   Limpopo                                 6.647      0.26                                                         
+          Saylor 2012                    A        6.15       0.26   12.3        0.26                                      
+
+   1504   Lappeenranta                   A       15.190      0.29                                                         
+          Polakis 2017b                  A       15.16       0.09   30.34       0.09                                      
+
+   1506   Xosa                           T0     292.         0.70                                                         
+          Stecher 2009                   A        5.9        0.15    6.6        0.15                                      
+
+   1513   Matra                          A       34.48       0.56                                                         
+          Rowe 2019                      A       34.48       0.56   51.90       0.56                                      
+
+   1549   Mikko                          DA       8.74       0.10                                                         
+          Fauerbach 2019b                DA       8.74       0.10   13.74       0.10                                      
+
+   1564   Srbija                                  9.135      0.37                                                         
+          Angliongto 2007                A       29.64       0.37   18.29       0.37    9.72       0.37                   
+
+   1565   Lemaitre                       A       11.403      0.04                                                         
+          Warner 2008b                   A       11.403      0.04   22.805      0.04                                      
+
+   1629   Pecker                         A        8.2166     0.08                                                         
+          Pravec 2006web                 A        8.2166     0.08   12.325      0.08   16.433      0.08                   
+
+   1749   Telamon                        A       16.975      0.10                                                         
+          Szabo 2017                     HDA     11.331      0.06   22.662      0.06                                      
+
+   1782   Schneller                      DA      11.86       0.71                                                         
+          Chang 2016                     1A       5.93       0.71   11.86       0.71                                      
+
+   1917   Cuyo                           A        2.6890     0.41                                                         
+          Warner 2017p                   A        2.743      0.16    2.911      0.17                                      
+
+   1928   Summa                          A        6.8549     0.18                                                         
+          Owings 2013b                   A        6.855      0.13    5.987      0.04                                      
+
+   1947   Iso-Heikkila                   NA       5.0158     0.35                                                         
+          Galad 2010c                    NA       5.0158     0.35    3.2895     0.23    6.3792     0.39                   
+
+   1990   Pilcher                        A        2.842      0.10                                                         
+          Brincat 2017a                  A        2.842      0.10    3.895      0.10                                      
+
+   2020   Ukko                           A       25.478      0.24                                                         
+          Pilcher 2015i                  A       25.478      0.24   12.733      0.24   38.154      0.24                   
+
+   2023   Asaph                          A        3.87       0.06                                                         
+          Warner 2010j                   A        3.87       0.05    6.28       0.05                                      
+
+   2037   Tripaxeptalis                  A        2.33       0.10                                                         
+          Galad 2008a                    A        2.33       0.10    2.23       0.10                                      
+
+   2067   Aksnes                         A       17.75       0.24                                                         
+          Dahlgren 1998                  A       17.75       0.24    8.86       0.24                                      
+
+   2074   Shoemaker                               2.5328     0.13                                                         
+          Warner 2012l                   A        2.82       0.08    2.535      0.08    2.449      0.08                   
+          Warner 2016b                   A        2.809      0.13    2.515      0.14                                      
+
+   2085   Henan                          A       24.         0.25                                                         
+          Devogele 2017                  A      110.         0.4    94.         0.4                                       
+
+   2099   Opik                                    6.4430     0.7                                                          
+          Goretti 2000                   A        9.3        0.7    10.3        0.7                                       
+
+   2108   Otto Schmidt                   A        6.90       0.16                                                         
+          Warner 2017b                   A        6.90       0.16    6.31       0.16                                      
+
+   2142   Landau                                 19.2        0.20                                                         
+          Chang 2016                     1A       9.70       0.28   19.40       0.28                                      
+
+   2146   Stentor                                16.40       0.10                                                         
+          French 2013                    A       35.14       0.09   17.6        0.09                                      
+
+   2221   Chilton                        A        7.445      0.20                                                         
+          Sada 2006                      A        7.445      0.20    8.63                                                 
+
+   2253   Espinette                               7.442      0.48                                                         
+          Wisniewski 1997                A        7.3        0.48    5.5        0.48                                      
+
+   2259   Sofievka                       A       31.6        0.10                                                         
+          Chang 2016                     1A       9.80       0.10   19.60       0.10                                      
+
+   2388   Gase                           DA      26.30       0.48                                                         
+          Chang 2016                     1A      13.15       0.48   26.30       0.48                                      
+
+   2415   Ganesa                                  8.         0.15                                                         
+          Chang 2016                     1A       2.67       0.16    5.34       0.16                                      
+
+   2449   Kenos                                   3.8492     0.40                                                         
+          Wisniewski 1997                A        4.188      0.16    3.862      0.16                                      
+
+   2460   Mitlincoln                              3.01       0.20                                                         
+          Warner 2011j                   A        2.667      0.04    4.801      0.04    2.399      0.04                   
+
+   2540   Blok                           DA      19.20       0.07                                                         
+          Chang 2016                     1A       9.60       0.07   19.20       0.07                                      
+
+   2599   Veseli                         A       18.54       0.33                                                         
+          Bolt 2007                      A       18.54       0.33   13.25       0.33                                      
+
+   2651   Karen                          A        6.3227     0.25                                                         
+          Bembrick 2007c                 A        6.3227     0.25   12.7        0.25    9.5        0.25                   
+
+   2696   Magion                         AT0    480.         0.31                                                         
+          Galad 2009a                    AT?    480.         0.31  350.         0.32                                      
+
+   2857   NOT                                     5.6353     0.28                                                         
+          Galad 2008b                    A        5.6343     0.28    6.387      0.28    5.040      0.28                   
+
+   2883   Barabashov                     A        2.6840     0.05                                                         
+          Pravec 2017web                 A        2.6840     0.04    5.3680     0.04                                      
+          Warner 2017k                   A        2.72       0.05    5.48       0.05                                      
+
+   2948   Amosov                         A        7.3996     1.20                                                         
+          Galad 2008a                    A        7.3996     1.20    6.4106     1.20    8.754      1.20                   
+
+   2972   Niilo                          4A       8.592      0.12                                                         
+          Pravec 2015web                 4A       8.592      0.12    4.296      0.12                                      
+
+   2986   Mrinalini                      A       15.9        0.2                                                          
+          Galad 2009e                    A       15.9        0.2    11.9        0.2                                       
+
+   3026   Sarastro                       DA      15.74       0.2                                                          
+          Chang 2016                     1A       7.87       0.2    15.74       0.21                                      
+
+   3059   Pryor                                  24.544      0.60                                                         
+          Chang 2016                     1A       8.21       0.34   16.42       0.34                                      
+
+   3200   Phaethon                                3.604      0.34                                                         
+          Pan 2012                       A        3.679      0.07    7.357      0.07                                      
+
+   3253   Gradie                         A        6.293      0.54                                                         
+          Wisniewski 1997                A        6.293      0.54    5.915      0.54    6.760      0.54                   
+
+   3410   Vereshchagin                            2.6778     0.14                                                         
+          Warner 2007e                   A        2.5780     0.11    2.675      0.11                                      
+
+   3415   Danby                                   5.675      0.35                                                         
+          Behrend 2007web                4A       5.67066    0.13    2.8353     0.13                                      
+          Warner 2008f                   4A       5.666      0.10    2.920      0.11                                      
+          Apostolovska 2009              4A       5.689      0.18    2.845      0.18                                      
+          Behrend 2015web                4A       5.6706     0.11    2.8353     0.11                                      
+          Warner 2017d                   A        2.834      0.10    5.668      0.11                                      
+          Warner 2017d                   A        2.837      0.11    5.674      0.12                                      
+
+   3494   Purple Mountain                A        5.857      0.40                                                         
+          Cantu 2016                     A        5.857      0.32    2.929      0.32                                      
+          Kosiarek 2017                  A        2.928      0.40    5.857      0.42                                      
+
+   3552   Don Quixote                             6.665      1.24                                                         
+          Weidenschilling 1990           A        7.7        0.57    6.65       0.57                                      
+
+   3561   Devine                                  9.61       0.23                                                         
+          Stephens 2016d                 A        4.376      0.08    5.354      0.08                                      
+
+   3782   Celle                          A        3.84       0.17                                                         
+          Bowens-Rubin 2014              A        3.8389     0.12    3.9419     0.12                                      
+
+   3793   Leonteus                                5.621      0.31                                                         
+          Stephens 2010c                 A       11.22       0.05    5.61       0.05                                      
+
+   3855   Pasasymphonia                  A        6.5131     0.18                                                         
+          Pravec 2009web                 A        6.5131     0.18    7.542      0.18                                      
+
+   3872   Akirafujii                     A       10.635      0.35                                                         
+          Clark 2007                     A       10.635      0.35    5.321      0.35                                      
+
+   3928   Randa                                  29.9        0.12                                                         
+          Galad 2009c                    A       29.9        0.12   79.9        0.12                                      
+
+   4015   Wilson-Harrington              A        3.5736     0.12                                                         
+          Urakawa 2011                   AT?      3.5736     0.10    7.1496     0.10                                      
+
+   4171   Carrasco                       A       33.53       0.22                                                         
+          Pravec 2009web                 A       33.53       0.22   16.77       0.22                                      
+
+   4336   Jasniewicz                     A        9.99       0.20                                                         
+          Owings 2018                    A        9.99       0.20   40.         0.2                                       
+
+   4340   Dence                                   7.546      0.58                                                         
+          Pravec 2008web                 A        7.558      0.07   15.116      0.07                                      
+
+   4350   Shibecha                                2.890      0.16                                                         
+          Ferrero 2012b                  A        2.890      0.11    5.778      0.11                                      
+
+   4436   Ortizmoreno                    A        8.24       0.40                                                         
+          Warner 2013o                   A        8.24       0.09   16.4        0.09                                      
+
+   4495   Dassanowsky                    A        2.6314     0.06                                                         
+          Warner 2019i                   A        2.6314     0.06    5.263      0.06                                      
+
+   4692   SIMBAD                         A        2.736      0.15                                                         
+          Skiff 2017web                           2.736      0.15                                                         
+          Zeigler 2018                            5.44       0.14                                                         
+
+   4853   Marielukac                              7.946      0.29                                                         
+          Vander Haagen 2008a            A        9.5232     0.25    9.6005     0.28                                      
+
+   5043   Zadornov                       DA      25.60       0.18                                                         
+          Chang 2016                     1A      12.80       0.18   25.60       0.18                                      
+
+   5091   Isakovskij                     DA      13.62       0.53                                                         
+          Chang 2016                     1A       6.81       0.53   13.62       0.53                                      
+
+   5123   1989 BL                                 9.883      0.45                                                         
+          Szabo 2017                     HDA      9.90       0.44   19.80       0.44                                      
+
+   5143   Heracles                                2.7063     0.22                                                         
+          Linder 2013                    A        2.706      0.12    2.656      0.12                                      
+
+   5244   Amphilochos                             9.766      0.79                                                         
+          Szabo 2017                     HDA      9.578      0.73   19.556      0.73                                      
+
+   5268   Cernohorsky                    DA      15.60       0.08                                                         
+          Chang 2016                     1A       7.80       0.08   15.60       0.08                                      
+
+   5401   Minamioda                      A        3.949      0.11                                                         
+          Marchini 2016c                 A        3.949      0.11    7.897      0.11                                      
+
+   5404   Uemura                                  3.44872    0.13                                                         
+          Galad 2010b                    A     -9.99 -9.99 -9.99 -9.99 -9.99 -9.99 -9.99 -9.99                            
+
+   5405   Neverland                               3.181      0.20                                                         
+          Behrend 2017web                4A       7.1414     0.14    3.0707     0.14                                      
+
+   5436   Eumelos                        A       38.41       0.68                                                         
+          French 2013                            38.41       0.68                                                         
+          Ryan 2017                      H       21.23       0.40                                                         
+          Szabo 2017                     H       21.276      0.44                                                         
+
+   5479   Grahamryder                    A        7.60       0.30                                                         
+          Galad 2010a                    A        7.60       0.30   11.12       0.30                                      
+
+   5535   Annefrank                      A       15.12       0.25                                                         
+          Schmidt 2007                   A       15.12       0.25   12.         0.25   22.8        0.25                   
+
+   5641   McCleese                       T0     418.         1.3                                                          
+          Warner 2006c                   A        7.268      0.06   14.54       0.06                                      
+
+   5643   Roques                         DA       7.78       0.30                                                         
+          Chang 2016                     1A       3.89       0.30    7.78       0.30                                      
+
+   5676   Voltaire                                5.039      0.12                                                         
+          Pravec 2006web                 A        5.0404     0.05   10.081      0.05                                      
+          Pray 2008a                     A       10.081      0.06    5.040      0.06                                      
+          Pravec 2009web                 A       10.074      0.12   10.074      0.12                                      
+
+   5711   Eneev                          A      107.1        0.15                                                         
+          Warner 2018b                   A      107.1        0.15   53.25       0.14                                      
+
+   5771   Somerville                     A        9.20       0.80                                                         
+          Warner 2012g                   A        9.20       0.80    7.7        0.80                                      
+
+   5899   Jedicke                                 2.7481     0.11                                                         
+          Warner 2010h                   A        3.66       0.04    3.3        0.04    3.9        0.04    3.5        0.04
+          Warner 2010n                   A        3.66       0.04    3.4        0.04    3.9        0.04                   
+
+   6037   1988 EG                        A        2.760      0.2                                                          
+          Pravec 1998web                 A        2.760      0.20    2.919      0.22                                      
+
+   6053   1993 BW3                                2.573      0.50                                                         
+          Warner 2015s                   A        2.873      0.07    2.556      0.08                                      
+
+   6153   Hershey                        A        6.094      0.06                                                         
+          Higgins 2006e                  A        6.094      0.06    8.174      0.14                                      
+
+   6262   Javid                                   8.02       0.49                                                         
+          Chang 2016                     1A       3.84       0.52    7.68       0.52                                      
+
+   6296   Cleveland                              30.84       0.70                                                         
+          Warner 2008l                   A       15.65       0.11   31.54       0.11                                      
+
+   6344   1993 VM                        DA       8.24       0.82                                                         
+          Chang 2016                     1A       4.12       0.82    8.24       0.82                                      
+
+   6405   Komiyama                       A       19.855      0.13                                                         
+          Pravec 2009web                 A       19.855      0.13    9.929      0.13                                      
+
+   6435   Daveross                       T-      51.25       0.67                                                         
+          Warner 2008m                   A       14.734      0.10   15.473      0.10                                      
+
+   6455   1992 HE                        A        2.736      0.21                                                         
+          Pravec 2002web                 A        5.471      0.10    2.739      0.11                                      
+
+   6539   Nohavica                       DA       5.80       0.66                                                         
+          Chang 2016                     1A       2.90       0.66    5.80       0.66                                      
+
+   6693   1986 CC2                       A       11.39       0.28                                                         
+          Rowe 2018a                     A       11.39       0.28    9.21       0.24                                      
+
+   6859   Datemasamune                   A        5.2879     0.06                                                         
+          Warner 2016i                   A        5.2879     0.06    2.6440     0.05                                      
+
+   6901   Roybishop                      A        4.682      0.07                                                         
+          Warner 2015l                   A        4.694      0.07    7.857      0.03                                      
+
+   6984   Lewiscarroll                   A       24.65       0.16                                                         
+          Stephens 2016d                 A       24.65       0.16   48.85       0.12   12.19       0.12                   
+
+   7148   Reinholdbien                   DA      11.92       0.44                                                         
+          Chang 2016                     1A       5.96       0.44   11.92       0.44                                      
+
+   7437   Torricelli                     DA      13.72       0.41                                                         
+          Chang 2016                     1A       6.86       0.41   13.72       0.41                                      
+
+   7559   Kirstinemeyer                  A        5.475      0.05                                                         
+          Oey 2012d                      A        5.475      0.05   10.971      0.05                                      
+
+   7560   Spudis                                  3.5449     0.38                                                         
+          Warner 2008l                   A        3.5448     0.10    5.740      0.10                                      
+
+   7757   Kameya                         A        5.98       0.11                                                         
+          Warner 2005a                   A        5.98       0.11    7.96       0.11   11.94       0.11                   
+
+   7870   1987 UP2                               12.         0.07                                                         
+          Warner 2011l                   1A       6.15       0.07   12.30       0.02                                      
+
+   8013   Gordonmoore                    A        8.40       0.25                                                         
+          Warner 2016n                   A        8.40       0.25    4.19       0.25                                      
+
+   8021   Walter                         A        4.84       0.07                                                         
+          Warner 2009b                   A        4.84       0.07    9.68       0.07                                      
+
+   8034   Akka                           A        7.283      0.52                                                         
+          Wisniewski 1997                A        7.283      0.46    3.6377     0.46                                      
+          Pravec 1998b                   A        3.6377     0.52    7.283      0.52                                      
+
+   8348   Bhattacharyya                  A       19.60       0.10                                                         
+          Warner 2013b                   A       19.58       0.10   39.83       0.10                                      
+
+   8404   1995 AN                                 3.202      0.16                                                         
+          Warner 2009c                   A        4.612      0.16    3.204      0.09                                      
+
+   8432   Tamakasuga                     DA      12.08       0.23                                                         
+          Chang 2016                     1A       6.04       0.23   12.08       0.23                                      
+
+   8463   Naomimurdoch                   A        3.74       0.17                                                         
+          Benishek 2016a                 1A       3.74       0.17    7.50       0.17                                      
+
+   8551   Daitarabochi                   A        6.62       0.19                                                         
+          Warner 2018f                   A        6.62       0.19    3.31       0.20                                      
+
+   8590   Pygargus                       DA      17.62       0.20                                                         
+          Chang 2016                     1A       8.81       0.20   17.62       0.20                                      
+
+   8833   Acer                           DA      27.42       0.35                                                         
+          Chang 2016                     1A      13.71       0.35   27.42       0.35                                      
+
+   8914   Nickjames                               5.652      0.17                                                         
+          Galad 2010c                    NA       5.0669     0.20    5.347      0.20    6.406      0.15                   
+
+   8928   1996 YH2                       A        2.5689     0.07                                                         
+          Pravec 2014web                 A        2.5689     0.07    3.85       0.07                                      
+
+   9387   Tweedledee                              3.534      0.15                                                         
+          Warner 2007a                   A        7.08       0.15    3.54       0.10                                      
+
+   9739   Powell                         T?     109.         0.40                                                         
+          Warner 2007a                   A       18.29       0.09   36.5        0.09                                      
+          Warner 2010e                   A       16.7        0.11   33.5        0.11                                      
+
+   9928   1981 WE9                               18.3980     0.41                                                         
+          Clark 2015b                    A       18.310      0.32    9.14       0.32                                      
+
+  10132   Lummelunda                              2.5099     0.17                                                         
+          Salvaggio 2018b                A        2.510      0.17    2.453      0.17                                      
+
+  10187   1996 JV                        A       21.676      0.20                                                         
+          Pravec 2011web                 A       21.676      0.10   10.838      0.10                                      
+
+  10227   Izanami                        A        2.920      0.16                                                         
+          Galad 2008a                    A        2.920      0.16    7.422      0.16    3.327      0.16    3.836      0.16
+
+  10261   Nikdollezhal'                          16.747      0.09                                                         
+          Warner 2005d                   A       12.56       0.08   16.747      0.08                                      
+
+  10373   MacRobert                      DA       9.42       1.10                                                         
+          Chang 2016                     1A       4.71       1.10    9.42       1.10                                      
+
+  10731   1988 BL3                       A       28.02       0.41                                                         
+          Pray 2011web                   A       28.02       0.23   17.72       0.20                                      
+
+  10936   1998 FN11                      A       25.70       0.40                                                         
+          Warner 2008i                   A       17.3        0.35   26.2        0.35                                      
+          Warner 2011e                   A       25.70       0.28   17.00       0.28                                      
+
+  11120   Pancaldi                       DA      10.78       0.48                                                         
+          Chang 2016                     1A       5.39       0.48   10.78       0.48                                      
+
+  11388   1998 VU4                               28.74       0.08                                                         
+          Stephens 2016i                 A       28.74       0.08   14.34       0.08                                      
+
+  11574   d'Alviella                     A       12.549      0.15                                                         
+          Higgins 2007a                  A       12.549      0.15   25.10       0.15                                      
+
+  11789   Kempowski                      AT0     48.6        0.45                                                         
+          Warner 2009m                   A       48.6        0.45   24.1        0.40                                      
+
+  12119   Memamis                        DA       7.00       0.70                                                         
+          Chang 2016                     1A       3.50       0.70    7.00       0.70                                      
+
+  12236   1987 DD6                       DA       6.06       0.95                                                         
+          Chang 2016                     1A       3.03       0.95    6.06       0.95                                      
+
+  12429   1995 WH7                               19.122      0.27                                                         
+          Chang 2016                     1A       9.60       0.93   19.20       0.93                                      
+
+  12454   1996 YO1                                8.089      0.77                                                         
+          Chang 2016                     1A       4.05       0.56    8.10       0.56                                      
+
+  12466   1997 AS12                               2.675      0.06                                                         
+          Pravec 2009web                 A        2.6751     0.06    5.3502     0.06                                      
+
+  12538   1998 OH                        A        2.5780     0.20                                                         
+          Warner 2015h                   A        5.833      0.12    2.914      0.11                                      
+          Warner 2017i                   A        5.191      0.13    5.827      0.12                                      
+          Warner 2019h                   A        2.592      0.10    5.186      0.14                                      
+          Warner 2019h                   A        2.5780     0.18    5.154      0.20                                      
+
+  12699   1990 DD2                       DA      21.10       0.34                                                         
+          Chang 2016                     1A      10.55       0.34   21.10       0.34                                      
+
+  12815   1996 DL2                       A       15.8        0.5                                                          
+          Galad 2009e                    A       15.8        0.5    11.9        0.5                                       
+
+  12820   Robinwilliams                  DA      10.44       0.36                                                         
+          Chang 2016                     1A       5.22       0.36   10.44       0.36                                      
+
+  12896   Geoffroy                       DA      11.36       0.23                                                         
+          Chang 2016                     1A       5.68       0.23   11.36       0.23                                      
+
+  12920   1998 VM15                      A        9.0511     0.31                                                         
+          Clark 2015b                    A        9.0511     0.19   12.885      0.31                                      
+
+  12929   1999 TZ1                                9.2749     0.17                                                         
+          Thirouin 2010                  A       10.422      0.07    5.211      0.07                                      
+
+  13379   1998 WX9                       HA      13.698      0.15                                                         
+          Ryan 2017                      H       13.70       0.15                                                         
+          Szabo 2017                     H       13.698      0.11                                                         
+
+  13503   1988 RH6                       A        6.9        0.23                                                         
+          Polishook 2012b                A        6.9        0.23   13.8        0.23                                      
+
+  13573   1993 FZ18                      A        3.06       0.07                                                         
+          Warner 2013d                   A        3.06       0.07    6.12       0.07                                      
+
+  13693   Bondar                                 11.555      0.61                                                         
+          Chang 2016                     1A       5.55       0.79   11.10       0.79                                      
+
+  13921   Sgarbini                       A        3.679      0.12                                                         
+          Pravec 2006web                 A        3.679      0.12    7.358      0.12                                      
+
+  14279   2000 CD65                      DA       8.72       0.42                                                         
+          Chang 2016                     1A       4.36       0.42    8.72       0.42                                      
+
+  14431   1992 DX8                       A        9.222      0.26                                                         
+          Galad 2008a                    A        9.222      0.26    6.589      0.26    7.636      0.26    7.726      0.26
+
+  14728   Schuchardt                     A        4.636      0.9                                                          
+          Galad 2008a                    A        4.636      0.9     5.6        0.9                                       
+
+  15535   2000 AT177                     A        6.016      0.32                                                         
+          Stephens 2016k                 A        6.016      0.32    6.896      0.32                                      
+
+  15545   2000 EK46                              25.130      0.44                                                         
+          Chang 2016                     1A       8.35       1.5    16.70       1.5                                       
+
+  15700   1987 QD                                 3.0586     0.07                                                         
+          Vander Haagen 2011b            A        9.709      0.10    8.15       0.10                                      
+
+  15745   Yuliya                                  3.2486     0.15                                                         
+          Warner 2018m                   A        3.256      0.03   11.70       0.18                                      
+
+  15786   1993 RS                        A        6.82       0.21                                                         
+          Warner 2015j                   A        6.82       0.14    5.97       0.15    4.78       0.15                   
+
+  15874   1996 TL66                      1A      12.         0.07                                                         
+          Thirouin 2010                  1A      12.         0.07    8.04       0.07    6.         0.07                   
+
+  15914   1997 UM3                       A       12.8        0.5                                                          
+          Galad 2009e                    A       12.8        0.5     8.5        0.5                                       
+
+  16124   Timdong                        DA      10.54       0.25                                                         
+          Chang 2016                     1A       5.27       0.25   10.54       0.25                                      
+
+  16338   1106 T-3                       A       29.226      0.09                                                         
+          Pravec 2016web                 A       29.226      0.09   14.603      0.09                                      
+
+  16562   1992 AV1                       A       34.85       0.32                                                         
+          Warner 2011o                   A       12.251      0.04    6.51       0.07                                      
+
+  16813   1997 UT6                       A        8.768      0.29                                                         
+          Hayes-Gehrke 2015d             A        8.293      0.24    7.880      0.24                                      
+
+  16960   1998 QS52                      A        5.789      1.40                                                         
+          Warner 2009b                   A        5.789      0.24    2.900      0.24                                      
+
+  17633   1996 JU                        A        6.2098     0.26                                                         
+          Warner 2014l                   A        6.20       0.21    3.10       0.21                                      
+
+  18073   2000 CB82                               5.763      0.38                                                         
+          Chang 2016                     1A       2.70       0.27    5.40       0.27                                      
+
+  18486   1996 AS2                                3.62       0.34                                                         
+          Galad 2008a                    A        3.89       0.2     3.59       0.2                                       
+
+  19308   1996 TO66                      A        7.92       0.26                                                         
+          Sheppard 2003                  A        7.92       0.26    3.96       0.26    4.80       0.26    5.9        0.26
+
+  19309   1996 UK1                       A        5.21       0.06                                                         
+          Galad 2008c                    A        5.21       0.06    4.16       0.06    5.91       0.06                   
+
+  19537   1999 JL8                       AT0     50.1        0.10                                                         
+          Warner 2012g                   A       50.1        0.10   25.2        0.10                                      
+
+  20936   Nemrut Dagi                             3.2754     0.15                                                         
+          Skiff 2011web                  A        3.293      0.06    6.584      0.06                                      
+          Warner 2011o                   A        3.321      0.15    6.643      0.15                                      
+
+  21321   1997 AN2                       A       13.92       0.11                                                         
+          Warner 2014f                   A       13.92       0.11    6.96       0.11                                      
+
+  21361   Carsonmark                     D       20.22       0.40                                                         
+          Chang 2016                     1A      10.11       0.40   20.22       0.40                                      
+
+  22001   1999 XY41                      DA       9.64       0.16                                                         
+          Chang 2016                     1A       4.82       0.16    9.64       0.16                                      
+
+  22124   2000 ST183                     DA       4.76       0.92                                                         
+          Chang 2016                     1A       2.38       0.92    4.76       0.92                                      
+
+  22195   Nevadodelruiz                  A       14.56       0.19                                                         
+          Warner 2009k                   A       14.56       0.19    9.07       0.19                                      
+
+  22753   1998 WT                        A       10.24       0.11                                                         
+          Galad 2005                     A       10.24       0.11   13.05       0.16                                      
+
+  23654   1997 CC26                      D        6.14       0.49                                                         
+          Chang 2016                     1A       3.07       0.49    6.14       0.49                                      
+
+  23706   1997 SY32                      A        7.04       0.11                                                         
+          Stephens 2016web               A        7.04       0.11    8.24       0.11                                      
+
+  23958   1998 VD30                      H      562.         0.45                                                         
+          Szabo 2017                     HA    1143.         0.36  571.         0.36                                      
+
+  24443   2000 OG                        A        4.069      0.19                                                         
+          Warner 2015c                   A        4.069      0.11    4.904      0.10                                      
+
+  24465   2000 SX155                              2.66087    0.21                                                         
+          Warner 2012g                   A       21.46       0.15   19.77       0.15                                      
+
+  24770   1993 FG28                      DA       7.90       0.81                                                         
+          Chang 2016                     1A       3.95       0.81    7.90       0.81                                      
+
+  24819   1994 XY4                       A       27.73       0.04                                                         
+          Warner 2008l                   A       27.73       0.04   57.57       0.09                                      
+
+  24835   1995 SM55                      A        8.08       0.19                                                         
+          Sheppard 2003                  2A       8.08       0.19    4.04       0.19                                      
+
+  25318   1999 CH12                      A       15.80       0.09                                                         
+          Stephens 2015e                 A       15.80       0.09    7.93       0.11                                      
+
+  25332   1999 KK6                                2.4531     0.10                                                         
+          Warner 2008i                   A        2.4531     0.09    4.9062     0.09                                      
+          Warner 2013b                   A        2.453      0.08    4.906      0.08                                      
+
+  25458   1999 XT13                      A        3.6594     0.30                                                         
+          Pravec 2006web                 A        3.6594     0.30    1.829      0.30                                      
+
+  25916   2001 CP44                               4.6021     0.37                                                         
+          Warner 2014i                   A        4.208      0.37    3.867      0.35                                      
+          Warner 2014k                   A        4.208      0.37    3.867      0.35                                      
+
+  26093   1987 UA1                       A        3.3186     0.10                                                         
+          Pravec 2012web                 A        3.3186     0.10    6.637      0.10                                      
+
+  26227   1998 HJ7                       A       22.07       0.15                                                         
+          Warner 2014l                   A       22.07       0.15   11.03       0.16                                      
+
+  27529   2000 HJ64                      A        4.1290     0.51                                                         
+          Galad 2007a                    A        4.1290     0.51    4.1570     0.49                                      
+
+  30613   2678 P-L                       A       10.13       0.4                                                          
+          Galad 2008a                    A       10.13       0.4    10.66       0.4                                       
+
+  31022   1996 FJ9                       DA      15.60       0.24                                                         
+          Chang 2016                     1A       7.80       0.24   15.60       0.24                                      
+
+  31076   1996 XH1                       AT0    350.         0.17                                                         
+          Warner 2010k                   A      350.         0.17  700.         0.17                                      
+
+  32039   2000 JO23                               3.2990     0.05                                                         
+          Pray 2007c                     A        3.2990     0.05    6.5979     0.05                                      
+
+  32257   2000 OW52                      A       11.413      0.20                                                         
+          Galad 2010c                    A       11.413      0.20    6.699      0.26   21.785      0.26                   
+
+  32800   1990 QC19                               3.709      0.17                                                         
+          Warner 2015m                   A        4.045      0.14    3.726      0.14                                      
+
+  32895   1994 JL5                       DA      14.02       0.24                                                         
+          Chang 2016                     1A       7.01       0.24   14.02       0.24                                      
+
+  33128   1998 BU48                      A       12.6        0.68                                                         
+          Sheppard 2002                  AN      12.6        0.68    9.8        0.68                                      
+
+  33150   1998 DN10                      1        5.33       0.14                                                         
+          Chang 2016                     1A       5.33       0.14   10.66       0.14                                      
+
+  33816   2000 AL42                      AT0    193.         0.12                                                         
+          Warner 2010k                   A      193.         0.12  390.         0.12                                      
+
+  34449   2000 SJ79                      DA      13.52       0.93                                                         
+          Chang 2016                     1A       6.76       0.93   13.52       0.93                                      
+
+  35481   1998 FA8                       DA       8.50       0.32                                                         
+          Chang 2016                     1A       4.25       0.32    8.50       0.32                                      
+
+  35671   1998 SN165                     A        8.84       0.16                                                         
+          Lacerda 2006                   A        8.84       0.16    8.70       0.16                                      
+
+  35774   1999 JL9                       NA       7.860      0.15                                                         
+          Galad 2010c                    NA       7.860      0.15    2.1312     0.23   22.11       0.17                   
+
+  36379   2000 OA24                      A        3.21       0.15                                                         
+          Galad 2008a                    A        3.21       0.15    3.01       0.15    3.44       0.15                   
+
+  37378   2001 VU76                      A        1.780      0.23                                                         
+          Warner 2019e                   A        1.780      0.23    3.559      0.22                                      
+          Warner 2019e                   A        1.792      0.10    3.585      0.11                                      
+
+  38707   2000 QK89                               6.1509     0.36                                                         
+          Chang 2016                     1A       2.47       0.30    4.94       0.30                                      
+
+  39132   2000 WU58                      A       20.663      0.69                                                         
+          Galad 2010c                    A       20.663      0.69   14.439      0.60   36.31       0.62                   
+
+  39270   2001 AH11                      HA      82.191      0.14                                                         
+          Szabo 2017                     HA      82.191      0.14   41.09       0.14                                      
+
+  39304   2001 QX77                      DA       7.28       0.66                                                         
+          Chang 2016                     1A       3.64       0.66    7.28       0.66                                      
+
+  39828   1998 BH4                       A       14.2        0.13                                                         
+          Galad 2010a                    A       14.2        0.13   19.4        0.13                                      
+
+  41467   2000 OG29                      A        6.8        0.80                                                         
+          Warner 2010k                   A        6.8        0.80   10.0        0.80   14.5        0.80                   
+
+  42306   2001 VU46                      NA       2.3651     0.20                                                         
+          Galad 2010c                    NA       2.3651     0.20    2.2537     0.20                                      
+
+  42474   1981 EJ27                      DA      13.62       0.70                                                         
+          Chang 2016                     1A       6.81       0.70   13.62       0.70                                      
+
+  42600   1997 YF10                      A        7.7712     0.90                                                         
+          Chang 2016                     1A       3.87       0.73    7.74       0.73                                      
+
+  43426   2000 YD6                       DA      12.00       0.53                                                         
+          Chang 2016                     1A       6.00       0.53   12.00       0.53                                      
+
+  44534   1998 YZ9                       ADT0    45.0        0.75                                                         
+          Polishook 2012b                AD      45.0        0.75   22.5        0.75                                      
+
+  44594   1999 OX3                       1A       9.26       0.11                                                         
+          Thirouin 2012                  1A       9.26       0.11   13.4        0.11   15.45       0.11                   
+
+  44779   1999 TM153                     A        7.43       0.11                                                         
+          Warner 2019l                   A        7.43       0.11    3.71       0.11                                      
+
+  44881   1999 UJ51                      DA      20.00       2.07                                                         
+          Chang 2016                     1A      10.00       2.07   20.00       2.07                                      
+
+  45259   2000 AF1                       A       11.7        0.85                                                         
+          Chang 2016                     1A       5.85       0.80   11.70       1.03                                      
+
+  45646   2000 EE45                      A        5.26       0.41                                                         
+          Warner 2011j                   A        5.26       0.41    5.08       0.41    5.47       0.41                   
+
+  45878   2000 WX29                               3.9207     0.10                                                         
+          Warner 2009k                   A       16.07       0.05    8.03       0.05                                      
+
+  46001   2001 CG1                       DA      11.16       0.27                                                         
+          Chang 2016                     1A       5.58       0.27   11.16       0.27                                      
+
+  46242   2001 HQ12                      DA      20.86       0.45                                                         
+          Chang 2016                     1A      10.43       0.45   20.86       0.45                                      
+
+  46585   1992 RD7                       DA       8.46       0.96                                                         
+          Chang 2016                     1A       4.23       0.96    8.46       0.96                                      
+
+  46829   McMahon                        NA       2.6236     0.12                                                         
+          Pravec 2015b                   NA       2.6236     0.12    5.2483     0.12                                      
+
+  47035   1998 WS                        A        3.99       0.15                                                         
+          Skiff 2012web                  A        3.997      0.13    7.994      0.13                                      
+          Warner 2012o                   1A       3.995      0.10    7.98       0.10                                      
+
+  47048   1998 WW18                      A       17.29       0.14                                                         
+          Warner 2019l                   A       17.29       0.14    8.61       0.15   12.97       0.14                   
+
+  47614   2000 BO14                      DA       4.88       0.48                                                         
+          Chang 2016                     1A       2.44       0.48    4.88       0.48                                      
+
+  47662   2000 CN53                      1A       8.97       0.20                                                         
+          Chang 2016                     1A       8.97       0.20   17.94       0.20                                      
+
+  48147   2001 FO160                     A       26.17       0.25                                                         
+          Warner 2010p                   A       26.17       0.25   13.09       0.25                                      
+
+  48436   1989 VK                        A        5.45       0.31                                                         
+          Galad 2008a                    A        5.45       0.31    4.91       0.31    6.12       0.31                   
+
+  50000   Quaoar                         1A       8.840      0.18                                                         
+          Ortiz 2003b                    A       17.6788     0.13   17.6788     0.13                                      
+          Rabinowitz 2007                A        8.840      0.18   17.6780     0.18                                      
+          Thirouin 2010                  A       17.68       0.15    8.84       0.15                                      
+
+  50573   2000 EX39                      A        3.9789     0.19                                                         
+          Galad 2009a                    A        3.9789     0.19    4.0015     0.19                                      
+
+  51356   2000 RY76                      A        2.5572     0.09                                                         
+          Warner 2013f                   A        2.5572     0.09    5.1143     0.09                                      
+
+  51371   2000 XF15                      AT0     54.         0.09                                                         
+          Warner 2013d                   A       54.         0.09  112.         0.09                                      
+
+  52253   1981 EZ35                      DA      11.86       0.97                                                         
+          Chang 2016                     1A       5.93       0.97   11.86       0.97                                      
+
+  52317   1992 BC1                       A       34.07       0.11                                                         
+          Stephens 2014e                 A       34.07       0.11   17.03       0.11                                      
+
+  52379   1993 FL81                              17.213      0.73                                                         
+          Chang 2016                     1A       8.73       0.98   17.46       0.98                                      
+
+  52441   1994 RS1                       A        6.36       0.29                                                         
+          Warner 2019l                   A        6.36       0.29    3.19       0.29                                      
+
+  52762   1998 MT24                      A       12.08       0.4                                                          
+          Hicks 2013a                    A       12.08       0.27    4.82       0.27    6.04       0.27                   
+
+  52872   Okyrhoe                        A        9.72       0.4                                                          
+          Thirouin 2010                  A        9.72       0.07    4.86       0.02    9.72       0.02   12.16       0.02
+
+  53530   2000 AV200                              4.310      0.34                                                         
+          Warner 2013a                   A        3.628      0.26    3.374      0.26    3.932      0.26                   
+
+  54533   2000 QM38                      DA       7.64       0.35                                                         
+          Chang 2016                     1A       3.82       0.35    7.64       0.35                                      
+
+  55565   2002 AW197                     1A       8.86       0.08                                                         
+          Ortiz 2006                     1A       8.86       0.08   17.74       0.08                                      
+
+  55601   2002 RC110                     DA      14.54       0.51                                                         
+          Chang 2016                     1A       7.27       0.51   14.54       0.51                                      
+
+  55636   2002 TX300                     A        8.12       0.09                                                         
+          Sheppard 2003                  1A       8.12       0.08   12.101      0.08                                      
+          Ortiz 2004                     A       15.78       0.09    8.         0.09   12.         0.09   16.         0.09
+          Thirouin 2012                  A        8.15       0.05   11.7        0.05                                      
+
+  55637   2002 UX25                      HA      14.382      0.21                                                         
+          Rousselot 2005                 A       14.382      0.21    7.1908     0.21   16.782      0.21                   
+
+  55638   2002 VE95                      1A       6.76       0.08                                                         
+          Ortiz 2006                     1A       6.76       0.08    9.47       0.08    7.36       0.08                   
+          Thirouin 2010                  A        9.97       0.05    4.90       0.05    6.18       0.05   17.32       0.05
+
+  56292   1999 NK40                      DA       7.90       0.76                                                         
+          Chang 2016                     1A       3.95       0.76    7.90       0.76                                      
+
+  56367   2000 EF                        AT0     98.         0.8                                                          
+          Galad 2010a                    A       98.         0.8    84.         0.8   111.         0.8                    
+
+  57010   2000 TP1                       DA      10.00       0.84                                                         
+          Chang 2016                     1A       5.00       0.84   10.00       0.84                                      
+
+  57252   2001 QS96                      NA      11.427      0.30                                                         
+          Galad 2010c                    NA      11.427      0.30    7.209      0.36   10.310      0.41   22.854      0.30
+
+  58673   1997 YA9                       NA       9.731      0.52                                                         
+          Galad 2010c                    NA       9.731      0.52    6.918      0.47   19.365      0.71                   
+
+  58677   1997 YJ17                      A        9.631      0.63                                                         
+          Chang 2016                     1A       4.49       0.65    8.99       0.65                                      
+
+  59429   1999 GK8                       DA       8.38       0.76                                                         
+          Chang 2016                     1A       4.19       0.76    8.38       0.76                                      
+
+  62781   2000 UE23                      NA      28.94       1.1                                                          
+          Galad 2010c                    NA      28.94       1.1    17.95       0.8    71.7        1.1                    
+
+  62842   2000 UF63                      DA       7.94       0.79                                                         
+          Chang 2016                     1A       3.97       0.79    7.94       0.79                                      
+
+  63029   2000 WH57                      NA       8.693      0.19                                                         
+          Galad 2010c                    NA       8.693      0.19    2.2667     0.25   13.641      0.19                   
+
+  63376   2001 HA38                      NA       9.439      0.14                                                         
+          Galad 2010c                    NA       9.439      0.14    2.0122     0.17    9.735      0.14                   
+
+  63508   2001 OQ81                      A        3.63       0.2                                                          
+          Galad 2008a                    A        3.63       0.2     4.35       0.2                                       
+
+  63829   2001 RM72                      DA      18.64       0.51                                                         
+          Chang 2016                     1A       9.32       0.51    9.32       0.51                                      
+
+  65200   2002 CL294                     NA       2.4206     0.48                                                         
+          Galad 2010c                    NA       2.4206     0.48    6.461      0.38                                      
+
+  65597   3047 T-3                       A        7.6        0.14                                                         
+          Warner 2016b                   A        7.6        0.14    3.5        0.14                                      
+
+  65996   1998 MX5                       A        3.399      0.22                                                         
+          Warner 2018m                   A        3.399      0.22    3.660      0.21                                      
+
+  66718   1999 TU104                     DA      12.80       0.77                                                         
+          Chang 2016                     A        6.40       0.77   12.80       0.77                                      
+
+  68348   2001 LO7                                3.3313     0.30                                                         
+          Warner 2017p                   A        3.8201     0.30    1.9100     0.27                                      
+
+  68480   2001 TQ49                      NA       2.6982     0.40                                                         
+          Galad 2010c                    NA       2.6982     0.40    4.4044     0.39   17.246      0.32                   
+
+  69350   1993 YP                        AT?     31.79       0.95                                                         
+          Warner 2012g                   AT?     32.34       0.95   99.5        0.95                                      
+
+  69406   1995 SX48                               4.49       0.19                                                         
+          Warner 2011k                   A        2.2431     0.10    4.4861     0.10                                      
+
+  69706   1998 HJ77                      DA      13.06       0.34                                                         
+          Chang 2016                     1A       6.53       0.34   13.06       0.34                                      
+
+  69848   1998 SQ35                      DA       8.64       0.26                                                         
+          Chang 2016                     1A       4.32       0.26    8.64       0.26                                      
+
+  72290   2001 BQ15                      A        5.6657     0.81                                                         
+          Galad 2008b                    A        5.6657     0.81    5.067      0.81    6.420      0.81                   
+
+  72717   2001 FA88                      DA       9.46       0.53                                                         
+          Chang 2016                     1A       4.73       0.53    9.46       0.53                                      
+
+  73480   2002 PN34                      A        8.45       0.18                                                         
+          Ortiz 2003a                    A        8.45       0.18   10.22       0.18                                      
+
+  73915   1997 GD43                      DA       8.58       0.96                                                         
+          Chang 2016                     1A       4.29       0.96    8.58       0.96                                      
+
+  76865   2000 XW38                      DA       5.14       0.31                                                         
+          Chang 2016                     1A       2.57       0.31    5.14       0.31                                      
+
+  78468   2002 RL44                      DA      16.28       1.41                                                         
+          Chang 2016                     1A       8.14       1.41   16.28       1.41                                      
+
+  79530   1998 QD4                       NA      24.51       0.20                                                         
+          Galad 2010c                    NA      24.51       0.20    2.9623     0.20   12.117      0.20                   
+
+  79983   1999 DF9                       A        6.65       0.40                                                         
+          Lacerda 2006                   A        6.65       0.40    9.00       0.40                                      
+
+  81443   2000 GV114                     A        5.217      0.60                                                         
+          Chang 2016                     1A       2.62       0.59    5.24       0.59                                      
+
+  81590   2000 HN49                      A       26.170      0.70                                                         
+          Chang 2016                     1A       8.73       0.79   17.46       0.79                                      
+
+  83982   Crantor                        A       13.94       0.14                                                         
+          Ortiz 2003a                    A       13.94       0.14   19.34       0.14                                      
+
+  84890   2003 NP9                       A       19.2        0.07                                                         
+          Warner 2012c                   A       19.2        0.07   38.5        0.07                                      
+
+  84922   2003 VS2                                7.42       0.23                                                         
+          Ortiz 2006                     A        8.77       0.23    7.41       0.23                                      
+
+  85628   1998 KV2                       A        2.999      0.18                                                         
+          Warner 2018m                   A        2.999      0.17    2.823      0.17                                      
+
+  85713   1998 SS49                      A        5.370      0.18                                                         
+          Warner 2015c                   A        5.370      0.18    2.686      0.18                                      
+
+  86039   1999 NC43                      T?A     34.49       1.10                                                         
+          Pravec 2000web                 NA      34.49       1.1   122.3        1.1                                       
+          Warner 2014k                   T?A     34.29       1.00   40.81       1.10                                      
+
+  86326   1999 WK13                      A        6.36       0.14                                                         
+          Warner 2015h                   A        6.36       0.14    3.18       0.12                                      
+
+  86819   2000 GK137                     A        3.0239     0.27                                                         
+          Warner 2015c                   A        3.018      0.12    4.03       0.23                                      
+
+  87343   2000 QH25                              22.6        0.06                                                         
+          Warner 2009k                   A       22.6        0.06   45.32       0.06                                      
+
+  88005   2000 UR44                      NA      15.524      0.27                                                         
+          Galad 2010c                    NA      15.524      0.27   11.726      0.26   22.958      0.26                   
+
+  88522   2001 QM171                     DA      27.82       0.46                                                         
+          Chang 2016                     1A      13.91       0.46   27.82       0.46                                      
+
+  89891   2002 CQ256                     NA       2.2512     0.34                                                         
+          Galad 2010c                    NA       2.2512     0.34    8.258      0.31   16.629      0.31                   
+
+  90337   2003 FQ97                      A       60.         0.54                                                         
+          Melita 2010                    A        6.88       0.15    9.66       0.19                                      
+
+  90377   Sedna                          A       10.273      0.02                                                         
+          Gaudi 2005                     A       10.273      0.02   17.991      0.02                                      
+
+  90416   2003 YK118                     A       43.58       0.13                                                         
+          Warner 2015n                   A       43.58       0.13   21.69       0.08                                      
+
+  90482   Orcus                                  13.188      0.18                                                         
+          Ortiz 2006                     1A      10.08       0.04   17.43       0.04                                      
+          Thirouin 2010                  1A      10.47       0.04    5.6        0.04    7.3        0.04   18.54       0.04
+
+  90738   1993 FP21                      DA      10.10       0.76                                                         
+          Chang 2016                     1A       5.05       0.76   11.10       0.76                                      
+
+  91247   1999 CM40                      DA      11.64       1.16                                                         
+          Chang 2016                     1A       5.82       1.16   11.64       1.16                                      
+
+  94583   2001 VG47                      D       10.84       0.70                                                         
+          Chang 2016                     1A       5.42       0.70   10.84       0.70                                      
+
+  96178   Rochambeau                     A        5.2        0.14                                                         
+          Galad 2010a                    A        5.2        0.14   13.4        0.14                                      
+
+  96842   1999 RH208                     A        3.236      0.36                                                         
+          Warner 2017b                   A        3.236      0.36    2.855      0.33                                      
+
+  97481   2000 CF61                      DA      14.44       0.51                                                         
+          Chang 2016                     1A       7.22       0.51   14.44       0.51                                      
+
+  98496   2000 VT3                       DA      28.24       2.10                                                         
+          Chang 2016                     1A      14.12       2.10   28.24       2.10                                      
+
+  99674   2002 JN11                      DA       7.42       0.75                                                         
+          Chang 2016                     1A       3.71       0.75    7.42       0.75                                      
+
+  99767   2002 JP104                     DA       6.78       0.70                                                         
+          Chang 2016                     1A       3.39       0.70    6.78       0.70                                      
+
+ 101812   1999 JD7                       NA       7.420      0.22                                                         
+          Galad 2010c                    NA       7.420      0.22    2.47433    0.24    9.354      0.22                   
+
+ 101955   Bennu                          A        4.2968     0.35                                                         
+          Krugly 2002a                            2.146      0.3                                                          
+          Hergenrother 2012a             3        4.2968     0.15                                                         
+          Hergenrother 2013              3        4.2905     0.16                                                         
+          Nolan 2013                     R        4.29746                                                                 
+          Vaduvescu 2017                 a        2.19       0.35    4.10       0.40                                      
+          Vaduvescu 2017                 a        2.19       0.35                                                         
+
+ 103501   2000 AT245                     1A      29.95       0.16                                                         
+          Warner 2010p                   1A      29.95       0.16   44.60       0.16   59.85       0.16   62.42       0.16
+
+ 104551   2000 GU63                      DA       7.78       1.04                                                         
+          Chang 2016                     1A       3.89       1.04    7.78       1.04                                      
+
+ 106206   2000 UR29                      A        7.317      0.04                                                         
+          Pravec 2014web                 A        7.317      0.04    4.875      0.04    9.747      0.04   10.844      0.04
+
+ 106590   2000 WQ107                     NA      21.67       0.16                                                         
+          Galad 2010c                    NA      21.67       0.16    2.77757    0.19                                      
+
+ 107062   2001 AP10                      DA       7.48       0.72                                                         
+          Chang 2016                     1A       3.74       0.72    7.48       0.72                                      
+
+ 107541   2001 DG70                      A        5.67       0.07                                                         
+          Warner 2019l                   A        5.67       0.07    2.85       0.05                                      
+
+ 109280   2001 QO118                     DA       8.00       0.92                                                         
+          Chang 2016                     1A       4.00       0.92    8.00       0.92                                      
+
+ 110465   2001 TT51                      DA      15.00       0.92                                                         
+          Chang 2016                     1A       7.50       0.92   15.00       0.92                                      
+
+ 110634   2001 TY165                     NA       4.9311     0.26                                                         
+          Galad 2010c                    NA       4.9311     0.26    2.75308    0.29                                      
+
+ 110755   2001 UT13                      NA      46.9        0.80                                                         
+          Galad 2010c                    NA      46.9        0.80   49.0        0.75                                      
+
+ 111094   2001 VA66                      DA       9.06       0.59                                                         
+          Chang 2016                     1A       4.53       0.59    9.06       0.59                                      
+
+ 112985   2002 RS28                      A        4.787      0.24                                                         
+          Warner 2015r                            5.94       0.06                                                         
+          Carbognani 2016c                        3.436      0.08                                                         
+          Warner 2016c                            3.820      0.24                                                         
+          Warner 2016e                            4.787      0.09                                                         
+          Vaduvescu 2017                          0.34       0.12                                                         
+
+ 113216   2002 RF119                     DA      11.64       0.81                                                         
+          Chang 2016                     1A       5.82       0.81   11.64       0.81                                      
+
+ 114232   2002 VV123                     DA       8.18       0.92                                                         
+          Chang 2016                     1A       4.09       0.92    8.18       0.92                                      
+
+ 114302   2002 XO46                      DA       6.12       0.37                                                         
+          Chang 2016                     1A       3.06       0.37    6.12       0.37                                      
+
+ 115052   2003 RD6                       A       12.08       0.11                                                         
+          Warner 2019b                   A       12.08       0.11   24.2        0.11                                      
+
+ 115053   2003 RP6                       A       24.2        0.11                                                         
+          Warner 2019f                   A       24.2        0.11   12.08       0.11                                      
+
+ 117982   2134 T-1                       DA       6.86       0.60                                                         
+          Chang 2016                     1A       3.43       0.60    6.86       0.60                                      
+
+ 118060   4213 T-2                       DA      12.00       1.13                                                         
+          Chang 2016                     1A       6.00       1.13   12.00       1.13                                      
+
+ 119574   2001 VT90                      NA       2.9245     0.24                                                         
+          Galad 2010c                    NA       2.9245     0.24   43.40       0.24                                      
+
+ 120061   2003 CO1                       DA      10.0        0.10                                                         
+          Ortiz 2006                     DA      10.0        0.10    6.30       0.13    4.99       0.10                   
+
+ 120178   2003 OP32                               9.71       0.20                                                         
+          Thirouin 2010                  1A       4.05       0.13    8.1        0.13                                      
+          Benecchi 2013                  A        9.71       0.18    4.85       0.18    6.09       0.18   12.18       0.18
+
+ 120347   Salacia                        1A       6.09       0.06                                                         
+          Thirouin 2010                  1A       6.09       0.03    8.1        0.03   12.18       0.03   16.02       0.03
+
+ 120915   1998 SX81                      DA       7.32       0.66                                                         
+          Chang 2016                     1A       3.66       0.66    7.32       0.66                                      
+
+ 120928   1998 SP109                     A       10.7        0.5                                                          
+          Galad 2010a                    A       10.7        0.5     8.8        0.5                                       
+
+ 121368   1999 TP69                      DA       7.96       0.83                                                         
+          Chang 2016                     1A       3.98       0.83    7.96       0.83                                      
+
+ 122897   2000 SO156                     DA       7.72       0.50                                                         
+          Chang 2016                     1A       3.86       0.50    7.72       0.50                                      
+
+ 123404   2000 WS88                      DA      15.60       0.26                                                         
+          Chang 2016                     1A       7.80       0.26   15.60       0.26                                      
+
+ 124135   2001 LS                        NA       3.6217     0.17                                                         
+          Galad 2010c                    NA       3.6217     0.17    5.4315     0.22                                      
+
+ 125136   2001 UY61                      NA       2.94565    0.23                                                         
+          Galad 2010c                    NA       2.94565    0.23   11.596      0.14                                      
+
+ 125779   2001 XL145                     NA      11.251      0.28                                                         
+          Galad 2010c                    NA      11.251      0.28    2.57199    0.29    7.655      0.28                   
+
+ 126154   2001 YH140                             13.25       0.21                                                         
+          Ortiz 2006                     1A       8.45       0.19    6.22       0.19   12.99       0.19                   
+          Thirouin 2010                  A       13.2        0.13    6.19       0.13    8.40       0.13                   
+
+ 126179   2002 AY13                      DA      11.16       0.50                                                         
+          Chang 2016                     1A       5.58       0.50   11.16       0.50                                      
+
+ 126361   2002 AA179                     DA      10.84       0.70                                                         
+          Chang 2016                     1A       5.42       0.70   10.84       0.70                                      
+
+ 128018   2003 JA14                      NA       8.083      0.36                                                         
+          Galad 2010c                    NA       8.083      0.36    4.8539     0.34   12.192      0.31                   
+
+ 128343   Brianpage                      NA       2.4776     0.25                                                         
+          Galad 2010c                    NA       2.4776     0.25    4.2251     0.19   26.53       0.30                   
+
+ 130723   2000 SO216                     DA      14.88       0.75                                                         
+          Chang 2016                     1A       7.44       0.75   14.88       0.75                                      
+
+ 133074   Kenshamordola                  DA      24.94       0.60                                                         
+          Chang 2016                     1A      12.47       0.60   24.94       0.60                                      
+
+ 134483   1998 WK2                       DA       9.50       0.54                                                         
+          Chang 2016                     1A       4.75       0.54    9.50       0.54                                      
+
+ 136199   Eris                                   25.9        0.10                                                         
+          Duffard 2008a                  A       14.         0.01   28.         0.01   32.         0.01                   
+
+ 136472   Makemake                       A       22.48       0.03                                                         
+          Ortiz 2007                     1A      11.24       0.03   22.48       0.03                                      
+          Thirouin 2010                  1A       7.65       0.01   11.5        0.01                                      
+
+ 137032   1998 UO1                                2.925      0.16                                                         
+          Warner 2015h                   A        2.925      0.10    3.934      0.10                                      
+
+ 137170   1999 HF1                                2.3192     0.26                                                         
+          Sonka 2014                     A        2.566      0.22    2.7109     0.22    2.3189     0.22                   
+
+ 137689   1999 XB60                      DA      13.52       0.52                                                         
+          Chang 2016                     1A       6.76       0.52   13.52       0.52                                      
+
+ 137925   2000 BJ19                      A       48.         0.17                                                         
+          Warner 2015n                   A       48.         0.17   24.         0.17                                      
+
+ 138325   2000 GO82                      A        6.122      0.17                                                         
+          Warner 2016n                   A        6.122      0.17    8.22       0.15                                      
+
+ 138405   2000 HV24                      A        7.064      0.74                                                         
+          Chang 2016                     1A       3.05       0.80    6.10       0.80                                      
+
+ 138524   2000 OJ8                       A        2.6835     0.06                                                         
+          Pravec 2011web                 A        2.6835     0.06    5.3673     0.06                                      
+
+ 138846   2000 VJ61                      A        2.620      0.18                                                         
+          Carbognani 2018                A        2.620      0.18    2.962      0.26                                      
+
+ 138971   2001 CB21                      A        3.3020     0.19                                                         
+          Galad 2005                     A        3.3020     0.19    4.953      0.19                                      
+
+ 141056   2001 XV4                       A        2.671      0.21                                                         
+          Warner 2017p                   A        2.671      0.21    2.830      0.21                                      
+
+ 142040   2002 QE15                               3.853      0.19                                                         
+          Pravec 2002web                 NA       2.5811     0.10    3.8717     0.08                                      
+          Warner 2016c                   A        3.66       0.19    7.33       0.19                                      
+
+ 145452   2005 RN43                      1A       6.95       0.06                                                         
+          Thirouin 2010                  1A       5.62       0.04    7.32       0.04                                      
+          Benecchi 2013                  A        6.95       0.06   13.89       0.06    9.73       0.06   19.46       0.06
+
+ 145486   2005 UJ438                     A        8.32       0.13                                                         
+          Thirouin 2010                  A        8.32       0.13    4.16       0.13                                      
+
+ 148985   2001 YF43                      DA       8.60       0.36                                                         
+          Chang 2016                     1A       4.30       0.36    8.60       0.36                                      
+
+ 149182   2002 JX69                      NA       2.8950     0.30                                                         
+          Galad 2010c                    NA       2.8950     0.30    3.2926     0.30                                      
+
+ 150642   2001 CZ31                      A        4.71       0.21                                                         
+          Lacerda 2006                   A        4.71       0.21    5.23       0.21                                      
+
+ 151057   2001 VO14                      NA      20.631      0.6                                                          
+          Galad 2010c                    NA      20.631      0.6    36.20       0.6                                       
+
+ 151113   2001 WG32                      DA       8.76       0.70                                                         
+          Chang 2016                     1A       4.38       0.70    8.76       0.70                                      
+
+ 152641   Fredreed                       DA      18.28       0.46                                                         
+          Chang 2016                     1A       9.14       0.46   18.28       0.46                                      
+
+ 153695   2001 US35                      NA      18.61       0.34                                                         
+          Galad 2010c                    NA      18.61       0.34    4.0108     0.39   30.43       0.33                   
+
+ 153822   2001 WH37                      NA       5.6388     0.18                                                         
+          Galad 2010c                    NA       5.6388     0.18    7.373      0.20                                      
+
+ 153879   2001 XY141                     NA       2.3455     0.13                                                         
+          Galad 2010c                    NA       2.3455     0.13    4.6939     0.18                                      
+
+ 153937   2001 YG97                      NA      16.313      0.22                                                         
+          Galad 2010c                    NA      16.313      0.22    3.6951     0.18                                      
+
+ 153952   2002 AZ5                       DA       5.50       0.60                                                         
+          Chang 2016                     1A       2.75       0.60    5.50       0.60                                      
+
+ 153957   2002 AB29                      A        2.415      0.28                                                         
+          Warner 2018m                   A        2.415      0.17    4.827      0.19                                      
+
+ 154704   2004 JT19                      DA       8.24       0.75                                                         
+          Chang 2016                     1A       4.12       0.75    8.24       0.75                                      
+
+ 156347   2001 XS170                     DA      10.84       0.79                                                         
+          Chang 2016                     1A       5.42       0.79   10.84       0.79                                      
+
+ 156576   2002 EF139                     DA      10.54       0.35                                                         
+          Chang 2016                     1A       5.27       0.35   10.54       0.30                                      
+
+ 156751   Chelseaferrell                 A        6.5287     0.85                                                         
+          Galad 2010c                    A        6.5287     0.85    5.7470     0.85                                      
+
+ 159533   2001 HH31                      A        3.660      0.15                                                         
+          Warner 2015h                   A        3.660      0.11    7.317      0.10                                      
+
+ 160264   2002 RF64                      A       11.45       0.80                                                         
+          Galad 2008a                    A       11.45       0.8    16.83       0.8                                       
+
+ 160318   2003 JR8                       NA      21.83       0.24                                                         
+          Galad 2010c                    NA      21.83       0.24    4.0945     0.28                                      
+
+ 161139   2002 RJ150                     DA       6.80       0.64                                                         
+          Chang 2016                     1A       3.40       0.64    6.80       0.64                                      
+
+ 162900   2001 HG31                      T       60.61       0.56                                                         
+          Warner 2009f                   AT?     59.58       0.56   60.57       0.60                                      
+
+ 163693   Atira                                   3.3980     0.36                                                         
+          Pravec 2003web                 A        3.3984     0.36    3.9650     0.5                                       
+
+ 170727   2004 BU73                      DA       9.94       0.70                                                         
+          Chang 2016                     1A       4.97       0.70    9.94       0.70                                      
+
+ 171390   2006 PK13                      DA       6.94       0.70                                                         
+          Chang 2016                     1A       3.47       0.70    6.94       0.70                                      
+
+ 172104   2002 GA12                      DA       9.80       1.16                                                         
+          Chang 2016                     1A       4.90       1.16    9.80       1.16                                      
+
+ 174567   Varda                                   5.91       0.04                                                         
+          Thirouin 2010                  1A       5.90       0.06    7.87       0.06                                      
+
+ 175114   2004 QQ                        A        8.879      0.12                                                         
+          Vaduvescu 2017                 A        5.39       0.12   10.78       0.12                                      
+
+ 175412   2006 PA9                       DA       7.96       0.50                                                         
+          Chang 2016                     1A       3.98       0.50    7.96       0.50                                      
+
+ 177304   2003 YZ12                      DA      14.76       0.61                                                         
+          Chang 2016                     1A       7.38       0.61   14.76       0.61                                      
+
+ 185213   2006 TN53                      DA       5.48       0.55                                                         
+          Chang 2016                     1A       2.74       0.55    5.48       0.55                                      
+
+ 187067   2005 MX41                      DA       9.28       0.90                                                         
+          Chang 2016                     1A       4.64       0.90    9.28       0.90                                      
+
+ 188174   2002 JC                        A        2.472      0.40                                                         
+          Warner 2014k                   A        2.746      0.26    2.470      0.25                                      
+
+ 190453   2000 AQ235                     DA       6.76       0.96                                                         
+          Chang 2016                     1A       3.38       0.96    6.76       0.96                                      
+
+ 191789   2004 TG132                     DA      10.60       0.50                                                         
+          Chang 2016                     1A       5.30       0.50   10.60       0.50                                      
+
+ 191865   2004 XO28                      DA       9.42       0.70                                                         
+          Chang 2016                     1A       4.71       0.70    9.42       0.70                                      
+
+ 191870   2004 XT76                      A        5.52       0.98                                                         
+          Chang 2016                     1A       2.76       0.98    5.52       0.98                                      
+
+ 192683   1999 SO27                      A       13.17       0.14                                                         
+          Warner 2013d                   A       13.17       0.14   26.45       0.22                                      
+
+ 194268   2001 UY4                       A        7.88       0.13                                                         
+          Warner 2016e                   A        7.88       0.13    5.91       0.12                                      
+
+ 197155   2003 UJ272                     DA       6.40       0.62                                                         
+          Chang 2016                     1A       3.20       0.62    6.40       0.62                                      
+
+ 202421   2005 UQ513                     A        7.03       0.06                                                         
+          Thirouin 2012                  A        7.03       0.06   10.01       0.06                                      
+
+ 203095   2000 RO37                      A       19.61       0.31                                                         
+          Warner 2012c                   A       19.61       0.31   17.82       0.31                                      
+
+ 203334   2001 TC226                     DA      12.72       0.62                                                         
+          Chang 2016                     1A       6.36       0.62   12.72       0.62                                      
+
+ 208996   2003 AZ84                      A       13.42       0.14                                                         
+          Sheppard 2003                  1A       6.71       0.14   13.44       0.14                                      
+          Ortiz 2006                     1A       6.76       0.10   10.56       0.08                                      
+
+ 214479   2005 TB73                      NA      20.594      0.84                                                         
+          Galad 2010c                    NA      20.594      0.84   36.06       0.96                                      
+
+ 215187   2000 LQ25                      NA      17.735      0.61                                                         
+          Galad 2010c                    NA      17.735      0.61   12.945      0.58                                      
+
+ 217202   2002 TP198                     DA      13.62       0.50                                                         
+          Chang 2016                     1A       6.81       0.50   13.62       0.50                                      
+
+ 218827   2006 TJ68                      A        7.19       0.13                                                         
+          Warner 2019l                   A        7.19       0.13    3.60       0.15                                      
+
+ 219686   2001 WE37                      A       10.214      0.49                                                         
+          Galad 2010c                    A       10.214      0.49    8.420      0.45   12.979      0.40                   
+
+ 221267   2005 US313                     NA       3.8397     0.10                                                         
+          Galad 2010c                    NA       3.8397     0.10    6.8759     0.19   14.514      0.12                   
+
+ 221344   2005 WS70                      DA      13.72       0.95                                                         
+          Chang 2016                     1A       6.86       0.95   13.72       0.95                                      
+
+ 221910   2008 QT23                               6.07       0.41                                                         
+          Stephens 2015web               A        6.07       0.23    6.68       0.23                                      
+
+ 225088   2007 OR10                      A       22.40       0.04                                                         
+          Pal 2016                       A       22.40       0.04   44.81       0.04                                      
+
+ 225351   1998 TA20                      DA      13.62       0.80                                                         
+          Chang 2016                     1A       6.81       0.80   13.72       0.80                                      
+
+ 225873   2001 YL4                       NA       2.8464     0.39                                                         
+          Galad 2010c                    A        2.8464     0.39    3.1010     0.39    7.2122     0.42                   
+
+ 226863   2004 TK38                      DA       6.44       0.90                                                         
+          Chang 2016                     1A       3.22       0.90    6.44       0.90                                      
+
+ 233023   2005 ER264                     DA       6.78       0.56                                                         
+          Chang 2016                     1A       3.39       0.56    6.78       0.56                                      
+
+ 240468   2004 BV30                      DA       6.20       0.65                                                         
+          Chang 2016                     1A       3.10       0.65    6.20       0.65                                      
+
+ 242171   2003 GG51                      NA       6.785      0.49                                                         
+          Galad 2010c                    NA       6.785      0.49    5.9437     0.45    8.423      0.50                   
+
+ 250112   2002 KY14                      1A       3.56       0.13                                                         
+          Thirouin 2010                  1A       3.56       0.13    4.2        0.13    7.12                              
+
+ 252600   2001 XA44                      DA      22.58       1.81                                                         
+          Chang 2016                     1A      11.29       1.81   22.58       1.81                                      
+
+ 253493   2003 SG95                      A        5.878      0.81                                                         
+          Chang 2016                     1A       2.92       0.70    5.84       0.70                                      
+
+ 255129   2005 UC130                     NA       6.4083     0.20                                                         
+          Galad 2010c                    NA       6.4083     0.20    4.4018     0.18   21.83       0.20                   
+
+ 258207   2001 SJ332                     DA       7.94       0.90                                                         
+          Chang 2016                     1A       3.97       0.90    7.94       0.90                                      
+
+ 258309   2001 UM171                     DA       9.90       0.70                                                         
+          Chang 2016                     1A       4.95       0.70    9.90       0.70                                      
+
+ 258439   2001 XF231                     DA       6.98       0.60                                                         
+          Chang 2016                     1A       3.49       0.60    6.98       0.60                                      
+
+ 258798   2002 LX8                       DA      18.12       0.32                                                         
+          Chang 2016                     1A       9.06       0.32   18.12       0.32                                      
+
+ 259083   2002 VS31                      DA       7.22       0.65                                                         
+          Chang 2016                     1A       3.61       0.65    7.22       0.65                                      
+
+ 259221   2003 BA21                      A        9.09       0.15                                                         
+          Warner 2014k                   A        9.09       0.15    2.866      0.15                                      
+
+ 262623   2006 WY2                       A       16.3        0.14                                                         
+          Warner 2014e                   A       16.3        0.14   32.0        0.15                                      
+
+ 262903   2007 CC46                      DA      10.32       0.57                                                         
+          Chang 2016                     1A       5.16       0.57   10.32       0.57                                      
+
+ 267356   2001 XW5                       DA       8.54       0.70                                                         
+          Chang 2016                     1A       4.27       0.70    8.54       0.70                                      
+
+ 271745   2004 RM324                     DA       8.54       0.55                                                         
+          Chang 2016                     1A       4.27       0.55    8.54       0.55                                      
+
+ 274444   2008 SR47                      DA      12.00       0.61                                                         
+          Chang 2016                     1A       6.00       0.61   12.00       0.61                                      
+
+ 276003   2001 YE7                       DA       7.24       0.55                                                         
+          Chang 2016                     1A       3.62       0.55    7.24       0.55                                      
+
+ 276049   2002 CE26                      RA       3.2930     0.07                                                         
+          Warner 2015g                   A        3.298      0.07    3.088      0.07                                      
+
+ 276741   2004 EM66                      A        4.56       0.15                                                         
+          Skiff 2011web                  A        4.56       0.15    4.15       0.15                                      
+
+ 277011   2004 YZ21                      DA      21.34       0.55                                                         
+          Chang 2016                     1A      10.67       0.55   21.34       0.55                                      
+
+ 278361   2007 JJ43                              12.097      0.13                                                         
+          Benecchi 2013                  A        6.04       0.13   12.09       0.13                                      
+
+ 283460   2001 PD1                       NA      14.58       0.12                                                         
+          Pravec 2001web                 NA      14.58       0.12    9.03       0.12                                      
+
+ 284441   2007 EN37                      DA       6.76       0.90                                                         
+          Chang 2016                     1A       3.38       0.90    6.76       0.90                                      
+
+ 285944   2001 RZ11                      A        2.2455     0.11                                                         
+          Stephens 2015b                 A        4.804      0.11    4.002      0.11                                      
+
+ 288708   2004 RB7                       DA       8.58       0.21                                                         
+          Chang 2016                     1A       4.29       0.21    8.58       0.21                                      
+
+ 290559   2005 UV108                     NA      11.634      0.48                                                         
+          Galad 2010c                    NA      11.634      0.48    4.1676     0.53   22.62       0.47                   
+
+ 290723   2005 UZ437                     DA       6.76       0.42                                                         
+          Chang 2016                     1A       3.38       0.42    6.76       0.42                                      
+
+ 295076   2008 ER131                     DA       7.20       0.65                                                         
+          Chang 2016                     1A       3.60       0.65    7.20       0.65                                      
+
+ 295927   2008 WZ137                     DA       6.44       0.62                                                         
+          Chang 2016                     1A       3.22       0.62    6.44       0.62                                      
+
+ 303775   2005 QU182                     NA       9.61       0.12                                                         
+          Benecchi 2013                  NA       9.61       0.12   19.22       0.12                                      
+
+ 303938   2005 VS131                     NA       6.246      0.29                                                         
+          Galad 2010c                    NA       6.246      0.29    2.7107     0.33   15.67       0.26                   
+
+ 307251   2002 KW14                      A        8.58       0.25                                                         
+          Thirouin 2012                  A        8.58       0.21   10.5        0.26                                      
+          Benecchi 2013                  A        6.63       0.25   13.25       0.25    5.23       0.25   10.46       0.25
+
+ 307505   2002 YX11                      A        4.024      0.13                                                         
+          Skiff 2011web                  A        4.024      0.13    6.030      0.13                                      
+
+ 308242   2005 GO21                      A       11.00       0.24                                                         
+          Higgins 2012web                A       11.00       0.24    5.50       0.24                                      
+
+ 308543   2005 UO213                     NA      30.73       0.31                                                         
+          Galad 2010c                    NA      30.73       0.31    2.7128     0.28                                      
+
+ 308568   2005 UU396                     NA       7.689      0.26                                                         
+          Galad 2010c                    NA       7.689      0.26    5.812      0.25   11.288      0.26                   
+
+ 308635   2005 YU55                      AT0     19.31       0.30                                                         
+          Warner 2012e                   A       19.31       0.20   16.34       0.24                                      
+
+ 312645   2010 EP65                      A       14.97       0.17                                                         
+          Benecchi 2013                  A       14.97       0.17    7.48       0.17   11.54       0.17   16.90       0.17
+
+ 315284   2007 TW124                     DA       8.54       0.50                                                         
+          Chang 2016                     1A       4.27       0.50    9.54       0.50                                      
+
+ 315530   2008 AP129                     A        9.04       0.12                                                         
+          Thirouin 2016a                 A        9.04       0.12    6.25       0.12                                      
+
+ 317797   2003 SN183                     DA      12.16       0.56                                                         
+          Chang 2016                     1A       6.08       0.56   12.16       0.56                                      
+
+ 317932   2003 WC2                       DA       5.96       0.83                                                         
+          Chang 2016                     1A       2.98       0.83    5.96       0.83                                      
+
+ 318941   2005 UR143                     DA       8.18       0.60                                                         
+          Chang 2016                     1A       4.09       0.60    8.18       0.60                                      
+
+ 320125   2007 EQ185                     A        9.0        0.48                                                         
+          Warner 2012g                   A        9.0        0.48   11.1        0.48                                      
+
+ 320404   2007 UF119                     DA       7.68       0.92                                                         
+          Chang 2016                     1A       3.84       0.92    7.78       0.92                                      
+
+ 321706   2010 GA3                       A        6.26       0.17                                                         
+          Warner 2019l                   A        6.26       0.17    3.13       0.15                                      
+
+ 322436   2011 SP247                     A        6.2        0.21                                                         
+          Warner 2019l                   A        6.2        0.21    3.1        0.21                                      
+
+ 323894   2005 SS287                     NA      14.791      0.59                                                         
+          Galad 2010c                    NA      14.791      0.59   11.395      0.59   21.40       0.62                   
+
+ 323989   2005 UY203                     DA       6.40       0.75                                                         
+          Chang 2016                     1A       3.20       0.75    6.40       0.75                                      
+
+ 326912   2003 WM172                     DA      12.63       0.47                                                         
+          Chang 2016                     A       12.63       0.47    6.31       0.47                                      
+
+ 330388   2006 XS51                      DA       7.20       0.75                                                         
+          Chang 2016                     1A       3.60       0.75    7.20       0.75                                      
+
+ 334689   2003 BN50                      DA       5.24       0.65                                                         
+          Chang 2016                     1A       2.62       0.65    5.24       0.65                                      
+
+ 348400   2005 JF21                      A        2.4149     0.14                                                         
+          Linder 2017                    A        3.450      0.06    4.39       0.23    6.90       0.25                   
+
+ 357439   2004 BL86                      A        2.6205     0.17                                                         
+          Birlan 2015                    A        2.637      0.11    2.62       0.11                                      
+
+ 357911   2005 VR131                     NA       5.2737     0.36                                                         
+          Galad 2010c                    NA       5.2737     0.36    4.5051     0.26    5.5483     0.29                   
+
+ 360202   1997 WK27                      DA       5.84       1.14                                                         
+          Chang 2016                     1A       2.92       1.14    5.84       1.14                                      
+
+ 363018   1996 TA6                       DA       7.16       0.30                                                         
+          Chang 2016                     1A       3.58       0.30    7.16       0.30                                      
+
+ 367971   2012 DZ96                      DA      16.14       0.90                                                         
+          Chang 2016                     1A       8.07       0.90   16.14       0.90                                      
+
+ 379645   2011 EY17                      DA       9.60       1.05                                                         
+          Chang 2016                     1A       4.80       1.05    9.60       1.05                                      
+
+ 380981   2006 SU131                     A        4.92       0.18                                                         
+          Warner 2015r                   A        4.92       0.18    2.74       0.16                                      
+
+ 382243   2012 SV39                      DA       7.20       0.60                                                         
+          Chang 2016                     1A       3.60       0.60    7.20       0.60                                      
+
+ 385687   2005 SF286                     NA       2.36990    0.59                                                         
+          Galad 2010c                    NA       2.36990    0.59    2.1145     0.40    8.889      0.40                   
+
+ 401998   2003 MO                        A       50.         0.40                                                         
+          Warner 2015c                   A       50.         0.40   27.3        0.44                                      
+
+ 408751   1987 SF3                       A       21.0        0.20                                                         
+          Warner 2015c                   A       21.0        0.20   42.0        0.20                                      
+
+ 408980   2002 RB126                     A       16.21       0.14                                                         
+          Warner 2015c                   A       16.21       0.14    8.08       0.14                                      
+
+ 410516   2008 EG143                     DA       4.56       0.70                                                         
+          Chang 2016                     1A       2.28       0.70    4.56       0.70                                      
+
+ 410778   2009 FG19                      A        8.00       0.80                                                         
+          Warner 2015f                   A        8.00       0.80    9.61       0.81                                      
+
+ 411236   2010 PP75                      DA       8.34       0.84                                                         
+          Chang 2016                     1A       4.17       0.84    8.34       0.84                                      
+
+ 411280   2010 SL13                      A        7.79       0.20                                                         
+          Warner 2014e                   A        7.79       0.20    3.89       0.24                                      
+
+ 416151   2002 RQ25                      A       12.191      0.72                                                         
+          Warner 2015n                   A       12.191      0.72    6.096      0.43                                      
+
+ 422502   2014 TK3                       DA       7.74       0.83                                                         
+          Chang 2016                     1A       3.87       0.83    7.74       0.83                                      
+
+ 424037   2007 AH13                      DA       6.38       0.70                                                         
+          Chang 2016                     1A       3.19       0.70    6.38       0.70                                      
+
+ 430552   2002 HU11                      A       15.66       0.4                                                          
+          Gaftonyuk 2004                 A       15.66       0.4    11.71       0.4                                       
+
+ 433992   2000 HD74                      A        9.36       0.15                                                         
+          Warner 2015r                   A        9.36       0.15    4.68       0.18                                      
+
+ 437844   1999 MN                                 5.495      0.77                                                         
+          Polishook 2008a                NA       2.8                5.6                                                  
+
+ 444745   2007 JF43                      A        9.52       0.22                                                         
+          Benecchi 2013                  A        9.52       0.22    4.76       0.22                                      
+
+ 446804   1999 VN6                       NAT0    24.1        0.7                                                          
+          Pravec 1999web                 NA      24.1        0.7    16.1        0.7                                       
+
+ 450648   2006 UC63                      A       10.13       0.05                                                         
+          Warner 2018m                   A       10.13       0.05    5.086      0.04                                      
+
+ 455322   2002 NX18                      A        9.040      0.23                                                         
+          Wolters 2005                   A        9.040      0.23    7.602      0.22                                      
+
+ 457260   2008 RY24                               2.5308     0.11                                                         
+          Warner 2019b                   A        8.19       0.09    4.09       0.07                                      
+
+ 468738   2010 TN54                      AT0     12.12       0.07                                                         
+          Warner 2014c                   A       12.12       0.07    6.14       0.07   24.51       0.07                   
+
+ 469705   2005 EF298                     A        9.65       0.31                                                         
+          Benecchi 2013                  A        9.65       0.31    5.77       0.31   11.54       0.31    8.45       0.31
+
+ 471137   2010 ET65                      A        7.88       0.13                                                         
+          Benecchi 2013                  A        7.88       0.13    3.94       0.13                                      
+
+ 471143   Dziewanna                      A        7.07       0.12                                                         
+          Benecchi 2013                  A        7.07       0.12    3.53       0.12                                      
+
+ 471165   2010 HE79                      A       19.49       0.11                                                         
+          Benecchi 2013                  A       19.49       0.11    9.75       0.11                                      
+
+ 471241   2011 BX18                      A        4.828      0.32                                                         
+          Warner 2017c                   A        4.828      0.27    4.023      0.27                                      
+
+ 482796   2013 QJ10                      A       14.5        0.10                                                         
+          Warner 2014b                   A       14.5        0.10   29.0        0.10                                      
+
+ 485652   2011 WO41                      A        4.609      0.14                                                         
+          Warner 2017l                   A        4.609      0.14    9.26       0.14                                      
+
+ 490581   2009 WZ104                     AT0     19.304      0.52                                                         
+          Karashevich 2011               NA       9.652             19.304                                                
+          Karashevich 2012               A       19.304      0.52    9.652      0.52                                      
+
+ 496174   2011 CQ4                       A      128.         0.19                                                         
+          Warner 2014e                   A      128.         0.19  256.         0.19                                      
+
+ 500080   2011 WV134                             10.105      0.28                                                         
+          Hicks 2012c                    A       10.07       0.25    8.51       0.25                                      
+
+ 500119   2012 BV137                     DA      20.22       0.99                                                         
+          Chang 2016                     1A      10.11       0.99   20.22       0.99                                      
+
+ 500853   2013 HT120                     DA       5.68       1.05                                                         
+          Chang 2016                     1A       2.84       1.05    5.68       1.05                                      
+
+ 501949   2014 YV3                       DA      11.70       0.60                                                         
+          Chang 2016                     1A       5.85       0.60   11.70       0.60                                      
+
+ 502020   2015 AZ80                      DA       7.74       0.70                                                         
+          Chang 2016                     1A       3.87       0.70    7.74       0.70                                      
+
+ 502161   2015 BV53                      DA      19.20       0.45                                                         
+          Chang 2016                     1A       9.60       0.45   19.20       0.45                                      
+
+ 508912   2004 BB                        A        5.720      0.10                                                         
+          Warner 2018h                   A        5.720      0.10    2.863      0.08                                      
+
+ 511777   2015 EZ                        A        6.57       0.16                                                         
+          Warner 2015n                   A        6.57       0.16    7.63       0.17                                      
+
+ 517638   2015 AJ197                     DA       9.90       0.40                                                         
+          Chang 2016                     1A       4.95       0.40    9.90       0.40                                      
+
+ 523625   2008 DG17                      A        3.643      0.08                                                         
+          Warner 2018h                   A        3.643      0.08    7.280      0.09                                      
+
+ 523667   2012 TM139                     A        2.68       0.18                                                         
+          Warner 2016c                   A        2.68       0.18    5.37       0.17                                      
+
+          103P/Hartley                   T?RA    18.1                                                                     
+          Harmon 2010                    RA      18.1               13.2                                                  
+          Knight 2011                    T?NA    16.7               18.7                                                  
+
+          123P/West-Hartley              A        3.7        0.3                                                          
+          Kokotanekova 2017              A        3.7        0.3    10.7        0.3                                       
+
+          162P/Siding Spring             A       32.853      0.62                                                         
+          Kokotanekova 2017              A       32.853      0.62   33.237      0.62                                      
+
+          2000 UK11                      A        0.026599   0.28                                                         
+          Hergenrother 2011              A        0.026599   0.28    0.05320    0.28                                      
+
+          2000 YA                        1A       0.6658     0.35                                                         
+          Pravec 2000web                 1A       0.6658     0.35    1.3315     0.35                                      
+          Warner 2012c                   A        1.56       0.26    0.78       0.26                                      
+
+          2002 VE68                      T0      13.50       0.90                                                         
+          Pravec 2002web                 NA      13.5        0.8    10.55       0.8                                       
+
+          2003 BF91                      A       18.2        1.09                                                         
+          Trilling 2006                  A       18.2        1.09   14.6        1.09                                      
+
+          2004 BE86                      A        2.420      0.68                                                         
+          Hergenrother 2011              A        2.422      0.68    2.284      0.65                                      
+
+          2004 RQ10                      A        5.69       0.70                                                         
+          Hergenrother 2011              A        5.69       0.70    5.16       0.69    6.44       0.65                   
+
+          2005 RF47                      NA      13.556      0.55                                                         
+          Galad 2010c                    NA      13.556      0.55   18.887      0.67                                      
+
+          2005 SX4                       A       21.64       0.25                                                         
+          Warner 2015h                   A       21.64       0.25   10.88       0.20                                      
+
+          2006 RZ                        A        4.960      0.20                                                         
+          Pravec 2006web                 A        4.960      0.11    2.480      0.11                                      
+          Vander Haagen 2007b            A        4.97       0.20    5.40       0.20                                      
+
+          2006 RH120                     A        0.04583    1.1                                                          
+          Kwiatkowski 2009               A        0.04583    1.1     0.02291    1.1                                       
+
+          2007 HD84                      A        0.2754     0.65                                                         
+          Kwiatkowski 2010a              A        0.2754     0.65    0.1381     0.7                                       
+
+          2007 RS146                     A        0.03209    0.35                                                         
+          Kwiatkowski 2010a              A        0.03209    0.35    0.0642     0.4                                       
+
+          2007 VV126                     DA      12.54       0.69                                                         
+          Chang 2016                     1A       6.27       0.69   12.54       0.69                                      
+
+          2007 VC228                     DA       8.42       0.90                                                         
+          Chang 2016                     1A       4.21       0.90    8.42       0.90                                      
+
+          2008 TC3                       T        0.0269409  1.02                                                         
+          Betzler 2009a                  A        0.026957   0.30    0.053983   0.30                                      
+
+          2010 EL139                     A        6.32       0.15                                                         
+          Benecchi 2013                  A        6.32       0.15    3.16       0.15                                      
+
+          2010 FX86                      A       15.80       0.26                                                         
+          Benecchi 2013                  A       15.80       0.26    7.90       0.26                                      
+
+          2010 PU75                      A       12.39       0.27                                                         
+          Benecchi 2013                  A       12.39       0.27    6.19       0.27    4.91       0.27    9.82       0.27
+
+          2011 CE18                      DA      10.60       0.35                                                         
+          Chang 2016                     1A       5.30       0.35   10.60       0.35                                      
+
+          2011 JR13                               3.96       0.38                                                         
+          Warner 2014k                   A        3.77       0.37    7.54       0.38                                      
+
+          2011 LT17                      A        1.291      0.16                                                         
+          Skiff 2011web                  A        1.291      0.16    2.582      0.16                                      
+
+          2011 MD                        A        0.1937     1.00                                                         
+          Ryan 2011web                   1A       0.192816   0.70    0.385632   0.70                                      
+          Skiff 2011web                  1A       0.1937     0.83    0.3874     0.83                                      
+          Vaduvescu 2017                 A        0.38733    0.73    0.19366    0.73                                      
+
+          2012 LZ1                       T0      12.87       0.27                                                         
+          Hicks 2012d                    A       15.6        0.15   12.8        0.15                                      
+
+          2013 RH74                      A        5.346      0.21                                                         
+          Warner 2014e                   A        5.346      0.21   10.692      0.21                                      
+
+          2013 UR3                       A       11.08       0.08                                                         
+          Warner 2014e                   A       11.08       0.08   22.22       0.08                                      
+
+          2013 VJ2                       A        3.8        0.21                                                         
+          Warner 2014e                   A        3.8        0.21    7.4        0.3                                       
+
+          2013 WF108                              7.37       0.21                                                         
+          Warner 2014k                   A        7.37       0.21   14.72       0.23                                      
+
+          2013 XA4                       A        3.56       0.23                                                         
+          Warner 2014e                   A        3.56       0.23    1.78       0.17                                      
+
+          2013 XY8                       A        0.06055    0.47                                                         
+          Radar Team 2013                RA       0.03028            0.06055                                              
+          Carbognani 2014b               A        0.06056    0.18    0.09084    0.19                                      
+          Warner 2014e                   A        0.06055    0.13    0.03028    0.13                                      
+          Warner 2014e                   A        0.06054    0.47    0.030275   0.47                                      
+
+          2014 CU13                      T?A     14.36       0.45                                                         
+          Warner 2014i                   T?A     14.36       0.45   17.57       0.45    9.63       0.45                   
+
+          2014 DX110                     A        0.12041    0.37                                                         
+          Warner 2014i                   A        0.12041    0.37    0.06019    0.35                                      
+
+          2014 EQ12                      A        8.49       0.11                                                         
+          Warner 2014k                   A        8.49       0.11   16.99       0.12                                      
+
+          2014 HO132                     A        4.08       0.23                                                         
+          Warner 2014k                   A        4.08       0.23    8.16       0.23                                      
+
+          2014 OT111                     A       19.41       0.23                                                         
+          Warner 2015c                   A       19.41       0.23    9.71       0.25                                      
+
+          2014 PR62                      A       16.42       0.17                                                         
+          Warner 2015c                   A       16.42       0.17   18.08       0.17                                      
+
+          2014 SQ338                     DA       8.68       0.55                                                         
+          Chang 2016                     1A       4.34       0.55    8.68       0.55                                      
+
+          2014 TV                        A        0.02190    0.32                                                         
+          Warner 2015h                   A        0.02190    0.32    0.01095    0.32                                      
+
+          2014 UZ                        DA      10.98       0.50                                                         
+          Chang 2016                     1A       5.49       0.50   10.98       0.50                                      
+
+          2015 AZ107                     DA      16.28       0.73                                                         
+          Chang 2016                     1A       8.14       0.73   16.28       0.73                                      
+
+          2015 DN215                     A       18.2        0.06                                                         
+          Warner 2015n                   A       18.2        0.06   36.3        0.07                                      
+
+          2015 EE7                       A        9.42       0.15                                                         
+          Warner 2015r                   A        9.42       0.15    4.71       0.13                                      
+
+          2015 HP43                      A        5.77       0.11                                                         
+          Warner 2015r                   A        5.77       0.11    3.00       0.09                                      
+
+          2015 HV171                     A       18.78       0.17                                                         
+          Warner 2015r                   A       18.78       0.17    9.42       0.15                                      
+
+          2015 LG2                       A       16.31       0.40                                                         
+          Warner 2016c                   A       16.31       0.40    6.12       0.26                                      
+
+          2015 LK24                      A       18.55       0.33                                                         
+          Warner 2015r                   A       18.55       0.33   10.61       0.24                                      
+
+          2015 MU59                      A       14.32       0.22                                                         
+          Warner 2016c                   A       14.32       0.22   17.89       0.22                                      
+
+          2015 NF                        A       12.06       1.30                                                         
+          Warner 2016c                   A       12.06       1.30    9.63       1.23                                      
+
+          2015 OH                        A        4.729      0.20                                                         
+          Warner 2016c                   A        4.729      0.20    2.630      0.16                                      
+
+          2015 OM21                      DA       0.2042     0.55                                                         
+          Thirouin 2016b                 DA       0.2042     0.55    0.4084     0.55                                      
+
+          2015 TA25                      A       15.53       0.35                                                         
+          Warner 2016e                   A       15.53       0.35   23.2        0.35                                      
+
+          2015 TB145                     A        2.938      0.18                                                         
+          Muller 2017b                   IA       2.939      0.12    4.779      0.10                                      
+
+          2015 XB379                     A       48.2        0.18                                                         
+          Warner 2016j                   A       48.2        0.18   24.1        0.15                                      
+
+          2016 NA1                       A        8.67       0.14                                                         
+          Warner 2017c                   A        8.67       0.14    4.36       0.11                                      
+
+          2017 WL1                       A       17.41       0.61                                                         
+          Warner 2018d                   A       17.41       0.61   12.78       0.61                                      
+
+          2017 WX12                      A       16.26       0.31                                                         
+          Warner 2018d                   A       16.26       0.31   12.16       0.31                                      
+
+          2018 DH1                       A        5.00       0.22                                                         
+          Warner 2018h                   A        5.00       0.22    8.33       0.21                                      
+
+          2018 EJ4                       4A       7.485      0.38                                                         
+          Benishek 2018h                 A        3.7422     0.30    7.484      0.31                                      
+          Warner 2018m                   4A       7.485      0.38    3.742      0.36                                      
+
+          2018 NB                        T       50.2        0.39                                                         
+          Warner 2019b                   A       50.2        0.39   25.2        0.39                                      
+
+          2018 RQ2                       A        8.58       0.13                                                         
+          Warner 2019b                   A        8.58       0.13    4.28       0.10    5.17       0.10   10.60       0.12
+
+          2P/Encke                               11.083      0.70                                                         
+          Luu 1990a                      A       15.08       0.62   22.158      0.62                                      
+          Fernandez 2000                 A       15.2        0.70   22.158      0.70                                      
+          Fernandez 2005b                A       11.079      0.25   22.158      0.25                                      
+
+          94P/Russell 4                  A       20.70       0.65                                                         
+          Kokotanekova 2017              A       20.70       0.65   14.31       0.60                                      
+
+          Derm2g                         A        1.87       0.16                                                         
+          Dermawan 2011                  A        1.87       0.16    3.43       0.16                                      
+
+          Derm2K                         A        1.33       0.09                                                         
+          Dermawan 2011                  A        1.33       0.09    2.4        0.09                                      
+
+          Derm3b                         A        1.78       0.10                                                         
+          Dermawan 2011                  A        1.78       0.10    3.63       0.10                                      
+
+          Derm4a                         A        0.95       0.15                                                         
+          Dermawan 2011                  A        0.95       0.15    2.11       0.15                                      
+
+          Derm4o                         A        0.73       0.2                                                          
+          Dermawan 2011                  A        0.73       0.2     0.91       0.26                                      
+
+          Derm9e                         A        2.04       0.15                                                         
+          Dermawan 2011                  A        2.04       0.15    2.99       0.15                                      
+
+          P/2006 HR30                    A       70.7        0.3                                                          
+          Galad 2008a                    A       70.7        0.30   68.         0.30   73.         0.30                   
+

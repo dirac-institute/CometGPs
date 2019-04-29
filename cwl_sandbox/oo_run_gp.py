@@ -39,8 +39,30 @@ def main():
                                asteroid.gp, sampler, namestr=filename + "_plots",
                                true_period=true_period)
 
+    import datetime
+    now = datetime.datetime.now()
+
+    f = open(filename + "_run_report.txt", "w+")
+
+    f.write(now "\n"
+            filename "\n"
+            "walkers %d \n" % nwalkers
+            "iterations %d \n" % niter
+            "data points %d" % asteroid.data_pts
+            "period " + true_period)
+    f.close()
+
+
     if lsp:
         asteroid.run_lsp(filename, true_period, nterms)
+
+        f = open(filename + "_run_report.txt", "a+")
+
+        f.write("lsp " + str(lsp) \n
+                "nterms " + nterms \n
+                "guess period " + asteroid.lsp_period)
+
+        f.close()
 
 
     return

@@ -1,0 +1,1651 @@
+ASTEROID LIGHTCURVE DATABASE (LCDB) BINARY/MULTIPLE ASTEROIDS (Complete)
+GENERATED: Jan 31, 2019
+
+Number    Asteroid/Reference             B T Period1       Amp1 Period2       Amp2 P Orb           DsDp A/Dp
+------------------------------------------------------------------------------------------------------------
+     22   Kalliope                       B      4.1483     0.53                                             
+          Descamps 2008a                 B A                                                                  
+          Marchis 2008c                  B A                                         86.2896                  
+          Marchis 2011web                B A    4.148                                86.16                    
+          Di Martino                     B A                                                                 
+
+     41   Daphne                         B      5.988      0.45                                             
+          Conrad 2008a                   B S                                         26.4                     
+          Conrad 2008b                   B S                                         38.                      
+          Carry 2018                     B S    5.987981                             27.289              2.46 
+
+     45   Eugenia                        M      5.699      0.30                                             
+          Merline 1999                   B A                                        113.                      
+          Marchis 2006c                  B A                                                                  
+          Marchis 2007                   M A                                                                  
+          Marchis 2008c                  M A                                                                  
+          Marchis 2011web                B A    5.6991                              114.38                    
+
+     87   Sylvia                         M      5.184      0.50                                             
+          Marchis 2005b                  M A    5.184                                87.5904                  
+          Marchis 2011web                M A    5.1836                               87.59                    
+
+     90   Antiope                        B     16.509      0.88                                             
+          Merline 2000a                  B F                                         16.                      
+          Descamps 2005a                 B F   16.509      0.73   16.509      0.73   16.509                   
+          Behrend 2007web                B F   16.5045     0.86   16.5045     0.86   16.5045                  
+          Bartczak 2014                  B F   16.505046                             16.505046                
+
+     93   Minerva                        M      5.982      0.20                                             
+          Marchis 2011a                  M A    5.982      0.20                      57.79                    
+
+    107   Camilla                        M      4.844      0.53                                             
+          Marchis 2008c                  B A                                                                  
+          Marchis 2011web                B A    4.8439                               89.04                    
+          Marsset 2016                   M A                                                             1.550
+          Pajuelo 2018a                  M S                                         89.096              4.91 
+
+    113   Amalthea                       ?      9.950      0.22                                             
+          Maley 2017                     ? U                                                                  
+
+    121   Hermione                       B      5.55128    0.62                                             
+          Merline 2002b                  B A                                                                  
+          Marchis 2004                   B A                                                                  
+          Marchis 2005a                  B A                                                                  
+          Marchis 2011web                B A    5.55                                 61.97                    
+
+    130   Elektra                        M      5.225      0.58                                             
+          Marchis 2008d                  B A    5.22                                126.2                     
+          Yang 2014                      M A                                                                  
+
+    216   Kleopatra                      M      5.385      1.22                                             
+          Marchis 2008e                  M A    5.38                                                          
+
+    243   Ida                            B      4.634      0.86                                             
+          Belton 1994                    B A                                                                  
+
+    279   Thule                          ?     23.896      0.10                                             
+          Sato 2015                      B S    7.44       0.08                      72.2                     
+
+    283   Emma                           B      6.896      0.53                                             
+          Merline 2003c                  B A                                                                  
+          Marchis 2008d                  B A    6.89                                 80.48                    
+
+    324   Bamberga                       ?     29.43       0.12                                             
+          Sato 2015                      B S   29.458      0.06                      71.0                     
+
+    379   Huenna                         B     14.141      0.12                                             
+          Margot 2003c                   B A                                                                  
+          Marchis 2008d                  B A    4.022                              2102.                      
+
+    617   Patroclus                      B    102.8        0.07                                             
+          Marchis 2006a                  B F  102.8              102.8              102.8                     
+
+    624   Hektor                         B      6.924      1.10                                             
+          Marchis 2006b                  B A                                                                  
+
+    702   Alauda                         B      8.3531     0.12                                             
+          Rojo 2011                      B A                                        117.9                     
+
+    762   Pulcova                        B      5.839      0.42                                             
+          Merline 2000b                  B A    5.893                                96.                      
+
+    809   Lundia                         B     15.4142     1.12                                             
+          Behrend 2005web                B A   15.4142     0.40   15.4142     0.40   15.4142                  
+          Kryszczynska 2005              B A   15.4        0.35   15.4        0.35   15.4                     
+          Behrend 2007web                B F   15.423      0.18   15.423      0.18   15.423                   
+          Kryszczynska 2009              B A   15.418      1.12                      15.418                   
+          Bartczak 2017                  B F   15.41574                              15.41574                 
+
+    854   Frostia                        B     37.56       0.38                                             
+          Behrend 2004d                  B F   37.56       0.33   37.56       0.33   37.56                    
+          Behrend 2004web                B F   37.71       0.36                                               
+          Behrend 2006a                  B F   37.728      0.37   37.728      0.37   37.728                   
+          Marchis 2012                   B F   37.56       0.05                      37.56                    
+
+    939   Isberga                        B      2.9173     0.25                                             
+          Molnar 2008a                   B S    2.9173     0.25                      26.8                     
+          Behrend 2011web                ? S                                                                  
+          Carry 2015                     B S    2.91695    0.20                                               
+
+   1016   Anitra                         B      5.92951    0.50                                             
+          Pilcher 2016f                  B A    5.92943    0.30    2.609220   0.10                            
+          Pilcher 2016f                  B A    5.9295     0.28    2.60885    0.10                            
+          Pilcher 2016f                  B A    5.9300     0.41    2.60934    0.12                            
+          Pilcher 2016f                  B A    5.92951    0.30    2.609143   0.10  240.                      
+          Pilcher 2016f                  B A    5.9294     0.25    2.6091     0.09                            
+          Pilcher 2016f                  B A    5.92960    0.33    2.6092     0.11                            
+          Klinglesmith 2017d             ? A    5.9295     0.26    2.6090     0.10                            
+
+   1052   Belgica                        B      2.7097     0.10                                             
+          Franco 2013b                   B S    2.7097     0.08                      47.26                    
+
+   1089   Tama                           B     16.44       0.41                                             
+          Behrend 2004a                  B F   16.4442     0.41                      16.4442                  
+          Behrend 2004web                B F   16.4442     0.41                      16.4442                  
+
+   1103   Sequoia                               3.03784    0.53                                             
+          Warner 2015i                   ? A    3.0381     0.35   21.7        0.04                            
+
+   1139   Atami                          B     27.446      0.45                                             
+          Behrend 2005web                B F   27.446      0.40                      27.446                   
+
+   1220   Crocus                              491.4        1.00                                             
+          Binzel 1985                    ? A  737.         0.15    7.90       0.15                            
+
+   1313   Berna                          B     25.46       0.58                                             
+          Behrend 2004b                  B F   25.46       0.25                      25.46                    
+          Marchis 2012                   B F   25.46       0.50                      25.46                    
+          Behrend 2017web                ? F   25.46       0.58                      25.46                    
+
+   1333   Cevenola                              4.877      1.1                                              
+          Marchis 2012                   ? F    4.88       1.05                       4.88                    
+
+   1338   Duponta                        B      3.85453    0.26                                             
+          Gajdos 2007                    B S    3.85453    0.23                      17.57                    
+          Pravec 2012a                   B S    3.85449    0.26                      17.578                   
+          Pravec 2012a                   B S    3.85453    0.23                      17.57                    
+
+   1344   Caubeta                        ?      3.1220     0.25                                             
+          Pravec 2012web                 ? A    3.12206    0.16    7.940      0.03                            
+
+   1355   Magoeba                        ?      2.9712     0.22                                             
+          Warner 2015e                   ? S    2.9712     0.09                      15.05                    
+
+   1453   Fennia                         B      4.4121     0.20                                             
+          Warner 2007j                   B S    4.4121     0.18                      22.99                    
+          Warner 2008h                   B S    4.4121     0.10                      22.99                    
+          Higgins 2011b                  B S    4.4124     0.13                      23.03                    
+          Pravec 2012a                   B S    4.41224    0.18                      23.00351                 
+          Pravec 2012a                   B S    4.41207    0.19                      22.985                   
+          Pravec 2012a                   B S    4.4127     0.14                      22.99                    
+          Warner 2016i                   ? S    4.412      0.19                      23.55                    
+
+   1509   Esclangona                     B      3.25283    0.35                                             
+          Merline 2003a                  B A    3.247      0.13                     874.                      
+          Pravec 2009web                 B A    3.25281    0.13    6.6420                                     
+          Warner 2010b                   B A    3.25283    0.13    6.6422     0.04                            
+          Marchis 2012                   B A    3.247      0.12                     874.                      
+
+   1656   Suomi                                 2.583      0.20                                             
+          Warner 2016b                   ? A    2.5879     0.16   12.60       0.11                            
+
+   1717   Arlon                          B      5.1484     0.12                                             
+          Pravec 2005web                 B A    5.1484     0.08   18.236                                      
+          Cooney 2006a                   B A    5.1484     0.08   18.23                                       
+          Brinsfield 2009b               B A    5.148      0.08   18.211      0.06                            
+          Pravec 2011web                 B A    3.51482    0.07   18.229      0.11  117.                      
+          Pravec 2011web                 B A    5.1477     0.10   18.216      0.15  117.                      
+          Pravec 2011web                 B A    5.1496     0.09   18.227      0.14  117.                      
+
+   1727   Mette                          B      2.98109    0.38                                             
+          Warner 2013i                   B S    2.98109    0.33                      20.99                    
+          Warner 2013l                   B S    2.98109    0.33                      20.99                    
+          Warner 2016l                   ? S    2.9812     0.32                      20.9                     
+
+   1770   Schlesinger                    ?      2.88036    0.31                                             
+          Pravec 2015web                 ? S    2.8816     0.29    9.21       0.07                            
+          Pravec 2016web                 ? S    2.8803     0.25                      57.45                    
+          Pravec 2016web                 ? S    2.88036    0.30                      40.                      
+
+   1798   Watts                          B      3.5060     0.06                                             
+          Pray 2017e                     B S    3.5060     0.06                      26.96       > 0.25       
+
+   1829   Dawson                                4.254      0.32                                             
+          Oey 2017a                      ? S    4.2496     0.28                      23.04                    
+
+   1830   Pogson                         M      2.56999    0.18                                             
+          Higgins 2007d                  M A    2.5702     0.12                      24.240                   
+          Pravec 2012a                   M A    2.57013    0.10    3.2634     0.03   24.24                    
+          Pravec 2012a                   M A    2.56999    0.12    3.2627     0.04   24.240                   
+          Pravec 2012a                   M A    2.57010    0.12    3.2621     0.03   24.24                    
+          Pravec 2012a                   M A    2.56990    0.10    3.2622     0.03   24.24                    
+          Pravec 2013web                 M A    2.5698     0.14    3.2627     0.04   24.24                    
+
+   1857   Parchomenko                    ?      3.1177     0.27                                             
+          Stephens 2006a                 ? S    3.1177     0.22                                               
+
+   1862   Apollo                         B      3.065      1.15                                             
+          Ostro 2002                     B A                                                                  
+
+   1863   Antinous                              7.453      0.33                                             
+          Warner 2016j                   ? S    7.453      0.18                      28.6                     
+
+   1866   Sisyphus                       B      2.400      0.14                                             
+          Benner 1985                    B S                                                                  
+          Stephens 2011j                 ? S    2.401      0.02                      25.25                    
+          Warner 2016n                   ? S    2.3909     0.03                      27.16                    
+
+   1876   Napolitania                    ?     45.63       0.39                                             
+          Warner 2016b                   ? A   45.63       0.24    2.825      0.08                            
+
+   1928   Summa                                 6.8549     0.18                                             
+          Owings 2013b                   ? A    6.855      0.13    5.987      0.04                            
+
+   1943   Anteros                        B      2.86923    0.11                                             
+          Warner 2017g                   B S    2.86921    0.07                      23.548        0.22       
+          Warner 2019f                   ? S    2.86937    0.11                      19.70                    
+
+   1979   Sakharov                       ?      7.5209     0.22                                             
+          Pravec 2011web                 ? A    7.5209     0.13                                               
+
+   2006   Polonskaya                     B      3.1183     0.16                                             
+          Pray 2005c                     B A    3.1179     0.08    6.656      0.06   19.15       > 0.22       
+          Pravec 2012a                   B A    3.11789    0.08    6.6571     0.07   19.153                   
+          Pravec 2012a                   B A    3.11809    0.10    6.6593     0.10   19.153                   
+          Pravec 2012a                   B A    3.114      0.08    6.662      0.09   19.153                   
+
+   2044   Wirt                           B      3.6898     0.26                                             
+          Pray 2006c                     B S    3.6898     0.26                      18.97       > 0.25       
+          Pravec 2012a                   B S    3.6897     0.16   18.976             18.97       > 0.25       
+          Pravec 2012a                   B S    3.690      0.12   18.976      0.04   18.97       > 0.25       
+          Pravec 2012a                   B S    3.6897     0.25   18.976      0.04   18.976      > 0.25       
+
+   2047   Smetana                        B      2.4970     0.16                                             
+          Warner 2013e                   B S    2.4970     0.12   22.43              22.43       > 0.24       
+          Warner 2016l                   ? S    2.498      0.12                      22.4        > 0.16       
+
+   2048   Dwornik                               3.677      0.22                                             
+          Warner 2016i                   ? S    3.780      0.02   11.74       0.03                            
+
+   2070   Humason                        B      3.1883     0.15                                             
+          Benishek 2019c                 B S    3.1883     0.15                      53.5        = 0.31       
+
+   2074   Shoemaker                      ?      2.5328     0.13                                             
+          Warner 2009p                   ? S    2.5328     0.06                      55.5        > 0.25       
+          Warner 2011b                   ? S    2.5338     0.12                      27.39                    
+          Warner 2018c                   ? S    2.5331     0.09                      44.28                    
+
+   2083   Smither                               2.6717     0.11                                             
+          Warner 2010e                   ? A    2.6717     0.09                      30.09                    
+          Warner 2015i                   ? A    2.6731     0.08   32.3        0.05                            
+
+   2102   Tantalus                       ?      2.384      0.12                                             
+          Warner 2015g                   ? S    2.384      0.12                      16.49                    
+          Vaduvescu 2017                 ? S    2.3865     0.06    8.2177     0.05                            
+          Warner 2017l                   ? S    2.383      0.07                      16.37                    
+
+   2121   Sevastopol                     B      2.90640    0.20                                             
+          Higgins 2010a                  B S    2.90640    0.20                      37.1        > 0.41       
+          Pravec 2010web                 B S    2.90647    0.15                      37.14                    
+          Pravec 2016a                   B S    2.90660    0.16                      37.1536     > 0.41  3.3  
+          Di Sisto 2017                  B S    2.81       0.19                      37.048      > 0.40       
+
+   2131   Mayall                         B      2.5678     0.09                                             
+          Warner 2010b                   B S    2.5678     0.09                      23.48       > 0.26       
+          Warner 2010g                   B S    2.5678     0.09                      23.48       > 0.28       
+          Pravec 2011web                 B S    2.56783    0.05                      23.47                    
+          Warner 2015e                   B S    2.5907     0.07                      23.58                    
+          Pravec 2016a                   B S    2.5678     0.09                      23.4849     > 0.30  2.4  
+
+   2178   Kazakhstania                   B      3.0183     0.31                                             
+          Benishek 2018m                 B S    3.0183     0.31                      18.504      > 0.26       
+
+   2207   Antenor                        ?      7.9647     0.24                                             
+          Stephens 2018k                 ? A    7.9647     0.23                      27.066      > 0.19       
+
+   2242   Balaton                        B      2.7979     0.18                                             
+          Marchini 2016b                 B S    2.79792    0.18                      12.96       > 0.25       
+          Marchini 2016d                 B S    2.7979     0.18                      12.96       > 0.25       
+
+   2337   Boubin                         B      2.53163    0.06                                             
+          Benishek 2019b                 B S    2.53163    0.06                      16.09       > 0.16       
+
+   2343   Siding Spring                  M      2.10659    0.19                                             
+          Pollock 2015b                  M S    2.10637    0.15   20.01       0.04   11.789      > 0.19       
+          Oey 2017a                      B S    2.10639    0.15                      11.7884                  
+
+   2449   Kenos                          ?      3.8492     0.40                                             
+          Warner 2015l                   ? S    3.8481     0.14                      15.85       > 0.23       
+
+   2478   Tokai                          B     25.885      0.90                                             
+          Higgins 2007b                  B F   25.885      0.41                      25.885      > 0.72       
+          Oey 2011web                    B F   25.88       0.78                      25.88                    
+
+   2486   Metsahovi                      B      4.4518     0.13                                             
+          Pikler 2007                    ? A    2.6404     0.12    4.4518     0.12                            
+          Pravec 2007web                 ? A    4.4518     0.12    2.6404     0.04                            
+          Pravec 2009web                 ? A    4.4524     0.11    2.6400     0.03                            
+          Pravec 2014web                 ? A    4.452      0.13    2.64       0.03                            
+          Pray 2017b                     B A    4.4521     0.11    2.64040    0.03  172.6        > 0.02       
+
+   2491   Tvashtri                       B      4.0852     0.24                                             
+          Warner 2018l                   B S    4.0852     0.08                      26.712      > 0.24       
+          Warner 2018p                   B S    4.0852     0.08                      26.712      > 0.24       
+
+   2535   Hameenlinna                    B      3.23106    0.11                                             
+          Benishek 2016e                 B S    3.23106    0.10   21.23       0.03   21.23       > 0.22       
+          Sada 2017                      B S    3.2311     0.11                      21.200                   
+          Pravec 2018web                 B S    3.2312     0.09   10.615      0.05                            
+
+   2577   Litva                          M      2.81258    0.36                                             
+          Warner 2009g                   B S    2.8141     0.24                      35.78       > 0.35       
+          Warner 2009q                   B S    2.81258    0.24    5.6842     0.09   35.81       > 0.34       
+          Warner 2011b                   B S    2.81288    0.23    5.6830     0.04   35.88                    
+
+   2623   Zech                           B      2.7401     0.22                                             
+          Pray 2014a                     B A    2.7401     0.22   18.718      0.08  117.2        > 0.29       
+
+   2658   Gingerich                      ?      2.9392     0.39                                             
+          Molnar 2007                    ? S    2.9392     0.39                                               
+
+   2691   Sersic                         B      3.8811     0.22                                             
+          Oey 2011c                      B S    3.8811     0.21                      26.81       > 0.43       
+          Oey 2016a                      B S    3.885      0.22   27.17       0.55                            
+
+   2754   Efimov                         B      2.44967    0.16                                             
+          Pray 2006g                     B S    2.4497     0.15                      14.765      > 0.20       
+          Pravec 2012a                   B S    2.44967    0.16                      14.776      > 0.22       
+          Pravec 2012a                   B S    2.44963    0.14                      14.77578    > 0.22       
+          Pravec 2012a                   B S    2.4490     0.13                      14.77       > 0.22       
+
+   2759   Idomeneus                      ?    479.         0.27                                             
+          Stephens 2018d                 ? A  479.         0.19   32.17       0.10                            
+
+   2815   Soma                           B      2.73325    0.08                                             
+          Pollock 2011                   B S    2.73325    0.07                      17.915      > 0.25       
+
+   2825   Crosby                         B      2.8135     0.10                                             
+          Pray 2017d                     B S    2.8135     0.08                      14.350      > 0.18       
+
+   2881   Meiden                         M      3.48011    0.23                                             
+          Polakis 2017a                  M S    3.48011    0.12    3.7324     0.06   20.42       > 0.29       
+
+   3034   Climenhaga                     B      2.737485   0.10                                             
+          Oey 2013b                      B S    2.737485   0.10                      18.954                   
+
+   3073   Kursk                          B      3.4468     0.21                                             
+          Kusnirak 2007                  B S    3.4468     0.21                      44.96       > 0.25       
+
+   3076   Garber                                2.7600     0.18                                             
+          Oey 2013b                      ? A    2.7595     0.15                                               
+
+   3122   Florence                       M      2.3581     0.27                                             
+          Warner 2016j                   ? S    2.3580     0.12   10.36       0.07                            
+          Radar Team 2017c               M U    2.4                                   8.         > 0.04       
+          Rodrigo 2018                   ? S    2.357      0.18   11.899      0.07                            
+
+   3145   Walter Adams                   ?      2.7113     0.2                                              
+          Owings 2011b                   ? S    2.7113     0.10                      17.44       > 0.22       
+
+   3146   Dato                                  5.0540     0.27                                             
+          Pravec 2014web                 ? S    5.0540     0.23                                               
+
+   3169   Ostro                                 6.503      1.13                                             
+          Descamps 2005b                 ? F    6.482                                 6.482                   
+          Descamps 2007b                   F    6.509      0.8                        6.509                   
+
+   3309   Brorfelde                      B      2.5041     0.23                                             
+          Warner 2005j                   B S    2.5041     0.09                      18.48       > 0.26       
+          Warner 2009i                   B S    2.5046     0.10                      18.45       > 0.28       
+          Warner 2011n                   B S    2.5041     0.09                      18.48       > 0.28       
+          Pravec 2012a                   B S    2.50429    0.09                      18.46444    > 0.26       
+          Pravec 2012a                   B S    2.50429    0.13                      18.46444    > 0.26       
+          Pravec 2012a                   B S    2.5041     0.09                      18.45                    
+          Pravec 2012a                   B S    2.5044     0.10                      18.46444    > 0.26       
+          Pravec 2012a                   B S    2.50429    0.09                      18.46444    > 0.26       
+          Warner 2014j                   B S    2.503      0.10                      18.51       > 0.29       
+
+   3352   McAuliffe                      ?      2.2060     0.16                                             
+          Warner 2012g                   ? S    2.2060     0.09                      20.86                    
+
+   3378   Susanvictoria                  B      2.5621     0.10                                             
+          Pray 2017h                     B S    2.5621                               17.13         0.24       
+
+   3433   Fehrenbach                     B      3.9160     0.34                                             
+          Pray 2015d                     B S    3.9160     0.27                      19.665      > 0.31       
+
+   3562   Ignatius                       ?      2.832      0.21                                             
+          Stephens 2019b                 ? S    2.832      0.09   16.00       0.18                            
+
+   3623   Chaplin                        B      8.361      0.97                                             
+          Marchis 2012                   B F    8.361      0.80                       8.361                   
+
+   3637   O'Meara                               7.710      0.25                                             
+          Aznar 2017a                    ? S    4.118      0.25                      13.8252     > 0.09       
+
+   3671   Dionysus                       B      2.7053     0.26                                             
+          Mottola 1997b                  B S    2.705      0.12                      27.74                    
+          Pravec 2006                    B S    2.7053     0.13                      27.74       > 0.20  2.1  
+
+   3673   Levy                           B      2.6879     0.13                                             
+          Pravec 2007web                 B S    2.68748    0.13                      21.67       > 0.28       
+          Pray 2007d                     B S    2.6879     0.13                      21.6        > 0.28       
+
+   3703   Volkonskaya                    B      3.235      0.22                                             
+          Ryan 2007                      B S    3.235      0.22                      24.                      
+
+   3704   Gaoshiqi                              9.7725     0.21                                             
+          Oey 2013b                      ? A    9.7725     0.2                                                
+
+   3749   Balam                          M      2.80483    0.19                                             
+          Merline 2002a                  B S                                       1920.                      
+          Marchis 2008b                  M S    2.80483    0.13                      33.38       > 0.40       
+          Polishook 2011b                B S    2.80490    0.14                      33.385      > 0.42       
+          Behrend 2014web                B S                                         33.3873                  
+          Pravec 2017web                 B S    2.805      0.13                      33.38                    
+          Pravec 2017web                 B S    2.805      0.10                      33.38                    
+          Pravec 2017web                 B S    2.8051     0.19                      33.38                    
+
+   3782   Celle                          B      3.84       0.17                                             
+          Ryan 2003                      B S    3.839      0.15                      36.57       > 0.42       
+          Marchis 2012                   B S                                                     > 0.42  3.30 
+
+   3792   Preston                        ?      2.9274     0.30                                             
+          Pravec 2016web                 ? S    2.92768    0.18                      23.8                     
+          Pravec 2016web                 ? S    2.92754    0.22                      23.8                     
+          Benishek 2017c                 ? A    2.92754    0.22   11.909      0.04                            
+          Benishek 2017c                 ? A    2.92768    0.18   11.926      0.03                            
+
+   3800   Karayusuf                      ?      2.2319     0.19                                             
+          Warner 2008m                   ? S    2.2319     0.15                                               
+
+   3841   Dicicco                        B      3.5950     0.19                                             
+          Klinglesmith 2014e             B S    3.5949     0.18                      21.63       > 0.28       
+          Klinglesmith 2015d             B S    3.5950     0.19                      21.641      > 0.28       
+
+   3854   George                         ?      3.3398     0.14                                             
+          Warner 2006f                   ? S    3.3398     0.14                                               
+
+   3868   Mendoza                        B      2.77090    0.20                                             
+          Oey 2009c                      B S    2.77090    0.10                      24.38       > 0.22       
+          Pravec 2012a                   B S    2.77089    0.10                      12.1944     > 0.17       
+
+   3873   Roddy                          B      2.4782     0.11                                             
+          Warner 2008a                   ? S    2.4792     0.10                      47.29       > 0.36       
+          Warner 2013b                   B S    2.47900    0.11                      23.789                   
+          Warner 2013b                   B S    2.4797     0.08                      19.24                    
+
+   3880   Kaiserman                      ?      5.270      0.23                                             
+          Warner 2015i                   ? S    5.227      0.08                      22.16                    
+
+   3905   Doppler                        B     50.8        1.22                                             
+          Franco 2013h                   B F   50.8        1.22                      50.8        > 0.77       
+          Hayes-Gehrke 2014a             B F   50.8        1.22                      50.8        > 0.90       
+
+   3951   Zichichi                       B      3.39423    0.35                                             
+          Behrend 2009web                B S    3.39       0.25                                               
+          Antonini 2011                  ? S    3.3944     0.32                                               
+          Husarik 2011a                  B S    3.39423    0.26                      27.59       > 0.33       
+          Pravec 2013web                 B S    3.3942     0.26                      27.59                    
+          Pravec 2013web                 B S    3.3942     0.32                      27.59                    
+          Pravec 2013web                 B S    3.3942     0.26                      27.59                    
+          Pravec 2013web                 B S    3.3942     0.29                      27.59                    
+          Behrend 2018web                B S    3.39       0.30                                               
+
+   3982   Kastel'                        ?      8.488      0.28                                             
+          Pravec 2005b                   ? S    8.488      0.27    5.835      0.08                            
+          Pravec 2014web                 ? S    8.84877    0.28    5.8275     0.12                            
+          Oey 2017a                      ? A    8.48548    0.28    5.83574    0.09                            
+
+   4029   Bridges                        B      3.5746     0.29                                             
+          Higgins 2006d                  B S    3.5746     0.20                      16.31       > 0.24       
+          Higgins 2011b                  B S    3.5748     0.25                      16.30       > 0.25       
+          Pravec 2011web                 B S    3.5742     0.18                      16.312                   
+          Pravec 2011web                 B S    3.57491    0.23                      16.312                   
+          Pravec 2012a                   B S    3.5752     0.29                      16.31701    > 0.27       
+          Pravec 2012a                   B S    3.57459    0.20                      16.31701    > 0.27       
+          Pravec 2012a                   B S    3.5754     0.23                      16.31701    > 0.27       
+          Pravec 2012a                   B S    3.5746     0.21                      16.31701    > 0.27       
+
+   4039   Souseki                        ?      2.77196    0.24                                             
+          Stephens 2018e                 ? S    2.77203    0.24                      26.42                    
+
+   4217   Engelhardt                            3.0661     0.18                                             
+          Warner 2012c                   ? S    3.0661     0.18   36.03       0.10                            
+
+   4272   Entsuji                        B      2.8087     0.06                                             
+          Benishek 2015d                 B S    2.8087     0.06                      15.945      > 0.18       
+
+   4296   van Woerkom                    B      2.80868    0.20                                             
+          Odden 2017a                    B S    2.8087     0.20                      26.23       > 0.34       
+          Odden 2017e                    B S    2.80868    0.20                      26.23       > 0.34       
+
+   4383   Suruga                         B      3.4069     0.14                                             
+          Warner 2013j                   B S    3.4069     0.14                      16.386      > 0.22       
+
+   4435   Holt                           B      2.8670     0.30                                             
+          Stephens 2018c                 B S    2.8670     0.15                      42.65       > 0.34       
+          Stephens 2018g                 B S    2.8670     0.30                      42.65       > 0.34       
+
+   4440   Tchantches                     ?      2.7883     0.34                                             
+          Warner 2013j                   ? S    2.78836    0.29                      18.68                    
+          Warner 2014f                   ? S    2.7884     0.31                      15.35                    
+
+   4492   Debussy                        B     26.606      1.28                                             
+          Behrend 2006a                  B F   26.606      0.39                      26.606      > 0.65       
+          Behrend 2006a                  B F   26.606      0.48                      26.606      > 0.65  2.465
+          Behrend 2016web                B F   26.574      1.28                      26.574                   
+
+   4495   Dassanowsky                    B      2.6314     0.06                                             
+          Warner 2019i                   B S    2.6314     0.06                      18.516      > 0.26       
+
+   4514   Vilen                          B      2.89224    0.09                                             
+          Pray 2015a                     B S    2.89224    0.09                      16.85       > 0.26       
+
+   4541   Mizuno                         B      2.82784    0.08                                             
+          Pray 2015b                     B S    2.82784    0.08                      29.68                    
+
+   4555   Josefaperez                    ?      2.8847     0.26                                             
+          Pravec 2007web                 ? S    2.8847     0.22                                               
+          Oey 2016a                      ? S    2.8848     0.26                      22.18                    
+
+   4605   Nikitin                        ?      2.82726    0.08                                             
+          Pravec 2017web                 ? S    2.82726    0.08   11.902      0.05                            
+
+   4607   Seilandfarm                    B      3.9683     0.17                                             
+          Pravec 2009web                 B S    3.9682     0.15                      31.63                    
+          Pray 2009a                     B S    3.9683     0.15                      31.63       > 0.29       
+          Pravec 2014web                 B S    3.9681     0.17                      31.65                    
+
+   4666   Dietz                          B      2.95242    0.28                                             
+          Pravec 2015web                 ? S    2.95242    0.21                      16.64                    
+          Oey 2018a                      B S    2.9524     0.28                      33.2        > 0.34       
+
+   4674   Pauling                        B      2.5306     0.14                                             
+          Merline 2004                   B A                                       1200.         > 0.31       
+
+   4718   Araki                          ?     46.35       0.16                                             
+          Pravec 2017web                 ? A   46.35       0.16   19.373      0.10                            
+
+   4765   Wasserburg                     B      3.6231     0.60                                             
+          Warner 2013q                   B S    3.6231     0.17                      15.97       > 0.17       
+
+   4786   Tatianina                      B      2.9227     0.25                                             
+          Pravec 2006web                 B S    2.9227     0.20                      21.67       > 0.19       
+          Pray 2006e                     B S    2.9227     0.20                      21.67       > 0.19       
+
+   4868   Knushevia                      ?      3.1422     0.12                                             
+          Warner 2015k                   ? S    3.1422     0.09                      11.922      > 0.13       
+
+   4951   Iwamoto                        B    118.0        0.38                                             
+          Pravec 2007web                 B F  118.0        0.34                     118.0                     
+
+   4963   Kanroku                               2.616      0.13                                             
+          Sokova 2018                    ? S    2.616      0.12   16.4032     0.03                            
+
+   5112   Kusaji                         B      2.7995     0.20                                             
+          Chiorny 2016                   B S    2.7995     0.12                      20.74       > 0.31       
+
+   5143   Heracles                       B      2.7063     0.22                                             
+          Pilcher 2012h                  ? S    2.7063     0.05                                               
+          Taylor 2012b                   B S                                         16.0        > 0.17       
+          Lozano 2017                    ? A    2.708      0.22    5.932      0.11                            
+          Vaduvescu 2017                 ? S    2.7072     0.19                      17.114                   
+
+   5175   Ables                                 2.6862     0.33                                             
+          Warner 2014j                   ? S    2.7976     0.06   10.44       0.10                            
+
+   5261   Eureka                         B      2.6902     0.06                                             
+          Koehn 2014                     B S    2.6902     0.06                      16.93       > 0.39       
+
+   5381   Sekhmet                        B      2.8233     0.36                                             
+          Nolan 2003a                    B S                                         12.         > 0.30  1.50 
+          Warner 2014n                   B S    2.8233     0.36                      12.379      > 0.25       
+
+   5402   Kejosmith                      B      2.69549    0.13                                             
+          Benishek 2018j                 B S    2.69549    0.13                      16.31       > 0.18       
+
+   5407   1992 AX                        B      2.5488     0.12                                             
+          Pravec 2000b                   B S    2.54878    0.11                      13.520                   
+          Pravec 2012web                 B S    2.54883    0.12                      13.515                   
+          Pravec 2012web                 B S    2.5490     0.12                      13.517                   
+
+   5425   Vojtech                        B      2.64759    0.27                                             
+          Stephens 2015i                 B S    2.64759    0.27                      25.43       > 0.22       
+          Stephens 2016f                 B S    2.64759    0.26                      25.43       > 0.22       
+
+   5426   Sharp                          ?      4.5609     0.25                                             
+          Warner 2015o                   ? S    4.5609     0.18                      24.22                    
+
+   5474   Gingasen                       ?      3.6242     0.18                                             
+          Higgins 2008c                  ? A    3.6242     0.18    3.1095     0.06                            
+          Pravec 2008web                 ? A    3.6242     0.18    3.1095     0.06                            
+
+   5477   Holmes                         B      2.9940     0.12                                             
+          Warner 2005l                   B S    2.9943     0.11                      24.42       > 0.37       
+          Warner 2011n                   B S    2.99408    0.11                      24.424      > 0.45       
+          Pravec 2012a                   B S    2.99401    0.12                      24.41       > 0.39       
+          Pravec 2012a                   B S    2.99408    0.10                      24.41       > 0.39       
+          Warner 2012n                   B S    2.9932     0.10                      24.37       > 0.38       
+          Pravec 2016a                   B S    2.9940     0.10                      24.4037     > 0.39  2.5  
+
+   5481   Kiuchi                         B      3.6196     0.10                                             
+          Kusnirak 2008a                 B S    3.6196     0.10                      20.90       > 0.33       
+          Pravec 2013web                 B S    3.6198     0.08                      20.9                     
+          Pravec 2016a                   B S    3.6196     0.10                      20.9062     > 0.35  2.2  
+
+   5536   Honeycutt                      B      3.5830     0.09                                             
+          Benishek 2016h                 B S    3.5830     0.09                      16.325      > 0.31       
+          Pravec 2016web                 B S    3.5830     0.09                      16.325      > 0.34       
+
+   5626   1991 FE                             133.6        0.44                                             
+          Warner 2017l                   ? A  133.6        0.13    2.735      0.04                            
+
+   5646   1990 TR                        ?      3.1999     0.32                                             
+          Warner 2013e                   ? S    3.1999     0.12                      19.47       > 0.18       
+
+   5674   Wolff                          B     93.7        0.70                                             
+          Aznar 2016b                    B F   93.7        0.52   93.7        0.52   93.7        > 0.80       
+          Aznar 2016e                    B F   93.7        0.52                      93.7        > 0.80       
+
+   5693   1993 EA                               2.496      0.10                                             
+          Warner 2017l                   ? S    2.496      0.05   16.55       0.03                            
+
+   5828   1991 AM                        ?      2.6666     0.15                                             
+          Warner 2013p                   ? S    2.6666     0.15                      18.338                   
+
+   5872   Sugano                         B      3.3642     0.11                                             
+          Pray 2016                      B S    3.3642     0.11                      18.04       > 0.30       
+
+   5899   Jedicke                        B      2.7481     0.11                                             
+          Warner 2010h                   B S    3.66       0.04                      16.7        > 0.32       
+          Warner 2010n                   B S    3.66       0.04                      16.7        > 0.32       
+          Warner 2013p                   B S    2.7481     0.05                      16.722      > 0.30       
+          Warner 2013p                   B S    2.730      0.03                      16.745      > 0.30       
+          Warner 2016l                   ? S    2.751      0.11                      16.44                    
+
+   5905   Johnson                        B      3.7824     0.20                                             
+          Warner 2005h                   B S    3.7824     0.11                      21.785      > 0.40       
+          Warner 2009l                   B S    3.7827     0.10                      21.78       > 0.38       
+          Pravec 2011web                 B S    3.7814     0.18                      21.775                   
+          Pravec 2011web                 B S    3.78142    0.20                      21.775                   
+          Pravec 2011web                 B S    3.7814     0.19                      21.775                   
+          Pravec 2011web                 B S    3.7814     0.19                      21.775                   
+          Pravec 2012a                   B S    3.7824     0.10                      21.756      > 0.38       
+          Pravec 2012a                   B S    3.78222    0.08                      21.756      > 0.38       
+          Pravec 2016a                   B S    3.7823     0.16                      21.7970     > 0.38  2.3  
+
+   5968   Trauger                               3.7879     0.36                                             
+          Warner 2014d                   ? A    3.786      0.11                      15.9                     
+
+   6016   Carnelli                       B      2.8028     0.07                                             
+          Benishek 2016g                 B S    2.8028     0.07                      21.33       > 0.20       
+
+   6063   Jason                                48.6        0.12                                             
+          Warner 2017n                   ? A  682.         0.25   48.6        0.12                            
+
+   6084   Bascom                         B      2.74542    0.23                                             
+          Higgins 2006b                  B S    2.7454     0.22                      43.5        > 0.37       
+          Pravec 2012a                   B S    2.7453     0.22                      43.51       > 0.37       
+          Pravec 2012a                   B S    2.74516    0.14                      43.51       > 0.37       
+          Pravec 2013web                 B S    2.74544    0.23                      43.5                     
+
+   6186   Zenon                          M      2.6832     0.08                                             
+          Benishek 2017b                 M S    2.6832     0.08    3.2987     0.08   14.392      > 0.28       
+
+   6244   Okamoto                        B      2.8958     0.15                                             
+          Higgins 2006g                  B S    2.8958     0.11                      20.32       > 0.25       
+          Higgins 2011b                  B S    2.89585    0.15                      20.32       > 0.23       
+          Pravec 2012a                   B S    2.89597    0.13                      20.31       > 0.25       
+          Pravec 2012a                   B S    2.8957     0.11                      20.3105     > 0.25       
+
+   6245   Ikufumi                        B      2.9222     0.10                                             
+          Benishek 2018n                 B S    2.9222     0.10                      15.439      > 0.23       
+
+   6265   1985 TW3                       B      2.70932    0.36                                             
+          Bianchi 1921                   B S    2.7091     0.28                      15.86       > 0.32       
+          Higgins 2007f                  B S    2.7091     0.28                      15.86       > 0.24       
+          Higgins 2011b                  B S    2.70932    0.35                      15.845        0.30       
+          Pravec 2012a                   B S    2.70931    0.36                      15.86       > 0.32       
+          Pravec 2012a                   B S    2.7091     0.28                      15.86       > 0.32       
+
+   6369   1983 UC                        B      2.39707    0.08                                             
+          Pravec 2015c                   B S    2.39709    0.08                      39.8                     
+
+   6502   1993 XR1                       ?      4.1931     0.18                                             
+          Pravec 2014web                 ? S    4.1931     0.13                                               
+          Pravec 2015web                 ? S    4.1933     0.18                                               
+
+   6602   Gilclark                              4.5686     0.54                                             
+          Warner 2014f                   ? A    4.569      0.39                      23.54                    
+
+   6611   1993 VW                        ?      2.5568     0.15                                             
+          Pravec 2005web                 ? S    2.55680    0.06               0.09   17.190                   
+
+   6615   Plutarchos                     ?      2.3247     0.06                                             
+          Oey 2007c                      ? S    2.3247     0.06                      40.02       > 0.25       
+
+   6708   Bobbievaile                    B     12.3415     0.41                                             
+          Pravec 2009web                 B F    8.2255     0.09                      24.682                   
+          Pray 2009b                     B A    8.221      0.08                      24.7                     
+
+   6809   Sakuma                         ?      2.5749     0.10                                             
+          Pravec 2018web                 ? S    2.5749     0.10                                               
+
+   6815   Mutchler                       ?      2.4384     0.09                                             
+          Pray 2007a                     ? S    2.4384     0.09                                               
+
+   6901   Roybishop                      ?      4.682      0.07                                             
+          Warner 2009b                   ? S    4.682      0.04                      17.157      > 0.19       
+
+   6944   Elaineowens                           2.91280    0.17                                             
+          Pravec 2014web                 ? A    2.9131     0.16                      62.3                     
+
+   7002   Bronshten                      B      2.67025    0.14                                             
+          Warner 2019d                   B S    2.67025    0.13                      13.323      > 0.24       
+
+   7027   Toshihanda                     B     36.304      0.30                                             
+          Warner 2017j                   B F   36.304      0.30                      36.304      > 0.51       
+
+   7088   Ishtar                         B      2.6790     0.11                                             
+          Reddy 2005                     B S    2.6790     0.11                      20.65       > 0.42       
+          Pravec 2006web                 B S    2.6790     0.11                      20.65       > 0.42       
+          Pravec 2016a                   B S    2.6786     0.11                      20.63       > 0.42  2.2  
+
+   7132   Casulli                               3.524      0.25                                             
+          Behrend 2006web                B A    3.5253     0.25                                               
+
+   7173   Sepkoski                              2.5006     0.20                                             
+          Warner 2014f                   ? S    2.5006     0.11                                               
+
+   7187   Isobe                          B      4.2432     0.22                                             
+          Warner 2013b                   B S    4.2431     0.15                      32.69                    
+          Warner 2013b                   ? S    4.2427     0.09                      33.22       > 0.17       
+          Warner 2013b                   B S    4.247      0.18                      32.66                    
+          Warner 2013b                   ? S    4.2437     0.13                      32.76                    
+
+   7225   Huntress                       B      2.43995    0.11                                             
+          Pravec 2007web                 B S    2.43995    0.11                      14.67                    
+          Pray 2008b                     B S    2.4400     0.11                      14.67       > 0.21       
+
+   7247   Robertstirling                        3.17       0.15                                             
+          Warner 2013b                   ? A    3.716      0.17                      16.032                   
+
+   7344   Summerfield                    B      2.58975    0.17                                             
+          Pravec 2017web                 B S    2.58975    0.17                      17.41       > 0.18       
+          Pray 2017f                     B S    2.58975    0.17                      17.41       > 0.18       
+
+   7369   Gavrilin                       B     49.12       0.25                                             
+          Higgins 2008c                  B F   49.12       0.25                      49.12       > 0.7        
+          Pravec 2008web                 B F   49.12       0.25                      49.12       > 0.7        
+
+   7393   Luginbuhl                      B      2.68763    0.10                                             
+          Warner 2019k                   B S    2.68763    0.10                      39.422      > 0.40       
+
+   7758   Poulanderson                   ?      2.64752    0.15                                             
+          Warner 2012m                   ? S    2.6474     0.14                      59.4                     
+
+   7888   1993 UC                        B      2.337      0.22                                             
+          Brozovic 2013a                 B S                                         35.                      
+
+   7958   Leakey                         B      2.34843    0.22                                             
+          Warner 2012p                   B S    2.34843    0.22                      50.59       > 0.30       
+          Stephens 2016e                 B S    2.34831    0.19                      49.5                     
+          Stephens 2016e                 B S    2.34855    0.22                      49.5                     
+
+   8026   Johnmckay                      ?    372.         1.00                                             
+          Warner 2011b                   ? A  372.         1.00    2.2981     0.10                            
+          Warner 2015q                   ? A  355.         0.70   14.93       0.16                            
+
+   8077   Hoyle                          B      2.7454     0.30                                             
+          Klinglesmith 2016d             B S    2.746      0.18                      53.862      > 0.35       
+
+   8116   Jeanperrin                     B      3.61692    0.10                                             
+          Higgins 2007g                  B S    3.6169     0.09                      36.15       > 0.33       
+          Pravec 2007web                 B S    3.61692    0.09                      36.15                    
+
+   8306   Shoko                          B      3.3503     0.11                                             
+          Polishook 2014a                ? S    3.604      0.10                                               
+          Pravec 2014a                   B S    3.3503     0.11                      36.20       > 0.40       
+
+   8373   Stephengould                   B      4.435      0.39                                             
+          Krugly 2010                    B S    4.435      0.39                      34.15       > 0.27       
+
+   8474   Rettig                         B     30.54       0.93                                             
+          Chiorny 2015                   B F   30.54       0.34   30.54       0.34   30.54       > 0.86       
+          Oey 2017a                      B F   30.5595     0.90                      30.5595                  
+
+   9069   Hovland                        B      4.217      0.11                                             
+          Warner 2004e                   B S    4.2174     0.08                      30.35                    
+          Warner 2011n                   B S    4.2173     0.09                      30.292                   
+
+   9260   Edwardolson                    B      3.0852     0.11                                             
+          Jakubik 2005                   B S    3.0852     0.11                      17.785      > 0.27       
+
+   9387   Tweedledee                            3.534      0.15                                             
+          Stephens 2015b                 ? A    3.534      0.12   15.15       0.04                            
+
+   9617   Grahamchapman                  B      2.2856     0.11                                             
+          Pray 2006d                     B S    2.2856     0.10                      19.385      > 0.27       
+          Pravec 2012a                   B S    2.2856     0.10                      19.3817     > 0.27       
+          Pravec 2012a                   B S    2.28561    0.11                      19.385      > 0.27       
+
+   9772   1993 MB                        ?      5.3450     0.17                                             
+          Pravec 2015web                 ? A    5.3450     0.17    5.4292     0.06                            
+
+   9783   Tensho-kan                     B      3.0111     0.13                                             
+          Pravec 2015c                   B S    3.0111     0.13                      29.57                    
+
+   9972   Minoruoda                      B      3.4221     0.11                                             
+          Cooney 2017                    B S    3.4221     0.11                      22.89       > 0.24       
+          Pravec 2017web                 B S    3.4221     0.11                      22.89       > 0.02       
+
+  10123   Fideoja                        B      2.8657     0.06                                             
+          Pravec 2015c                   B S    2.8657     0.06   38.8        0.03   56.45                    
+
+  10132   Lummelunda                     B      2.5099     0.17                                             
+          Benishek 2017f                 B S    2.5099     0.11                      22.44       > 0.02       
+          Benishek 2018f                 B S    2.5099     0.11                      22.44       > 0.28       
+
+  10150   1994 PN                        ?      2.965      0.56                                             
+          Warner 2016n                   ? S    2.965      0.23   10.55       0.12                            
+
+  10208   Germanicus                     B      3.3484     0.13                                             
+          Oey 2007d                      B S    3.3484     0.13                      58.55       > 0.46       
+
+  10498   Bobgent                        ?      3.45556    0.29                                             
+          Pravec 2017web                 ? A    3.45556    0.29    5.0785     0.23                            
+
+  11001   Andrewulff                     ?      3.9638     0.14                                             
+          Pravec 2012web                 ? S    3.9638     0.14                                               
+
+  11116   1996 EK                        ?      4.4017     0.10                                             
+          Pravec 2006web                 ? S    4.4017     0.08                                  > 0.17       
+          Pravec 2009web                 ? S    4.4018     0.10                                               
+
+  11217   1999 JC4                              4.8219     0.11                                             
+          Warner 2014d                   ? S    4.8219     0.11                      19.17                    
+
+  11227   Ksenborisova                   B      2.61679    0.34                                             
+          Behrend 2015web                B S    2.61679    0.34                      16.06                    
+
+  11264   Claudiomaccone                 B      3.1872     0.16                                             
+          Pravec 2006                    B S    3.1872     0.12                      15.11       > 0.30       
+          Krugly 2007a                   B S    3.1872     0.15                      15.11                    
+
+  12008   Kandrup                        B     32.9034     0.85                                             
+          Behrend 2016web                ? F   32.9        0.84                      32.9                     
+          Manzini 2016                   B F   32.88                                 32.88       > 0.75       
+
+  12326   Shirasaki                      B      2.7286     0.12                                             
+          Pray 2017a                     B S    2.7286     0.12   12.7        0.03   25.06       > 0.24       
+
+  12390   1994 WB1                              2.4629     0.09                                             
+          Warner 2013q                   ? A    2.462      0.05                      15.21                    
+          Warner 2013q                   ? A    2.4629     0.09                      15.94                    
+
+  12538   1998 OH                        ?      2.5780     0.20                                             
+          Warner 2019h                   ? A    2.5262     0.11    2.4683     0.09                            
+
+  13123   Tyson                          ?      3.3303     0.35                                             
+          Pravec 2016a                   ? A    3.3302     0.20    3.862      0.04                            
+
+  13921   Sgarbini                              3.679      0.12                                             
+          Oey 2014                       ? A    7.3681     0.1                       43.4                     
+
+  15268   Wendelinefroger                B      2.4224     0.07                                             
+          Oey 2008d                      B S    2.4224     0.07                      25.07       > 0.27       
+
+  15430   1998 UR31                      ?      2.52735    0.11                                             
+          Pravec 2010web                 ? S    2.52735    0.11                                               
+          Oey 2013b                      ? S    2.5273     0.10                      23.96                    
+
+  15700   1987 QD                        ?      3.0586     0.07                                             
+          Durkee 2010c                   ? S    3.0856     0.07                      50.3        > 0.31       
+
+  15745   Yuliya                         B      3.2486     0.15                                             
+          Aznar 2018c                    B S    3.2486     0.10                      15.63       > 0.43       
+          Benishek 2018i                 B S    3.2495     0.08                      11.735      > 0.46       
+          Warner 2018m                   B S    3.256      0.03                      15.60                    
+
+  15778   1993 NH                        ?    113.         0.61                                             
+          Warner 2015e                   ? A  113.         0.61    3.320      0.04                            
+
+  15822   1994 TV15                      B      2.95998    0.36                                             
+          Warner 2011c                   ? S    2.9601     0.28                      37.19                    
+          Warner 2014d                   B S    2.95998    0.27                      20.13       > 0.22       
+          Warner 2014d                   ? A    2.9603     0.26                      20.01       > 0.22       
+
+  16525   Shumarinaiko                   B      2.5932     0.08                                             
+          Warner 2013h                   B S    2.5932     0.08                      14.409      > 0.17       
+          Warner 2013k                   B S    2.5932     0.08                      14.409      > 0.17       
+
+  16635   1993 QO                        B      2.20827    0.17                                             
+          Pray 2007b                     B A    2.2083     0.17    7.622      0.05   32.25       > 0.27       
+
+  17246   Christophedumas                B     10.         0.15                                             
+          Tamblyn 2004                   B A                                       2034.         > 0.44       
+
+  17260   Kusnirak                       B      3.1285     0.17                                             
+          Higgins 2006c                  B S    3.1287     0.15                      14.757      > 0.26       
+          Pravec 2012a                   B S    3.12867    0.15                      14.7577     > 0.26       
+          Pravec 2012a                   B S    3.1288     0.17                      14.7577     > 0.26       
+
+  17700   1997 GM40                      B      3.8382     0.15                                             
+          Pray 2018a                     B S    3.8382     0.13                      15.49       > 0.31       
+
+  18527   1996 VJ30                      B      3.35290    0.13                                             
+          Benishek 2018k                 B S    3.35290    0.13                      19.07       > 0.32       
+
+  18736 * 1998 NU                               2.4753     0.16                                             
+        * Warner 2019m                   ? S    2.4753     0.10   11.95       0.03                            
+
+  18890   2000 EV26                      B      3.8216     0.11                                             
+          Warner 2015e                   B S    3.8216     0.10                      14.29       > 0.27       
+          Warner 2015e                   ? S    3.882      0.09                      14.42                    
+          Warner 2016l                   B S    3.815      0.09                      14.290      > 0.31       
+
+  19204   Joshuatree                     ?    480.         0.95                                             
+          Stephens 2016h                 ? A  480.         0.25   21.25       0.08                            
+          Stephens 2016h                 ? A  480.         0.05   21.25       0.05                            
+
+  20325   Julianoey                      B      3.24474    0.13                                             
+          Pray 2014b                     B S    3.24474    0.13                      23.54       > 0.30       
+
+  20421   1998 TG3                             11.8905     0.16                                             
+          Warner 2010d                   ? A   11.8905     0.16    8.046      0.04                            
+
+  20460   Robwhiteley                           2.7209     0.09                                             
+          Pravec 2017web                 ? U    2.7228     0.09    3.4174     0.08                            
+
+  20882   2000 VH57                      B      2.5586     0.13                                             
+          Warner 2019j                   B S    2.5586     0.13                      32.81       > 0.26       
+
+  20932   2258 T-1                       ?      4.3245     0.17                                             
+          Stephens 2016g                 ? S    4.3245     0.09                      12.02                    
+
+  22899   Alconrad                       B      4.03       0.19                                             
+          Merline 2003b                  B A                                       1356.                      
+
+  23615   1996 FK12                      ?    367.         0.23                                             
+          Warner 2015l                   ? A  367.         0.23    3.6456     0.09                            
+
+  23621   1996 PA                        B      2.6649     0.10                                             
+          Pray 2017g                     B S    2.6649     0.07                      20.60       > 0.27       
+
+  23999   Rinner                         B     48.57       0.80                                             
+          Behrend 2018web                B A   48.57       0.80   48.57       0.80   48.57                    
+
+  24465   2000 SX155                     B      2.66087    0.21                                             
+          Stephens 2017e                 B S    2.66087    0.12                       9.252      > 0.22       
+
+  24495   Degroff                        ?     24.083      0.58                                             
+          Stephens 2017i                 ? A   24.083      0.58    2.7375     0.19                            
+
+  24870   1996 FJ1                              3.10124    0.13                                             
+          Pravec 2015web                 ? A    3.10124    0.13                      24.                      
+
+  25332   1999 KK6                              2.4531     0.10                                             
+          Warner 2013b                   ? A    2.4139     0.06                      29.13                    
+
+  25884   Asai                           ?      4.9169     0.55                                             
+          Warner 2012i                   ? S    4.91684    0.36                      73.5        > 0.28       
+
+  26074   Carlwirtz                      ?      2.5493     0.20                                             
+          Warner 2013o                   ? S    2.5493     0.11                      16.11                    
+
+  26083   1981 EJ11                      ?    347.         0.34                                             
+          Warner 2018e                   ? A  347.         0.34   25.14       0.17                            
+
+  26416   1999 XM84                             2.907      0.20                                             
+          Polishook 2014a                ? A    2.907      0.2                                                
+
+  26471   Tracybecker                    B      2.68679    0.24                                             
+          Warner 2009s                   B S    2.6866     0.22                      39.22       > 0.38       
+          Warner 2010b                   B S    2.68679    0.22                      39.28       > 0.36       
+          Warner 2013e                   B S    2.6869     0.18                      39.61       > 0.20       
+
+  27568   2000 PT6                       ?      3.4885     0.15                                             
+          Warner 2013n                   ? S    3.4885     0.10                      16.353      > 0.22       
+          Warner 2015e                   ? S    3.499      0.11                      11.73                    
+
+  27675   1981 CH                        B      2.9661     0.13                                             
+          Pray 2017c                     B S    2.9661     0.11                     120.1        > 0.20       
+
+  27776   Cortland                              2.6095     0.07                                             
+          Warner 2016i                   ? A    2.615      0.07    5.06       0.04                            
+
+  29168   1990 KJ                        ?      2.58247    0.15                                             
+          Pravec 2011web                 ? S    2.58247    0.14                      34.4                     
+          Stephens 2018m                 ? S    2.5827     0.13                      35.66                    
+
+  30019   2000 DD                               5.4741     0.16                                             
+          Warner 2012c                   ? A    5.4741     0.08                      33.05                    
+
+  30535   2001 OR5                       ?      2.9697     0.12                                             
+          Warner 2015e                   ? A    2.9697     0.12                      13.27                    
+
+  31345   1998 PG                        B      2.5163     0.11                                             
+          Pravec 2000b                   B A    2.51620    0.11    7.0035     0.07                            
+          Warner 2019a                   B S    2.5163     0.05                      15.992      > 0.26       
+
+  31450   Stevepreston                   B      3.4116     0.31                                             
+          Pray 2015c                     B A    3.4116     0.24                      53.47       > 0.22       
+
+  32008   Adriangalad                    B      3.0171     0.19                                             
+          Pravec 2007a                   B S    3.0171     0.19                      40.24         0.40       
+
+  32039   2000 JO23                      B      3.2990     0.05                                             
+          Pray 2007c                     B A    3.2990     0.05   11.099      0.08  360.         > 0.58       
+          Pravec 2011web                 B A    3.2990     0.05                                  > 0.58       
+
+  32800   1990 QC19                             3.709      0.17                                             
+          Warner 2011web                 ? A    3.7091     0.17                      53.2                     
+
+  33046   1997 UF2                              2.67219    0.09                                             
+          Pravec 2014web                 ? A    2.67129    0.09                                               
+
+  34706   2001 OP83                      B      2.5946     0.16                                             
+          Warner 2005k                   B S    2.5944     0.13                      20.76       > 0.28       
+          Warner 2006j                   B S    2.5946     0.13                      20.76       > 0.28       
+
+  35107   1991 VH                        B      2.6236     0.15                                             
+          Pravec 1997d                   B S    2.6236     0.08                      32.74                    
+          Pravec 1998a                   B S    2.6237     0.08                      32.688      > 0.39       
+          Pravec 2006                    B S    2.6238     0.08                      32.69       > 0.40       
+          Pravec 2006                    M S    2.6236     0.08   12.836      0.06   32.63       > 0.37       
+          Merline 2008                   B S                                                                  
+          Vander Haagen 2010a            B S    2.6239     0.15                      32.26                    
+
+  42355   Typhon                         B      5.         0.15                                             
+          Noll 2006a                     B A                                                     > 0.50       
+          Grundy 2008                    B A                                        455.                      
+
+  43904   1995 WO                             200.         0.34                                             
+          Oey 2014                         A    4.589      0.05                      98.                      
+
+  45878   2000 WX29                      ?      3.9207     0.10                                             
+          Warner 2017k                   ? A    3.9207     0.10    7.0584     0.09                            
+
+  46037   2001 DF33                      ?      2.6865     0.23                                             
+          Warner 2012c                   ? S    2.6865     0.23                      17.03                    
+
+  46829   McMahon                        B      2.6236     0.12                                             
+          Pravec 2015b                   B S    2.6236     0.12                      16.833      > 0.40       
+
+  47141   1999 HB3                       ?      2.8614     0.14                                             
+          Warner 2016b                   ? S    2.8614     0.14                      10.56                    
+
+  47171   Lempo                          B      6.21       0.06                                             
+          Trujillo 2002                  B F                                                                  
+          Margot 2005                    B F                                                                  
+          Stansberry 2005                B F                                                                  
+
+  48639   1995 TL8                       B                                                                  
+          Stephens 2006d                 B U                                                                  
+
+  50000   Quaoar                         B      8.840      0.18                                             
+          Brown 2007                     B S                                                                  
+          Noll 2008a                     B S                                                                  
+
+  51356   2000 RY76                      B      2.5572     0.09                                             
+          Warner 2013f                   B S    2.5572     0.09                      62.05       > 0.21       
+
+  52316   Daveslater                     B      2.7629     0.10                                             
+          Warner 2013e                   B S    2.7629     0.10                      13.435      > 0.19       
+
+  52750   1998 KK17                      ?     26.43       0.24                                             
+          Warner 2017c                   ? A   26.43       0.24    3.1308     0.16                            
+
+  53110   1999 AR7                       B      2.7375     0.25                                             
+          Warner 2016f                   B S    2.7375     0.10                      31.31       > 0.40       
+
+  53432   1999 UT55                      B      3.330      0.10                                             
+          Warner 2013g                   B S    3.330      0.10                      14.10       > 0.24       
+          Warner 2013j                   B S    3.330      0.10                      14.10       > 0.24       
+
+  54697   2001 FA70                      ?      3.05204    0.09                                             
+          Pravec 2016web                 ? S    3.05204    0.09                      49.2                     
+          Warner 2016l                   ? A    2.7075     0.05    2.1239     0.04   16.269      > 0.19       
+
+  55637   2002 UX25                      B     14.382      0.21                                             
+          Brown 2007                     B S                                                                  
+          Noll 2008a                     B S                                                                  
+
+  58534   Logos                          B                                                                  
+          Noll 2002a                     B A                                                                  
+          Grundy 2011                    B A                                       7440.                40.   
+
+  60458   2000 CM114                     B                                                                  
+          Noll 2006c                     B F                                                                  
+
+  60621   2000 FE8                       B                                                                  
+          Noll 2007a                     B F                                                                  
+
+  65489   Ceto                           B      4.43       0.08                                             
+          Grundy 2007                    B F  229.3                                 229.3                     
+
+  65803   Didymos                        B      2.2593     0.08                                             
+          Pravec 2003c                   B S    2.26                                 11.91       > 0.22       
+          Pravec 2006                    B S    2.2593     0.08                      11.900      > 0.22  1.4  
+          Scheirich 2009                 B S                                         11.906      > 0.22  2.8  
+
+  66063   1998 RO1                       B      2.4924     0.16                                             
+          Pravec 2003a                   B S    2.4924     0.13                      14.53       > 0.50       
+          Galad 2004                     B S    2.4924     0.13                      14.54                    
+          Scheirich 2009                 B S                                         14.54       > 0.48  3.2  
+
+  66146   1998 TU3                              2.375      0.15                                             
+          Warner 2018a                   ? S    2.37772    0.09                      13.58                    
+
+  66391   1999 KW4                       B      2.7650     0.14                                             
+          Benner 2001d                   B S                                                                  
+          Ostro 2006                     B S    2.7645                               17.4223                  
+          Pravec 2006                    B S    2.7650     0.12                      17.45       > 0.30       
+          Scheirich 2009                 B S                                         17.42       > 0.46  3.2  
+          Warner 2018m                   B S    2.7660     0.14                      17.452      > 0.38       
+          Holliday                       ? S                                                                 
+
+  66652   Borasisi                       B                 0.05                                             
+          Noll 2008a                     B A                                                                  
+          Grundy 2011                    B A                                       1110.9               16.3  
+
+  67175   2000 BA19                      ?    275.         0.25                                             
+          Warner 2013b                   ? A  275.         0.25    2.7157     0.07                            
+
+  68063   2000 YJ66                      B      2.1102     0.14                                             
+          Warner 2015a                   B S    2.1102     0.14                      15.69                    
+
+  68216   2001 CV26                             2.4290     0.36                                             
+          Stephens 2015g                 ? A    2.429      0.14   21.89       0.07                            
+
+  68348   2001 LO7                              3.3313     0.30                                             
+          Warner 2015g                   ? S    3.8759     0.08                      17.54                    
+          Vaduvescu 2017                 ? S    3.3313             9.20       0.04                            
+
+  69230   Hermes                         B     13.894      0.08                                             
+          Behrend 2003web                B F   13.894      0.08                      13.894                   
+          Margot 2003b                   B F   17.                                   17.         > 1.0        
+          Pravec 2006                    B F   13.894      0.06                      13.894      > 0.90       
+
+  69406   1995 SX48                      ?      4.49       0.19                                             
+          Warner 2014f                   ? S    4.487      0.15                      16.11       > 0.19       
+
+  70030   Margaretmiller                 ?      4.3292     0.50                                             
+          Warner 2012b                   ? S    4.3292     0.45                      15.87                    
+
+  76818   2000 RG79                      B      3.1664     0.15                                             
+          Warner 2005i                   B S    3.1664     0.14                      14.125      > 0.37       
+          Warner 2009d                   B S    3.16640    0.14                      14.123      > 0.34       
+          Warner 2011n                   B S    3.1666     0.14                      14.126      > 0.36       
+          Pravec 2012a                   B S    3.16649    0.14                      14.11960    > 0.35       
+          Pravec 2012a                   B S    3.16639    0.14                      14.11960    > 0.35       
+          Warner 2014d                   B S    3.1669     0.15                      14.134      > 0.36       
+
+  79360   Sila-Nunam                     B    300.24       0.15                                             
+          Stephens 2006d                 B U                                                                  
+          Noll 2008a                     B F                                                                  
+          Grundy 2012a                   B F  300.24       0.17                     300.24                    
+          Rabinowitz 2014                B F  300.24       0.15                     300.24                    
+
+  79472   Chiorny                        ?      2.8802     0.27                                             
+          Warner 2015q                   ? S    2.8800     0.19                      15.51       > 0.34       
+          Warner 2015q                   ? S    2.8796     0.19                      16.14       > 0.34       
+
+  80218   1999 VO123                     B      3.1451     0.21                                             
+          Pravec 2015c                   B S    3.1451     0.21                      33.1                     
+
+  80806   2000 CM105                     B                 0.14                                             
+          Stephens 2006d                 B U                                                                  
+          Noll 2008a                     B F                                                                  
+
+  82066   2000 XG15                            11.23       0.19                                             
+          Warner 2015q                   ? A    3.86       0.07   15.6        0.15                            
+
+  82075   2000 YW134                     B                 0.1                                              
+          Stephens 2006d                 B U                                                                  
+
+  85275   1994 LY                        ?      2.6962     0.16                                             
+          Pravec 2007web                 ? S    2.6962     0.11                      48.5                     
+
+  85628   1998 KV2                       ?      2.999      0.18                                             
+          Warner 2018m                   ? S    2.823      0.18   13.28       0.13                            
+
+  85938   1999 DJ4                       B      2.5141     0.11                                             
+          Benner 2004a                   B S                                                                  
+          Pravec 2004                    B S    2.514      0.10                      17.72       > 0.45       
+
+  88611   Teharonhiawako                 B                                                                  
+          Elliot 2001                    B F                                                                  
+          Grundy 2011                    B A                                       19890.                 9.5  
+
+  88710   2001 SL9                       B      2.4004     0.12                                             
+          Pravec 2001                    B S    2.4003     0.08                      16.40       > 0.31       
+          Warner 2014e                   B S    2.4013     0.12                      16.19       > 0.32       
+
+  90482   Orcus                          B     13.188      0.18                                             
+          Brown 2007                     B A                                                                  
+          Brown 2010                     B A                                        228.9432                  
+
+  99913   1997 CZ5                       B      2.833      0.20                                             
+          Higgins 2011c                  B S    2.83507    0.19                      14.68       > 0.19       
+
+ 100015   1989 SR7                       B      2.4172     0.05                                             
+          Benishek 2018l                 B S    2.4172     0.05                      20.65       > 0.35       
+
+ 101668   1999 CR95                      ?     16.54       0.90                                             
+          Polishook 2012b                ? F   16.54       0.90                      16.54                    
+
+ 114319   2002 XD58                      ?      2.9649     0.14                                             
+          Pray 2005d                     ? A    2.9649     0.14    7.954      0.08                            
+
+ 119067   2001 KP76                      B                                                                  
+          Marchis 2008a                  B F                                                     > 0.95       
+
+ 119744   2001 YN42                      ?    625.         0.52                                             
+          Warner 2014f                   ? A  625.         0.52    7.24       0.07                            
+
+ 119979   2002 WC19                      B                 0.05                                             
+          Noll 2007b                     B F                                                                  
+
+ 120347   Salacia                        B      6.09       0.06                                             
+          Noll 2006e                     B U                                                                  
+          Stansberry 2012                B S                                        131.851      > 0.34       
+
+ 123509   2000 WK183                     B                                                                  
+          Noll 2007c                     B F                                                                  
+          Grundy 2011                    B A                                        742.0               11.8  
+
+ 126719   2002 CC249                           11.87       0.79                                             
+          Thirouin 2017b                 ? F   11.87       0.79                      11.87                    
+
+ 134340   Pluto                          M    153.2935     0.30                                             
+          Tholen 1997                    M F  153.2935     0.30                     153.2935     > 0.53       
+
+ 134860   2000 OJ67                      B                                                                  
+          Stephens 2006d                 B U                                                                  
+          Noll 2008a                     B S                                                                  
+
+ 136108   Haumea                         B      3.9154     0.32                                             
+          Brown 2005a                    B A                                                                  
+
+ 136199   Eris                           B     25.9        0.10                                             
+          Brown 2006                     B A                                                                  
+
+ 136472   Makemake                       B     22.48       0.03                                             
+          Parker 2016                    B S                                                                  
+
+ 136617   1994 CC                        M      2.38860    0.09                                             
+          Brozovic 2009b                 M A                                                                  
+          Brozovic 2011                  M A    2.38860    0.09                      29.832      > 0.18       
+
+ 136993   1998 ST49                      B      2.3017     0.15                                             
+          Radar Team 2012                B S    2.3                                                           
+
+ 137170   1999 HF1                       B      2.3192     0.26                                             
+          Pravec 2002a                   ? S    2.319      0.12                      14.017      > 0.20       
+          Pravec 2002b                   ? S    2.31927    0.13                      14.017      > 0.17       
+          Pravec 2006                    B S    2.31927    0.12                      14.02       > 0.30       
+          Pravec 2006                    B S    2.3192     0.17                      14.03       > 0.24       
+          Marchis 2012                   B S    2.319      0.22                      14.04       > 0.23       
+
+ 139345   2001 KA67                      ?     44.25       0.47                                             
+          Stephens 2018j                 ? A   44.25       0.47    6.011      0.10                            
+
+ 139775   2001 QG298                     ?     13.7744     1.14                                             
+          Lacerda 2011                   ? F   13.7744     0.7                                                
+
+ 148780   Altjira                        B                 0.3                                              
+          Noll 2008a                     B A                                                                  
+          Grundy 2011                    B A                                       3349.5               49.5  
+
+ 152858   1999 XN35                             2.990      0.18                                             
+          Hills 2013b                    ? A    2.990      0.18                                               
+
+ 153591   2001 SN263                     M      3.423      0.27                                             
+          Becker 2008                    M S    3.20       0.27                      46.1                     
+          Betzler 2008d                  B S    3.20       0.27                      46.1                     
+          Nolan 2008                     M S                                                     > 0.50       
+          Becker 2015b                   M S    3.4256                               16.464      > 0.31       
+
+ 153958   2002 AM31                      B      2.8174     0.25                                             
+          Pravec 2012web                 B S    2.8174     0.09                      12.81                    
+          Taylor 2013                    B S    2.8174     0.10                      26.3                     
+
+ 154244   2002 KL6                              4.6063     1.15                                             
+          Warner 2016o                   ? S    4.60869    0.65   24.05       0.08                            
+
+ 160091   2000 OL67                      B                                                                  
+          Marchis 2008a                  B S                                                                  
+
+ 160256   2002 PD149                     B                                                                  
+          Noll 2007d                     B F                                                                  
+
+ 162000   1990 OS                        B      2.536      0.22                                             
+          Ostro 2003b                    B S                                         21.                      
+
+ 162483   2000 PJ5                       ?      2.642      0.25                                             
+          Polishook 2008a                ? S    2.642      0.25                      14.16                    
+
+ 163693   Atira                          B      3.3980     0.36                                             
+          Rivera-Valentin 2017           B S                                         15.5        > 0.20  1.18 
+
+ 164121   2003 YT1                       B      2.343      0.27                                             
+          Nolan 2004                     B S    2.343      0.16                                               
+          Pravec 2006                    B S    2.343      0.27                      30.                      
+
+ 174567   Varda                          B      5.91       0.04                                             
+          Grundy 2015                    B F  138.01512                             138.01512            6.665
+
+ 175706   1996 FG3                       B      3.5942     0.2                                              
+          Mottola 2000                   B S    3.595      0.10                      16.15       > 0.33       
+          Pravec 2000b                   B S    3.5942     0.08                      16.135      > 0.31       
+          Scheirich 2009                 B S                                         16.14       > 0.28  3.1  
+          Scheirich 2015                 B S    3.595195                             16.1508                  
+
+ 182933   2002 GZ31                      B                                                                  
+          Noll 2007e                     B S                                                                  
+
+ 185851   2000 DP107                     B      2.7754     0.19                                             
+          Margot 2000                    B S                                         42.5                     
+          Ostro 2000b                    B S                                                                  
+          Pravec 2000e                   B S    2.7754     0.19                      42.24       > 0.37       
+          Margot 2002                    B S                                                                  
+          Scheirich 2009                 B S                                         42.09                    
+          Warner 2009d                   B S    2.77447    0.13                      42.201      > 0.35       
+          Warner 2011web                 B S    2.7745     0.18                      42.20                    
+          Naidu 2015a                    B S    2.7745                               42.131                   
+
+ 190166   2005 UP156                     B     40.542      1.35                                             
+          Behrend 2017web                ? F   40.6        0.53                      40.6                     
+          Warner 2017m                   B F   40.542                                40.542      = 0.8        
+          Warner 2017q                   B F   40.572                                40.572      = 0.8   3.0  
+          Benishek 2018b                 B F   40.71       1.05                      40.71                    
+
+ 190208   2006 AQ                        ?    182.         0.25                                             
+          Warner 2015g                   ? A  182.         0.25    2.621      0.08                            
+
+ 208996   2003 AZ84                      B     13.42       0.14                                             
+          Brown 2007                     B S                                                                  
+
+ 215442   2002 MQ3                       ?    473.         0.38                                             
+          Warner 2016m                   ? A  473.         0.38    2.6491     0.31                            
+
+ 218144   2002 RL66                      ?    587.         0.32                                             
+          Warner 2010m                   ? A  587.         0.25    2.49       0.04                            
+
+ 225088   2007 OR10                            22.40       0.04                                             
+          Marton 2016                    B S                                                                  
+
+ 226514   2003 UX34                      B                                                                  
+          Brozovic 2017a                 B S                                         15.         > 0.36  1.62 
+
+ 229762   2007 UK126                     B     11.05       0.03                                             
+          Grundy 2011web                 B S                                                                  
+
+ 231927   2001 DU30                            24.4        0.90                                             
+          Polishook 2012b                ? F   24.4        0.9                       24.4                     
+
+ 250162   2002 TY57                      B      2.5001     0.09                                             
+          Pravec 2019a                   B S    2.5001     0.09                      10.765      > 0.18       
+
+ 252793   2002 FW5                       ?     61.2        0.33                                             
+          Warner 2017i                   ? A   61.2        0.33    8.33       0.10                            
+
+ 274138   2008 FU6                              2.852      0.07                                             
+          Warner 2014k                   ? A    2.852      0.07                      12.70                    
+
+ 275809   2001 QY297                     B     11.68       0.49                                             
+          Grundy 2011                    B A                                       3314.6               31.2  
+
+ 276049   2002 CE26                      B      3.2930     0.07                                             
+          Pravec 2006                    B S    3.2930     0.06                      15.6        > 0.07       
+          Shepard 2006                   B S                                                                  
+          Warner 2015g                   B S    3.088      0.07                      16.26                    
+
+ 285263   1998 QE2                       B      4.749      0.20                                             
+          Brozovic 2013b                 B S                                                                  
+          Pravec 2013web                 ? S    4.749      0.19                      31.3                     
+
+ 300163   2006 VW139                     B   3240.                                                          
+          Agarwal 2017                   B F 3240.                                 3240.                      
+
+ 303712   2005 PR21                      B                                                                  
+          Noll 2008d                     B S                                                                  
+
+ 311066   2004 DC                        B      2.5709     0.25                                             
+          Taylor 2006                    B S                                                                  
+
+ 330825   2008 XE3                              4.409      0.22                                             
+          Hicks 2012g                    ? A    4.412      0.15                      29.71                    
+
+ 341520   Mors-Somnus                    B      9.28       0.24                                             
+          Sheppard 2011                  B A                                       23000.                      
+          Sheppard 2012a                 B A                                       23050.                      
+
+ 348400   2005 JF21                      M      2.4149     0.14                                             
+          Naidu 2015c                    M S                                                                  
+          Oey 2016b                      ? S    2.41437    0.11                      29.                      
+          Stephens 2016c                 B S    2.4157     0.07                      14.74       > 0.19       
+          Stephens 2016c                 B S    2.4131     0.05                      14.72       > 0.17       
+
+ 357439   2004 BL86                      B      2.6205     0.17                                             
+          Pollock 2015a                  B S    2.6205     0.17                      13.80       > 0.21       
+          Radar Team 2015a               B S                                                     = 0.22       
+
+ 363027   1998 ST27                      B      3.         0.1                                              
+          Benner 2001b                   B S                                                                  
+
+ 363599   2004 FG11                      B      4.         0.30                                             
+          Taylor 2012a                   B S                                         20.0                     
+          Warner 2014k                   ? F                                         22.                      
+          Dumitru 2018                   B S    7.021                                22.0                     
+
+ 374851   2006 VV2                       B      2.425      0.57                                             
+          Benner 2007b                   B S                                                                  
+          Vereshchagina 2011             B S                                          6.1                     
+
+ 385186   1994 AW1                       B      2.5193     0.17                                             
+          Mottola 1995a                  ? S                                         11.94                    
+          Pravec 1997a                   B S    2.5193     0.13                      22.40       > 0.53       
+          Birlan 2010                    B S    2.5193     0.17                      22.38       > 0.31       
+          Warner 2016c                   M S    2.5182     0.14    4.508      0.08   22.34       > 0.33       
+
+ 385446   Manwe                          B                                                                  
+          Noll 2006d                     B S                                                                  
+          Grundy 2011                    B A                                       2643.1               31.8  
+
+ 399307   1991 RJ2                       B      3.4807     0.09                                             
+          Warner 2015b                   B S    3.4807     0.09                      15.917      > 0.53       
+
+ 399774   2005 NB7                       B      3.4882     0.15                                             
+          Kusnirak 2008b                 B S    3.4833     0.13                      15.28       > 0.32       
+          Pravec 2008web                 B S    3.4882     0.13                      15.28                    
+          Shepard 2008d                  B S                                                                  
+          Vander Haagen 2008c            B S    3.472      0.15                      15.267                   
+
+ 442742   2012 WP3                       ?    221.         0.30                                             
+          Warner 2019g                   ? A  221.         0.30    8.19       0.03                            
+
+ 450649   2006 UY64                             2.824      0.09                                             
+          Warner 2016e                   ? A    2.824      0.09    4.800      0.05                            
+
+ 450894   2008 BT18                      B      2.5702     0.30                                             
+          Benner 2008a                   B S                                                     = 0.35       
+          Pravec 2008web                 ? S    2.5702     0.08                                               
+
+ 451397   2011 EZ78                      ?      3.1150     0.45                                             
+          Skiff 2011web                  ? A                                                                  
+
+ 452561   2005 AB                        B      3.3387     0.10                                             
+          Behrend 2005web                B S    3.3387     0.10                      17.93                    
+          Reddy 2005                     B S    3.339      0.07                      17.93       > 0.24       
+
+ 461852   2006 GY2                       B      2.25       0.1                                              
+          Benner 2006b                   B S                                                     = 0.20       
+          Benner 2011web                 B S                                                                  
+
+ 463380   2013 BY45                      ?    425.         0.49                                             
+          Warner 2016j                   ? A  425.         0.49   15.63       0.09                            
+
+ 464797   2004 FZ1                       ?     45.4        0.39                                             
+          Warner 2017c                   ? A   45.4        0.39   12.49       0.16                            
+
+ 465616   2009 EC                        ?     48.6        0.44                                             
+          Warner 2016m                   ? A   48.6        0.44    3.261      0.13                            
+
+ 469514   2003 QA91                      B                                                                  
+          Noll 2008a                     B A                                                                  
+
+ 469581   2003 YU35                             2.7909     0.09                                             
+          Warner 2017f                   ? S    2.7909     0.09   16.17       0.07                            
+
+ 469705   2005 EF298                            9.65       0.31                                             
+          Grundy 2011web                 B S                                                                  
+
+ 477162   2009 ES                        ?     28.0        0.33                                             
+          Warner 2017c                   ? A   28.0        0.33    2.988      0.09                            
+
+ 481532   2007 LE                        B      2.603      0.15                                             
+          Brozovic 2012                  B S                                         13.         = 0.36       
+          Hicks 2012b                    B S    2.603      0.15                      33.5                     
+
+ 485652   2011 WO41                             4.609      0.14                                             
+          Vaduvescu 2017                 ? S    5.73       0.14                      17.66       > 0.1        
+
+ 488453   1994 XD                        B      2.7365     0.08                                             
+          Benner 2005a                   B S                                                     = 0.25       
+          Warner 2013e                   B S    2.7365     0.08                      17.975      > 0.44       
+
+ 494658   2000 UG11                      B      4.44       0.10                                             
+          Nolan 2001                     B S                                                                  
+          Pravec 2006                    B S    4.44       0.10                      18.4        > 0.58       
+
+ 523604   2004 QB17                      ?     74.97       0.15                                             
+          Warner 2019g                   ? A   74.97       0.15    2.3509     0.03                            
+
+ 523624   2008 CT190                     B                                                                  
+          Noll 2018b                     B U                                                     >            
+
+ 523625   2008 DG17                      B      3.643      0.08                                             
+          Radar Team 2013                B S                                                                  
+
+ 523775   2014 YB35                      B      3.277      0.16                                             
+          Naidu 2015b                    B S                                                     = 0.45       
+
+          1994 CJ1                       B     30.         0.80                                             
+          Radar Team 2014b               B F                                                     = 0.95       
+          Warner 2015c                   B F   30.0        0.70                      30.0                     
+
+          1998 WV24                      B                                                                  
+          Benecchi 2008                  B S                                                                  
+
+          1998 WW31                      B                                                                  
+          Veillet 2001                   B S                                                                  
+
+          1999 OJ4                       B                                                                  
+          Stephens 2006d                 B U                                                                  
+
+          1999 RT214                     B                                                                  
+          Noll 2006b                     B S                                                                  
+
+          2000 CF105                     B                                                                  
+          Parker 2011                    B U                                                                  
+
+          2001 QC298                     B     12.         0.4                                              
+          Noll 2002c                     B S                                                                  
+
+          2001 QQ322                     B                                                                  
+          Noll 2008d                     B F                                                                  
+
+          2001 QW322                     ?                                                                  
+          Kavelaars 2001                 ? F                                                                  
+          Parker 2011                    B U                                                                  
+
+          2002 BM26                      B      2.7                                                         
+          Nolan 2002a                    B S    2.7                                              = 0.16       
+
+          2002 KK8                       B                                                                  
+          Nolan 2002b                    B S                                                     = 0.20       
+
+          2002 VF130                     B                                                                  
+          Noll 2009c                     B F                                                                  
+
+          2002 XH91                      B                                                                  
+          Noll 2009d                     B S                                                                  
+
+          2003 HG57                      B                                                                  
+          Grundy 2012web                 B S                                                                  
+
+          2003 QY90                      B      6.8        0.34                                             
+          Kern 2006                      B A    6.8        0.34    7.1        0.90               > 0.80       
+          Grundy 2011                    B A                                       7432.3               38.7  
+
+          2003 QR91                      B                                                                  
+          Noll 2008a                     B A                                                                  
+
+          2003 SS84                      B                 0.3                                              
+          Nolan 2003b                    B S                                                     = 0.50       
+
+          2003 UN284                     B                                                                  
+          Millis 2003                    B S                                                                  
+
+          2003 WU188                     B                                                                  
+          Noll 2008a                     B A                                                                  
+
+          2003 YS179                     B                                                                  
+          Grundy 2012web                 B A                                                                  
+
+          2004 KB19                      B                                                                  
+          Noll 2018a                     B U                                                                  
+
+          2004 PB108                     B                                                                  
+          Noll 2007a                     B F                                                                  
+
+          2004 RZ164                     ?      2.5561     0.11                                             
+          Pravec 2004web                 ? A    2.5561     0.11                                  > 0.45       
+
+          2005 EO304                     B                                                                  
+          Kern 2005                      B A                                                                  
+
+          2005 SF278                     B                                                                  
+          Benecchi 2018                  B U                                                                  
+
+          2005 YQ96                      B                                                                  
+          Naidu 2015e                    B S                                                                  
+
+          2006 SF369                     B                                                                  
+          Noll 2008b                     B A                                                                  
+
+          2007 DT103                     B      2.5845     0.16                                             
+          Pravec 2007web                 B S    2.5845     0.16                      15.32       > 0.47       
+
+          2013 FY27                      B                                                                  
+          Sheppard 2018c                 B U                                                             9.29 
+
+          2013 US3                       ?    450.         1.2                                              
+          Warner 2018m                   ? A  450.         1.2     2.4050     0.09                            
+
+          2013 WT44                      B      2.8849     0.05                                             
+          Brozovic 2014a                 B S                                                                  
+
+          2014 LQ25                      B                 0.48                                             
+          Sheppard 2018a                 B U                                                                  
+
+          2014 PL51                      ?    205.         0.43                                             
+          Warner 2015a                   ? A  205.         0.43    5.384      0.09                            
+
+          2014 WZ120                     B      3.361      0.05                                             
+          Warner 2015i                   B S    3.361      0.05                      13.665      > 0.36       
+
+          2015 QL14                      B                                                                  
+          Sheppard 2018b                 B U                                                                  
+
+          2015 TD144                     B                                                                  
+          Radar Team 2015web             B S                                                                  
+
+          2016 AZ8                       B      4.         0.15                                             
+          Virkki 2019                    B S    3.         0.10                      18.                      
+
+          2016 BU13                      ?     39.5        0.24                                             
+          Warner 2016m                   ? A   39.5        0.24    2.4499     0.11                            
+
+          2016 EV27                            61.         0.45                                             
+          Warner 2016j                   ? A   61.         0.45   18.0        0.13                            
+
+          2017 RV1                       B      3.4460     0.09                                             
+          Pravec 2017a                   B S    3.4460     0.09                      14.15       > 0.33       
+
+          2017 YE5                       B     20.6        0.33                                             
+          JPL 2018                       B F   22.0               22.0               22.0                     
+
+          2018 JE1                              1.86       0.44                                             
+          Warner 2018m                   ? S    1.86       0.44   29.8        0.59                            
+
+          2018 KE3                       ?     47.08       0.23                                             
+          Warner 2019b                   ? A   47.08       0.23    4.168      0.14                            
+
+          2018 RL                        ?    155.         1.00                                             
+          Warner 2019g                   ? A  155.         1.00    7.782      0.13                            
+
+          2018 TF3                       B      2.3498     0.18                                             
+          Pravec 2018b                   B S    2.3498     0.18   10.511      0.03   10.511      > 0.23       
+          Pravec 2018web                 B S    2.3498     0.18                      10.511      > 0.23       
+          Warner 2019f                   B S    2.4436     0.09                      10.51       > 0.28       
+
