@@ -63,7 +63,7 @@ The FALC reference
 * [Distribution of shape elongations of main belt asteroids derived from Pan-STARRS1 photometry](http://adsabs.harvard.edu/abs/2017arXiv170905640C) <br>
 * [Distribution of spin-axes longitudes and shape elongations of main-belt asteroids](http://adsabs.harvard.edu/abs/2016A%26A...596A..57C) <br>
 * [Shape and spin distributions of asteroid populations from brightness variation estimates and large databases](https://arxiv.org/abs/1703.07178)  <br>
-* [Spin rate distribution of small asteroids](http://adsabs.harvard.edu/abs/2008Icar..197..497P) <br>
+* [Pravec et al 2008 - Spin rate distribution of small asteroids](http://adsabs.harvard.edu/abs/2008Icar..197..497P) <br>
 * [Warner et al 2009 - The asteroid lightcurve database](http://adsabs.harvard.edu/abs/2009Icar..202..134W)  <br>
 
 
