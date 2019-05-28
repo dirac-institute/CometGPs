@@ -8,6 +8,7 @@ import george
 import numpy.random as rnd
 import multiprocessing as mp
 import matplotlib.pyplot as plt
+plt.switch_backend('agg')
 import time as tm
 import corner
 
