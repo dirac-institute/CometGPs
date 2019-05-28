@@ -6,6 +6,10 @@ import pandas as pd
 import scipy.stats
 import george
 import numpy.random as rnd
+import multiprocessing as mp
+import matplotlib.pyplot as plt
+import time as tm
+import corner
 
 def read_data(filename, whitespace=False, datadir="./"):
     """
@@ -21,16 +25,40 @@ def read_data(filename, whitespace=False, datadir="./"):
     return tsample, fsample, flux_err
 
 
+class DataManager:
+    def __init__(self, flux, time, flux_err):
+        self.flux = flux
+        kernel = np.exp(0) * george.kernels.ExpSine2Kernel(gamma = 1, log_period = 0)
+        self.gp = george.GP(kernel, fit_mean=True, mean=1)
+        self.gp.compute(time, flux_err)
+
+    def calculate_likelihood(self, params):
+        self.gp.set_parameter_vector(params)
+
+        try:
+            #gp.compute(time, flux_err)
+            lnlike = self.gp.log_likelihood(self.flux)
+        except np.linalg.LinAlgError:
+            lnlike = -1e25
+
+        return lnlike
+
 
 def main():
     # read in the data file
     time, flux, flux_err= read_data(filename, whitespace, datadir)
 
     # 1 : set up the prior distriubtion
-    prior = scipy.stats.norm(np.log(4./24.), (12./24.))
+    prior_mean = scipy.stats.norm(1, 0.5)
+    prior_log_amp = scipy.stats.norm(np.log(0.15), np.log(2))
+    prior_log_gamma = scipy.stats.norm(np.log(10), np.log(2))
+    prior_log_period = scipy.stats.norm(np.log(4./24.), (12./24.))
 
     # sample the prior pdf with nsample rvs
-    J = prior.rvs(nsamples)
+    J_mean = prior_mean.rvs(nsamples)
+    J_log_amp = prior_log_amp.rvs(nsamples)
+    J_log_gamma = prior_log_gamma.rvs(nsamples)
+    J_log_period= prior_log_period.rvs(nsamples)
 
     # set up initial parameter values
     mean_flux = np.mean(flux)
@@ -38,41 +66,64 @@ def main():
     gamma = 1
     log_period = 0
 
-    # set up the kernel parameters
-    kernel = np.exp(log_amp) * george.kernels.ExpSine2Kernel(gamma = gamma, log_period = log_period)
-    gp = george.GP(kernel, fit_mean=True, mean=mean_flux)
-    gp.compute(time, flux_err)
-
+    manager = DataManager(flux, time, flux_err)
     # 2: for each nsample, calculate the log likelihood
-    L_results = np.ones(nsamples)
 
-    for i in np.arange(nsamples):
+    start_time = tm.time()
+
+
+    pool = mp.Pool(processors)
+
+    L_results = []
+    # L_results = pool.map(manager.calculate_likelihood, [i for i in np.arange(nsamples)])
+    L_results = pool.map(manager.calculate_likelihood, zip(J_mean, J_log_amp, np.exp(J_log_gamma), J_log_period))
+    L_results = np.array(L_results)
+
+    pool.close()
+
+    end_time = tm.time()
+    print("\nTotal time taken : %.2f seconds" %(end_time - start_time))
+
+    #L_results = np.ones(nsamples)
+
+    #for i in np.arange(nsamples):
         # input the new sampled period value into the kernel
-        params = [mean_flux, log_amp, gamma, J[i]]
-        gp.set_parameter_vector(params)
+#        params = [mean_flux, log_amp, gamma, J[i]]
+#        gp.set_parameter_vector(params)
 
         # calculate the log likelihood
         # and check to see if it is a valid number
-        try:
-            gp.compute(time, flux_err)
-            lnlike = gp.log_likelihood(flux)
-        except np.linalg.LinAlgError:
-            lnlike = -1e25
+#        try:
+#            gp.compute(time, flux_err)
+#            lnlike = gp.log_likelihood(flux)
+#        except np.linalg.LinAlgError:
+#            lnlike = -1e25
 
         # add log likelihood value to results array
-        L_results[i] = lnlike
+#        L_results[i] = lnlike
 
     # 3 : Pick a random number r out of a uniform distribution between 0 and 1
     #     and compare the normalized (between 0 and 1) likelihood value to it
-    uu = rnd.uniform(size=len(L_results))
+
+
+    #uu = rnd.uniform(size=len(L_results))
 
     good_samples_bool = uu < np.exp(L_results-L_results.max())
     good_samples_idx, = np.where(good_samples_bool)
 
-    print(np.exp(J[good_samples_idx])*24.)
+    print("Number of samples passed : %s" %len(good_samples_idx))
+
+    # print(np.exp(J[good_samples_idx])*24.)
+
+    plt.hist(np.exp(J_log_period[good_samples_idx])*24)
+
 
     ### figure out what you want to return
 
+    data = np.array([np.exp(J_log_period[good_samples_idx])*24, np.exp(J_log_gamma[good_samples_idx]), np.exp(J_log_amp[good_samples_idx]), J_mean[good_samples_idx]]).T
+    print(data)
+    figure = corner.corner(data, labels=["period", 'gamma', 'amp', 'mean'])#, J_log_gamma[good_samples_idx], J_mean[good_samples_idx])
+    plt.savefig(filename + "_rej_sampler_posterior.pdf", format="pdf")
     return
 
 
@@ -118,7 +169,10 @@ if __name__ == "__main__":
                         help="The number of j samples you want to retreive from the prior pdf.")
     parser.add_argument('-ws', '--whitespace', action="store_true", dest="whitespace", required=False, default=False,
                         help="The delimeter for the input file, assumed to be whitespace.")
-
+    parser.add_argument('-p', '--processors', action="store", dest="processors", required=False, type=int, default=1,
+                        help="The number of processors you want to use for multiprocessing.")
+    parser.add_argument('-u', '--uu', action="store", dest="uu", required=False, type=float, default=0.1,
+                        help="The limit for calculating what constitutes a good likelihood.")
 
     clargs = parser.parse_args()
 
@@ -126,6 +180,8 @@ if __name__ == "__main__":
     datadir = clargs.datadir
     nsamples = clargs.nsamples
     whitespace = clargs.whitespace
+    processors = clargs.processors
+    uu = clargs.uu
 
 
     main()
