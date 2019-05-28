@@ -115,7 +115,7 @@ def main():
 
     # print(np.exp(J[good_samples_idx])*24.)
 
-    plt.hist(np.exp(J_log_period[good_samples_idx])*24)
+    #plt.hist(np.exp(J_log_period[good_samples_idx])*24)
 
 
     ### figure out what you want to return
