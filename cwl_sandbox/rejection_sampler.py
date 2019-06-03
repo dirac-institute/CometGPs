@@ -109,7 +109,7 @@ def main():
 
     #uu = rnd.uniform(size=len(L_results))
 
-    good_samples_bool = uu < np.exp(L_results-L_results.max())
+    good_samples_bool = uu < (L_results-L_results.max())
     good_samples_idx, = np.where(good_samples_bool)
 
     print("Number of samples passed : %s" %len(good_samples_idx))
