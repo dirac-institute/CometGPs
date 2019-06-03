@@ -117,7 +117,7 @@ if __name__ == "__main__":
                         help="The delimeter for the input file, assumed to be whitespace.")
     parser.add_argument('-n', '--nterms', action="store", dest="nterms", required=False, type=int, default=1,
                         help='The number of harmonics to plot apart from the true period.')
-    parser.add_argument('-lsp', '--lsp', action="store_true", dest="lsp", required=False, default=False,
+    parser.add_argument('-lsp', '--lsp', action="store_true", dest="lsp", required=False, default=True,
                         help="Generates a Lomb-Scargle periodogram.")
 
     clargs = parser.parse_args()

@@ -123,8 +123,33 @@ def main():
 
     data = np.array([np.exp(J_log_period[good_samples_idx])*24, np.exp(J_log_gamma[good_samples_idx]), np.exp(J_log_amp[good_samples_idx]), J_mean[good_samples_idx]]).T
     print(data)
+
+    import datetime
+    now = datetime.datetime.now()
+
+    f = open(filename + "_run_report.txt", "w+")
+
+    f.write(str(now) + "\n" +
+            filename + "\n"
+            "nsamples: %d \n" % nsamples +
+
+            #filename "\n"
+            #"nsamples %d \n" % nsamples
+            "processors: %d \n" % processors +
+            "time: %.2f sec \n" % float(end_time - start_time) +
+            "uu: %.2f \n" %uu +
+            "passed: %d \n\n" %len(good_samples_idx) +
+            str(data))
+    f.close()
+
+    f = open(filename + "_results.txt", "w+")
+
+    f.write(str(data))
+
+    f.close()
+
     figure = corner.corner(data, labels=["period", 'gamma', 'amp', 'mean'])#, J_log_gamma[good_samples_idx], J_mean[good_samples_idx])
-    plt.savefig(filename + "_rej_sampler_posterior.pdf", format="pdf")
+    plt.savefig(filename + "_rej_sampler_posterior.pdf" + now, format="pdf")
     return
 
 
