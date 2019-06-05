@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 import time as tm
 import corner
+import datetime
+
 
 def read_data(filename, whitespace=False, datadir="./"):
     """
@@ -107,9 +109,9 @@ def main():
     #     and compare the normalized (between 0 and 1) likelihood value to it
 
 
-    #uu = rnd.uniform(size=len(L_results))
+    uu = rnd.uniform(size=len(L_results))
 
-    good_samples_bool = uu < (L_results-L_results.max())
+    good_samples_bool = uu < np.exp(L_results-L_results.max())
     good_samples_idx, = np.where(good_samples_bool)
 
     print("Number of samples passed : %s" %len(good_samples_idx))
@@ -121,13 +123,18 @@ def main():
 
     ### figure out what you want to return
 
-    data = np.array([np.exp(J_log_period[good_samples_idx])*24, np.exp(J_log_gamma[good_samples_idx]), np.exp(J_log_amp[good_samples_idx]), J_mean[good_samples_idx]]).T
+    now = datetime.datetime.now().strftime("%Y-%m-%d-%Hh%Mm")
+
+    data = np.array([np.exp(J_log_period[good_samples_idx])*24, np.exp(J_log_gamma[good_samples_idx]), np.exp(J_log_amp[good_samples_idx]), J_mean[good_samples_idx], L_results[good_samples_idx]]).T
     print(data)
 
-    import datetime
-    now = datetime.datetime.now()
+    np.savetxt(filename + "results_%s.txt" %(now), data)
 
-    f = open(filename + "_run_report.txt", "w+")
+    figure = corner.corner(data, labels=["period", 'gamma', 'amp', 'mean'])#, J_log_gamma[good_samples_idx], J_mean[good_samples_idx])
+    plt.savefig(filename + "_rej_sampler_posterior_%s.pdf" %now, format="pdf")
+
+
+    f = open(filename + "_run_reports_%s.txt" %now, "w+")
 
     f.write(str(now) + "\n" +
             filename + "\n"
@@ -142,14 +149,7 @@ def main():
             str(data))
     f.close()
 
-    f = open(filename + "_results.txt", "w+")
 
-    f.write(str(data))
-
-    f.close()
-
-    figure = corner.corner(data, labels=["period", 'gamma', 'amp', 'mean'])#, J_log_gamma[good_samples_idx], J_mean[good_samples_idx])
-    plt.savefig(filename + "_rej_sampler_posterior.pdf" + now, format="pdf")
     return
 
 
