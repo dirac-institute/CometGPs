@@ -109,7 +109,6 @@ def main():
     #plt.hist(np.exp(J_log_period[good_samples_idx])*24)
 
 
-    ### figure out what you want to return
 
     now = datetime.datetime.now().strftime("%Y-%m-%d-%Hh%Mm")
 
@@ -117,9 +116,6 @@ def main():
     print(data)
 
     np.savetxt(filename + "results_%s.txt" %(now), data)
-
-    figure = corner.corner(data, labels=["period", 'gamma', 'amp', 'mean'])#, J_log_gamma[good_samples_idx], J_mean[good_samples_idx])
-    plt.savefig(filename + "_rej_sampler_posterior_%s.pdf" %now, format="pdf")
 
 
     f = open(filename + "_run_reports_%s.txt" %now, "w+")
@@ -132,11 +128,12 @@ def main():
             #"nsamples %d \n" % nsamples
             "processors: %d \n" % processors +
             "time: %.2f sec \n" % float(end_time - start_time) +
-            "uu: %.2f \n" %uu +
             "passed: %d \n\n" %sum(good_samples_bool) +
             str(data))
     f.close()
 
+    figure = corner.corner(data, labels=["period", 'gamma', 'amp', 'mean'])#, J_log_gamma[good_samples_idx], J_mean[good_samples_idx])
+    plt.savefig(filename + "_rej_sampler_posterior_%s.pdf" %now, format="pdf")
 
     return
 

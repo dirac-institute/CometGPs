@@ -1,0 +1,10 @@
+2019-06-07-10h47m
+../data/simulation_results_new/221/221_lc_49627_to_49787.txt_sampled_ztf-lsst_60days.txt
+nsamples: 1000 
+processors: 1 
+time: 0.53 sec 
+uu: 0.10 
+passed: 1 
+
+[[ 3.47833685e+00  2.19758003e+01  1.93628875e-01  6.71302520e-01
+  -2.76384947e+02]]
