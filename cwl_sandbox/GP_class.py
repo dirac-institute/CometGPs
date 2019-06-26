@@ -159,7 +159,7 @@ def prior(params):
 
     p_mean = scipy.stats.norm(1, 0.5).logpdf(params[0])
     p_log_amp = scipy.stats.norm(np.log(0.15), np.log(2)).logpdf(params[1])
-    p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(params[2])
+    p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
     #print(params[2])
     #print("   " + str(p_log_gamma))
     p_log_period = scipy.stats.norm(np.log(4./24.), (12./24.)).logpdf(params[3])
