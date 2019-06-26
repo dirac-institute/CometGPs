@@ -71,6 +71,7 @@ class GPFit():
         #run steps for a burn-in
         state = sampler.run_mcmc(self.walker_params, burn_in)
         sampler.reset()
+        print(state[0])
         sampler.run_mcmc(state[0], niter)
         self.sampler = sampler
 
