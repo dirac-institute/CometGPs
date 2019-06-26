@@ -42,7 +42,7 @@ class GPFit():
             p0 = np.random.multivariate_normal(mean=p_start, cov=cov_matrix, size=(nwalkers))
 
             # equally distributed starting period values
-            p0[:,3] = np.log(np.linspace(2,12,nwalkers)/24.)
+            p0[:,3] = np.random.normal(size=nwalkers)*0.5 + np.log(4/24.)
 
             self.walker_params = p0
 
@@ -62,13 +62,16 @@ class GPFit():
 
         return
 
-    def run_emcee(self, nwalkers, niter, threads=1):
+    def run_emcee(self, nwalkers, niter, threads, burn_in):
         """Runs emcee's mcmc code."""
 
         ndim = 4
         sampler = emcee.EnsembleSampler(nwalkers, ndim, post_lnlikelihood, args=[self.gp, self.time, self.flux, self.flux_err], threads=threads)
 
-        mcmc_sampling = sampler.run_mcmc(self.walker_params, niter)
+        #run steps for a burn-in
+        state = sampler.run_mcmc(self.walker_params, burn_in)
+        sampler.reset()
+        sampler.run_mcmc(state[0], niter)
         self.sampler = sampler
 
         return sampler
@@ -155,7 +158,9 @@ def prior(params):
 
     p_mean = scipy.stats.norm(1, 0.5).logpdf(params[0])
     p_log_amp = scipy.stats.norm(np.log(0.15), np.log(2)).logpdf(params[1])
-    p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
+    p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(params[2])
+    #print(params[2])
+    #print("   " + str(p_log_gamma))
     p_log_period = scipy.stats.norm(np.log(4./24.), (12./24.)).logpdf(params[3])
     # log period (period between 0.5hrs and 36hrs)
     #p_log_period = scipy.stats.uniform(np.log(0.5/24), -(np.log(2/3)+np.log(0.5/24))).logpdf((params[3]))

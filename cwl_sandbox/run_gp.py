@@ -1,220 +1,73 @@
 
-import numpy as np
-import numpy.linalg
-import scipy.stats
-from scipy.signal import argrelextrema
-import pandas as pd
+import os
+os.environ["MKL_NUM_THREADS"] = "3"
 
 import argparse
 import textwrap
 
-import emcee
-import george
+import numpy as np
+import pandas as pd
+import h5py
 
-from plotting import plot_lightcurve, plot_folded_lightcurve, plot_mcmc_sampling_results, plot_steps
-import matplotlib.pyplot as plt
+from plotting import plot_mcmc_sampling_results
+from GP_class import GPFit
 
-def prior(params):
-
-    """
-    Calculated the log of the prior values, given parameter values.
-
-    Parameters
-    ----------
-    params : list
-        List of all kernel parameters
-
-    param[0] : float
-        mean (between 0 and 2)
-
-    param[1] : float
-        log amplitude (between -10 and 10)
-
-    param[2] : float
-        gamma (log gamma between 0.1 and 40)
-
-    param[3] : float
-        log period (period between 1h and 24hrs)
-
-    Returns
-    -------
-    sum_log_prior : int
-        sum of all log priors (-inf if a parameter is out of range)
-
-    """
-
-    p_mean = scipy.stats.norm(1, 0.5).logpdf(params[0])
-    p_log_amp = scipy.stats.norm(np.log(0.15), np.log(2)).logpdf(params[1])
-    p_log_gamma = scipy.stats.norm(np.log(10), np.log(2)).logpdf(np.log(params[2]))
-    p_log_period = scipy.stats.norm(np.log(4./24.), (12./24.)).logpdf(params[3])
-
-    sum_log_prior =  p_mean + p_log_amp + p_log_gamma + p_log_period
-
-    if np.isnan(sum_log_prior) == True:
-        return -np.inf
-
-    return sum_log_prior
-
-
-def logl(params, gp, tsample, fsample, flux_err):
-     # compute lnlikelihood based on given parameters
-     gp.set_parameter_vector(params)
-
-
-     try:
-         gp.compute(tsample, flux_err)
-         lnlike = gp.lnlikelihood(fsample)
-     except np.linalg.LinAlgError:
-         lnlike = -1e25
-
-     return lnlike
-
-
-def post_lnlikelihood(params, gp, tsample, fsample, flux_err):
-
-    """
-    Calculates the posterior likelihood from the log prior and
-    log likelihood.
-
-    Parameters
-    ----------
-    params : list
-        List of all kernel parameters
-
-    Returns
-    -------
-    ln_likelihood : float
-        The posterior, unless the posterior is infinite, in which case,
-        -1e25 will be returned instead.
-
-    """
-
-    # calculate the log_prior
-    log_prior = prior(params)
-
-    # return -inf if parameters are outside the priors
-    if np.isneginf(log_prior) == True:
-        return -np.inf
-
-    try:
-        lnlike = logl(params, gp, tsample, fsample, flux_err)
-        ln_likelihood = lnlike+log_prior
-
-    except np.linalg.linalg.LinAlgError:
-        ln_likelihood = -1e25
-
-    return ln_likelihood if np.isfinite(ln_likelihood) else -1e25
-
-
-def read_data(filename, datadir="./"):
+def read_data(filename, whitespace=False, datadir="./"):
     """
     Read in light curve data from asteroid.
     """
 
-    data  = pd.read_csv(datadir+filename, header=None, delim_whitespace=False)
+    data  = pd.read_csv(datadir+filename, header=None, delim_whitespace=whitespace)
 
     tsample = data[0]
     fsample = data[1]
     flux_err = data[2]
-    data_pts = len(tsample)
 
-    return tsample, fsample, flux_err, data_pts
+    return tsample, fsample, flux_err
 
-def run_gp(filename, datadir="./", nchain=100, niter=100, gamma=1, cov_scale=1, threads=1):
-    tsample, fsample, flux_err, data_pts = read_data(filename, datadir)
+def write_data(filename, sampler, asteroid, nwalkers, niter):
+    """
+    Write the sampler results as an HDF5 file,
+    with all the other info you might want.
+    """
 
-    #get l-s best period estimate
-    from lombscargle import make_lsp
-    from astropy.stats import LombScargle
+    with h5py.File(filename+".hdf5", "w") as f:
+        f.create_dataset("chain", data=sampler.chain)
 
-    freq, power = make_lsp(tsample, fsample, flux_err, p_max=5.0)
+        if asteroid.true_period == None:
+            f.attrs['true_period'] = 0
+        else:
+            f.attrs['true_period'] = asteroid.true_period
 
-    # determine the indices of local power maxima
-    best_idx = argrelextrema(power, np.greater)
-
-    # sort these indices based on actual power value
-    # reverse list so max is read first
-    indices = np.argsort(power[best_idx[0]])[::-1]
-
-    # sort our original indices based on the new
-    # power-sorted indices
-    best_idx = (best_idx[0]).T[indices]
-    best_freqs = freq[best_idx].T
-
-    new_freq = best_freqs[0]
-    new_period = 1./new_freq
-    new_log_period = np.log(1./new_freq)
-
-    ###change for examples
-    #####delete for final product
-    true_period = 10.443 #3.603957
-
-    fig, ax = plt.subplots(1,1, figsize=(6,5))
-    fig.set_tight_layout('tight')
-    ax.plot((1./freq)*24.,power)
-    ax.set_xlabel('Period')
-    ax.vlines(new_period*24., 0, 1, colors='orange', linestyles='--',
-              label = 'Best fit : ' + str(round(new_period*24., 5)))
-    ax.vlines(true_period, 0, 1, colors='blue', linestyles='--',
-              label = 'True fit : ' + str(true_period))
-    ax.set_xlim([0,24])
-    ax.legend()
-    namestr=filename + "_plots"
-    plt.savefig(namestr + "_lsp.pdf", format="pdf")
-    #####
-
-
-    ndim = 4
-    nwalkers = nchain
-
-    # initialize walker parameters
-    gp_mean = np.mean(fsample)
-    log_amp = np.log(fsample.max()-fsample.min())
-    gamma = 1
-    log_period = new_log_period
-
-    params = [np.mean(fsample), log_amp, gamma, log_period]
-
-
-    # set up gp kernel
-    kernel = np.exp(log_amp) * george.kernels.ExpSine2Kernel(gamma = gamma, log_period = log_period)
-    gp = george.GP(kernel, fit_mean=True, mean=gp_mean)
-    gp.compute(tsample, flux_err)
-
-
-    p_start = np.array(params)/100.
-    cov_matrix = np.sqrt(np.diag(p_start)**2)
-    p0 = np.random.multivariate_normal(mean=params, cov=cov_matrix, size=(nwalkers))
-
-    # equally distributed starting period values
-    # overwrites guess from l-s previously
-    x = np.log(np.linspace(2,12,nwalkers)/24.)
-    p0[:,3] = x
-
-
-    sampler = emcee.EnsembleSampler(nwalkers, ndim, post_lnlikelihood, args=[gp, tsample, fsample, flux_err], threads=threads)
-
-    mcmc_sampling = sampler.run_mcmc(p0, niter)
-
-    def save_chain(file_name, sampler, results):
-        header = str(sampler.chain.shape)
-        np.savetxt(file_name, sampler.flatchain, header=header)
-        return
-
-    #save_chain(filename + "_results.txt", sampler, results)
-
-    ###AVOID HAVING TO USE pd SO YOU DON'T HAVE TO CHANGE THIS TO A NP.ARRAY
-    tsample = np.array(tsample)
-
-    plot_mcmc_sampling_results(tsample, fsample, flux_err, gp, sampler, namestr=filename + "_plots", true_period=true_period)
-
-
-    return
-
-
+        f.attrs['walkers'] = nwalkers
+        f.attrs['iterations'] = niter
+        f.attrs['data_pts'] = asteroid.data_pts
+        f.attrs['acceptance_faction'] = sampler.acceptance_fraction
+        f.create_dataset("time", data= asteroid.time)
+        f.create_dataset("flux", data = asteroid.flux)
+        f.create_dataset("flux_err", data = asteroid.flux_err)
 
 def main():
-    run_gp(filename, datadir, nchain, niter, gamma, cov_scale, threads)
+    # read in the data file
+    time, flux, flux_err= read_data(filename, whitespace, datadir)
+
+    asteroid = GPFit(time, flux, flux_err)
+    asteroid.set_params()
+    asteroid.set_walker_param_matrix(nwalkers)
+    asteroid.set_gp_kernel()
+
+    sampler = asteroid.run_emcee(niter=niter, nwalkers=nwalkers, burn_in=burn_in, threads=threads)
+
+    write_data(filename, sampler, asteroid, nwalkers, niter)
+
+    #plot_mcmc_sampling_results(np.array(asteroid.time), asteroid.flux, asteroid.flux_err,
+#                               asteroid.gp, sampler, namestr=filename + "_plots",
+#                               true_period=true_period)
+
+    #if lsp:
+    #    asteroid.run_lsp(filename, true_period, nterms)
+
+
 
     return
 
@@ -246,7 +99,7 @@ if __name__ == "__main__":
 
     Run on example data (from example data directory) with more walkers, steps, etc.
 
-            $> python ../code/run_gp.py -f "2001SC170.csv" -d "./" -c 50 -i 5000 -g 5 -c 0.5 -t 2
+            $> python ../code/run_gp.py -f "2001SC170.csv" -d "./" -c 50 -i 5000 -c 0.5 -t 2
 
 
     """))
@@ -256,25 +109,34 @@ if __name__ == "__main__":
                         help="Data file with observed time (in unit days) and flux.")
     parser.add_argument('-d', '--datadir', action="store", dest="datadir", required=False, default="./",
                         help="Directory with the data (default: current directory).")
-    parser.add_argument('-c', '--nchain', action="store", dest="nchain", required=False, type=int, default=100,
+    parser.add_argument('-w', '--nwalkers', action="store", dest="nwalkers", required=False, type=int, default=100,
                         help="The number of walkers/chains for the MCMC run (default: 100).")
-    parser.add_argument('-i', '--niter', action="store", dest="niter", required=False, type=int, default=100,
-                        help="The number of iterations per chain/walker in the MCC run (default: 100).")
-####    parser.add_argument('-g', '--gamma', action="store", dest="gamma", required=False, type=int, default=1,
-                        help="The length scale of variations within a single period (default: 1).")
-    parser.add_argument('-s', '--cov_scale', action="store", dest="cov_scale", required=False, type=int, default=1,
-                        help="Determines the scatter of the multivariate distribution (default: 1).")
+    parser.add_argument('-i', '--niter', action="store", dest="niter", required=False, type=int, default=1000,
+                        help="The number of iterations per chain/walker in the MCMC run (default: 1000).")
     parser.add_argument('-t', '--threads', action="store", dest="threads", required=False, type=int, default=1,
                         help="The numer of threads used for computing the posterior (default: 1).")
+    parser.add_argument('-p', '--period', action="store", dest="period", required=False, type=float, default=None,
+                        help="The true period of an asteroid in hours.")
+    parser.add_argument('-ws', '--whitespace', action="store_true", dest="whitespace", required=False, default=False,
+                        help="The delimeter for the input file, assumed to be whitespace.")
+    parser.add_argument('-n', '--nterms', action="store", dest="nterms", required=False, type=int, default=1,
+                        help='The number of harmonics to plot apart from the true period.')
+    parser.add_argument('-lsp', '--lsp', action="store_true", dest="lsp", required=False, default=True,
+                        help="Generates a Lomb-Scargle periodogram.")
+    parser.add_argument('-b', '--burnin', action="store", dest="burn_in", required=False, type=int, default=2000,
+                        help="The number of iterations to remove from the head of the MCMC chain walkers.")
 
     clargs = parser.parse_args()
 
     filename = clargs.filename
     datadir = clargs.datadir
-    nchain = clargs.nchain
+    nwalkers = clargs.nwalkers
     niter = clargs.niter
-    gamma = clargs.gamma
-    cov_scale = clargs.cov_scale
     threads = clargs.threads
+    true_period = clargs.period
+    whitespace = clargs.whitespace
+    nterms = clargs.nterms
+    lsp = clargs.lsp
+    burn_in = clargs.burn_in
 
     main()
