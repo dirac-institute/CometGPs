@@ -42,7 +42,7 @@ def write_data(filename, sampler, asteroid, nwalkers, niter):
         f.attrs['walkers'] = nwalkers
         f.attrs['iterations'] = niter
         f.attrs['data_pts'] = asteroid.data_pts
-        f.attrs['acceptance_faction'] = sampler.acceptance_fraction
+        f.attrs['acceptance_fraction'] = sampler.acceptance_fraction
         f.create_dataset("time", data= asteroid.time)
         f.create_dataset("flux", data = asteroid.flux)
         f.create_dataset("flux_err", data = asteroid.flux_err)
