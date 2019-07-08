@@ -1,6 +1,0 @@
-2019-04-16 14:31:58 
-filename: test 
-nwalkers: 100 
-iterations: 999 
-data points: 53 
-true period: 10
