@@ -25,7 +25,7 @@ def read_data(filename, whitespace=False, datadir="./"):
 
     return tsample, fsample, flux_err
 
-def write_data(filename, sampler, asteroid, nwalkers, niter):
+def write_data(filename, sampler, asteroid, nwalkers, niter, burn_in):
     """
     Write the sampler results as an HDF5 file,
     with all the other info you might want.
@@ -43,6 +43,7 @@ def write_data(filename, sampler, asteroid, nwalkers, niter):
         f.attrs['iterations'] = niter
         f.attrs['data_pts'] = asteroid.data_pts
         f.attrs['acceptance_fraction'] = sampler.acceptance_fraction
+        f.attrs['burn_in'] = burn_in
         f.create_dataset("time", data= asteroid.time)
         f.create_dataset("flux", data = asteroid.flux)
         f.create_dataset("flux_err", data = asteroid.flux_err)
@@ -58,7 +59,7 @@ def main():
 
     sampler = asteroid.run_emcee(niter=niter, nwalkers=nwalkers, burn_in=burn_in, threads=threads)
 
-    write_data(filename, sampler, asteroid, nwalkers, niter)
+    write_data(filename, sampler, asteroid, nwalkers, niter, burn_in)
 
     #plot_mcmc_sampling_results(np.array(asteroid.time), asteroid.flux, asteroid.flux_err,
 #                               asteroid.gp, sampler, namestr=filename + "_plots",
@@ -123,7 +124,7 @@ if __name__ == "__main__":
                         help='The number of harmonics to plot apart from the true period.')
     parser.add_argument('-lsp', '--lsp', action="store_true", dest="lsp", required=False, default=True,
                         help="Generates a Lomb-Scargle periodogram.")
-    parser.add_argument('-b', '--burnin', action="store", dest="burn_in", required=False, type=int, default=2000,
+    parser.add_argument('-b', '--burn_in', action="store", dest="burn_in", required=False, type=int, default=2000,
                         help="The number of iterations to remove from the head of the MCMC chain walkers.")
 
     clargs = parser.parse_args()
