@@ -1,0 +1,4 @@
+Total SSO alerts 4476303
+Number of different objects 243737
+Number of nights included 225
+Found 29771 objects with more than 40 observations
