@@ -475,13 +475,13 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
                 c=colours[1], label="True Lightcurve")
 
         for i, x in enumerate(idx[:-1]):
-            ax.plot(true_phase[istart:iend], true_flux[istart:iend], alpha=0.3, c=colours[1])
+            ax.plot(true_phase[istart:iend], true_flux[istart:iend], alpha=0.3, c=colours[1], label="")
             istart = x+1
             iend = idx[i+1]+1
 
         # last plot
         istart = idx[-1]+1
-        ax.plot(true_phase[istart:], true_flux[istart:], alpha=0.3, c=colours[1])
+        ax.plot(true_phase[istart:], true_flux[istart:], alpha=0.3, c=colours[1], label="")
 
     if models:
 
@@ -516,18 +516,18 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
 
             else:
                 ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1,
-                        c=colours[2])
+                        c=colours[2], label="")
 
             for j, x in enumerate(idx[:-1]):
                 ax.plot(m_phase[istart:iend], m[istart:iend], alpha=0.1,
-                        c=colours[2])
+                        c=colours[2], label="")
 
                 istart = x+1
                 iend = idx[j+1]+1
 
             # last plot
             istart = idx[-1]+1
-            ax.plot(m_phase[istart:], m[istart:], alpha=0.1, c=colours[2])
+            ax.plot(m_phase[istart:], m[istart:], alpha=0.1, c=colours[2], label="")
 
     if legend:
         ax.legend()
