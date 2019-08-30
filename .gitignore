@@ -1,0 +1,6 @@
+.DS_Store
+code/__pycache__/*
+cwl_sandbox/__pycache/*
+__pycache__
+cwl_sandbox/.ipynb_checkpoints/*
+*checkpoint.ipynb
