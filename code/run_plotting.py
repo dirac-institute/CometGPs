@@ -47,7 +47,7 @@ def set_kernel(time, flux, flux_err):
 
     return gp
 
-def calc_prob(data, period=None, p_range=None, bins=100000, width=0.00035, plot=False):
+def calc_prob(data, period=None, p_range=None, bins=100000, width=0.1, plot=False):
     """
     Calculated the probability of an interval of periods.
 
@@ -540,7 +540,6 @@ def plot_folded_lightcurve(time, flux, period, flux_err=None, models=None, true_
         ax.set_xlim(0, 1)
     return ax
 
-# still need to figure out why the heck 'flux' is printed when true lightcurve is displayed
 def plot_posterior(data, true_period=None, legend=True, colours=None):
     """
     Plot a histogram of the posterior distribution, showing the full distribution,
@@ -676,7 +675,7 @@ def make_summary_plots(filename, true_lightcurve=None, true_period=None):
 
 
         ###   LOMB-SCARGLE   ###
-        lsp = run_lsp(time, flux, flux_err, data, true_period, true_lightcurve)
+        lsp = run_lsp(time, flux, flux_err, data, true_period, true_lightcurve, plot=True)
         plt.savefig(filename + "_lsp.pdf", format="pdf")
 
 
