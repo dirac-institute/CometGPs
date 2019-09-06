@@ -247,7 +247,7 @@ def plot_trace(data, iterations, colours=None):
 
     return fig
 
-def run_lsp(time, flux, flux_err=None, data=None, true_period=None, true_lightcurve=None, use_radians=False, legend=True, colours=None, plot=False):
+def run_lsp(time, flux, flux_err=None, data=None, true_period=0, true_lightcurve=None, use_radians=False, legend=True, colours=None, plot=False):
     """
     Determine the Lomb-Scargle Periodogram (nterms = 1-3) for the light curve data
     and plot the frequencies as well as the a folded light curve using
@@ -349,7 +349,7 @@ def run_lsp(time, flux, flux_err=None, data=None, true_period=None, true_lightcu
             ax[i][0].vlines(new_period*24., 0, y_max, colors=colours[2], linestyles='--',
                       label = 'Best fit : %.5f' %(new_period*24.))
 
-            if true_period != 0:
+            if true_period:
                 ax[i][0].vlines(true_period, 0,  y_max, colors=colours[1], linestyles='--',
                       label = 'True fit : %.5f' %true_period)
 
@@ -586,7 +586,7 @@ def plot_posterior(data, true_period=None, legend=True, colours=None):
 
     ax.set_xlabel("Period in hours")
     ax.set_ylabel("Probability")
-    ax.set_ylim(ylim)
+    ax.set_ylim(ax.get_ylim())
     ax.set_title("Posteriod Period Distibution")
 
     # plot the 5th-95th percentile
@@ -602,7 +602,7 @@ def plot_posterior(data, true_period=None, legend=True, colours=None):
     bx.set_title("5th - 95th Percentile")
     bx.set_xlabel("Period in hours")
     bx.set_ylabel("Probability")
-    bx.set_ylim(ylim)
+    bx.set_ylim(bx.get_ylim())
 
     # zoom in on the part of the graph that has the highest probability
     prob, edges = calc_prob(data, true_period, plot=False)
