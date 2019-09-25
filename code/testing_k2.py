@@ -114,80 +114,89 @@ def post_lnlikelihood(params, gp, tsample, fsample, flux_err):
 def main():
 
     #read in the data
-
-    #h5py_files = list()
     obs_files = list()
 
     import glob, os
 
-    #for file in glob.glob("../data/paper_plots/ztf_lightcurves/*.hdf5"):
-    #    h5py_files.append(file)
-
-    for file in glob.glob("../data/paper_plots/ztf_lightcurves/*.txt"):
+    for file in glob.glob("../data/paper_plots/ztf_lightcurves/*k2.txt"):
         obs_files.append(file)
+        
+    print(obs_files)
+        
+    for i in np.arange(len(obs_files)):
+        print(obs_files[i])
 
-    time, flux, flux_err = run_gp.read_data(filename, whitespace=True)
+        time, flux, flux_err = run_gp.read_data(obs_files[i], whitespace=True)
 
-    # Calculates initial gp parameter values based on data
+        # Calculates initial gp parameter values based on data
 
-    mean_flux = np.mean(flux)
+        mean_flux = np.mean(flux)
 
-    # k1
-    log_amp_k1 = np.log(flux.max()-flux.min())
-    metric = 5**2
+        # k1
+        log_amp_k1 = np.log(flux.max()-flux.min())
+        metric = 5**2
 
-    # k2
-    log_amp_k2 = np.log(0.5)
-    gamma = 10
-    log_period = np.log(6/24.)
+        # k2
+        log_amp_k2 = np.log(0.5)
+        gamma = 10
+        log_period = np.log(6/24.)
 
-    parameters = {"mean": mean_flux, "log_amp_k1": log_amp_k1, "metric": metric, "log_amp_k2": log_amp_k2, "gamma": gamma,"log_period": log_period}
-    params = parameters
+        parameters = {"mean": mean_flux, "log_amp_k1": log_amp_k1, "metric": metric, "log_amp_k2": log_amp_k2, "gamma": gamma,"log_period": log_period}
+        params = parameters
 
-    # Creates a matrix of starting parameters for every walker.
-    p_start = np.array(list(params.values()))
-    cov_matrix = np.sqrt(np.diag(p_start)**2)
-    p0 = np.random.multivariate_normal(mean=p_start, cov=cov_matrix, size=(nwalkers))
+        # Creates a matrix of starting parameters for every walker.
+        p_start = np.array(list(params.values()))
+        cov_matrix = np.sqrt(np.diag(p_start)**2)
+        p0 = np.random.multivariate_normal(mean=p_start, cov=cov_matrix, size=(nwalkers))
 
-    # equally distributed starting period values for
-    p0[:,-1] = np.random.normal(size=nwalkers)*0.5 + np.log(4/24.)
+        # equally distributed starting period values for
+        p0[:,-1] = np.random.normal(size=nwalkers)*0.5 + np.log(4/24.)
 
-    walker_params = p0
+        walker_params = p0
 
-    """Calculates initial gp parameter values based on data."""
-    k1 = np.mean(flux) * george.kernels.ExpSquaredKernel(metric=10**2)
-    k2 = 0.5 * george.kernels.ExpSine2Kernel(gamma=7, log_period=np.log(3/24.))
+        """Calculates initial gp parameter values based on data."""
+        k1 = np.mean(flux) * george.kernels.ExpSquaredKernel(metric=10**2)
+        k2 = 0.5 * george.kernels.ExpSine2Kernel(gamma=7, log_period=np.log(3/24.))
 
-    kernel = k1+k2
+        kernel = k1+k2
 
-    gp = george.GP(kernel, mean=np.mean(flux), fit_mean=True)
+        gp = george.GP(kernel, mean=np.mean(flux), fit_mean=True)
 
-    gp.compute(time, flux_err)
+        gp.compute(time, flux_err)
+                       
+        print("GP kernel is set.")
 
-    ndim = 6
-    threads = 2
-    iterations = niter
-    #burn_in=100
+        ndim = 6
+        threads = 2
+        iterations = niter
+        burn_in=10000
+                     
+        print("Burn-in starting.")
 
-    sampler = emcee.EnsembleSampler(nwalkers, ndim, post_lnlikelihood, args=[gp, time, flux, flux_err])
+        sampler = emcee.EnsembleSampler(nwalkers, ndim, post_lnlikelihood, args=[gp, time, flux, flux_err])
 
-    #run steps for a burn-in
-    #state = sampler.run_mcmc(walker_params, burn_in)
-    #sampler.reset()
-    #print(state[0])
-    data = sampler.run_mcmc(walker_params, iterations)
+        #run steps for a burn-in
+        state = sampler.run_mcmc(walker_params, burn_in)
+        sampler.reset()
+                       
+        print("Burn-in complete.")
+        #print(state[0])
+        data = sampler.run_mcmc(state[0], iterations)
+                       
+        
+        print("Saving data.")
 
-    with h5py.File(filename + "_k2.hdf5", "w") as f:
-        f.create_dataset("chain", data=sampler.chain)
+        with h5py.File(obs_files[i] + ".hdf5", "w") as f:
+            f.create_dataset("chain", data=sampler.chain)
 
-        f.attrs['walkers'] = nwalkers
-        f.attrs['iterations'] = niter
-        f.attrs['data_pts'] = len(flux)
-        f.attrs['acceptance_fraction'] = sampler.acceptance_fraction
-        #f.attrs['burn_in'] = burn_in
-        f.create_dataset("time", data= time)
-        f.create_dataset("flux", data = flux)
-        f.create_dataset("flux_err", data = flux_err)
+            f.attrs['walkers'] = nwalkers
+            f.attrs['iterations'] = niter
+            f.attrs['data_pts'] = len(flux)
+            f.attrs['acceptance_fraction'] = sampler.acceptance_fraction
+            #f.attrs['burn_in'] = burn_in
+            f.create_dataset("time", data= time)
+            f.create_dataset("flux", data = flux)
+            f.create_dataset("flux_err", data = flux_err)
 
     return
 
@@ -226,7 +235,7 @@ if __name__ == "__main__":
     """))
 
     ### other arguments
-    parser.add_argument('-f', '--filenumber', action="store", dest="filename", required=True,
+    parser.add_argument('-f', '--filename', action="store", dest="filename", required=True,
                         help="Data file with observed time (in unit days) and flux.")
     parser.add_argument('-d', '--datadir', action="store", dest="datadir", required=False, default="./",
                         help="Directory with the data (default: current directory).")
