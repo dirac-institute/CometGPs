@@ -114,19 +114,19 @@ def post_lnlikelihood(params, gp, tsample, fsample, flux_err):
 def main():
 
     #read in the data
-    obs_files = list()
+    obs_files = filename#list()
 
-    import glob, os
+    #import glob, os
 
-    for file in glob.glob("../data/paper_plots/ztf_lightcurves/*k2.txt"):
-        obs_files.append(file)
+    #for file in glob.glob("../data/paper_plots/ztf_lightcurves/*k2.txt"):
+     #   obs_files.append(file)
         
-    print(obs_files)
+    #print(obs_files)
         
     for i in np.arange(len(obs_files)):
-        print(obs_files[i])
+        print(obs_files)
 
-        time, flux, flux_err = run_gp.read_data(obs_files[i], whitespace=True)
+        time, flux, flux_err = run_gp.read_data(obs_files, whitespace=False)
 
         # Calculates initial gp parameter values based on data
 
@@ -155,10 +155,10 @@ def main():
         walker_params = p0
 
         """Calculates initial gp parameter values based on data."""
-        k1 = np.mean(flux) * george.kernels.ExpSquaredKernel(metric=10**2)
-        k2 = 0.5 * george.kernels.ExpSine2Kernel(gamma=7, log_period=np.log(3/24.))
+        k1 = np.exp(log_amp_k1) * george.kernels.ExpSquaredKernel(metric=metric)
+        k2 = np.exp(log_amp_k2) * george.kernels.ExpSine2Kernel(gamma=gamma, log_period=log_period)
 
-        kernel = k1+k2
+        kernel = k1*k2
 
         gp = george.GP(kernel, mean=np.mean(flux), fit_mean=True)
 
@@ -167,7 +167,7 @@ def main():
         print("GP kernel is set.")
 
         ndim = 6
-        threads = 2
+        threads = 10
         iterations = niter
         burn_in=10000
                      
@@ -186,7 +186,7 @@ def main():
         
         print("Saving data.")
 
-        with h5py.File(obs_files[i] + ".hdf5", "w") as f:
+        with h5py.File(obs_files + "profile_testing.hdf5", "w") as f:
             f.create_dataset("chain", data=sampler.chain)
 
             f.attrs['walkers'] = nwalkers
@@ -245,6 +245,8 @@ if __name__ == "__main__":
                         help="The number of iterations per chain/walker in the MCMC run (default: 1000).")
     parser.add_argument('-t', '--threads', action="store", dest="threads", required=False, type=int, default=1,
                         help="The numer of threads used for computing the posterior (default: 1).")
+    parser.add_argument('-b', '--burn_in', action="store", dest="burn_in", required=False, type=int, default=2000,
+                        help="The number of iterations to remove from the head of the MCMC chain walkers.")
 
     clargs = parser.parse_args()
 
@@ -253,5 +255,6 @@ if __name__ == "__main__":
     nwalkers = clargs.nwalkers
     niter = clargs.niter
     threads = clargs.threads
+    burn_in = clargs.burn_in
 
     main()
